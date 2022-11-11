@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html 
+keywords:  
+summary: 'Vous pouvez générer un bundle de prise en charge à partir du plug-in SnapCenter pour l"interface graphique de VMware vSphere.' 
+---
+= Générez un bundle de prise en charge à partir de l'interface graphique du plug-in SnapCenter pour VMware vSphere
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pour vous connecter à l'interface utilisateur graphique de gestion SnapCenter Plug-in for VMware vSphere, vous devez connaître l'adresse IP et les identifiants de connexion.
+
+* L'adresse IP était affichée lorsque le plug-in SnapCenter VMware a été déployé.
+* Utilisez les identifiants de connexion fournis lors du déploiement du plug-in SnapCenter VMware ou modifiés ultérieurement.
+
+
+.Étapes
+. Connectez-vous au plug-in SnapCenter pour l'interface utilisateur graphique VMware vSphere.
++
+Utiliser le format `https://<OVA-IP-address>:8080`.
+
+. Cliquez sur l'icône Paramètres dans la barre d'outils supérieure.
++
+image:scpivs44_image10.png["Erreur : image graphique manquante"]
+
+. Sur la page *Paramètres*, dans la section *support*, cliquez sur *générer support*.
+. Une fois le pack créé, cliquez sur le lien fourni pour télécharger le pack sur NetApp.
+

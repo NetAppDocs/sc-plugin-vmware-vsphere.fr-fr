@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_modify_storage_timeout.html 
+keywords:  
+summary: 'Même si les sauvegardes ont déjà réussi à fonctionner correctement, elles peuvent échouer lorsque le plug-in SnapCenter pour VMware vSphere doit attendre que le système de stockage dépasse la période d"expiration configurée. Si cette condition se produit, vous pouvez augmenter le délai configuré.' 
+---
+= Modifier le délai d'expiration du stockage configuré
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Même si les sauvegardes ont déjà réussi à fonctionner correctement, elles peuvent échouer lorsque le plug-in SnapCenter pour VMware vSphere doit attendre que le système de stockage dépasse la période d'expiration configurée. Si cette condition se produit, vous pouvez augmenter le délai configuré.
+
+Vous pouvez rencontrer l'erreur `Unable to discover resources on SCV: Unable to get storage details for datastore <xxx>…`
+
+.Étapes
+. Dans le client Web VMware vSphere, cliquez sur *Storage Systems*.
+. Sur la page Storage Systems (systèmes de stockage), sélectionnez le système de stockage à modifier et cliquez sur *Edit* (Modifier).
+. Dans le champ délai, augmentez le nombre de secondes.
++
+
+TIP: 180 secondes sont recommandées pour les environnements de grande taille.
+
+

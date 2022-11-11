@@ -1,0 +1,169 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_prescripts_and_postscripts.html 
+keywords:  
+summary: 'Vous pouvez utiliser des prescripteurs et des postscripts personnalisés dans le cadre de vos opérations de protection des données. Ces scripts permettent l"automatisation avant ou après votre tâche de protection des données.' 
+---
+= Préscripts et postscripts
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez utiliser des prescripteurs et des postscripts personnalisés dans le cadre de vos opérations de protection des données. Ces scripts permettent l'automatisation avant ou après votre tâche de protection des données. Vous pouvez, par exemple, inclure un script qui vous informe automatiquement des échecs ou des avertissements liés aux tâches de protection des données. Avant de configurer vos prescripteurs et vos postscripts, vous devez comprendre certaines des conditions requises pour la création de ces scripts.
+
+
+
+== Types de script pris en charge
+
+Les scripts Perl et shell sont pris en charge. Les scripts shell doivent commencer par `!/bin/bash`. (`!/bin/sh` n'est pas pris en charge.)
+
+
+
+== Emplacement du chemin du script
+
+Les préscripts et scripts sont exécutés par le plug-in SnapCenter pour VMware vSphere. Par conséquent, les scripts doivent se trouver dans le plug-in SnapCenter pour VMware vSphere OVA, avec des autorisations exécutables.
+
+Par exemple : * un chemin de script PERL peut être `/support/support/script.pl`* Un chemin de script shell peut être `/support/support/script.sh`
+
+Le chemin du script est validé au moment de l'exécution du script.
+
+
+
+== Où spécifier des scripts
+
+Les scripts sont spécifiés dans les politiques de sauvegarde. Lorsqu'une tâche de sauvegarde est lancée, la stratégie associe automatiquement le script aux ressources sauvegardées.
+
+Pour spécifier plusieurs scripts, appuyez sur *entrée* après chaque chemin de script pour répertorier chaque script sur une ligne distincte. Les points-virgules (;) ne sont pas autorisés. Vous pouvez spécifier plusieurs prescripteurs et plusieurs postscripts. Un seul script peut être codé en tant que prescripteur et PostScript et peut appeler d'autres scripts.
+
+
+
+== Lors de l'exécution des scripts
+
+Les scripts sont exécutés en fonction de la valeur définie pour BACKUP_PHASE.
+
+* BACKUP_PHASE=PRE_BACKUP
++
+Les Prescripts sont exécutés dans la phase PRÉ_SAUVEGARDE de l'opération.
+
+
+
+
+NOTE: Si un prescripteur échoue, la sauvegarde se termine avec succès et un message d'avertissement est envoyé.
+
+* BACKUP_PHASE=POST_SAUVEGARDE OU BACKUP_PHASE=FAILED_BACKUP
++
+Les Postscripts sont exécutés dans la phase POST_BACKUP de l'opération une fois la sauvegarde terminée avec succès ou dans LA phase FAILED_BACKUP si la sauvegarde ne s'effectue pas correctement.
+
+
+
+
+NOTE: En cas d'échec d'un script PostScript, la sauvegarde se termine avec succès et un message d'avertissement est envoyé.
+
+Vérifiez les valeurs de script suivantes : * pour les scripts PERL : `/support/support/log_env.log`* Pour les scripts shell: `/support/support/log_file.log`
+
+
+
+== Les variables d'environnement sont transmises à des scripts
+
+Vous pouvez utiliser les variables d'environnement indiquées dans le tableau suivant dans les scripts.
+
+|===
+| Variable d'environnement | Description 
+
+
+| `BACKUP_NAME` | Nom de la sauvegarde. Variable transmise uniquement dans les scripts post. 
+
+
+| `BACKUP_DATE` | Date de la sauvegarde, au format `yyyymmdd`Variable transmise uniquement dans les scripts post. 
+
+
+| `BACKUP_TIME` | Heure de la sauvegarde, au format `hhmmss`Variable transmise uniquement dans les scripts post. 
+
+
+| `BACKUP_PHASE` | Phase de sauvegarde dans laquelle vous souhaitez exécuter le script. Les valeurs valides sont : `PRE_BACKUP, POST_BACKUP, and FAILED_BACKUP`. Variable transmise dans les prescripteurs et les postscripts. 
+
+
+| `STORAGE_SNAPSHOTS` | Le nombre de snapshots de stockage dans la sauvegarde. Variable transmise uniquement dans les scripts post. 
+
+
+| `STORAGE_SNAPSHOT.#` | L'un des snapshots de stockage définis, au format suivant :
+`<filer>:/vol/<volume>:<ONTAP-snapshot-name>`Variable transmise uniquement dans les scripts post. 
+
+
+| `VIRTUAL_MACHINES` | Nombre de machines virtuelles dans la sauvegarde. Variable transmise dans les prescripteurs et les postscripts. 
+
+
+| `VIRTUAL_MACHINE.#` | L'une des machines virtuelles définies, au format suivant :
+`<VM name>[vertical bar]<VM UUID>[vertical bar]<power-state>[vertical bar]<VM snapshot>[vertical bar]<ip-addresses>
+<power-state> has the values POWERED_ON, POWERED_OFF, or
+SUSPENDED`
+`<VM snapshot>` a les valeurs `true` ou `false`Variable transmise dans les prescripteurs et les postscripts. 
+|===
+
+
+== Délais d'expiration du script
+
+Le délai d'expiration des scripts de sauvegarde est de 15 minutes et ne peut pas être modifié.
+
+
+
+== Exemple de script PERL #1
+
+L'exemple de script PERL suivant imprime les variables environnementales lors de l'exécution d'une sauvegarde.
+
+`#!/usr/bin/perl`
+`use warnings;`
+`use strict;`
+`my $argnum;`
+`my $logfile = '/support/support/log_env.log';`
+`open (FH, '>>', $logfile) or die $!;`
+`foreach (sort keys %ENV) {`
+`print FH "$_ = $ENV{$_}\n";`
+`}`
+`print FH "=========\n";`
+`close (FH);`
+
+
+
+== Exemple de script PERL #2
+
+L'exemple suivant imprime des informations sur la sauvegarde.
+
+`#!/usr/bin/perl`
+`use warnings;`
+`use strict;`
+
+`my $argnum;`
+`my $logfile = '/support/support/log_env.log';`
+`open (FH, '>>', $logfile) or die $!;`
+
+`print FH "BACKUP_PHASE is $ENV{'BACKUP_PHASE'}\n";`
+`print FH "Backup name  $ENV{'BACKUP_NAME'}\n";`
+`print FH "Virtual Machine  $ENV{'VIRTUAL_MACHINES'}\n";`
+`print FH "VIRTUAL_MACHINE # is $ENV{'VIRTUAL_MACHINE.1'}\n";`
+`print FH "BACKUP_DATE is $ENV{'BACKUP_DATE'}\n";`
+`print FH "BACKUP_TIME is $ENV{'BACKUP_TIME'}\n";`
+`print FH "STORAGE_SNAPSHOTS is $ENV{'STORAGE_SNAPSHOTS'}\n";`
+`print FH "STORAGE_SNAPSHOT # is $ENV{'STORAGE_SNAPSHOT.1'}\n";`
+
+`print FH "PWD is $ENV{'PWD'}\n";`
+`print FH "INVOCATION_ID is $ENV{'INVOCATION_ID'}\n";`
+
+`print FH "=========\n";`
+`close (FH);`
+
+
+
+== Exemple de script de shell
+
+
+`===============================================`
+`#!/bin/bash`
+`echo Stage $BACKUP_NAME >> /support/support/log_file.log`
+`env >> /support/support/log_file.log`
+`===============================================`

@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_unmount_a_backup.html 
+keywords:  
+summary: 'Vous pouvez démonter une sauvegarde lorsque vous n"avez plus besoin d"accéder aux fichiers du datastore.' 
+---
+= Démonter une sauvegarde
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez démonter une sauvegarde lorsque vous n'avez plus besoin d'accéder aux fichiers du datastore.
+
+Si une sauvegarde est répertoriée comme montée dans l'interface utilisateur graphique du client Web VMware vSphere, mais qu'elle ne figure pas dans l'écran de démontage de la sauvegarde, vous devez utiliser l'API REST `/backup/{backup-Id}/cleanup` pour nettoyer les datastores hors limite, puis réessayez la procédure de démontage.
+
+Si vous tentez de monter une copie de sauvegarde d'un datastore NFS sur une machine virtuelle de stockage (SVM) avec le volume racine dans une relation de miroir de partage de charge, l'erreur peut se produire `You may have reached the maximum number of NFS volumes configured in the vCenter. Check the vSphere Client for any error messages.` Pour éviter ce problème, modifiez le paramètre de volumes maximum en accédant à *ESX* > *Manage* > *Settings* > *Advance System Settings* et en modifiant la valeur NFS.Maxvolumes. La valeur maximale est de 256.
+
+.Étapes
+. Dans le client Web VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *Storage* dans la liste déroulante.
+. Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur un datastore, puis sélectionnez *NetApp SnapCenter* dans la liste déroulante, puis sélectionnez Unmount dans la liste déroulante secondaire.
++
+
+IMPORTANT: Assurez-vous de sélectionner le datastore approprié à démonter. Sinon, vous pourriez avoir un impact sur le travail de production.
+
+. Dans la boîte de dialogue *Unmount cloné datastore*, sélectionnez un datastore, cochez la case *Unmount le datastore cloné*, puis cliquez sur *Unmount*.
+

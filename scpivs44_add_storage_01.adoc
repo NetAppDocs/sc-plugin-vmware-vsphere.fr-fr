@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_add_storage_01.html 
+keywords:  
+summary: 'L"ajout de stockage permet au plug-in SnapCenter pour VMware vSphere de reconnaître et de gérer les opérations de sauvegarde et de restauration dans vCenter.' 
+---
+= Ajouter du stockage
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Avant de sauvegarder ou de restaurer des machines virtuelles, vous devez ajouter des clusters de stockage ou des machines virtuelles de stockage. L'ajout de stockage permet au plug-in SnapCenter pour VMware vSphere de reconnaître et de gérer les opérations de sauvegarde et de restauration dans vCenter.
+
+* Dans quelle interface utilisateur choisir
++
+Utilisez le client Web VMware vSphere pour ajouter du stockage.
+
+* Grandes LUN
++
+Le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures prend en charge les datastores dans des LUN de grande taille, jusqu'à 128 To sur des agrégats ASA. Pour les LUN de grande taille, SnapCenter ne prend en charge que les LUN à provisionnement lourd pour éviter la latence.
+
+* Volumes virtuels VMware (vvols)
++
+Vous devez d'abord ajouter le système de stockage vvols dans ONTAP Tools pour VMware vSphere, puis ajouter le système de stockage vvols dans le plug-in SnapCenter pour VMware vSphere.
+
++
+Pour plus d'informations, voir https://docs.netapp.com/vapp-98/index.jsp["Outils ONTAP pour VMware vSphere"^]
+
+
+
+Le serveur ESXi, le plug-in SnapCenter VMware et chaque vCenter doivent être synchronisés en même temps. Si vous essayez d'ajouter du stockage mais que les paramètres d'heure de vos vCenters ne sont pas synchronisés, l'opération peut échouer avec une erreur de certificat Java.
+
+Le plug-in SnapCenter pour VMware réalise des opérations de sauvegarde et de restauration sur les machines virtuelles de stockage directement connectées et sur les machines virtuelles de stockage dans un cluster de stockage.
+
+
+NOTE: Si vous utilisez le plug-in SnapCenter pour VMware pour prendre en charge les sauvegardes basées sur les applications sur des VMDK, vous devez utiliser l'interface graphique de SnapCenter pour entrer les identifiants de stockage et enregistrer les systèmes de stockage.
+
+* Pour les vCenters en mode lié, vous devez ajouter séparément des systèmes de stockage à chaque vCenter.
+* Les noms des VM de stockage doivent être résolus sur les LIF de gestion.
++
+Si vous avez ajouté des entrées d'hôte etc pour les noms de machines virtuelles de stockage dans SnapCenter, vous devez vérifier qu'elles peuvent également être résolues à partir de l'appliance virtuelle.
+
++
+Si vous ajoutez un serveur virtuel de stockage portant un nom qui ne peut pas être résolu sur la LIF de gestion, les tâches de sauvegarde planifiées échouent, car le plug-in ne peut pas détecter les datastores ou les volumes de cette machine virtuelle de stockage. Le cas échéant, ajoutez la VM de stockage à SnapCenter et spécifiez la LIF de gestion ou ajoutez un cluster qui contient le VM de stockage et spécifiez la LIF de cluster management.
+
+* Les identifiants de stockage ne sont pas partagés entre plusieurs instances du plug-in SnapCenter VMware ou entre Windows SnapCenter Server et le plug-in SnapCenter sur vCenter.
+
+
+.Étapes
+. Dans le volet navigateur de gauche du client Web vSphere, cliquez sur *Storage Systems*.
+. Sur la page Storage Systems (systèmes de stockage), cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Ajouter*.
++
+image:scpivs44_image12.png["Erreur : image graphique manquante"]
+
+. Dans l'assistant *Add Storage System*, entrez les informations de base sur la machine virtuelle de stockage ou le cluster comme indiqué dans le tableau suivant :
++
+|===
+| Pour ce champ… | Faites cela… 
+
+
+| Adieu les migrations de données onéreuses | Entrez le nom de domaine complet ou l'adresse IP d'un cluster de stockage ou d'une machine virtuelle de stockage. Le plug-in SnapCenter pour VMware ne prend pas en charge plusieurs systèmes de stockage d'un même nom sur des clusters différents. Chaque système de stockage pris en charge par SnapCenter doit disposer d'une adresse IP de LIF de données unique. 
+
+
+| Plateforme | Sélectionnez la plate-forme. 
+
+
+| Nom d'utilisateur | Entrez le nom d'utilisateur ONTAP utilisé pour vous connecter à la machine virtuelle de stockage. 
+
+
+| Mot de passe | Entrez le mot de passe de connexion de la machine virtuelle de stockage. 
+
+
+| Protocole | Sélectionnez le protocole de stockage. 
+
+
+| Port | Sélectionnez le port 443 (par défaut) ou le port 80 pour communiquer avec vCenter. Le port 443 est utilisé pour la communication entre l'hôte de machine virtuelle de stockage pour le plug-in SnapCenter pour VMware vSphere et vCenter lors des opérations de sauvegarde et de restauration des machines virtuelles et des datastores. Vous devez sélectionner le port par défaut 443 si vous prévoyez de protéger les VM vvol. 
+
+
+| Délai dépassé | Entrez le nombre de secondes que vCenter doit attendre avant de mettre fin à l'opération. La valeur par défaut est 60 secondes. 
+
+
+| Adresse IP préférée | Si la machine virtuelle de stockage possède plusieurs adresses IP de gestion, cochez cette case et entrez l'adresse IP que vous souhaitez utiliser SnapCenter. *Remarque :* n'utilisez pas de crochets ([]) lors de la saisie de l'adresse IP. 
+
+
+| Consigner les événements du serveur SnapCenter dans syslog | Cochez la case pour consigner les événements du plug-in SnapCenter VMware. 
+
+
+| Envoyer la notification AutoSupport en cas d'échec de l'opération dans le système de stockage | Cochez la case si vous souhaitez que la notification AutoSupport pour les tâches de protection des données ayant échoué. Vous devez également activer AutoSupport sur la machine virtuelle de stockage et configurer les paramètres de messagerie AutoSupport. 
+|===
+. Cliquez sur *Ajouter*.
++
+Si vous avez ajouté un cluster de stockage, toutes les machines virtuelles de stockage de ce cluster sont automatiquement ajoutées. Les machines virtuelles de stockage ajoutées automatiquement (parfois appelées machines virtuelles de stockage « implicites ») sont affichées sur la page de résumé du cluster avec un tiret (-) au lieu d'un nom d'utilisateur. Les noms d'utilisateur sont affichés uniquement pour les entités de stockage explicites.
+
+

@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_view_vm_and_datastore_backups.html 
+keywords:  
+summary: Lorsque vous préparez à sauvegarder ou restaurer une machine virtuelle ou un datastore, vous pouvez voir toutes les sauvegardes disponibles pour cette ressource et afficher les détails de ces sauvegardes. 
+---
+= Afficher les sauvegardes des VM et des datastores
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Lorsque vous préparez à sauvegarder ou restaurer une machine virtuelle ou un datastore, vous pouvez voir toutes les sauvegardes disponibles pour cette ressource et afficher les détails de ces sauvegardes.
+
+La navigation dans de grands dossiers de fichiers, par exemple des dossiers de fichiers 10k, peut prendre une ou plusieurs minutes la première fois. Les sessions de navigation suivantes prennent moins de temps.
+
+.Étapes
+. Cliquez sur *Menu* et sélectionnez l'option de menu *hôtes et clusters*, puis sélectionnez une machine virtuelle, sélectionnez l'onglet *configurer*, puis cliquez sur *sauvegardes* dans la section *SnapCenter Plug-in pour VMware vSphere*.
++
+image:scpivs44_image14.png["Erreur : image graphique manquante"]
+
+. Cliquez sur la sauvegarde que vous souhaitez afficher.
+

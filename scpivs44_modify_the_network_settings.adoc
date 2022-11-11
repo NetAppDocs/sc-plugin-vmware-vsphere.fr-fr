@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_modify_the_network_settings.html 
+keywords:  
+summary: Vous pouvez modifier les paramètres réseau configurés dans le plug-in SnapCenter pour VMware vSphere. Ces paramètres sont utilisés par le plug-in pour accéder à vCenter. 
+---
+= Modifiez les paramètres réseau
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Vous pouvez modifier les paramètres réseau configurés dans le plug-in SnapCenter pour VMware vSphere. Ces paramètres sont utilisés par le plug-in pour accéder à vCenter.
+
+Vous devez connaître l'adresse IP et les identifiants de connexion de l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere.
+
+* L'adresse IP était affichée lorsque le plug-in SnapCenter VMware a été déployé.
+* Utilisez les identifiants de connexion fournis lors du déploiement du plug-in SnapCenter VMware ou modifiés ultérieurement.
+
+
+.Étapes
+. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware.
++
+Utiliser le format `https://<appliance-IP-address>:8080`
+
+. Cliquez sur l'icône Paramètres dans la barre d'outils supérieure.
++
+image:scpivs44_image31.png["Erreur : image graphique manquante"]
+
+. Sur la page *Paramètres*, dans la section *Paramètres réseau*, cliquez sur *IPv4* ou *IPv6*, puis sur *Modifier*.
++
+Saisissez les nouvelles informations et cliquez sur *Enregistrer*.
+
+. Si vous supprimez un paramètre réseau, procédez comme suit :
++
+** IPv4 : dans le champ *adresse IP*, entrez `0.0.0.0` Puis cliquez sur *Enregistrer*.
+** IPv6 : dans le champ *adresse IP* : saisissez `: :0` Puis cliquez sur *Enregistrer*.
+
+
+
+
+
+NOTE: Si vous utilisez IPv4 et IPv6, vous ne pouvez pas supprimer les deux paramètres réseau. Le réseau restant doit spécifier les champs serveurs DNS et domaines de recherche.

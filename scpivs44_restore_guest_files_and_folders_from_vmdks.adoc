@@ -1,0 +1,171 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_restore_guest_files_and_folders_from_vmdks.html 
+keywords:  
+summary: 'Vous pouvez restaurer un ou plusieurs fichiers ou dossiers à partir d"un VMDK sur un système d"exploitation invité Windows.' 
+---
+= Restaurez les fichiers et les dossiers invités à partir de VMDK
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez restaurer un ou plusieurs fichiers ou dossiers à partir d'un VMDK sur un système d'exploitation invité Windows.
+
+Par défaut, le disque virtuel connecté est disponible pendant 24 heures, puis il est automatiquement détaché. Vous pouvez choisir dans l'assistant de supprimer automatiquement la session une fois l'opération de restauration terminée, ou supprimer manuellement la session Restauration du fichier invité à tout moment, ou vous pouvez prolonger l'heure à la page *Configuration invité*.
+
+La performance de restauration des fichiers ou dossiers invités dépend de deux facteurs : la taille des fichiers ou dossiers à restaurer et le nombre de fichiers ou de dossiers à restaurer. La restauration d'un grand nombre de fichiers de petite taille peut prendre plus de temps que prévu par rapport à la restauration d'un petit nombre de fichiers de taille importante si le jeu de données à restaurer est de même taille.
+
+
+IMPORTANT: Seule une opération de rattachement ou de restauration peut être exécutée en même temps sur une machine virtuelle. Vous ne pouvez pas exécuter des opérations de rattachement ou de restauration en parallèle sur la même machine virtuelle.
+
+
+IMPORTANT: La fonction de restauration invité vous permet d'afficher et de restaurer des fichiers système et masqués et d'afficher des fichiers cryptés. N'essayez pas d'écraser un fichier système existant ou de restaurer des fichiers cryptés vers un dossier crypté. Pendant l'opération de restauration, les attributs masqués, système et cryptés des fichiers invités ne sont pas conservés dans le fichier restauré. L'affichage ou la navigation dans les partitions réservées peut provoquer une erreur.
+
+.Étapes
+. Cliquez sur *Menu* et sélectionnez l'option de menu *hôtes et clusters*, puis sélectionnez une machine virtuelle, sélectionnez *NetApp SnapCenter*, puis cliquez sur *Restauration de fichiers invités*.
+. Dans le client Web VMware vSphere, cliquez sur *Guest File Restore* dans la liste déroulante secondaire pour démarrer l'assistant.
+. Sur la page *Restore Scope*, spécifiez la sauvegarde qui contient le disque virtuel que vous souhaitez associer en procédant comme suit :
++
+.. Dans le tableau *Nom de la sauvegarde*, sélectionnez la sauvegarde qui contient le disque virtuel que vous souhaitez joindre.
+.. Dans la table *VMDK*, sélectionnez le disque virtuel qui contient les fichiers ou dossiers que vous souhaitez restaurer.
+.. Dans le tableau *emplacements*, sélectionnez l'emplacement, principal ou secondaire, du disque virtuel que vous souhaitez joindre.
+
+
+. Sur la page *Détails client*, procédez comme suit.
++
+.. Choisissez l'emplacement de connexion du disque virtuel :
++
+|===
+| Sélectionnez cette option… | Si… 
+
+
+| Utilisation de la machine virtuelle invitée  a| 
+Vous souhaitez attacher le disque virtuel à la machine virtuelle sur laquelle vous avez cliqué avec le bouton droit de la souris avant de démarrer l'assistant, puis sélectionner les informations d'identification de la machine virtuelle que vous avez cliqué avec le bouton droit de la souris.
+
+
+NOTE: Les identifiants doivent déjà être créés pour la machine virtuelle.
+
+
+
+| Utilisez la machine virtuelle proxy de restauration de fichiers invités  a| 
+Vous souhaitez connecter le disque virtuel à une machine virtuelle proxy, puis sélectionner la machine virtuelle proxy.
+
+
+NOTE: La machine virtuelle proxy doit être configurée avant le début de l'opération de liaison et de restauration.
+
+|===
+.. Sélectionnez l'option *Envoyer une notification par e-mail*.
++
+Cette option est requise si vous souhaitez être averti à la fin de l'opération de connexion et si le disque virtuel est disponible. L'e-mail de notification inclut le nom du disque virtuel, le nom de la machine virtuelle et la lettre de lecteur nouvellement attribuée pour le VMDK.
+
++
+
+TIP: Activez cette option, car la restauration d'un fichier invité est une opération asynchrone et une latence peut être nécessaire pour établir une session invité.
+
++
+Cette option utilise les paramètres de messagerie configurés lors de la configuration du client Web VMware vSphere dans vCenter.
+
+
+
+. Vérifiez le résumé, puis cliquez sur *Terminer*.
++
+Avant de cliquer sur *Finish*, vous pouvez revenir à n'importe quelle page de l'assistant et modifier les informations.
+
+. Attendre la fin de l'opération d'attache.
++
+Vous pouvez afficher la progression de l'opération dans le moniteur des tâches du tableau de bord, ou vous pouvez attendre la notification par e-mail.
+
+. Pour trouver les fichiers à restaurer à partir du disque virtuel joint, cliquez sur *Menu > Plug-in SnapCenter pour VMware vSphere*, puis dans le volet gauche du navigateur, cliquez sur *Restauration de fichiers invités* et sélectionnez l'onglet *Configuration invité*.
++
+Dans le tableau moniteur de session invité, vous pouvez afficher des informations supplémentaires sur une session en cliquant sur *... *dans la colonne de droite.
+
+. Sélectionnez la session de restauration des fichiers invités pour le disque virtuel répertorié dans l'e-mail de notification.
++
+Une lettre de lecteur est attribuée à toutes les partitions, y compris les partitions réservées par le système. Si un VMDK possède plusieurs partitions, vous pouvez sélectionner un lecteur spécifique en sélectionnant le lecteur dans la liste déroulante du champ de lecteur en haut de la page Parcourir les fichiers invités.
+
+. Cliquez sur l'icône *Parcourir les fichiers* pour afficher une liste de fichiers et de dossiers sur le disque virtuel.
++
+Lorsque vous double-cliquez sur un dossier pour parcourir et sélectionner des fichiers individuels, il peut y avoir un temps de latence lors de l'extraction de la liste des fichiers car l'opération de récupération est effectuée au moment de l'exécution.
+
++
+Pour faciliter la navigation, vous pouvez utiliser des filtres dans votre chaîne de recherche. Les filtres sont des expressions Perl sensibles à la casse sans espaces. La chaîne de recherche par défaut est `.`*. Le tableau suivant présente quelques exemples d'expressions de recherche Perl.
+
++
+|===
+| Cette expression… | Recherche… 
+
+
+| . | Tout caractère, à l'exception d'un caractère de nouvelle ligne. 
+
+
+| .* | Toute chaîne. Il s'agit de la valeur par défaut. 
+
+
+| a | Le caractère 
+
+
+| ab | La chaîne ab. 
+
+
+| a [barre verticale] b | Le caractère a ou b. 
+
+
+| a* | Zéro instance ou plus du caractère a. 
+
+
+| a+ | Une ou plusieurs instances du caractère a. 
+
+
+| a ? | Zéro ou une instance du caractère a. 
+
+
+| a{x} | X nombre exact d'instances du caractère a. 
+
+
+| a{x,} | Au moins x nombre d'instances du caractère a. 
+
+
+| a{x,y} | Au moins x nombre d'instances du caractère a et au plus y nombre. 
+
+
+| \ | Échappe à un caractère spécial. 
+|===
++
+La page Parcourir les fichiers invités affiche tous les fichiers et dossiers cachés en plus de tous les autres fichiers et dossiers.
+
+. Sélectionnez un ou plusieurs fichiers ou dossiers à restaurer, puis cliquez sur *Sélectionner l'emplacement de restauration*.
++
+Les fichiers et les dossiers à restaurer sont répertoriés dans la table des fichiers sélectionnés.
+
+. Dans la page *Sélectionner l'emplacement de restauration*, spécifiez les éléments suivants :
++
+|===
+| Option | Description 
+
+
+| Restaurez le chemin d'accès | Entrez le chemin du partage UNC vers l'invité où les fichiers sélectionnés seront restaurés. Exemple IPv4 : `\\10.60.136.65\c$`Exemple IPv6 : `\\fd20-8b1e-b255-832e--61.ipv6-literal.net\C\restore` 
+
+
+| S'il existe un ou plusieurs fichiers d'origine  a| 
+Sélectionnez l'action à effectuer si le fichier ou le dossier à restaurer existe déjà sur la destination de restauration : toujours écraser ou toujours ignorer.
+
+
+NOTE: Si le dossier existe déjà, le contenu du dossier est fusionné avec le dossier existant.
+
+
+
+| Déconnecter la session invité après la restauration réussie | Sélectionnez cette option si vous souhaitez supprimer la session de restauration du fichier invité une fois l'opération de restauration terminée. 
+|===
+. Cliquez sur *Restaurer*.
++
+Vous pouvez afficher la progression de l'opération de restauration dans le moniteur des tâches du tableau de bord, ou vous pouvez attendre la notification par e-mail. Le temps nécessaire à l'envoi de la notification par e-mail dépend de la durée de l'opération de restauration.
+
++
+L'e-mail de notification contient une pièce jointe contenant la sortie de l'opération de restauration. Si l'opération de restauration échoue, ouvrez la pièce jointe pour plus d'informations.
+
+

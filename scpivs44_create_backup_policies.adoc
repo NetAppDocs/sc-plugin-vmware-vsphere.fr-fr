@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_create_backup_policies.html 
+keywords:  
+summary:  
+---
+= Création de règles de sauvegarde
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *Policies*, puis cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Nouvelle politique*.
+. Sur la page *Nouvelle stratégie de sauvegarde*, entrez les informations de configuration de la stratégie, puis cliquez sur *Ajouter*.
++
+Si la stratégie sera utilisée pour les relations miroir-coffre-fort, alors dans le champ réplication, vous devez sélectionner uniquement l'option *mettre à jour SnapVault après sauvegarde* si vous souhaitez que les sauvegardes soient copiées vers les destinations miroir-coffre-fort.
+
+

@@ -1,0 +1,18 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_deployment_workflow_for_existing_users.html 
+keywords:  
+summary: Vous pouvez utiliser ce flux de travail si vous êtes un utilisateur SnapCenter et que vous avez des sauvegardes SnapCenter. 
+---
+= Flux de travail de déploiement pour les utilisateurs existants
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Si vous êtes un utilisateur SnapCenter et que vous disposez de sauvegardes SnapCenter, utilisez le workflow suivant pour commencer.
+
+image:scpivs44_image3.png["Erreur : image graphique manquante"]

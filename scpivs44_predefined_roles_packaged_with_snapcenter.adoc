@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_predefined_roles_packaged_with_snapcenter.html 
+keywords:  
+summary: 'Pour simplifier la collaboration avec vCenter Server RBAC, le plug-in SnapCenter VMware fournit un ensemble de rôles prédéfinis qui permettent aux utilisateurs d"effectuer des tâches SnapCenter. Le rôle en lecture seule permet également aux utilisateurs d"afficher les informations SnapCenter, mais n"effectuent aucune tâche.' 
+---
+= Rôles prédéfinis avec le plug-in SnapCenter pour VMware vSphere
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pour simplifier la collaboration avec vCenter Server RBAC, le plug-in SnapCenter VMware fournit un ensemble de rôles prédéfinis qui permettent aux utilisateurs d'effectuer des tâches SnapCenter. Le rôle en lecture seule permet également aux utilisateurs d'afficher les informations SnapCenter, mais n'effectuent aucune tâche.
+
+Les rôles prédéfinis possèdent à la fois les privilèges spécifiques à SnapCenter et les privilèges vCenter Server natifs, permettant de s'assurer que les tâches sont correctement effectuées. En outre, les rôles sont configurés pour disposer des privilèges nécessaires sur toutes les versions prises en charge de vCenter Server.
+
+En tant qu'administrateur, vous pouvez attribuer ces rôles aux utilisateurs appropriés.
+
+Le plug-in VMware de SnapCenter renvoie ces rôles à leurs valeurs par défaut (ensemble initial de privilèges) chaque fois que vous redémarrez le service du client Web vCenter ou que vous modifiez votre installation. Si vous mettez à niveau le plug-in SnapCenter VMware, les rôles prédéfinis sont automatiquement mis à niveau pour fonctionner avec cette version du plug-in.
+
+Vous pouvez voir les rôles prédéfinis dans l'interface utilisateur graphique vCenter en cliquant sur *Menu > Administration > rôles*, comme indiqué dans le tableau suivant.
+
+|===
+| Rôle | Description 
+
+
+| Administrateur de distributeurs sélectifs | Fournit tous les privilèges natifs vCenter Server et spécifiques à SnapCenter nécessaires pour effectuer toutes les tâches du plug-in SnapCenter pour VMware vSphere. 
+
+
+| Secours du distributeur auxiliaire | Fournit tous les privilèges natifs vCenter Server et spécifiques à SnapCenter nécessaires pour sauvegarder des objets vSphere (machines virtuelles et datastores). L'utilisateur a également accès au privilège de configuration. L'utilisateur ne peut pas restaurer à partir des sauvegardes. 
+
+
+| Restauration du fichier invité du distributeur auxiliaire | Fournit tous les privilèges natifs de vCenter Server et spécifiques à SnapCenter nécessaires à la restauration des fichiers et dossiers invités. L'utilisateur ne peut pas restaurer des machines virtuelles ou des VMDK. 
+
+
+| Restauration du distributeur auxiliaire | Fournit tous les privilèges natifs vCenter Server et SnapCenter nécessaires pour restaurer les objets vSphere qui ont été sauvegardés à l'aide du plug-in SnapCenter VMware et pour restaurer des fichiers et des dossiers invités. L'utilisateur a également accès au privilège de configuration. L'utilisateur ne peut pas sauvegarder les objets vSphere. 
+
+
+| Vue du distributeur auxiliaire | Fournit un accès en lecture seule à toutes les sauvegardes, groupes de ressources et règles du plug-in SnapCenter VMware. 
+|===

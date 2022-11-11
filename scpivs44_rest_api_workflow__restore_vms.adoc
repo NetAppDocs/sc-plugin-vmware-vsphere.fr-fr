@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_api_workflow__restore_vms.html 
+keywords:  
+summary: 'Pour effectuer des opérations de restauration pour les sauvegardes de machines virtuelles à l"aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez suivre la séquence prescrite d"appels d"API REST.' 
+---
+= Workflow d'API REST pour restaurer des VM
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pour effectuer des opérations de restauration pour les sauvegardes de machines virtuelles à l'aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez suivre la séquence prescrite d'appels d'API REST.
+
+Pour chaque API REST, ajoutez `https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
+
+|===
+| Étape | API REST | Commentaires 
+
+
+| 1 | Accédez à `http://<vCenter-IP>/mob` | Recherchez le moref de la VM à partir de l'URL des objets gérés VMware. Notez le *moref* pour la machine virtuelle que vous souhaitez restaurer. 
+
+
+| 2 | `/4.1/vm/{moref}/backups` | `Get VM Backups` Obtient la liste des sauvegardes pour la machine virtuelle spécifiée. Passez le *moref* de l'étape 1. Notez la *backupId* de la sauvegarde que vous souhaitez restaurer. 
+
+
+| 3 | `/4.1/vm/backups/{backupId}/
+snapshotlocations` | `Get snapshot locations` Obtient l'emplacement de la copie Snapshot pour la sauvegarde spécifiée. Passez le *backupId* de l'étape 2. Notez les informations *snapshotLocationsList*. 
+
+
+| 4 | `/4.1/vm/{moref}/backups/
+availableesxhosts` | `Get available ESX Hosts` obtient les informations de l'hôte sur lequel la sauvegarde est stockée. Notez les informations *disponibleEsxHostsList*. 
+
+
+| 5 | `/4.1/vm/{moref}/backups/
+{backupId}/restore`  a| 
+`Restore a VM from a backup` restaure la sauvegarde spécifiée. Passez les informations des étapes 3 et 4 de l'attribut *restoreLocation*.
+
+
+NOTE: Si la sauvegarde VM est une sauvegarde partielle, définissez l' `restartVM` paramètre à « false ».
+
+
+NOTE: Vous ne pouvez pas restaurer une machine virtuelle qui est un modèle.
+
+|===

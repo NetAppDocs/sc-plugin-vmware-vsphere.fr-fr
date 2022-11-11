@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_generate_a_support_bundle_from_the_maintenance_console.html 
+keywords:  
+summary: Vous pouvez générer un bundle de support à partir de la console de maintenance. 
+---
+= Générez un bundle de support à partir de la console de maintenance
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+.Étapes
+. Dans le client web VMware vSphere, sélectionnez la machine virtuelle sur laquelle se trouve le plug-in SnapCenter VMware.
+. Cliquez avec le bouton droit de la souris sur la VM, puis dans l'onglet *Résumé* de l'appliance virtuelle, cliquez sur *lancer la console distante ou sur lancer la console Web* pour ouvrir une fenêtre de la console de maintenance, puis connectez-vous.
++
+Pour plus d'informations sur l'accès et la connexion à la console de maintenance, reportez-vous à la section link:scpivs44_access_the_maintenance_console.html["Accéder à la Console de maintenance"^].
+
++
+image:scpivs44_image11.png["Erreur : image graphique manquante"]
+
+. Dans le Menu principal, entrez l'option *4) support et diagnostic*.
+. Dans le menu support et Diagnostics, entrez l'option *1) générer le bundle de support*.
+
+
+Pour accéder à l'ensemble de support, dans le menu support et diagnostic, saisissez l'option *2) accédez à diagnostic Shell*. Dans la console, accédez à `/support/support/<bundle_name>.tar.gz`.

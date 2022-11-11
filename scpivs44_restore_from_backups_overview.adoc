@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_restore_from_backups_overview.html 
+keywords:  
+summary: Il est possible de restaurer des machines virtuelles, des VMDK, des fichiers et des dossiers à partir de sauvegardes primaires ou secondaires. 
+---
+= Vue d'ensemble de la restauration
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il est possible de restaurer des machines virtuelles, des VMDK, des fichiers et des dossiers à partir de sauvegardes primaires ou secondaires.
+
+* Destinations de restauration VM
++
+Vous pouvez restaurer des machines virtuelles classiques sur l'hôte d'origine, ou sur un autre hôte du même serveur vCenter, ou sur un autre hôte ESXi géré par le même vCenter ou tout autre vCenter en mode lié.
+
++
+Vous pouvez restaurer des machines virtuelles vvol sur l'hôte d'origine.
+
+* Destinations de restauration VMDK
++
+Les disques VMDK peuvent être restaurés sur les machines virtuelles classiques vers le datastore d'origine ou vers un autre datastore.
+
++
+Il est possible de restaurer des VMDK dans des VM vvol vers le datastore d'origine.
+
+
+
+Vous pouvez également restaurer des fichiers et des dossiers individuels dans une session de restauration de fichiers invités, qui joint une copie de sauvegarde d'un disque virtuel, puis restaure les fichiers ou dossiers sélectionnés.
+
+Vous ne pouvez pas restaurer les éléments suivants :
+
+* Datastore
++
+Vous ne pouvez pas utiliser le plug-in SnapCenter pour VMware vSphere pour restaurer un datastore, mais uniquement les machines virtuelles individuelles du datastore.
+
+* Sauvegardes des machines virtuelles supprimées
++
+Vous ne pouvez pas restaurer les sauvegardes des machines virtuelles de stockage qui ont été supprimées. Par exemple, si vous ajoutez une machine virtuelle de stockage à l'aide de la LIF de gestion, puis que vous créez une sauvegarde, et que vous supprimez cette machine virtuelle de stockage et ajoutez un cluster contenant cette même machine virtuelle de stockage, l'opération de restauration de la sauvegarde échoue.
+
+

@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_create_resource_groups.html 
+keywords:  
+summary:  
+---
+= Créer des groupes de ressources
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *groupes de ressources*, puis sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Créer*.
+. Entrez les informations requises sur chaque page de l'assistant de création de groupe de ressources, sélectionnez les machines virtuelles et les datastores à inclure dans le groupe de ressources, puis sélectionnez les stratégies de sauvegarde à appliquer au groupe de ressources et spécifiez la planification de sauvegarde.
+
+
+Les sauvegardes sont effectuées comme indiqué dans les stratégies de sauvegarde configurées pour le groupe de ressources.
+
+Vous pouvez effectuer une sauvegarde à la demande à partir de la page *groupes de ressources* en cliquant sur image:scpivs44_image38.png["Erreur : image graphique manquante"] *Exécuter maintenant*.

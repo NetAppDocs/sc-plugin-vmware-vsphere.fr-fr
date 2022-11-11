@@ -1,0 +1,257 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_properties_you_can_override.html 
+keywords:  
+summary: 'Vous pouvez utiliser les propriétés répertoriées dans le `scbr.override` fichier de configuration pour modifier les valeurs par défaut.' 
+---
+= Propriétés que vous pouvez remplacer
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+* Par défaut, le modèle utilise le symbole de hachage pour commenter les propriétés de configuration. Pour utiliser une propriété pour modifier une valeur de configuration, vous devez supprimer `#` caractères.
+* Vous devez redémarrer le service sur l'hôte du plug-in SnapCenter pour VMware vSphere pour que les modifications soient appliquées.
+
+
+Vous pouvez utiliser les propriétés suivantes qui sont répertoriées dans le `scbr.override` fichier de configuration pour modifier les valeurs par défaut.
+
+* *dashboard.protected.vm.count.interval=7*
++
+Spécifie le nombre de jours pendant lesquels le tableau de bord affiche l'état de protection de la VM.
+
++
+La valeur par défaut est « 7 ».
+
+* *Disable.faiblement Ciphers=true*
++
+Désactive les modules de chiffrement suivants pour le canal de communication entre le plug-in SnapCenter pour VMware vSphere et SnapCenter, ainsi que les autres modules de chiffrement répertoriés dans `include.weakCiphers`: TLS_RSA_WAS_AES_256 128 128_CBC_SHA256 TLS_DHE_RSA_WAS_AES_256_CBC_SHA256 TLS_RSA_WAS_AES_128_CBC_SHA256 TLS_DHAU_AES_256 AVEC RSA_TLS_SHA384_TLS_AES_SHAQI_TLS_SHAQI_256_QF_AES_TLS_AES_QGHAE_128_QGHAE_TLS_TLS_QGHAQF_QF_QF_QF_QF_QF_QF_QF_QF_QF_QF_AES_AES_TLS_AES_QGHAQF_QF_AES
+
+* *global.ds.exclusion.modèle*
++
+Spécifie un ou plusieurs datastores traditionnels ou vvol à exclure des opérations de sauvegarde. Vous pouvez spécifier les datastores à l'aide de n'importe quelle expression régulière Java valide.
+
++
+Exemple 1 : expression `global.ds.exclusion.pattern=.*21` exclut les datastores qui ont un modèle commun ; par exemple `datastore21` et `dstest21` serait exclu.
+
++
+Exemple 2 : expression `global.ds.exclusion.pattern=ds-.*|^vol123` a l'exception de tous les datastores qui contiennent `ds-` (par exemple `scvds-test`) ou commencer par `vol123`.
+
+* *guestFileRestore.guest.operation.interval=5*
++
+Spécifie l'intervalle, en secondes, pendant lequel le plug-in SnapCenter pour VMware vSphere surveille l'exécution des opérations invité sur l'invité (disque en ligne et fichiers de restauration). Le temps d'attente total est défini par `guestFileRestore.online.disk.timeout` et `guestFileRestore.restore.files.timeout`.
+
++
+La valeur par défaut est « 5 ».
+
+* *GuestFileRestore.monitorInterval=30*
++
+Spécifie l'intervalle de temps, en minutes, que le plug-in SnapCenter VMware surveille pour les sessions de restauration de fichiers invités expirées. Toute session exécutée au-delà de l'heure configurée de la session est déconnectée.
+
++
+La valeur par défaut est « 30 ».
+
+* *GuestFileRestore.online.disk.timeout=100*
++
+Spécifie le temps, en secondes, pendant lequel le plug-in SnapCenter VMware attend la fin d'une opération de disque en ligne sur une machine virtuelle invitée. Notez que le temps d'attente supplémentaire de 30 secondes avant les sondages du plug-in est écoulé pour la fin du fonctionnement du disque en ligne.
+
++
+La valeur par défaut est « 100 ».
+
+* *GuestFileRestore.restore.files.timeout=3600*
++
+Spécifie le temps, en secondes, pendant lequel le plug-in SnapCenter VMware attend la fin de l'opération de restauration des fichiers sur une machine virtuelle invitée. Si l'heure est dépassée, le processus est terminé et le travail est marqué comme ayant échoué.
+
++
+La valeur par défaut est « 3600 » (1 heure).
+
+* *GuestFileRestore.robocopy.Directory.flags=/R:0 /W:0 /ZB /CopyAll /EFSRAW /A-:SH /e /NJH /NDL /NP*
++
+Spécifie les indicateurs robocopy supplémentaires à utiliser lors de la copie de répertoires lors des opérations de restauration de fichiers invités.
+
++
+Ne pas déposer `/NJH` ou ajouter `/NJS` car cela rompez l'analyse de la sortie de restauration.
+
++
+Ne pas autoriser de tentatives illimitées (en retirant le `/R` flag) car cela peut entraîner des tentatives infinies pour les copies ayant échoué.
+
++
+Les valeurs par défaut sont `"/R:0 /W:0 /ZB /CopyAll /EFSRAW /A-:SH /e /NJH /NDL /NP"` .
+
+* *GuestFileRestore.robocopy.file.flags=/R:0 /W:0 /ZB /CopyAll /EFSRAW /A-:SH /NJH /NDL /NP*
++
+Spécifie les indicateurs robocopy supplémentaires à utiliser lors de la copie de fichiers individuels pendant les opérations de restauration de fichiers invités.
+
++
+Ne pas déposer `/NJH` ou ajouter `/NJS` car cela rompez l'analyse de la sortie de restauration.
+
++
+Ne pas autoriser de tentatives illimitées (en retirant le `/R` flag) car cela peut entraîner des tentatives infinies pour les copies ayant échoué.
+
++
+Les valeurs par défaut sont `"/R:0 /W:0 /ZB /CopyAll /EFSRAW /A-:SH /NJH /NDL /NP"`.
+
+* *guestFileRestore.sessionTime=1440*
++
+Spécifie le temps, en minutes, où le plug-in SnapCenter pour VMware vSphere maintient une session de restauration de fichiers invité active.
+
++
+La valeur par défaut est « 1440 » (24 heures).
+
+* *guestFileRestore.use.custom.online.disk.script=true*
++
+Indique s'il faut utiliser un script personnalisé pour aligner des disques et récupérer des lettres de lecteur lors de la création de sessions de restauration de fichiers invités. Le script doit être situé à `[Install Path]  \etc\guestFileRestore_onlineDisk.ps1`. Un script par défaut est fourni avec l'installation. Les valeurs `[Disk_Serial_Number]`, `[Online_Disk_Output]`, et `[Drive_Output]` sont remplacés dans le script pendant le processus de rattachement.
+
++
+La valeur par défaut est « false ».
+
+* *include.esx.initiator.id.from.cluster=true*
++
+Spécifie que le plug-in SnapCenter VMware doit inclure les ID d'initiateur iSCSI et FCP de tous les hôtes ESXi du cluster dans l'application via les flux de travail VMDK.
+
++
+La valeur par défaut est « false ».
+
+* *Inclure.faiblement Ciphers*
++
+Quand `disable.weakCiphers` est défini sur `true`, spécifie le chiffrement faible que vous souhaitez désactiver en plus du chiffrement faible qui `disable.weakCiphers` désactive par défaut.
+
+* *max.max.concurrentes.ds.storage.query.count=15*
++
+Spécifie le nombre maximal d'appels simultanés que le plug-in SnapCenter VMware peut faire au serveur SnapCenter pour détecter l'encombrement du stockage pour les datastores. Le plug-in effectue ces appels lorsque vous redémarrez le service Linux sur l'hôte de machine virtuelle du plug-in SnapCenter VMware.
+
+* *nfs.datastore.mount.retry.count=3*
++
+Spécifie le nombre maximal de tentatives de montage d'un volume en tant que datastore NFS dans vCenter par le plug-in SnapCenter VMware.
+
++
+La valeur par défaut est « 3 ».
+
+* *nfs.datastore.mount.retry.delay=60000*
++
+Spécifie le temps, en millisecondes, que le plug-in SnapCenter VMware attend entre les tentatives de montage d'un volume en tant que datastore NFS dans vCenter.
+
++
+La valeur par défaut est « 60000 » (60 secondes).
+
+* *script.virtual.machine.count.variable.name= MACHINES virtuelles*
++
+Indique le nom de la variable d'environnement contenant le nombre de machines virtuelles. Vous devez définir la variable avant d'exécuter tout script défini par l'utilisateur pendant une tâche de sauvegarde.
+
++
+Par exemple, VIRTUAL_MACHINES=2 signifie que deux machines virtuelles sont en cours de sauvegarde.
+
+* *script.virtual.machine.info.variable.name=VIRTUAL_MACHINE.%s*
++
+Fournit le nom de la variable d'environnement qui contient des informations sur la nème machine virtuelle dans la sauvegarde. Vous devez définir cette variable avant d'exécuter tout script défini par l'utilisateur pendant une sauvegarde.
+
++
+Par exemple, LA variable d'environnement VIRTUAL_MACHINE.2 fournit des informations sur la seconde machine virtuelle dans la sauvegarde.
+
+* *script.virtual.machine.info.format= %s|%s|%s|%s|%s*
++
+La section fournit des informations sur la machine virtuelle. Le format de ces informations, défini dans la variable d'environnement, est le suivant : `VM name|VM UUID| VM power state (on|off)|VM snapshot taken (true|false)|IP address(es)`
+
++
+Voici un exemple d'informations que vous pouvez fournir :
+
++
+`VIRTUAL_MACHINE.2=VM 1|564d6769-f07d-6e3b-68b1f3c29ba03a9a|POWERED_ON||true|10.0.4.2`
+
+* *storage.connection.timeout=600000*
++
+Spécifie le temps, en millisecondes, pendant lequel le serveur SnapCenter attend une réponse du système de stockage.
+
++
+La valeur par défaut est « 600000 » (10 minutes).
+
+* *vmware.esx.ip.kernel.ip.map*
++
+Il n'y a pas de valeur par défaut. Cette valeur permet de mapper l'adresse IP VMware ESXi à l'adresse IP VMkernel. Par défaut, le plug-in VMware de SnapCenter utilise l'adresse IP de l'adaptateur VMkernel de gestion de l'hôte ESXi. Si vous souhaitez que le plug-in SnapCenter VMware utilise une autre adresse IP d'adaptateur VMkernel, vous devez fournir une valeur de remplacement.
+
++
+Dans l'exemple suivant, l'adresse IP de l'adaptateur VMkernel de gestion est 10.225.10.56 ; cependant, le plug-in VMware de SnapCenter utilise l'adresse spécifiée de 10.225.11.57 et 10.225.11.58. Et si l'adresse IP de l'adaptateur VMkernel de gestion est 10.225.10.60, le plug-in utilise l'adresse 10.225.11.61.
+
++
+`vmware.esx.ip.kernel.ip.map=10.225.10.56:10.225.11.57,10.225.11.58; 10.225.10.60:10.225.11.61`
+
+* *vmware.max.concurrent.snapshots=30*
++
+Spécifie le nombre maximal de snapshots VMware simultanés que le plug-in SnapCenter VMware effectue sur le serveur.
+
++
+Ce numéro est vérifié par datastore et n'est vérifié que si la stratégie a « VM cohérente » sélectionnée. Si vous effectuez des sauvegardes cohérentes avec les défaillances, ce paramètre ne s'applique pas.
+
++
+La valeur par défaut est « 30 ».
+
+* *vmware.max.concurrent.snapshots.delete=30*
++
+Spécifie le nombre maximal d'opérations de suppression de snapshots VMware simultanées, par datastore, que le plug-in SnapCenter VMware effectue sur le serveur.
+
++
+Ce numéro est vérifié par datastore.
+
++
+La valeur par défaut est « 30 ».
+
+* *vmware.query.unresolved.retry.count=10*
++
+Spécifie le nombre maximal de tentatives du plug-in SnapCenter VMware d'envoi d'une requête sur des volumes non résolus en raison des erreurs «...limite de temps pour la rétention d'E/S. ».
+
++
+La valeur par défaut est « 10 ».
+
+* *vmware.quiesce.retry.count=0*
++
+Spécifie le nombre maximal de tentatives du plug-in SnapCenter VMware pour envoyer une requête à propos des snapshots VMware en raison de la « limite de temps pour la rétention des E/S. » erreurs lors d'une sauvegarde.
+
++
+La valeur par défaut est « 0 ».
+
+* *vmware.quiesce.retry.interval=5*
++
+Spécifie le temps que le plug-in SnapCenter VMware attend, en secondes, entre l'envoi des requêtes relatives au snapshot VMware «...limite de temps pour contenir les erreurs d'E/S. » pendant une sauvegarde.
+
++
+La valeur par défaut est « 5 ».
+
+* *vmware.query.unresolved.retry.delay= 60000*
++
+Spécifie le temps, en millisecondes, que le plug-in SnapCenter VMware attend entre l'envoi des requêtes relatives aux volumes non résolus en raison d'une limite de temps «...pour contenir les erreurs E/S. ». Cette erreur se produit lors du clonage d'un datastore VMFS.
+
++
+La valeur par défaut est « 60000 » (60 secondes).
+
+* *vmware.reconfig.vm.retry.count=10*
++
+Spécifie le nombre maximal de tentatives du plug-in SnapCenter VMware d'envoi d'une requête sur la reconfiguration d'un ordinateur virtuel en raison des erreurs «...limite de temps pour la conservation des E/S. ».
+
++
+La valeur par défaut est « 10 ».
+
+* *vmware.reconfig.vm.retry.delay=30000*
++
+Spécifie le temps maximal, en millisecondes, que le plug-in SnapCenter VMware attend entre l'envoi des requêtes concernant la reconfiguration d'une machine virtuelle en raison de la «...limite de temps pour contenir les erreurs des E/S. ».
+
++
+La valeur par défaut est « 30000 » (30 secondes).
+
+* *vmware.rescan.hba.retry.count=3*
++
+Spécifie le temps, en millisecondes, que le plug-in SnapCenter VMware attend entre l'envoi des requêtes relatives à la remise en état de l'adaptateur de bus hôte en raison des erreurs «...délai limite pour la rétention des E/S. ».
+
++
+La valeur par défaut est « 3 ».
+
+* *vmware.rescan.hba.retry.delay=30000*
++
+Spécifie le nombre maximal de tentatives de relance des requêtes par le plug-in SnapCenter VMware pour relancer l'analyse de l'adaptateur de bus hôte.
+
++
+La valeur par défaut est « 30000 ».
+
+

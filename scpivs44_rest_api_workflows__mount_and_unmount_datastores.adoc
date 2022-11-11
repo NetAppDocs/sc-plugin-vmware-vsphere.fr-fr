@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_api_workflows__mount_and_unmount_datastores.html 
+keywords:  
+summary: 'Pour effectuer des opérations de montage et de démontage pour les sauvegardes de datastores à l"aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez suivre la séquence prescrite d"appels de l"API REST.' 
+---
+= Des workflows d'API REST pour monter et démonter des datastores
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pour effectuer des opérations de montage et de démontage pour les sauvegardes de datastores à l'aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez suivre la séquence prescrite d'appels de l'API REST.
+
+Pour chaque API REST, ajoutez `https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
+
+
+
+== Pour monter des datastores, suivez ce workflow :
+
+|===
+| Étape | API REST | Commentaires 
+
+
+| 1 | Accédez à `http://<vCenter-IP>/mob` | Recherchez le moref du datastore à partir de l'URL des objets gérés VMware. Notez le *moref* pour le datastore que vous souhaitez monter. 
+
+
+| 2 | `/4.1/datastores/{moref}/
+backups` | `Get the list of backups for a datastore` obtient une liste de sauvegardes pour le datastore spécifié. Passez le *moref* de l'étape 1. Notez le *backupId* que vous souhaitez monter. 
+
+
+| 3 | `/4.1/datastores/backups/
+{backupId}/snapshotlocators` | `Get the list of Snapshot Locations` obtient des détails sur l'emplacement de la sauvegarde spécifiée. Passez le *backupId* de l'étape 2. Notez le *datastore* et l'emplacement dans la liste *snapshotLocationsList*. 
+
+
+| 4 | `/4.1/datastores/{moref}/
+availableEsxHosts` | `Get the list of Available Esxi Hosts` Affiche la liste des hôtes ESXi disponibles pour les opérations de montage. Passez le *moref* de l'étape 1. Notez les informations *disponibleEsxHostsList*. 
+
+
+| 5 | `/4.1/datastores/backups/
+{backupId}/mount` | `Mount datastores for a backup` monte la sauvegarde du datastore spécifiée. Passez le *backupId* de l'étape 2. Dans les attributs *datastore* et *location*, transmettez les informations de `snapshotLocationsList` À l'étape 3. Dans l'attribut *esxHostName*, passez les informations de *disponibleEsxHostsList* à l'étape 4. 
+|===
+
+
+== Pour démonter les datastores, suivez ce workflow :
+
+|===
+| Étape | API REST | Commentaires 
+
+
+| 1 | `/4.1/datastores/backups/
+{backupId}/mounted` | `Get the list of mounted datastores`. Notez le datastore *moref* que vous souhaitez démonter. 
+
+
+| 2 | `/4.1/datastores/unmount` | `UnMount datastores for a backup` démonte la sauvegarde de datastore spécifiée. Passez le datastore *moref*(s) de l'étape 1. 
+|===

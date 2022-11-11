@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_protect_data_overview.html 
+keywords:  
+summary: Toutes les opérations de sauvegarde sont effectuées sur des groupes de ressources qui peuvent contenir une ou plusieurs machines virtuelles et datastores. Vous pouvez effectuer des sauvegardes à la demande ou selon un planning de protection défini. 
+---
+= Flux de travail de protection des données
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Utilisez le client web SnapCenter vSphere pour effectuer des opérations de protection des données pour les machines virtuelles, les VMDK et les datastores. Toutes les opérations de sauvegarde sont effectuées sur des groupes de ressources qui peuvent contenir une ou plusieurs machines virtuelles et datastores. Vous pouvez effectuer des sauvegardes à la demande ou selon un planning de protection défini.
+
+Lorsque vous sauvegardez un datastore, vous sauvegardez toutes les machines virtuelles de ce datastore.
+
+Les opérations de sauvegarde et de restauration ne peuvent pas être exécutées simultanément sur le même groupe de ressources.
+
+Consultez les informations sur ce que le plug-in SnapCenter VMware fonctionne et ne prend pas en charge.link:scpivs44_deployment_planning_and_requirements.html["Planification et exigences de déploiement"]
+
+Dans les configurations MetroCluster :
+
+* Le plug-in SnapCenter pour VMware pourrait ne pas détecter une relation de protection après un basculement. Voir https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover["Article de la base de connaissances : impossible de détecter la relation SnapMirror ou SnapVault après le basculement de MetroCluster"^].
+* Si les sauvegardes échouent avec l'erreur `Unable to discover resources on SCV: <xxx>…` Pour les machines virtuelles NFS et VMFS après un basculement/switch interne, redémarrez les services VMware SnapCenter à partir de la console de maintenance.
+
+
+La figure de workflow suivante montre l'ordre dans lequel vous devez effectuer des opérations de sauvegarde :
+
+image:scpivs44_image13.png["Erreur : image graphique manquante"]

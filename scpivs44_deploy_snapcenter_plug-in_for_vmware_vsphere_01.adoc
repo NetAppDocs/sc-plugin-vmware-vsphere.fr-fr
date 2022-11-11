@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html 
+keywords:  
+summary:  
+---
+= Déployez le plug-in SnapCenter pour VMware vSphere
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. Dans votre navigateur, accédez à VMware vSphere vCenter.
++
+
+NOTE: Pour les clients web HTML IPv6, vous devez utiliser Chrome ou Firefox.
+
+. Sur l'écran VMware, cliquez sur *vSphere Web client (HTML5)*, puis connectez-vous à la page *VMware vCenter Single Sign-on page*.
+. Cliquez avec le bouton droit de la souris sur un objet d'inventaire qui est un objet parent valide d'une machine virtuelle, tel qu'un centre de données, un dossier, un cluster ou un hôte, puis sélectionnez *déployer modèle OVF* pour démarrer l'assistant.
+. Sur la page *Sélectionner un modèle OVF*, indiquez l'emplacement du `.ova` (Comme indiqué dans le tableau suivant) et cliquez sur *Suivant*.
++
+|===
+| Sur cette page de l'assistant… | Faites cela… 
+
+
+| Sélectionnez un nom et un dossier | Entrez un nom unique pour la machine virtuelle ou la vApp et sélectionnez un emplacement de déploiement. 
+
+
+| Sélectionnez une ressource | Sélectionnez une ressource dans laquelle vous souhaitez exécuter le modèle de machine virtuelle déployé. 
+
+
+| Vérifiez les détails | Vérifiez le `.ova` détails du modèle. 
+
+
+| Contrats de licence | Cochez la case *J'accepte tous les accords de licence*. 
+
+
+| Sélectionnez stockage | Définir où et comment stocker les fichiers pour le modèle OVF déployé. 
+
+
+| Sélectionnez réseaux | Sélectionnez un réseau source et mappez-le sur un réseau de destination. 
+
+
+| Personnaliser le modèle  a| 
+Dans *s'inscrire à vCenter* existant, saisissez les informations d'identification vCenter. Dans *Créer un plug-in SnapCenter pour les informations d'identification VMware vSphere*, entrez les informations d'identification du plug-in SnapCenter pour VMware vSphere.
+
+
+NOTE: Notez le nom d'utilisateur et le mot de passe que vous spécifiez. Vous devez utiliser ces informations d'identification pour modifier ultérieurement la configuration du plug-in SnapCenter pour VMware vSphere.
+
+Dans *Setup Network Properties*, entrez les informations du réseau. Dans *Configuration Date et heure*, sélectionnez le fuseau horaire dans lequel se trouve le vCenter.
+
+
+
+| Prêt à terminer | Vérifiez la page et cliquez sur *Terminer*. 
+|===
++
+
+NOTE: Tous les hôtes doivent être configurés avec des adresses IP (les noms d'hôte FQDN ne sont pas pris en charge). L'opération de déploiement ne permet pas de valider vos informations avant le déploiement.
+
+. Accédez à la machine virtuelle sur laquelle le plug-in SnapCenter pour VMware vSphere a été déployé, puis cliquez sur l'onglet *Summary* (Résumé*), puis cliquez sur la case *Power On* (alimentation) pour démarrer le plug-in SnapCenter VMware.
+. Pendant la mise sous tension du plug-in SnapCenter VMware, cliquez avec le bouton droit de la souris sur le plug-in SnapCenter VMware déployé, sélectionnez *Guest OS*, puis cliquez sur *installer VMware Tools*.
++
+Le déploiement peut prendre quelques minutes. Un déploiement réussi est indiqué lorsque le plug-in SnapCenter VMware est sous tension, les outils VMware sont installés et vous êtes invité à vous connecter au plug-in SnapCenter VMware.
+
++
+L'écran affiche l'adresse IP à laquelle le plug-in SnapCenter VMware est déployé. Notez l'adresse IP. Vous devez vous connecter à l'interface graphique de gestion du plug-in SnapCenter pour VMware si vous souhaitez modifier la configuration du plug-in SnapCenter pour VMware.
+
+. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter VMware à l'aide de l'adresse IP affichée sur l'écran de déploiement à l'aide des informations d'identification fournies dans l'assistant de déploiement, puis vérifiez dans le tableau de bord que le plug-in SnapCenter VMware est correctement connecté à vCenter et activé.
++
+Utiliser le format `https://<appliance-IP-address>:8080` Pour accéder à l'interface graphique de gestion.
+
++
+Par défaut, le nom d’utilisateur de la console de maintenance est défini sur “maint” et le mot de passe est défini sur “admin123”.
+
+. Connectez-vous au client HTML5 vCenter, puis cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *Plug-in SnapCenter pour VMware vSphere*
+

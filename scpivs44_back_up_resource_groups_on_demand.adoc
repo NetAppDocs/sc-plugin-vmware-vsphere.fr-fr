@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_back_up_resource_groups_on_demand.html 
+keywords:  
+summary: 'Les opérations de sauvegarde sont effectuées sur toutes les ressources définies dans un groupe de ressources. Si une stratégie est associée à un groupe de ressources et qu"une planification est configurée, les sauvegardes sont automatiquement effectuées en fonction de la planification.' 
+---
+= Sauvegarder des groupes de ressources à la demande
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Les opérations de sauvegarde sont effectuées sur toutes les ressources définies dans un groupe de ressources. Si une stratégie est associée à un groupe de ressources et qu'une planification est configurée, les sauvegardes sont automatiquement effectuées en fonction de la planification.
+
+Vous devez avoir créé un groupe de ressources associé à une stratégie.
+
+
+IMPORTANT: Ne lancez pas de tâche de sauvegarde à la demande lorsqu'une tâche de sauvegarde de la base de données MySQL du plug-in VMware de SnapCenter est déjà en cours d'exécution. Utilisez la console de maintenance pour voir le planning de sauvegarde configuré pour la base de données MySQL.
+
+Dans les versions antérieures de Virtual Storage Console (VSC), vous pouvez effectuer une sauvegarde à la demande sans avoir à configurer une tâche de sauvegarde pour une machine virtuelle ou un datastore. Cependant, pour le plug-in SnapCenter VMware, les machines virtuelles et les datastores doivent se trouver dans un groupe de ressources avant de pouvoir effectuer des sauvegardes.
+
+.Étapes
+. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources, puis cliquez sur image:scpivs44_image38.png["Erreur : image graphique manquante"] *Exécuter maintenant* pour démarrer la sauvegarde.
++
+image:scpivs44_image20.png["Erreur : image graphique manquante"]
+
+. Si plusieurs stratégies sont configurées dans le groupe de ressources, sélectionnez la stratégie à utiliser dans la boîte de dialogue *sauvegarde maintenant*.
+. Cliquez sur *OK* pour lancer la sauvegarde.
+. Facultatif : surveillez la progression de l'opération en cliquant sur *tâches récentes* en bas de la fenêtre ou sur le tableau de bord *moniteur des tâches* pour plus de détails. Résultat
+
+
+Si l'opération de mise au repos échoue pour l'une des machines virtuelles de la sauvegarde, la sauvegarde se termine par un avertissement et est marquée comme non cohérente au niveau de la machine virtuelle, même si la règle sélectionnée contient la cohérence de la machine virtuelle. Dans ce cas, il est possible que certains serveurs virtuels aient été suspendus avec succès. Sur le moniteur des tâches, les détails de la machine virtuelle ayant échoué indiquent que la mise en veille a échoué.

@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_monitor_jobs.html 
+keywords:  
+summary: 'Après avoir effectué toute opération de protection des données à l"aide du client Web VMware vSphere, vous pouvez surveiller l"état des tâches à partir de l"onglet surveillance des tâches du tableau de bord et afficher les détails des tâches.' 
+---
+= Surveiller les tâches
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Après avoir effectué toute opération de protection des données à l'aide du client Web VMware vSphere, vous pouvez surveiller l'état des tâches à partir de l'onglet surveillance des tâches du tableau de bord et afficher les détails des tâches.
+
+.Étapes
+. Dans le volet navigateur de gauche du client Web vSphere, cliquez sur *Tableau de bord*, sélectionnez un serveur vCenter, puis cliquez sur l'onglet *moniteur des tâches*.
++
+image:scpivs44_image8.png["Erreur : image graphique manquante"]
+
++
+L'onglet moniteur de tâches répertorie chaque travail et son état, l'heure de début et l'heure de fin. Si les noms des travaux sont longs, vous devrez peut-être faire défiler vers la droite pour afficher les heures de début et de fin. L'affichage est actualisé toutes les 30 secondes.
+
++
+** Cliquez sur le bouton image:scpivs44_image36.png["Erreur : image graphique manquante"] actualiser l'icône dans la barre d'outils pour actualiser l'affichage à la demande.
+** Cliquez sur le bouton image:scpivs44_image41.png["Erreur : image graphique manquante"] icône de filtre pour sélectionner la plage horaire, le type, la balise et l'état des travaux que vous souhaitez afficher. Le filtre est sensible à la casse.
+** Cliquez sur le bouton image:scpivs44_image36.png["Erreur : image graphique manquante"] Icône Actualiser dans la fenêtre Détails du travail pour actualiser l'affichage pendant l'exécution du travail.
+
+
+
+
+Si le tableau de bord n'affiche pas d'informations sur les tâches, reportez-vous à la section https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_vSphere_web_client_dashboard_does_not_display_jobs["Article de la base de connaissances : le tableau de bord du client Web SnapCenter vSphere n'affiche pas de tâches"^].

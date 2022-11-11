@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_apis__download_jobs_and_generate_reports.html 
+keywords:  
+summary: 'Pour générer des rapports et télécharger les journaux des travaux du client Web VMware vSphere à l"aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez utiliser les appels de l"API REST pour VMware vSphere.' 
+---
+= API REST pour télécharger des travaux et générer des rapports
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pour générer des rapports et télécharger les journaux des travaux du client Web VMware vSphere à l'aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez utiliser les appels de l'API REST pour VMware vSphere.
+
+Pour chaque API REST, ajoutez `https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
+
+
+
+== Utilisez les API REST suivantes de la section travaux pour obtenir des informations détaillées sur les tâches :
+
+|===
+| API REST | Commentaires 
+
+
+| `/4.1/jobs` | `Get all jobs` obtient les détails du travail pour plusieurs travaux. Vous pouvez restreindre la portée de la demande en spécifiant un type de travail, tel que `backup`, `mountBackup`, ou `restore`. 
+
+
+| `/4.1/jobs/{id}` | `Get job details` obtient des informations détaillées pour le travail spécifié. 
+|===
+
+
+== Utilisez l'API REST suivante de la section travaux pour télécharger les journaux de travaux :
+
+|===
+| API REST | Commentaires 
+
+
+| `/4.1/jobs/{id}/logs` | `getJobLogsById` télécharge les journaux du travail spécifié. 
+|===
+
+
+== Utilisez les API REST suivantes de la section Rapports pour générer des rapports :
+
+|===
+| API REST | Commentaires 
+
+
+| `4.1/reports/protectedVM` | `Get Protected VM List` Obtient la liste des machines virtuelles protégées au cours des sept derniers jours. 
+
+
+| `/4.1/reports/
+unProtectedVM` | `Get Unprotected VM List` Obtient la liste des machines virtuelles non protégées au cours des sept derniers jours. 
+|===

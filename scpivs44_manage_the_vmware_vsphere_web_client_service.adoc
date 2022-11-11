@@ -1,0 +1,86 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_manage_the_vmware_vsphere_web_client_service.html 
+keywords:  
+summary: Si le client Web SnapCenter VMware vSphere commence à se comporter de manière incorrecte, vous devrez peut-être effacer le cache du navigateur. Si le problème persiste, redémarrez le service client Web VMware vSphere. 
+---
+= Redémarrez le service client Web VMware vSphere
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si le client Web SnapCenter VMware vSphere commence à se comporter de manière incorrecte, vous devrez peut-être effacer le cache du navigateur. Si le problème persiste, redémarrez le service client Web VMware vSphere.
+
+
+
+== Redémarrez le service client Web dans un vCenter Linux
+
+Si votre vCenter se trouve sur une appliance Linux, vous devez utiliser les commandes Linux pour redémarrer le service client web SnapCenter vSphere.
+
+Vous devez exécuter vCenter 6.5 ou une version ultérieure.
+
+.Étapes
+. Utilisez SSH pour vous connecter à l'appliance vCenter Server en tant que root.
+. Accédez au shell de l'appliance ou AU shell BASH à l'aide de la commande suivante :
++
+`shell`
+
+. Arrêtez le service client Web à l'aide de la commande HTML5 suivante :
++
+`service-control --stop vsphere-ui`
+
+. Supprimez tous les packages scvm obsolètes sur vCenter à l'aide de la commande HTML5 suivante :
++
+`etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/rm -rf com.netapp.scvm.webclient-<version_number>`
+
++
+
+IMPORTANT: Ne supprimez pas les packages VASA ou VSC7.x et ultérieurs.
+
+. Démarrez le service client Web à l'aide de la commande HTML5 suivante :
++
+`service-control --start vsphere-ui`
+
+
+
+
+
+== Redémarrez le service client Web dans un serveur Windows vCenter
+
+Si votre vCenter est sur un hôte Windows, vous devez utiliser les commandes Windows pour redémarrer le service client Web SnapCenter.
+
+Vous devez exécuter vCenter 6.5 ou une version ultérieure.
+
+.Étapes
+. Arrêtez le service client Web à l'aide de la commande HTML5 suivante :
++
+`service-control --stop vsphere-ui`
+
++
+Attendez le message `Completed Stop service request`.
+
+. Supprimez tous les packages scvm obsolètes sur vCenter en effectuant les opérations suivantes :
++
+.. Accédez au dossier vCenter vsphere-client-sérénité/dossier :
++
+`C:\ProgramData\VMware\vCenterServer\cfg\vsphere-ui\vc-packages\vsphere-client-serenity\`
+
+.. Supprimez tous les dossiers de plug-in portant le nom suivant :
++
+`com.netapp.scvm.webclient-<version_number>.`
+
+
+
+. Redémarrez le service client Web à l'aide de la commande HTML5 suivante :
++
+`service-control --start vsphere-ui`
+
++
+Attendez le message `Completed Start service request`.
+
+

@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_manage_resource_groups.html 
+keywords:  
+summary: Vous pouvez créer, modifier et supprimer des groupes de ressources de sauvegarde et effectuer des opérations de sauvegarde sur des groupes de ressources. 
+---
+= Gérer les groupes de ressources
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez créer, modifier et supprimer des groupes de ressources de sauvegarde et effectuer des opérations de sauvegarde sur des groupes de ressources.
+
+
+NOTE: Ces groupes de ressources sont appelés tâches de sauvegarde dans Virtual Storage Console (VSC).
+
+
+
+== Suspendre et reprendre les opérations sur les groupes de ressources
+
+Vous pouvez désactiver temporairement les opérations planifiées de démarrer sur un groupe de ressources. Vous pouvez activer ces opérations plus tard que vous le souhaitez.
+
+.Étapes
+. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *groupes de ressources*, puis cliquez avec le bouton droit de la souris sur un groupe de ressources et cliquez sur *suspendre* (ou cliquez sur *reprendre*).
++
+image:scpivs44_image24.png["Erreur : image graphique manquante"]
+
+. Dans la zone de confirmation, cliquez sur *OK* pour confirmer.
+
+
+Sur la page groupes de ressources, l'état du travail de la ressource suspendue est `Under_Maintenance`. Vous devrez peut-être faire défiler la liste vers la droite pour afficher la colonne Statut du travail.
+
+Après la reprise des opérations de sauvegarde, l'état du travail devient `Production`.
+
+
+
+== Modifier les groupes de ressources
+
+Vous pouvez supprimer ou ajouter des ressources dans des groupes de ressources dans vCenter, détacher ou attacher des stratégies, modifier des plannings ou modifier toute autre option de groupe de ressources.
+
+Si vous souhaitez modifier le nom d'un groupe de ressources, n'utilisez pas les caractères spéciaux suivants dans les noms de VM, datastore, stratégie, sauvegarde ou groupe de ressources :
+
+% Et * $ # @ ! \ / : * ? " < > - | ; ' , .
+
+Un caractère de soulignement (_) est autorisé.
+
+.Étapes
+. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources et cliquez sur *Modifier*.
+. Dans la liste de gauche de l'assistant *Modifier le groupe de ressources*, cliquez sur la catégorie que vous souhaitez modifier et entrez vos modifications.
++
+Vous pouvez modifier plusieurs catégories.
+
+. Cliquez sur *Suivant* jusqu'à ce que la page Résumé s'affiche, puis cliquez sur *Terminer*.
+
+
+
+
+== Supprimer des groupes de ressources
+
+Vous pouvez supprimer un groupe de ressources dans vCenter si vous n'avez plus besoin de protéger les ressources du groupe de ressources. Vous devez vous assurer que tous les groupes de ressources sont supprimés avant de supprimer le plug-in SnapCenter pour VMware vSphere de vCenter.
+
+Toutes les opérations de suppression de groupe de ressources sont effectuées en tant que suppressions de force. L'opération de suppression détache toutes les règles du groupe de ressources vCenter, supprime le groupe de ressources du plug-in SnapCenter pour VMware vSphere et supprime toutes les sauvegardes et copies Snapshot du groupe de ressources.
+
+
+NOTE: Dans une relation SnapVault, la dernière copie Snapshot ne peut pas être supprimée. Le groupe de ressources ne peut donc pas être supprimé. Avant de supprimer un groupe de ressources faisant partie d'une relation SnapVault, vous devez utiliser OnCommand System Manager ou l'interface de ligne de commandes de ONTAP pour supprimer la relation SnapVault, puis supprimer la dernière copie Snapshot.
+
+.Étapes
+. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources et cliquez sur *Supprimer*.
+. Dans la zone de confirmation *Supprimer le groupe de ressources*, cliquez sur *OK* pour confirmer.
+

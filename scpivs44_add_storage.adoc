@@ -1,0 +1,18 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_add_storage.html 
+keywords:  
+summary:  
+---
+= Ajouter du stockage
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *Storage Systems*, puis sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Ajouter*.
+. Dans la boîte de dialogue Add Storage System (Ajouter un système de stockage), indiquez les informations de base sur le SVM ou le cluster, puis cliquez sur *Add* (Ajouter).
+

@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_set_up_proxy_vms_for_restore_operations.html 
+keywords:  
+summary: 'Si vous souhaitez utiliser une machine virtuelle proxy pour connecter un disque virtuel aux opérations de restauration de fichiers invités, vous devez configurer la machine virtuelle proxy avant de commencer l"opération de restauration. Bien que vous puissiez configurer une machine virtuelle proxy à tout moment, il peut être plus pratique de la configurer immédiatement une fois le déploiement du plug-in terminé.' 
+---
+= Configuration de VM proxy pour les opérations de restauration
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si vous souhaitez utiliser une machine virtuelle proxy pour connecter un disque virtuel aux opérations de restauration de fichiers invités, vous devez configurer la machine virtuelle proxy avant de commencer l'opération de restauration. Bien que vous puissiez configurer une machine virtuelle proxy à tout moment, il peut être plus pratique de la configurer immédiatement une fois le déploiement du plug-in terminé.
+
+.Étapes
+. Dans le client Web VMware vSphere, cliquez sur *Restauration de fichiers invités*.
+. Dans la section *Exécuter en tant qu'informations d'identification*, effectuez l'une des opérations suivantes :
++
+|===
+| Pour cela… | Faites cela… 
+
+
+| Utiliser les informations d'identification existantes | Sélectionnez l'une des informations d'identification configurées. 
+
+
+| Ajouter de nouvelles informations d'identification  a| 
+.. Cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Ajouter*.
+.. Dans la boîte de dialogue *Exécuter en tant qu'informations d'identification*, entrez les informations d'identification.
+.. Cliquez sur *Sélectionner VM*, puis sélectionnez une VM dans la boîte de dialogue *Proxy VM*. Cliquez sur *Enregistrer* pour revenir à la boîte de dialogue *Exécuter en tant qu'informations d'identification*.
+.. Entrez les informations d'identification. Pour Nom d'utilisateur, vous devez entrer « Administrateur ».
+
+
+|===
++
+Le plug-in SnapCenter VMware utilise les informations d'identification sélectionnées pour se connecter à la machine virtuelle proxy sélectionnée.
+
++
+Les informations d'identification Exécuter en tant que doivent être l'administrateur de domaine par défaut fourni par Windows ou par l'administrateur local intégré. Les utilisateurs de Workgroup peuvent utiliser le compte d'administrateur local intégré.
+
+. Dans la section *Proxy Credentials*, cliquez sur *Add* pour ajouter une machine virtuelle à utiliser comme proxy.
+. Dans la boîte de dialogue *Proxy VM*, complétez les informations, puis cliquez sur *Enregistrer*.
+

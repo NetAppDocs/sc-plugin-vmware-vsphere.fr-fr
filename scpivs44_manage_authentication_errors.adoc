@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_manage_authentication_errors.html 
+keywords:  
+summary: 'Si vous n"utilisez pas les informations d"identification Admin, vous risquez de recevoir une erreur d"authentification après le déploiement du plug-in SnapCenter pour VMware vSphere ou après la migration. Si vous rencontrez une erreur d"authentification, vous devez redémarrer le service.' 
+---
+= Gérer les erreurs d'authentification
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si vous n'utilisez pas les informations d'identification Admin, vous risquez de recevoir une erreur d'authentification après le déploiement du plug-in SnapCenter pour VMware vSphere ou après la migration. Si vous rencontrez une erreur d'authentification, vous devez redémarrer le service.
+
+.Étapes
+. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware à l'aide du format `https://<OVA-IP-address>:8080.`
+. Redémarrez le service.
+

@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_how_to_configure_ontap_rbac_for_snapcenter_plug-in_for_vmware_vsphere.html 
+keywords:  
+summary: 'Le contrôle d"accès basé sur des rôles (RBAC) ONTAP s"applique uniquement aux tâches du serveur SnapCenter cohérentes au niveau des applications (application sur VMDK).' 
+---
+= Comment configurer le RBAC ONTAP pour le plug-in SnapCenter pour VMware vSphere
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le contrôle d'accès basé sur des rôles (RBAC) ONTAP s'applique uniquement aux tâches du serveur SnapCenter cohérentes au niveau des applications (application sur VMDK).
+
+Vous devez configurer le RBAC ONTAP sur le système de stockage si vous souhaitez l'utiliser avec le plug-in SnapCenter VMware. Depuis ONTAP, vous devez effectuer les tâches suivantes :
+
+* Créez un rôle unique.
++
+http://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-adm-auth-rbac%2Fhome.html["Guide de l'authentification de l'administrateur ONTAP 9 et de l'alimentation RBAC"^]
+
+* Créez un nom d'utilisateur et un mot de passe (identifiants du système de stockage) dans ONTAP pour le rôle.
++
+Ces informations d'identification du système de stockage sont nécessaires pour vous permettre de configurer les systèmes de stockage pour le plug-in SnapCenter VMware. Pour ce faire, saisissez les informations d'identification dans le plug-in. Chaque fois que vous vous connectez à un système de stockage à l'aide de ces identifiants, vous y trouverez l'ensemble des fonctions SnapCenter que vous configurez dans ONTAP lors de sa création.
+
+
+
+Vous pouvez utiliser l'administrateur ou la connexion racine pour accéder à toutes les tâches SnapCenter. Cependant, il est conseillé d'utiliser la fonctionnalité RBAC fournie par ONTAP pour créer un ou plusieurs comptes personnalisés avec des privilèges d'accès limités.
+
+Pour plus d'informations, voir link:scpivs44_minimum_ontap_privileges_required.html["Privilèges minimum ONTAP requis"^].

@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_minimum_vcenter_privileges_required.html 
+keywords:  
+summary: Avant de commencer le déploiement du plug-in SnapCenter pour VMware vSphere, assurez-vous de disposer du minimum de privilèges vCenter requis. 
+---
+= Privilèges vCenter minimum requis
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Avant de commencer le déploiement du plug-in SnapCenter pour VMware vSphere, assurez-vous de disposer du minimum de privilèges vCenter requis.
+
+
+
+== Privilèges requis pour le rôle d'administrateur vCenter
+
+System.Anonyme System.View System.Read datastore.Renommer datastore.Move datastore.Delete datastore.Browse datastore.FileManagement datastore.AllocateSpace Network.assigner Host.Config.Storage Host.Config.Virtual-al-Virtual machine.Remer_al_Exal_al_Virtual machine.Repeautre.Virtual machine.Alpeautre.Virtual machine.Virtual_Exal_Exal_Exal_Exal_Exal_Exal_Exal_Exal_Exal_Exal_Exal_Exal_Exal_Exal_Exal_Exal_Exal_Exal_are_Exal_Exal_are_ar_ar_ar_ar_Alpeautre.machine.Repeautre.machine.Virtual machine.Repeautre.Alpeautre.Virtual machine.Alpeautre.Alpeautre.Alpeautre.Alpeautre.Alpeautre.Alpeautre.Alpeautre.Alpeautre.Alpeautre.Alpeautre.Alpeautre.Alpeautre.Alpe_Virtual machine.Virtual machine.Virtual machine.Alpeautre.Alpeautre.Alpeautre.Alpeautre.
+
+
+
+== Privilèges requis spécifiques au plug-in SnapCenter pour VMware vCenter
+
+NetappSCV.Guest.RestoreFile netappSCV.Recovery.MountundenetappSCV.Backup.DeleteBackupJob SCV.Configure.ConfigStorageSystems.Delete SCV.View SCV.Recovery.netappVM.netapp.netapp-fr.netapp-fr.netapp-fr.netapp-fr.netapp.com.Add.netapp.com.Backup.Backup.BackupVSCV.Guest.BackupSand.BackupSand.ConfigurationundeVSCV.ConfigurationundeVSCV.ConfigurationundeNetApp.Programmeest.Configurationdeaccès

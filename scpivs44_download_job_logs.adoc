@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_download_job_logs.html 
+keywords:  
+summary: 'Vous pouvez télécharger les journaux des tâches à partir de l"onglet surveillance des tâches du tableau de bord du client Web SnapCenter VMware vSphere.' 
+---
+= Télécharger les journaux des travaux
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez télécharger les journaux des tâches à partir de l'onglet surveillance des tâches du tableau de bord du client Web SnapCenter VMware vSphere.
+
+Si vous rencontrez un comportement inattendu lors de l'utilisation du client Web VMware vSphere, vous pouvez utiliser les fichiers journaux pour identifier la cause du problème et le résoudre.
+
+
+NOTE: La valeur par défaut pour la conservation des journaux de travaux est de 30 jours ; la valeur par défaut pour les travaux de conservation est de 90 jours. Les journaux des travaux et les travaux antérieurs à la conservation configurée sont purgés toutes les six heures. Vous pouvez utiliser la configuration `jobs/cleanup` API REST permettant de modifier la durée de conservation des tâches et des journaux de tâches. Vous ne pouvez pas modifier la planification de purge.
+
+.Étapes
+. Dans le volet navigateur de gauche du client Web vSphere, cliquez sur *Tableau de bord*, sélectionnez un serveur vCenter, puis cliquez sur l'onglet *moniteur des tâches*.
++
+image:scpivs44_image9.png["Erreur : image graphique manquante"]
+
+. Cliquez sur le bouton image:scpivs44_image37.png["Erreur : image graphique manquante"] Icône de téléchargement dans la barre de titre du moniteur des tâches.
++
+Vous devrez peut-être faire défiler l'icône vers la droite.
+
++
+Vous pouvez également double-cliquer sur un travail pour accéder à la fenêtre Détails du travail, puis cliquer sur *Télécharger les journaux du travail*.
+
+
+
+Les journaux de tâches sont situés sur l'hôte VM Linux où le plug-in SnapCenter VMware est déployé. L'emplacement par défaut du journal des travaux est `/var/log/netapp`.
+
+Si vous avez essayé de télécharger des journaux de travaux mais que le fichier journal nommé dans le message d'erreur a été supprimé, vous pouvez rencontrer l'erreur suivante : `HTTP ERROR 500 Problem accessing /export-scv-logs`. Pour corriger cette erreur, vérifiez l'état d'accès au fichier et les autorisations pour le fichier nommé dans le message d'erreur et corrigez le problème d'accès.

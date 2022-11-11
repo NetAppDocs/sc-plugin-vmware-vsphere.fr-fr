@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_minimum_ontap_privileges_required.html 
+keywords:  
+summary: Les privilèges minimum ONTAP requis varient en fonction des plug-ins SnapCenter utilisés pour la protection des données. 
+---
+= Privilèges ONTAP requis
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Les privilèges minimum ONTAP requis varient en fonction des plug-ins SnapCenter utilisés pour la protection des données.
+
+
+
+== Privilèges minimum ONTAP requis
+
+Tous les plug-ins SnapCenter requièrent les privilèges minimaux suivants :
+
+|===
+| Commandes All-Access : privilèges minimum requis pour ONTAP 8.3 et versions ultérieures 
+
+
+| event generate-autosupport-log 
+
+
+| l'historique des tâches affiche l'arrêt des tâches 
+
+
+| lun create lun delete lun igroup add lun igroup create lun igroup delete lun igroup rename lun igroup show lun mapping add-reporting-nodes lun mapping create lun mapping create lun mapping delete lun mapping delete-reporting-nodes lun mapping show lun modify lun move-in-volume lun offline lun lun en ligne lun persistent-reservation clear lun resize série affichage de la lun 
+
+
+| snapmirror liste-destinations snapmirror add-règle snapmirror règle modification-règle snapmirror règle suppression-règle snapmirror règle snapmirror show snapmirror restore snapmirror show-show-history snapmirror mise à jour de snapmirror snapmirror update-ls-set 
+
+
+| Version 
+
+
+| clone de volume créer un clone de volume affiche le clone de volume fractionnement du volume modifier le volume détruire le volume clone de volume créer un volume fichier show-disk-usage volume offline du volume modifier le volume qtree créer un volume qtree supprimer un volume qtree modifier le volume qtree afficher le volume restreindre le volume snapshot créer snapshot de volume supprimer l'instantané de volume modifier l'instantané de volume renommer le snapshot de volume restaurer l'instantané de volume de fichier de restauration snapshot de volume affiche le démontage de volume 
+
+
+| vserver cifs vserver cifs share création vserver cifs share suppression vserver cifs shadwcopy show vserver cifs share show vserver cifs share show vserver cifs show vserver cifs show vserver show export-policy create vserver export-policy rule vserver export-policy create vserver export-policy show vserver export-policy show vserver iscsi vserver connection show vserver network interface show failover-group des interfaces réseau show 
+|===
+|===
+| Commandes en lecture seule : privilèges minimum requis pour ONTAP 8.3 et versions ultérieures 
+
+
+| un vserver 
+|===
+
+
+== Autres informations sur ONTAP
+
+* Si vous exécutez ONTAP 8.2.x :
++
+Vous devez vous connecter en tant que `vsadmin` Sur la machine virtuelle de stockage pour disposer des privilèges appropriés pour les opérations du plug-in SnapCenter pour VMware vSphere.
+
+* Si vous exécutez ONTAP 8.3 et versions ultérieures :
++
+Vous devez vous connecter en tant que `vsadmin` ou avec un rôle dont les privilèges sont minimum indiqués dans les tableaux ci-dessus.
+
+* Vous devez être l'administrateur du cluster pour créer et gérer les rôles utilisateur. Vous pouvez associer les utilisateurs à la machine virtuelle de stockage du cluster ou à la machine virtuelle de stockage.
+

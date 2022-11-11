@@ -1,0 +1,138 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_create_backup_policies_for_vms_and_datastores.html 
+keywords:  
+summary: 'Vous devez créer des politiques de sauvegarde avant d"utiliser le plug-in SnapCenter pour VMware vSphere pour sauvegarder des machines virtuelles et des datastores.' 
+---
+= Créez des règles de sauvegarde pour les VM et les datastores
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous devez créer des politiques de sauvegarde avant d'utiliser le plug-in SnapCenter pour VMware vSphere pour sauvegarder des machines virtuelles et des datastores.
+
+.Avant de commencer
+* Vous devez avoir lu les prérequis.
+* Vous devez avoir configuré des relations de stockage secondaire.
++
+** Si vous répliquez des copies Snapshot sur un stockage secondaire en miroir ou à distance, les relations doivent être configurées, et l'administrateur SnapCenter doit avoir affecté les machines virtuelles de stockage à vous pour les volumes source et de destination.
+** Pour réussir le transfert des copies Snapshot sur un stockage secondaire pour les relations version-FlexibleMirror sur un datastore NFS ou VMFS, vérifiez que le type de règle SnapMirror est Asynchronous Mirror et activez l'option « All_source_snapshots ».
+** Lorsque le nombre de copies Snapshot sur le stockage secondaire (miroir-coffre) atteint la limite maximale, l'activité pour enregistrer une sauvegarde et appliquer la conservation lors de l'opération de sauvegarde échoue et l'erreur suivante : `This Snapshot copy is currently used as a reference Snapshot copy by one or more SnapMirror relationships. Deleting the Snapshot copy can cause future SnapMirror operations to fail.`
++
+Pour corriger ce problème, configurez la règle de conservation SnapMirror pour le stockage secondaire afin d'éviter d'atteindre la limite maximale des copies Snapshot.
+
++
+Pour plus d'informations sur la manière dont les administrateurs attribuent des ressources aux utilisateurs, reportez-vous à la section https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["Informations SnapCenter sur l'utilisation du contrôle d'accès basé sur des rôles"^].
+
+
+
+* Si vous souhaitez des sauvegardes cohérentes avec les machines virtuelles, VMware Tools doit être installé et en cours d'exécution. VMware Tools est nécessaire pour arrêter les machines virtuelles. Les sauvegardes cohérentes avec les machines virtuelles ne sont pas prises en charge pour les machines virtuelles vvol.
+
+
+La plupart des champs de ces pages de l'assistant sont explicites. Les informations suivantes décrivent certains des champs pour lesquels vous pouvez avoir besoin de conseils.
+
+.Étapes
+. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *Policies*.
+. Sur la page *Policies*, cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Créer* pour démarrer l'assistant.
++
+image:scpivs44_image15.png["Erreur : image graphique manquante"]
+
+. Sur la page *Nouvelle stratégie de sauvegarde*, sélectionnez le serveur vCenter qui utilisera la stratégie, puis entrez le nom de la stratégie et une description.
++
+** Mode lié
++
+En mode lié, chaque vCenter dispose d'une appliance virtuelle distincte. Par conséquent, vous pouvez utiliser des noms dupliqués dans les vCenters. Cependant, vous devez créer la règle dans le même vCenter que le groupe de ressources.
+
+** Caractères non pris en charge
++
+N'utilisez pas les caractères spéciaux suivants dans VM, datastore, cluster, stratégie, sauvegarde, ou noms des groupes de ressources : % et * $ # @ ! \ / : * ? " < > - | ; ' , .
+
++
+Un caractère de soulignement (_) est autorisé.
+
+
+
+. Spécifiez les paramètres de rétention.
++
+
+IMPORTANT: Si vous prévoyez d'activer la réplication SnapVault, définissez le nombre de rétention sur 2 sauvegardes ou plus. Si vous définissez le nombre de rétention sur 1 sauvegarde à conserver, l'opération de rétention peut échouer. En effet, la première copie Snapshot de référence est la copie Snapshot de référence de la relation SnapVault jusqu'à ce que la nouvelle copie Snapshot soit répliquée sur la cible.
+
++
+
+NOTE: La valeur maximale de rétention est de 1018 sauvegardes pour les ressources sous ONTAP 9.4 ou version ultérieure et de 254 sauvegardes pour les ressources sous ONTAP 9.3 ou version antérieure. Les sauvegardes échouent si la conservation est définie sur une valeur supérieure à celle prise en charge par la version ONTAP sous-jacente. Cela s'applique également aux datastores Spanning. Si un datastore Spanning comprend des ressources à la fois sur ONTAP 9.3 et versions antérieures, et sur ONTAP 9.4 et versions ultérieures, veillez à définir la valeur de rétention ci-dessous 254.
+
+. Spécifiez les paramètres de fréquence.
++
+La stratégie spécifie uniquement la fréquence de sauvegarde. La planification de protection spécifique pour la sauvegarde est définie dans le groupe de ressources. Par conséquent, au moins deux groupes de ressources peuvent partager la même stratégie et la même fréquence de sauvegarde, mais ont des programmes de sauvegarde différents.
+
+. Dans les champs *Replication*, spécifiez le type de réplication vers le stockage secondaire, comme indiqué dans le tableau suivant :
++
+|===
+| Pour ce champ… | Faites cela… 
+
+
+| Mettre à jour SnapMirror après la sauvegarde  a| 
+Sélectionnez cette option pour créer des copies miroir des jeux de sauvegarde sur un autre volume ayant une relation SnapMirror avec le volume de sauvegarde primaire. Si un volume est configuré avec une relation miroir-coffre-fort, vous devez sélectionner uniquement l'option *mettre à jour SnapVault après sauvegarde* si vous souhaitez copier les sauvegardes vers les destinations miroir-coffre-fort.
+
+
+NOTE: Cette option est prise en charge pour les datastores dans les volumes FlexGroup dans le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures.
+
+
+
+| Mettre à jour SnapVault après sauvegarde  a| 
+Sélectionnez cette option pour effectuer la réplication de sauvegarde disque à disque sur un autre volume dont la relation SnapVault avec le volume de sauvegarde primaire est établie.
+
+
+IMPORTANT: Si un volume est configuré avec une relation miroir-coffre-fort, vous devez sélectionner cette option uniquement si vous souhaitez que les sauvegardes soient copiées vers les destinations miroir-coffre-fort.
+
+
+NOTE: Cette option est prise en charge pour les datastores dans les volumes FlexGroup dans le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures.
+
+
+
+| Étiquette snapshot  a| 
+Entrer une étiquette facultative personnalisée à ajouter aux copies Snapshot SnapVault et SnapMirror créées avec cette règle. L'étiquette Snapshot permet de distinguer les snapshots créés avec cette règle des autres snapshots du système de stockage secondaire.
+
+
+NOTE: Les étiquettes de copie Snapshot peuvent comporter jusqu'à 31 caractères.
+
+|===
+. Facultatif : dans les champs *Avancé*, sélectionnez les champs nécessaires. Les détails du champ Avancé sont répertoriés dans le tableau suivant.
++
+|===
+| Pour ce champ… | Faites cela… 
+
+
+| Cohérence des machines virtuelles  a| 
+Cochez cette case pour arrêter les machines virtuelles et créer un snapshot VMware à chaque exécution de la tâche de sauvegarde.
+
+Cette option n'est pas prise en charge pour vVvols. Pour les machines virtuelles vvol, seules des sauvegardes cohérentes avec les défaillances sont effectuées.
+
+
+IMPORTANT: Vous devez exécuter VMware Tools sur la machine virtuelle pour réaliser des sauvegardes cohérentes. Si VMware Tools n'est pas en cours d'exécution, une sauvegarde cohérente après panne est effectuée à la place.
+
+
+NOTE: Lorsque vous cochez la case de cohérence de la machine virtuelle, les opérations de sauvegarde peuvent prendre plus de temps et exiger plus d'espace de stockage. Dans ce scénario, les serveurs virtuels sont d'abord suspendus, puis VMware réalise un snapshot cohérent à une machine virtuelle. SnapCenter exécute alors son opération de sauvegarde, puis reprend les opérations liées aux serveurs virtuels. La mémoire invité de la machine virtuelle n'est pas incluse dans les snapshots de cohérence des machines virtuelles.
+
+
+
+| Incluez les datastores avec des disques indépendants | Cochez cette case pour inclure dans la sauvegarde tous les datastores dotés de disques indépendants qui contiennent des données temporaires. 
+
+
+| Scripts  a| 
+Indiquez le chemin complet du prescripteur ou du post-script que vous souhaitez que le plug-in SnapCenter VMware s'exécute avant ou après les opérations de sauvegarde. Par exemple, vous pouvez exécuter un script pour mettre à jour les traps SNMP, automatiser les alertes et envoyer des logs. Le chemin du script est validé au moment de l'exécution du script.
+
+
+NOTE: Les scripts d'écriture et post-scripts doivent être situés sur la machine virtuelle de l'appliance virtuelle. Pour entrer plusieurs scripts, appuyez sur *entrée* après chaque chemin de script pour répertorier chaque script sur une ligne distincte. Le caractère « ; » n'est pas autorisé.
+
+|===
+. Cliquez sur *Ajouter.*
++
+Vous pouvez vérifier que la stratégie est créée et vérifier la configuration de la stratégie en sélectionnant la stratégie dans la page stratégies.
+
+

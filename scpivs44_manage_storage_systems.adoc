@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_manage_storage_systems.html 
+keywords:  
+summary: 'Avant de pouvoir sauvegarder ou restaurer des machines virtuelles ou des datastores à l"aide du client Web VMware vSphere, vous devez ajouter le stockage.' 
+---
+= Gérer des systèmes de stockage
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Avant de pouvoir sauvegarder ou restaurer des machines virtuelles ou des datastores à l'aide du client Web VMware vSphere, vous devez ajouter le stockage.
+
+
+
+== Modifier les VM de stockage
+
+Vous pouvez utiliser le client web VMware vSphere pour modifier les configurations des clusters et des machines virtuelles de stockage enregistrées dans le plug-in SnapCenter pour VMware vSphere et utilisées pour les opérations de protection des données des machines virtuelles.
+
+Si vous modifiez une machine virtuelle de stockage qui a été automatiquement ajoutée dans un cluster (parfois appelée machine virtuelle de stockage implicite), cette machine virtuelle de stockage passe à une machine virtuelle de stockage explicite et peut être supprimée séparément sans modifier le reste des machines virtuelles de stockage du cluster. Sur la page Storage Systems (systèmes de stockage), le nom d'utilisateur est affiché sous la forme « - » pour les machines virtuelles de stockage implicites ; les noms d'utilisateur ne sont affichés que pour les machines virtuelles de stockage explicites dans la liste des clusters et l'indicateur ExplicitSVM est défini sur vrai. Toutes les machines virtuelles de stockage sont toujours répertoriées sous le cluster associé.
+
+
+IMPORTANT: Si vous avez ajouté des machines virtuelles de stockage pour les opérations de protection des données basées sur les applications à l'aide de l'interface graphique de SnapCenter, vous devez utiliser la même interface pour modifier ces machines virtuelles de stockage.
+
+.Étapes
+. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *Storage Systems*.
+. Sur la page *Storage Systems*, sélectionnez la VM de stockage à modifier, puis cliquez sur image:scpivs44_image25.png["Erreur : image graphique manquante"] *Modifier*.
+. Dans la fenêtre *Modifier le système de stockage*, entrez les nouvelles valeurs, puis cliquez sur *mettre à jour* pour appliquer les modifications.
++
+image:scpivs44_image26.png["Erreur : image graphique manquante"]
+
+
+
+
+
+== Renommez les machines virtuelles de stockage
+
+Si vous renommez une machine virtuelle après l'avoir ajoutée à un groupe de ressources, il se peut que le nouveau nom ne s'affiche pas sur la page Resources car le plug-in SnapCenter pour VMware vSphere agit sur l'UUID de la machine virtuelle, pas sur son nom.
+
+Pour vous assurer que les nouveaux noms de VM s'affichent sur la page Ressources, procédez comme suit.
+
+. Modifiez le groupe de ressources et supprimez la VM.
+. Renommer la machine virtuelle.
+. Ajoutez de nouveau la VM au groupe de ressources.
+
+
+
+
+== Supprimer les machines virtuelles de stockage
+
+Vous pouvez utiliser le client Web VMware vSphere pour supprimer les machines virtuelles de stockage de l'inventaire dans vCenter.
+
+
+NOTE: Si vous avez ajouté des machines virtuelles de stockage pour les opérations de protection des données basées sur les applications à l'aide de l'interface graphique de SnapCenter, vous devez utiliser la même interface pour modifier ces machines virtuelles de stockage.
+
+Vous devez démonter tous les datastores de la machine virtuelle de stockage avant de pouvoir supprimer la machine virtuelle de stockage.
+
+Si un groupe de ressources contient des sauvegardes qui résident sur une machine virtuelle de stockage que vous supprimez, les sauvegardes suivantes de ce groupe de ressources échouent.
+
+.Étapes
+. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *Storage Systems*.
+. Sur la page *Storage Systems*, sélectionnez la VM de stockage à supprimer, puis cliquez sur *Supprimer*.
+. Dans la case de confirmation *Remove Storage System*, cochez la case *Delete Storage system(s)* (Supprimer le(s) système(s) de stockage*), puis cliquez sur *Yes* (Oui) pour confirmer.
+. Si la machine virtuelle de stockage supprimée a été gérée par un serveur ESXi 6.7, vous devez redémarrer le service client Web.
++
+link:scpivs44_manage_the_vmware_vsphere_web_client_service.html["Redémarrez le service client Web VMware vSphere"].
+
+

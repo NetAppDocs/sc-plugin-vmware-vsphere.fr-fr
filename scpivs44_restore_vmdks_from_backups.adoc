@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_restore_vmdks_from_backups.html 
+keywords:  
+summary: 'Il est possible de restaurer des VMDK existants, ou des VMDK supprimés ou détachés, à partir d"une sauvegarde primaire ou secondaire de machines virtuelles traditionnelles ou vvol.' 
+---
+= Restaurer des VMDK à partir des sauvegardes
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il est possible de restaurer des VMDK existants, ou des VMDK supprimés ou détachés, à partir d'une sauvegarde primaire ou secondaire de machines virtuelles traditionnelles ou vvol.
+
+Vous pouvez restaurer un ou plusieurs disques virtuels (VMDK) sur une machine virtuelle vers le même datastore.
+
+
+TIP: Pour améliorer les performances des opérations de restauration dans les environnements NFS, activez l'API VMware vStorage pour l'intégration de baies (VAAI).
+
+.Avant de commencer
+* Une sauvegarde doit exister.
++
+Vous devez avoir créé une sauvegarde de la machine virtuelle à l'aide du plug-in SnapCenter pour VMware vSphere.
+
+* La machine virtuelle ne doit pas être en transit.
++
+La machine virtuelle à restaurer ne doit pas être dans un état vMotion ou Storage vMotion.
+
+
+
+.Description de la tâche
+* Si le VMDK est supprimé ou détaché de la machine virtuelle, l'opération de restauration le lie à la machine virtuelle.
+* Une opération de restauration peut échouer si le niveau de stockage de la FabricPool où se trouve la machine virtuelle est indisponible.
+* Les opérations de liaison et de restauration connectent les VMDK à l'aide du contrôleur SCSI par défaut. Les VMDK connectés à une machine virtuelle avec contrôleur NVME sont sauvegardés, mais pour les opérations de connexion et de restauration, ils sont connectés de nouveau à l'aide d'un contrôleur SCSI.
+
+
+.Étapes
+. Dans l'interface utilisateur graphique du client Web VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
+. Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *NetApp SnapCenter* dans la liste déroulante, puis sélectionnez *Restaurer* dans la liste déroulante secondaire.
+. Dans l'assistant *Restaurer*, sur la page Sélectionner une sauvegarde, sélectionnez la copie de sauvegarde à partir de laquelle vous souhaitez effectuer la restauration.
++
+Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partiel, ou filtrer la liste des sauvegardes en cliquant sur l'icône du filtre et en sélectionnant une plage de dates et d'heures, en sélectionnant si vous souhaitez que les sauvegardes contenant des snapshots VMware soient montées ou non, et emplacement principal ou secondaire. Cliquez sur *OK* pour revenir à l'assistant.
+
+. Sur la page *Sélectionner l'étendue*, sélectionnez la destination de restauration.
++
+|===
+| Pour restaurer... | Spécifiez la destination de restauration… 
+
+
+| Le datastore d'origine | Sélectionnez *disque particulier* dans la liste déroulante, puis cliquez sur *Suivant*. Dans la table de sélection du datastore, vous pouvez sélectionner ou désélectionner tout VMDK. 
+
+
+| Un autre datastore dans un autre emplacement | Cliquez sur le datastore de destination et sélectionnez un autre datastore dans la liste. 
+|===
+. Sur la page *Sélectionner l'emplacement*, sélectionnez la copie Snapshot que vous souhaitez restaurer (primaire ou secondaire).
+. Vérifiez la page Résumé, puis cliquez sur *Terminer*.
+. Facultatif : surveillez la progression de l'opération en cliquant sur *tâches récentes* en bas de l'écran.
+. Actualiser l'écran pour afficher les informations mises à jour.
+

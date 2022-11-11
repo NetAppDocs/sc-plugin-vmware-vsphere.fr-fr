@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_modify_the_time_zones.html 
+keywords:  
+summary: 'Lorsque vous configurez une planification de sauvegarde pour un groupe de ressources plug-in SnapCenter pour VMware vSphere, la planification est automatiquement définie pour le fuseau horaire dans lequel le plug-in SnapCenter VMware est déployé. Vous pouvez modifier ce fuseau horaire à l"aide de l"interface graphique ou de la console de maintenance du plug-in SnapCenter pour VMware vSphere.' 
+---
+= Modifier les fuseaux horaires pour les sauvegardes
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Lorsque vous configurez une planification de sauvegarde pour un groupe de ressources plug-in SnapCenter pour VMware vSphere, la planification est automatiquement définie pour le fuseau horaire dans lequel le plug-in SnapCenter VMware est déployé. Vous pouvez modifier ce fuseau horaire à l'aide de l'interface graphique ou de la console de maintenance du plug-in SnapCenter pour VMware vSphere.
+
+Vous devez connaître l'adresse IP et les identifiants de connexion de l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere.
+
+* L'adresse IP était affichée lorsque le plug-in SnapCenter VMware a été déployé.
+* Utilisez les identifiants de connexion fournis lors du déploiement du plug-in SnapCenter VMware ou modifiés ultérieurement.
+
+
+.Étapes
+. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware.
++
+Utiliser le format `https://<appliance-IP-address>:8080`
+
+. Cliquez sur l'icône Paramètres dans la barre d'outils supérieure.
++
+image:scpivs44_image28.jpg["Erreur : image graphique manquante"]
+
+. Sur la page *Paramètres*, dans la section *Date et heure*, cliquez sur *Modifier*.
+. Sélectionnez le nouveau fuseau horaire et cliquez sur *Enregistrer*.
++
+Le nouveau fuseau horaire sera utilisé pour toutes les sauvegardes effectuées par le plug-in SnapCenter VMware.
+
+

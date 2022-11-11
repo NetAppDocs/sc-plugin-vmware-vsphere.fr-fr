@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_unregister_plugin_from_vcenter.html 
+keywords:  
+summary: 'Si vous arrêtez le service du plug-in SnapCenter VMware dans un vCenter en mode lié, les groupes de ressources ne sont pas disponibles dans tous les vCenters liés, même lorsque le service du plug-in SnapCenter VMware s"exécute dans les autres vCenters liés. Vous devez annuler l"enregistrement manuel des extensions du plug-in SnapCenter VMware.' 
+---
+= Annuler l'enregistrement du plug-in SnapCenter pour VMware vSphere à partir de vCenter
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Si vous arrêtez le service du plug-in SnapCenter VMware dans un vCenter en mode lié, les groupes de ressources ne sont pas disponibles dans tous les vCenters liés, même lorsque le service du plug-in SnapCenter VMware s'exécute dans les autres vCenters liés.
+
+Vous devez annuler l'enregistrement manuel des extensions du plug-in SnapCenter VMware.
+
+.Étapes
+. Sur le serveur vCenter lié où le service de plug-in SnapCenter VMware est arrêté, accédez au gestionnaire MOB (Managed Object Reference).
+. Dans l'option Propriétés, sélectionnez *content* dans la colonne valeur, puis, dans l'écran suivant, sélectionnez *ExtensionManager* dans la colonne valeur pour afficher la liste des extensions enregistrées.
+. Annuler l'enregistrement des extensions `com.netapp.scvm.webclient` et `com.netapp.aegis`.
+

@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_manage_policies.html 
+keywords:  
+summary: Vous pouvez créer, modifier, afficher, détacher et supprimer des règles de sauvegarde pour le plug-in SnapCenter pour VMware vSphere. Des règles sont requises pour exécuter les opérations de protection des données. 
+---
+= Gestion des règles
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez créer, modifier, afficher, détacher et supprimer des règles de sauvegarde pour le plug-in SnapCenter pour VMware vSphere. Des règles sont requises pour exécuter les opérations de protection des données.
+
+
+
+== Détacher les polices
+
+Vous pouvez détacher les stratégies d'un groupe de ressources de plug-in SnapCenter VMware si vous ne souhaitez plus que ces stratégies régissent la protection des données pour les ressources. Vous devez détacher une stratégie avant de pouvoir la supprimer ou avant de modifier la fréquence de programmation.
+
+Les instructions de détachement des stratégies des groupes de ressources du plug-in SnapCenter VMware diffèrent des instructions des groupes de ressources SnapCenter. Pour un groupe de ressources client Web VMware vSphere, il est possible de détacher toutes les stratégies, ce qui laisse le groupe de ressources sans stratégie. Toutefois, pour effectuer toute opération de protection des données sur ce groupe de ressources, vous devez associer au moins une règle.
+
+.Étapes
+. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources et cliquez sur *Modifier*.
+. Sur la page *Policies* de l'assistant *Modifier le groupe de ressources*, décochez la case en regard des stratégies que vous souhaitez détacher.
++
+Vous pouvez également ajouter une stratégie au groupe de ressources en cochant la stratégie.
+
+. Apportez toute modification supplémentaire au groupe de ressources dans le reste de l'assistant, puis cliquez sur *Terminer*.
+
+
+
+
+== Modifier des règles
+
+Vous pouvez modifier les règles d'un plug-in SnapCenter pour un groupe de ressources VMware vSphere. Vous pouvez modifier la fréquence, les options de réplication, les paramètres de conservation des copies Snapshot ou les informations relatives aux scripts lorsqu'une règle est associée à un groupe de ressources.
+
+La modification des règles de sauvegarde du plug-in SnapCenter VMware diffère de la modification des règles de sauvegarde des plug-ins basés sur les applications SnapCenter. Il n'est pas nécessaire de dissocier les stratégies des groupes de ressources lorsque vous modifiez les stratégies du plug-in.
+
+Avant de modifier les paramètres de réplication ou de conservation, vous devez prendre en compte les conséquences possibles.
+
+* Augmentation des paramètres de réplication ou de conservation
++
+Les sauvegardes continuent à s'accumuler jusqu'à ce qu'elles atteignent le nouveau paramètre.
+
+* Diminution des paramètres de réplication ou de conservation
++
+Les sauvegardes qui dépassent le nouveau paramètre sont supprimées lors de la prochaine sauvegarde.
+
+
+
+
+NOTE: Pour modifier la planification d'une stratégie de plug-in SnapCenter VMware, vous devez modifier la planification dans le groupe de ressources du plug-in.
+
+.Étapes
+. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *Policies*, puis sélectionnez une stratégie et cliquez sur *Modifier*.
+. Modifier les champs de la stratégie.
+. Lorsque vous avez terminé, cliquez sur *mettre à jour*.
+
+
+Les modifications prennent effet lorsque la prochaine sauvegarde planifiée est exécutée.
+
+
+
+== Supprimer des règles
+
+Si vous n'avez plus besoin d'une règle de sauvegarde configurée pour le plug-in SnapCenter pour VMware vSphere, vous pouvez la supprimer.
+
+Vous devez avoir détaché la stratégie de tous les groupes de ressources de l'appliance virtuelle pour SnapCenter avant de pouvoir la supprimer.
+
+.Étapes
+. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *Policies*, puis sélectionnez une stratégie et cliquez sur *Supprimer*.
+. Dans la boîte de dialogue de confirmation, cliquez sur *OK*.
+

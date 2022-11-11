@@ -1,0 +1,201 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html 
+keywords:  
+summary: 'Vous devez utiliser le plug-in SnapCenter pour la gestion de VMware vSphere pour arrêter, désactiver ou activer le plug-in SnapCenter pour l"appliance VMware vSphere.' 
+---
+= Gestion du plug-in SnapCenter pour VMware vSphere
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous devez utiliser le plug-in SnapCenter pour la gestion de VMware vSphere pour arrêter, désactiver ou activer le plug-in SnapCenter pour l'appliance VMware vSphere.
+
+
+
+== Accéder à la console de maintenance
+
+Vous pouvez gérer vos configurations d'application, système et réseau à l'aide de la console de maintenance du plug-in SnapCenter pour VMware vSphere. Vous pouvez modifier votre mot de passe d'administrateur, le mot de passe de maintenance, générer des packs de support et lancer des diagnostics à distance.
+
+Avant d'arrêter et de redémarrer le plug-in SnapCenter pour le service VMware vSphere, vous devez interrompre l'ensemble des planifications.
+
+.Description de la tâche
+* Les valeurs par défaut sont “maint” comme nom d'utilisateur et “admin123” comme mot de passe pour se connecter à la console de maintenance pour le plug-in SnapCenter pour VMware vSphere.
++
+
+TIP: Après le déploiement, modifiez les informations d'identification par défaut.
+
+* Vous devez définir un mot de passe pour l’utilisateur “diag” tout en activant les diagnostics à distance.
++
+Pour obtenir l'autorisation utilisateur root d'exécuter la commande, utilisez la commande sudo <commande>.
+
+
+
+.Étapes
+. Dans le client web VMware vSphere, sélectionnez la machine virtuelle sur laquelle se trouve le plug-in SnapCenter VMware.
+. Cliquez avec le bouton droit de la souris sur la VM, puis dans l'onglet *Résumé* de l'appliance virtuelle, cliquez sur *lancer la console distante* pour ouvrir une fenêtre de la console de maintenance.
++
+Les paramètres par défaut de connexion pour la console de maintenance du plug-in SnapCenter VMware sont les suivants :
+
++
+Nom d'utilisateur : `maint`Mot de passe : `admin123`
+
++
+image:scpivs44_image11.png["Erreur : image graphique manquante"]
+
+. Vous pouvez effectuer les opérations suivantes :
++
+** Option 1 : Configuration de l'application
++
+Démarrage ou arrêt du service de plug-in SnapCenter VMware changer le nom d'utilisateur ou le mot de passe changer le mot de passe MySQL configurer la liste de sauvegarde MySQL Restaurer la sauvegarde MySQL
+
+** Option 2 : configuration du système
++
+Redémarrage ou arrêt de la machine virtuelle Modifier le mot de passe utilisateur Modifier le fuseau horaire Modifier le serveur NTP Activer/Désactiver l'accès SSH augmenter la taille du disque de prison (/jail) mise à niveau installer VMware Tools
+
+** Option 3 : configuration réseau
++
+Afficher ou modifier les paramètres d'adresse IP Afficher ou modifier les paramètres de recherche de nom de domaine Afficher ou modifier les routes statiques valider les changements Ping a host
+
+** Option 4 : assistance et diagnostic
++
+Générer le support bundle accéder au shell de diagnostic Activer l'accès de diagnostic à distance générer le bundle de vidage de noyau
+
+
+
+
+
+
+
+== Modifiez le mot de passe du plug-in VMware SnapCenter à partir de la console de maintenance
+
+Si vous ne connaissez pas le mot de passe d'administration de l'interface graphique de gestion SnapCenter Plug-in pour VMware vSphere, vous pouvez définir un nouveau mot de passe à partir de la console de maintenance.
+
+Avant d'arrêter et de redémarrer le plug-in SnapCenter pour le service VMware vSphere, vous devez interrompre l'ensemble des planifications.
+
+Vous devez utiliser la valeur par défaut `“maint”` comme nom d'utilisateur et `“admin123”` Comme mot de passe pour vous connecter à la console de maintenance du plug-in SnapCenter VMware.
+
+.Étapes
+. Dans le client web VMware vSphere, sélectionnez la machine virtuelle sur laquelle se trouve le plug-in SnapCenter VMware.
+. Cliquez avec le bouton droit de la souris sur la VM, puis dans l'onglet *Résumé* de l'appliance virtuelle, cliquez sur *lancer la console distante* pour ouvrir une fenêtre de la console de maintenance.
++
+Les paramètres par défaut de connexion pour la console de maintenance du plug-in SnapCenter VMware sont les suivants :
+
++
+Nom d'utilisateur : `maint`Mot de passe : `admin123`
+
++
+image:scpivs44_image29.jpg["Erreur : image graphique manquante"]
+
+. Entrez “*1*” pour Configuration de l’application.
+. Entrez “*4*” pour changer le nom d’utilisateur ou le mot de passe.
+. Saisissez le nouveau mot de passe.
++
+Le service d'appliance virtuelle SnapCenter VMware est arrêté et redémarré.
+
+
+
+
+
+== Créer et importer des certificats
+
+Le plug-in SnapCenter VMware utilise le cryptage SSL pour sécuriser les communications avec le navigateur client. Bien que cela active les données cryptées sur le réseau, la création d'un nouveau certificat auto-signé, ou l'utilisation de votre propre infrastructure d'autorité de certification ou d'une autorité de certification tierce garantit que le certificat est unique pour votre environnement. Voir la https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_and_or_import_an_SSL_certificate_to_SnapCenter_Plug-in_for_VMware_vSphere_(SCV)["Article de la base de connaissances : comment créer et/ou importer un certificat SSL dans le plug-in VMware pour SnapCenter"^].
+
+
+
+== Annuler l'enregistrement du plug-in SnapCenter pour VMware vSphere à partir de vCenter
+
+Si vous arrêtez le service du plug-in SnapCenter VMware dans un vCenter en mode lié, les groupes de ressources ne sont pas disponibles dans tous les vCenters liés, même lorsque le service du plug-in SnapCenter VMware s'exécute dans les autres vCenters liés.
+
+Vous devez annuler l'enregistrement manuel des extensions du plug-in SnapCenter VMware.
+
+.Étapes
+. Sur le serveur vCenter lié où le service de plug-in SnapCenter VMware est arrêté, accédez au gestionnaire MOB (Managed Object Reference).
+. Dans l'option Propriétés, sélectionnez Gestionnaire d'extension pour afficher la liste des extensions enregistrées.
+. Annuler l'enregistrement des extensions `com.netapp.scvm.webclient` et `com.netapp.aegis`.
+
+
+
+
+== Désactivation et activation du plug-in SnapCenter pour VMware vSphere
+
+Si vous n'avez plus besoin des fonctionnalités de protection des données SnapCenter, vous devez modifier la configuration du plug-in SnapCenter pour VMware. Par exemple, si vous avez déployé le plug-in dans un environnement de test, vous devrez peut-être désactiver les fonctionnalités SnapCenter de cet environnement et les activer dans un environnement de production.
+
+.Avant de commencer
+* Vous devez disposer des privilèges d'administrateur.
+* Assurez-vous qu'aucun travail SnapCenter n'est en cours d'exécution.
+
+
+Lorsque vous désactivez le plug-in SnapCenter VMware, tous les groupes de ressources sont suspendus et le plug-in n'est pas enregistré comme extension dans vCenter.
+
+Lorsque vous activez le plug-in SnapCenter VMware, le plug-in est enregistré en tant qu'extension dans vCenter, tous les groupes de ressources sont en mode production et tous les planifications sont activées.
+
+.Étapes
+. Facultatif : sauvegardez le référentiel MySQL du plug-in SnapCenter VMware au cas où vous souhaitez le restaurer sur une nouvelle appliance virtuelle.
++
+link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html["Sauvegardez le plug-in SnapCenter pour la base de données MySQL VMware vSphere"].
+
+. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware à l'aide du format `https://<OVA-IP-address>:8080`.
++
+L'adresse IP du plug-in SnapCenter pour VMware s'affiche lorsque vous déployez le plug-in.
+
+. Cliquez sur *Configuration* dans le volet de navigation de gauche, puis désélectionnez l'option Service dans la section *Détails du plug-in* pour désactiver le plug-in.
+. Confirmez votre choix.
++
+** Si vous avez utilisé uniquement le plug-in SnapCenter pour VMware, vous pouvez réaliser des sauvegardes cohérentes au niveau des machines virtuelles
++
+Le plug-in est désactivé et aucune autre action n'est requise.
+
+** Si vous avez utilisé le plug-in SnapCenter VMware pour réaliser des sauvegardes cohérentes avec les applications
++
+Le plug-in est désactivé et un nettoyage supplémentaire est requis.
+
++
+... Connectez-vous à VMware vSphere.
+... Mettre la machine virtuelle hors tension, puis la supprimer
+... Dans l'écran de gauche du navigateur, cliquez avec le bouton droit de la souris sur l'instance du plug-in SnapCenter VMware (le nom du `.ova` Fichier `utilisé lors du déploiement de l'appliance virtuelle) et sélectionnez *Supprimer du disque*.
+... Connectez-vous à SnapCenter et supprimez l'hôte vSphere.
+
+
+
+
+
+
+
+
+== Suppression du plug-in SnapCenter pour VMware vSphere
+
+Si vous n'avez plus besoin d'utiliser les fonctionnalités de protection des données SnapCenter, vous devez désactiver le plug-in SnapCenter VMware pour annuler l'enregistrement depuis vCenter, puis supprimer le plug-in SnapCenter VMware de vCenter et supprimer manuellement les fichiers restants.
+
+.Avant de commencer
+* Vous devez disposer des privilèges d'administrateur.
+* Assurez-vous qu'aucun travail SnapCenter n'est en cours d'exécution.
+
+
+.Étapes
+. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware à l'aide du format `https://<OVA-IP-address>:8080`.
++
+L'adresse IP du plug-in SnapCenter pour VMware s'affiche lorsque vous déployez le plug-in.
+
+. Cliquez sur *Configuration* dans le volet de navigation de gauche, puis désélectionnez l'option Service dans la section *Détails du plug-in* pour désactiver le plug-in.
+. Connectez-vous à VMware vSphere.
+. Dans l'écran de gauche du navigateur, cliquez avec le bouton droit de la souris sur l'instance du plug-in SnapCenter VMware (le nom du `.ova` Fichier utilisé lors du déploiement de l'appliance virtuelle) et sélectionnez *Supprimer du disque*.
+. Supprimez manuellement les fichiers suivants dans `/etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/com.netapp.scvm.webclient-4.5.0.5942045/plugins` Dossier du serveur vCenter :
++
+`vsc-httpclient3-security.jar`
+`scv-api-model.jar`
+`scvm_webui_service.jar`
+`scvm_webui_ui.war`
+`gson-2.5.jar`
+
+. Si vous avez utilisé le plug-in SnapCenter VMware pour prendre en charge d'autres plug-ins SnapCenter pour des sauvegardes cohérentes avec les applications, connectez-vous à SnapCenter et supprimez l'hôte vSphere.
+
+
+L'appliance virtuelle est toujours déployée, mais le plug-in SnapCenter VMware est supprimé.
+
+Après avoir supprimé la machine virtuelle hôte du plug-in SnapCenter VMware, le plug-in peut rester répertorié dans vCenter jusqu'à ce que le cache vCenter local soit actualisé. Cependant, le plug-in a été supprimé, aucune opération SnapCenter VMware vSphere ne peut être effectuée sur cet hôte. Si vous souhaitez actualiser le cache vCenter local, vérifiez d'abord que l'appliance est dans un état désactivé sur la page de configuration du plug-in SnapCenter VMware, puis redémarrez le service du client Web vCenter.

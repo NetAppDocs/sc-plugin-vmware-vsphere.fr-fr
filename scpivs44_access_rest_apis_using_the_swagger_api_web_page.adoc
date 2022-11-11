@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_access_rest_apis_using_the_swagger_api_web_page.html 
+keywords:  
+summary: 'Les API REST sont exposées via la page Web de swagger. Vous pouvez accéder à la page Web swagger pour afficher le serveur SnapCenter ou le plug-in SnapCenter pour les API REST VMware vSphere, ainsi que pour lancer manuellement un appel d"API. Utilisez le plug-in SnapCenter pour les API REST VMware vSphere pour exécuter des opérations de protection sur les machines virtuelles et les datastores.' 
+---
+= Accédez aux API REST à l'aide de la page Web de l'API swagger
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Les API REST sont exposées via la page Web de swagger. Vous pouvez accéder à la page Web swagger pour afficher le serveur SnapCenter ou le plug-in SnapCenter pour les API REST VMware vSphere, ainsi que pour lancer manuellement un appel d'API. Utilisez le plug-in SnapCenter pour les API REST VMware vSphere pour effectuer des opérations sur des machines virtuelles et des datastores.
+
+Le plug-in comporte différentes pages Web de swagger à partir des pages Web de SnapCenter Server swagger.
+
+Pour les API REST SnapCenter Plug-in pour VMware vSphere, vous devez connaître soit l'adresse IP, soit le nom d'hôte du plug-in SnapCenter VMware.
+
+
+NOTE: Le plug-in ne prend en charge que les API REST dans le but de l'intégration avec des applications tierces et ne prend pas en charge les applets de commande PowerShell ou une interface de ligne de commande.
+
+.Étapes
+. Depuis un navigateur, entrez l'URL pour accéder à la page Web du plug-in swagger :
++
+`https://<appliance_IP_address_or_host_name>:8144/api/swagger-ui.html`
+
++
+
+IMPORTANT: N'utilisez pas les caractères suivants dans l'URL DE L'API REST : +, . , % et &.
+
++
+Accédez aux API REST du plug-in SnapCenter VMware :
+
++
+`https://192.0.2.82:8144/api/swagger-ui.html`
+`https://OVAhost:8144/api/swagger-ui.html`
+
++
+Connectez-vous utilisez le mécanisme d'authentification vCenter pour générer le jeton.
+
+. Cliquez sur un type de ressource API pour afficher les API dans ce type de ressource.
+
