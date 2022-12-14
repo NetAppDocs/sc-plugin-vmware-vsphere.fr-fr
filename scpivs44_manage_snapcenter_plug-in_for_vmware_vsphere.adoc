@@ -22,6 +22,7 @@ Vous devez utiliser le plug-in SnapCenter pour la gestion de VMware vSphere pour
 
 Vous pouvez gérer vos configurations d'application, système et réseau à l'aide de la console de maintenance du plug-in SnapCenter pour VMware vSphere. Vous pouvez modifier votre mot de passe d'administrateur, le mot de passe de maintenance, générer des packs de support et lancer des diagnostics à distance.
 
+.Avant de commencer
 Avant d'arrêter et de redémarrer le plug-in SnapCenter pour le service VMware vSphere, vous devez interrompre l'ensemble des planifications.
 
 .Description de la tâche
@@ -76,8 +77,10 @@ Générer le support bundle accéder au shell de diagnostic Activer l'accès de 
 
 Si vous ne connaissez pas le mot de passe d'administration de l'interface graphique de gestion SnapCenter Plug-in pour VMware vSphere, vous pouvez définir un nouveau mot de passe à partir de la console de maintenance.
 
+.Avant de commencer
 Avant d'arrêter et de redémarrer le plug-in SnapCenter pour le service VMware vSphere, vous devez interrompre l'ensemble des planifications.
 
+.Description de la tâche
 Vous devez utiliser la valeur par défaut `“maint”` comme nom d'utilisateur et `“admin123”` Comme mot de passe pour vous connecter à la console de maintenance du plug-in SnapCenter VMware.
 
 .Étapes
@@ -131,6 +134,7 @@ Si vous n'avez plus besoin des fonctionnalités de protection des données SnapC
 * Assurez-vous qu'aucun travail SnapCenter n'est en cours d'exécution.
 
 
+.Description de la tâche
 Lorsque vous désactivez le plug-in SnapCenter VMware, tous les groupes de ressources sont suspendus et le plug-in n'est pas enregistré comme extension dans vCenter.
 
 Lorsque vous activez le plug-in SnapCenter VMware, le plug-in est enregistré en tant qu'extension dans vCenter, tous les groupes de ressources sont en mode production et tous les planifications sont activées.
@@ -196,6 +200,7 @@ L'adresse IP du plug-in SnapCenter pour VMware s'affiche lorsque vous déployez 
 . Si vous avez utilisé le plug-in SnapCenter VMware pour prendre en charge d'autres plug-ins SnapCenter pour des sauvegardes cohérentes avec les applications, connectez-vous à SnapCenter et supprimez l'hôte vSphere.
 
 
+.Une fois que vous avez terminé
 L'appliance virtuelle est toujours déployée, mais le plug-in SnapCenter VMware est supprimé.
 
 Après avoir supprimé la machine virtuelle hôte du plug-in SnapCenter VMware, le plug-in peut rester répertorié dans vCenter jusqu'à ce que le cache vCenter local soit actualisé. Cependant, le plug-in a été supprimé, aucune opération SnapCenter VMware vSphere ne peut être effectuée sur cet hôte. Si vous souhaitez actualiser le cache vCenter local, vérifiez d'abord que l'appliance est dans un état désactivé sur la page de configuration du plug-in SnapCenter VMware, puis redémarrez le service du client Web vCenter.

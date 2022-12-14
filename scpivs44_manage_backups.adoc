@@ -40,8 +40,10 @@ N'utilisez pas les caractères spéciaux suivants dans les noms VM, datastore, s
 
 Vous pouvez supprimer le plug-in SnapCenter pour sauvegardes VMware vSphere si vous ne souhaitez plus effectuer de sauvegarde pour d'autres opérations de protection des données. Vous pouvez supprimer une sauvegarde ou supprimer plusieurs sauvegardes simultanément.
 
+.Avant de commencer
 Vous ne pouvez pas supprimer les sauvegardes montées. Vous devez démonter une sauvegarde avant de la supprimer.
 
+.Description de la tâche
 Les copies Snapshot sur le stockage secondaire sont gérées par vos paramètres de conservation ONTAP, et non par le plug-in SnapCenter VMware. Par conséquent, lorsque vous utilisez le plug-in SnapCenter pour supprimer une sauvegarde, les copies Snapshot du stockage primaire sont supprimées, mais les copies Snapshot du stockage secondaire ne sont pas supprimées. Si une copie Snapshot existe toujours sur un système de stockage secondaire, le plug-in SnapCenter VMware conserve les métadonnées associées à la sauvegarde pour prendre en charge les demandes de restauration. Lorsque le processus de conservation ONTAP supprime la copie Snapshot secondaire, le plug-in SnapCenter VMware supprime les métadonnées à l'aide d'une tâche de suppression qui s'exécute à intervalles réguliers.
 
 . Cliquez sur *Menu* et sélectionnez l'option de menu *hôtes et clusters*, puis sélectionnez une machine virtuelle, sélectionnez l'onglet *configurer*, puis cliquez sur *sauvegardes* dans la section *SnapCenter Plug-in pour VMware vSphere*.

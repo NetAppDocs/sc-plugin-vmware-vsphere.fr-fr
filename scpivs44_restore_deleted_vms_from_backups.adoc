@@ -54,6 +54,7 @@ Vous devez avoir créé une sauvegarde de la machine virtuelle à l'aide du plug
 
 TIP: Pour améliorer les performances des opérations de restauration dans les environnements NFS, activez l'API VMware vStorage pour l'intégration de baies (VAAI).
 
+.Description de la tâche
 Vous ne pouvez pas restaurer un datastore, mais vous pouvez restaurer une machine virtuelle du datastore.
 
 Une opération de restauration peut échouer si le niveau de stockage de la FabricPool où se trouve la machine virtuelle est indisponible.

@@ -16,11 +16,13 @@ summary: 'Les opérations de sauvegarde sont effectuées sur toutes les ressourc
 [role="lead"]
 Les opérations de sauvegarde sont effectuées sur toutes les ressources définies dans un groupe de ressources. Si une stratégie est associée à un groupe de ressources et qu'une planification est configurée, les sauvegardes sont automatiquement effectuées en fonction de la planification.
 
+.Avant de commencer
 Vous devez avoir créé un groupe de ressources associé à une stratégie.
 
 
 IMPORTANT: Ne lancez pas de tâche de sauvegarde à la demande lorsqu'une tâche de sauvegarde de la base de données MySQL du plug-in VMware de SnapCenter est déjà en cours d'exécution. Utilisez la console de maintenance pour voir le planning de sauvegarde configuré pour la base de données MySQL.
 
+.Description de la tâche
 Dans les versions antérieures de Virtual Storage Console (VSC), vous pouvez effectuer une sauvegarde à la demande sans avoir à configurer une tâche de sauvegarde pour une machine virtuelle ou un datastore. Cependant, pour le plug-in SnapCenter VMware, les machines virtuelles et les datastores doivent se trouver dans un groupe de ressources avant de pouvoir effectuer des sauvegardes.
 
 .Étapes

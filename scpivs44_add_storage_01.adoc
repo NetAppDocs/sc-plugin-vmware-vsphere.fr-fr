@@ -33,8 +33,10 @@ Pour plus d'informations, voir https://docs.netapp.com/vapp-98/index.jsp["Outils
 
 
 
+.Avant de commencer
 Le serveur ESXi, le plug-in SnapCenter VMware et chaque vCenter doivent être synchronisés en même temps. Si vous essayez d'ajouter du stockage mais que les paramètres d'heure de vos vCenters ne sont pas synchronisés, l'opération peut échouer avec une erreur de certificat Java.
 
+.Description de la tâche
 Le plug-in SnapCenter pour VMware réalise des opérations de sauvegarde et de restauration sur les machines virtuelles de stockage directement connectées et sur les machines virtuelles de stockage dans un cluster de stockage.
 
 

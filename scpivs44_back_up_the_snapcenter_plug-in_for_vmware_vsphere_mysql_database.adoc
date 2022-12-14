@@ -18,6 +18,7 @@ Le plug-in SnapCenter VMware comprend une base de données MySQL (également app
 
 Vous devez également sauvegarder le référentiel avant d'effectuer des migrations ou des mises à niveau.
 
+.Avant de commencer
 Ne démarrez pas un travail pour sauvegarder la base de données MySQL lorsqu'une tâche de sauvegarde à la demande est déjà en cours d'exécution.
 
 .Étapes

@@ -16,6 +16,7 @@ summary: 'Vous pouvez restaurer un ou plusieurs fichiers ou dossiers à partir d
 [role="lead"]
 Vous pouvez restaurer un ou plusieurs fichiers ou dossiers à partir d'un VMDK sur un système d'exploitation invité Windows.
 
+.Description de la tâche
 Par défaut, le disque virtuel connecté est disponible pendant 24 heures, puis il est automatiquement détaché. Vous pouvez choisir dans l'assistant de supprimer automatiquement la session une fois l'opération de restauration terminée, ou supprimer manuellement la session Restauration du fichier invité à tout moment, ou vous pouvez prolonger l'heure à la page *Configuration invité*.
 
 La performance de restauration des fichiers ou dossiers invités dépend de deux facteurs : la taille des fichiers ou dossiers à restaurer et le nombre de fichiers ou de dossiers à restaurer. La restauration d'un grand nombre de fichiers de petite taille peut prendre plus de temps que prévu par rapport à la restauration d'un petit nombre de fichiers de taille importante si le jeu de données à restaurer est de même taille.

@@ -18,6 +18,7 @@ Il est possible d'attacher un ou plusieurs VMDK à partir d'une sauvegarde sur l
 
 Il est ainsi plus facile de restaurer un ou plusieurs fichiers individuels depuis un disque au lieu de restaurer l'intégralité du disque. Vous pouvez détacher le VMDK après avoir restauré ou accédé aux fichiers dont vous avez besoin.
 
+.Description de la tâche
 Vous disposez des options d'attache suivantes :
 
 * Vous pouvez attacher des disques virtuels à partir d'une sauvegarde primaire ou secondaire.
@@ -70,4 +71,5 @@ La page Modifier les paramètres répertorie les disques de la machine virtuelle
 
 
 
+.Résultat
 Vous pouvez accéder aux disques connectés à partir du système d'exploitation hôte, puis extraire les informations requises des disques.

@@ -1932,4 +1932,6 @@
   <block id="11d88a82190664755120fc16494310df" category="sidebar">Documentation pour les versions antérieures du distributeur auxiliaire</block>
   <block id="74fe1f888648848c4fd5f85ae847a16c" category="sidebar">Base de connaissances NetApp – distributeur auxiliaire</block>
   <block id="3390e3575b3e341afa2b7172ff5b33a7" category="sidebar">Plug-in SnapCenter pour VMware vSphere</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Résultat</block>
+  <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="paragraph-title">Exemple</block>
 </blocks>

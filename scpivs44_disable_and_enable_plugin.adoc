@@ -20,6 +20,7 @@ Si vous n'avez plus besoin des fonctionnalités de protection des données SnapC
 * Assurez-vous qu'aucun travail SnapCenter n'est en cours d'exécution.
 
 
+.Description de la tâche
 Lorsque vous désactivez le plug-in SnapCenter VMware, tous les groupes de ressources sont suspendus et le plug-in n'est pas enregistré comme extension dans vCenter.
 
 Lorsque vous activez le plug-in SnapCenter VMware, le plug-in est enregistré en tant qu'extension dans vCenter, tous les groupes de ressources sont en mode production et tous les planifications sont activées.

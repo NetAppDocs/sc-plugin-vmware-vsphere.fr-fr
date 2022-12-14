@@ -58,8 +58,10 @@ Vous pouvez utiliser le client Web VMware vSphere pour supprimer les machines vi
 
 NOTE: Si vous avez ajouté des machines virtuelles de stockage pour les opérations de protection des données basées sur les applications à l'aide de l'interface graphique de SnapCenter, vous devez utiliser la même interface pour modifier ces machines virtuelles de stockage.
 
+.Avant de commencer
 Vous devez démonter tous les datastores de la machine virtuelle de stockage avant de pouvoir supprimer la machine virtuelle de stockage.
 
+.Description de la tâche
 Si un groupe de ressources contient des sauvegardes qui résident sur une machine virtuelle de stockage que vous supprimez, les sauvegardes suivantes de ce groupe de ressources échouent.
 
 .Étapes

@@ -33,6 +33,7 @@ image:scpivs44_image24.png["Erreur : image graphique manquante"]
 . Dans la zone de confirmation, cliquez sur *OK* pour confirmer.
 
 
+.Une fois que vous avez terminé
 Sur la page groupes de ressources, l'état du travail de la ressource suspendue est `Under_Maintenance`. Vous devrez peut-être faire défiler la liste vers la droite pour afficher la colonne Statut du travail.
 
 Après la reprise des opérations de sauvegarde, l'état du travail devient `Production`.
@@ -43,6 +44,7 @@ Après la reprise des opérations de sauvegarde, l'état du travail devient `Pro
 
 Vous pouvez supprimer ou ajouter des ressources dans des groupes de ressources dans vCenter, détacher ou attacher des stratégies, modifier des plannings ou modifier toute autre option de groupe de ressources.
 
+.Description de la tâche
 Si vous souhaitez modifier le nom d'un groupe de ressources, n'utilisez pas les caractères spéciaux suivants dans les noms de VM, datastore, stratégie, sauvegarde ou groupe de ressources :
 
 % Et * $ # @ ! \ / : * ? " < > - | ; ' , .
@@ -64,6 +66,7 @@ Vous pouvez modifier plusieurs catégories.
 
 Vous pouvez supprimer un groupe de ressources dans vCenter si vous n'avez plus besoin de protéger les ressources du groupe de ressources. Vous devez vous assurer que tous les groupes de ressources sont supprimés avant de supprimer le plug-in SnapCenter pour VMware vSphere de vCenter.
 
+.Description de la tâche
 Toutes les opérations de suppression de groupe de ressources sont effectuées en tant que suppressions de force. L'opération de suppression détache toutes les règles du groupe de ressources vCenter, supprime le groupe de ressources du plug-in SnapCenter pour VMware vSphere et supprime toutes les sauvegardes et copies Snapshot du groupe de ressources.
 
 

@@ -22,6 +22,7 @@ Si le client Web SnapCenter VMware vSphere commence à se comporter de manière 
 
 Si votre vCenter se trouve sur une appliance Linux, vous devez utiliser les commandes Linux pour redémarrer le service client web SnapCenter vSphere.
 
+.Avant de commencer
 Vous devez exécuter vCenter 6.5 ou une version ultérieure.
 
 .Étapes
@@ -54,6 +55,7 @@ IMPORTANT: Ne supprimez pas les packages VASA ou VSC7.x et ultérieurs.
 
 Si votre vCenter est sur un hôte Windows, vous devez utiliser les commandes Windows pour redémarrer le service client Web SnapCenter.
 
+.Avant de commencer
 Vous devez exécuter vCenter 6.5 ou une version ultérieure.
 
 .Étapes

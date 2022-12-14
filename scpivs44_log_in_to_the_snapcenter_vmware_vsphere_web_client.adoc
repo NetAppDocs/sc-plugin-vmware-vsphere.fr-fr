@@ -16,6 +16,7 @@ summary: 'Une fois déployé le plug-in SnapCenter pour VMware vSphere, il insta
 [role="lead"]
 Une fois déployé le plug-in SnapCenter pour VMware vSphere, il installe un client web VMware vSphere sur vCenter, qui s'affiche sur l'écran vCenter avec d'autres clients web vSphere.
 
+.Avant de commencer
 Le protocole TLS (transport Layer Security) doit être activé dans vCenter. Voir la documentation VMware.
 
 .Étapes

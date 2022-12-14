@@ -14,6 +14,7 @@ summary: Vous pouvez générer un bundle de support à partir de la console de m
 
 
 .Étapes
+[role="lead"]
 . Dans le client web VMware vSphere, sélectionnez la machine virtuelle sur laquelle se trouve le plug-in SnapCenter VMware.
 . Cliquez avec le bouton droit de la souris sur la VM, puis dans l'onglet *Résumé* de l'appliance virtuelle, cliquez sur *lancer la console distante ou sur lancer la console Web* pour ouvrir une fenêtre de la console de maintenance, puis connectez-vous.
 +

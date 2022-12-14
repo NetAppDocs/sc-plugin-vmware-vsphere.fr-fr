@@ -35,6 +35,7 @@ Vous pouvez également double-cliquer sur un travail pour accéder à la fenêtr
 
 
 
+.Résultat
 Les journaux de tâches sont situés sur l'hôte VM Linux où le plug-in SnapCenter VMware est déployé. L'emplacement par défaut du journal des travaux est `/var/log/netapp`.
 
 Si vous avez essayé de télécharger des journaux de travaux mais que le fichier journal nommé dans le message d'erreur a été supprimé, vous pouvez rencontrer l'erreur suivante : `HTTP ERROR 500 Problem accessing /export-scv-logs`. Pour corriger cette erreur, vérifiez l'état d'accès au fichier et les autorisations pour le fichier nommé dans le message d'erreur et corrigez le problème d'accès.

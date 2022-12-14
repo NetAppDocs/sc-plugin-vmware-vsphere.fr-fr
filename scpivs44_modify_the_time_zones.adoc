@@ -15,6 +15,7 @@ summary: 'Lorsque vous configurez une planification de sauvegarde pour un groupe
 
 Lorsque vous configurez une planification de sauvegarde pour un groupe de ressources plug-in SnapCenter pour VMware vSphere, la planification est automatiquement définie pour le fuseau horaire dans lequel le plug-in SnapCenter VMware est déployé. Vous pouvez modifier ce fuseau horaire à l'aide de l'interface graphique ou de la console de maintenance du plug-in SnapCenter pour VMware vSphere.
 
+.Avant de commencer
 Vous devez connaître l'adresse IP et les identifiants de connexion de l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere.
 
 * L'adresse IP était affichée lorsque le plug-in SnapCenter VMware a été déployé.

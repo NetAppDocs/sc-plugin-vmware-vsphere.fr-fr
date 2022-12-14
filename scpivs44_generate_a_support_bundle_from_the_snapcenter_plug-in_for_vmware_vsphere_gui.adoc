@@ -13,6 +13,7 @@ summary: 'Vous pouvez générer un bundle de prise en charge à partir du plug-i
 :imagesdir: ./media/
 
 
+.Avant de commencer
 [role="lead"]
 Pour vous connecter à l'interface utilisateur graphique de gestion SnapCenter Plug-in for VMware vSphere, vous devez connaître l'adresse IP et les identifiants de connexion.
 

@@ -15,6 +15,7 @@ summary: Vous pouvez modifier les paramètres réseau configurés dans le plug-i
 
 Vous pouvez modifier les paramètres réseau configurés dans le plug-in SnapCenter pour VMware vSphere. Ces paramètres sont utilisés par le plug-in pour accéder à vCenter.
 
+.Avant de commencer
 Vous devez connaître l'adresse IP et les identifiants de connexion de l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere.
 
 * L'adresse IP était affichée lorsque le plug-in SnapCenter VMware a été déployé.

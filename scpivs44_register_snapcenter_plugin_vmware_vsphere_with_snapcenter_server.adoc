@@ -64,4 +64,5 @@ NOTE: Vous devez sélectionner Linux pour le champ authentification.
 
 
 
+.Une fois que vous avez terminé
 Si les informations d'identification du plug-in SnapCenter pour VMware vSphere sont modifiées, vous devez mettre à jour l'enregistrement dans SnapCenter Server à l'aide de la page hôtes gérés SnapCenter.

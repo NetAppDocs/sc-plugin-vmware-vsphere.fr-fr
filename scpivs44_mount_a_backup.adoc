@@ -33,6 +33,7 @@ Assurez-vous que les initiateurs du système de stockage sont mappés à l'hyper
 
 
 
+.Description de la tâche
 Une opération de montage peut échouer si le niveau de stockage de la FabricPool où se trouve le datastore n'est pas disponible.
 
 .Étapes

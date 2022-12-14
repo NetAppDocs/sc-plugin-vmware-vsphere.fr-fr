@@ -34,6 +34,7 @@ Pour plus d'informations sur la manière dont les administrateurs attribuent des
 * Si vous souhaitez des sauvegardes cohérentes avec les machines virtuelles, VMware Tools doit être installé et en cours d'exécution. VMware Tools est nécessaire pour arrêter les machines virtuelles. Les sauvegardes cohérentes avec les machines virtuelles ne sont pas prises en charge pour les machines virtuelles vvol.
 
 
+.Description de la tâche
 La plupart des champs de ces pages de l'assistant sont explicites. Les informations suivantes décrivent certains des champs pour lesquels vous pouvez avoir besoin de conseils.
 
 .Étapes

@@ -55,10 +55,12 @@ TIP: Le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures pren
 
 IMPORTANT: N'ajoutez pas de VM inaccessibles. Bien qu'il soit possible de créer un groupe de ressources contenant des VM inaccessibles, les sauvegardes de ce groupe de ressources échoueront.
 
+.Avant de commencer
 Les outils ONTAP pour VMware doivent être déployés avant de créer un groupe de ressources contenant des machines virtuelles vvol.
 
 Pour plus d'informations, voir https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Outils ONTAP pour VMware vSphere"^].
 
+.Description de la tâche
 Vous pouvez à tout moment ajouter ou supprimer des ressources d'un groupe de ressources.
 
 * La sauvegarde d'une seule ressource
@@ -89,7 +91,7 @@ Bien qu'il soit possible de créer un groupe de ressources sans stratégie de sa
 SnapCenter vérifie la compatibilité lors de la création d'un groupe de ressources.
 
 +
- compatibility check failures
+<<Gérer les échecs de contrôle de compatibilité>>
 
 
 
@@ -168,10 +170,10 @@ Si vous souhaitez utiliser le format personnalisé des noms de copies Snapshot, 
 Lorsque vous cliquez sur *Suivant*, le système vérifie d'abord que SnapCenter gère et est compatible avec le stockage sur lequel les ressources sélectionnées sont situées.
 
 +
-Si le message s'affiche `Selected <resource-name> is not SnapCenter compatible` S'affiche. Une ressource sélectionnée n'est alors pas compatible avec SnapCenter. Voir  compatibility check failures pour en savoir plus.
+Si le message s'affiche `Selected <resource-name> is not SnapCenter compatible` S'affiche. Une ressource sélectionnée n'est alors pas compatible avec SnapCenter. Voir <<Gérer les échecs de contrôle de compatibilité>> pour en savoir plus.
 
 +
-Pour exclure globalement un ou plusieurs datastores des sauvegardes, vous devez spécifier le ou les noms de datastores dans le `global.ds.exclusion.pattern` propriété dans le `scbr.override` fichier de configuration. Voir #Properties you can override,Propriétés que vous pouvez remplacer.
+Pour exclure globalement un ou plusieurs datastores des sauvegardes, vous devez spécifier le ou les noms de datastores dans le `global.ds.exclusion.pattern` propriété dans le `scbr.override` fichier de configuration. Voir <<scpivs44_properties_you_can_override.adoc#Properties you can override,Propriétés que vous pouvez remplacer>>.
 
 . Sur la page *Spanning disks*, sélectionnez une option pour les machines virtuelles avec plusieurs VMDK sur plusieurs datastores :
 +

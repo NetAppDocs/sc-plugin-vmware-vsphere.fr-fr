@@ -40,6 +40,7 @@ L'adresse IP du plug-in SnapCenter pour VMware s'affiche lorsque vous déployez 
 . Si vous avez utilisé le plug-in SnapCenter VMware pour prendre en charge d'autres plug-ins SnapCenter pour des sauvegardes cohérentes avec les applications, connectez-vous à SnapCenter et supprimez l'hôte vSphere.
 
 
+.Une fois que vous avez terminé
 L'appliance virtuelle est toujours déployée, mais le plug-in SnapCenter VMware est supprimé.
 
 Après avoir supprimé la machine virtuelle hôte du plug-in SnapCenter VMware, le plug-in peut rester répertorié dans vCenter jusqu'à ce que le cache vCenter local soit actualisé. Cependant, le plug-in a été supprimé, aucune opération SnapCenter VMware vSphere ne peut être effectuée sur cet hôte. Si vous souhaitez actualiser le cache vCenter local, vérifiez d'abord que l'appliance est dans un état désactivé sur la page de configuration du plug-in SnapCenter VMware, puis redémarrez le service du client Web vCenter.

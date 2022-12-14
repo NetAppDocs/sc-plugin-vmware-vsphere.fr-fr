@@ -16,6 +16,7 @@ summary: Vous pouvez rapidement ajouter un seul serveur virtuel ou datastore à 
 [role="lead"]
 Vous pouvez rapidement ajouter un seul serveur virtuel ou datastore à tout groupe de ressources existant géré par le plug-in SnapCenter pour VMware vSphere.
 
+.Description de la tâche
 Vous pouvez ajouter des datastores SAN et NAS, mais pas des datastores VSAN ou VVOL.
 
 .Étapes

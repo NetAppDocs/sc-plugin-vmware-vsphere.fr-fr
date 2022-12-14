@@ -16,6 +16,7 @@ summary: 'Vous pouvez gérer vos configurations d"application, système et rése
 [role="lead"]
 Vous pouvez gérer vos configurations d'application, système et réseau à l'aide de la console de maintenance du plug-in SnapCenter pour VMware vSphere. Vous pouvez modifier votre mot de passe d'administrateur, le mot de passe de maintenance, générer des packs de support et lancer des diagnostics à distance.
 
+.Avant de commencer
 Avant d'arrêter et de redémarrer le plug-in SnapCenter pour le service VMware vSphere, vous devez interrompre l'ensemble des planifications.
 
 .Description de la tâche
