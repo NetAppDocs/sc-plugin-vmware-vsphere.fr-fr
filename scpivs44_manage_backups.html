@@ -1805,7 +1805,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-17 05:22:36 +0000">11/17/2022</time>
+    <time datetime="2022-12-14 18:04:50 +0000">12/14/2022</time>
     
   
 
@@ -1857,9 +1857,11 @@
 <p>Vous pouvez supprimer le plug-in SnapCenter pour sauvegardes VMware vSphere si vous ne souhaitez plus effectuer de sauvegarde pour d&#8217;autres opérations de protection des données. Vous pouvez supprimer une sauvegarde ou supprimer plusieurs sauvegardes simultanément.</p>
 </div>
 <div class="paragraph">
+<div class="title">Avant de commencer</div>
 <p>Vous ne pouvez pas supprimer les sauvegardes montées. Vous devez démonter une sauvegarde avant de la supprimer.</p>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Les copies Snapshot sur le stockage secondaire sont gérées par vos paramètres de conservation ONTAP, et non par le plug-in SnapCenter VMware. Par conséquent, lorsque vous utilisez le plug-in SnapCenter pour supprimer une sauvegarde, les copies Snapshot du stockage primaire sont supprimées, mais les copies Snapshot du stockage secondaire ne sont pas supprimées. Si une copie Snapshot existe toujours sur un système de stockage secondaire, le plug-in SnapCenter VMware conserve les métadonnées associées à la sauvegarde pour prendre en charge les demandes de restauration. Lorsque le processus de conservation ONTAP supprime la copie Snapshot secondaire, le plug-in SnapCenter VMware supprime les métadonnées à l&#8217;aide d&#8217;une tâche de suppression qui s&#8217;exécute à intervalles réguliers.</p>
 </div>
 <div class="olist arabic">
