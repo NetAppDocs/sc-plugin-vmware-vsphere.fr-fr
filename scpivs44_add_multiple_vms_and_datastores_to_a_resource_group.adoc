@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html 
 keywords:  
-summary: 'Vous pouvez ajouter plusieurs ressources à un groupe de ressources existant à l"aide de l"assistant de modification de groupe de ressources du client Web SnapCenter vSphere.' 
+summary: 'Vous pouvez ajouter plusieurs ressources à un groupe de ressources existant à l"aide de l"assistant de modification de groupe de ressources client SnapCenter vSphere.' 
 ---
 = Ajouter plusieurs machines virtuelles et datastores à un groupe de ressources
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Vous pouvez ajouter plusieurs ressources à un groupe de ressources ex
 
 
 [role="lead"]
-Vous pouvez ajouter plusieurs ressources à un groupe de ressources existant à l'aide de l'assistant de modification de groupe de ressources du client Web SnapCenter vSphere.
+Vous pouvez ajouter plusieurs ressources à un groupe de ressources existant à l'aide de l'assistant de modification de groupe de ressources client SnapCenter vSphere.
 
 Un groupe de ressources peut contenir l'un des éléments suivants :
 
@@ -30,7 +30,7 @@ Un groupe de ressources peut contenir l'un des éléments suivants :
 NOTE: Les machines virtuelles vvol réparties sur plusieurs datastores vvol ne sont pas prises en charge car SnapCenter sauvegarde uniquement les volumes vVvols dans le datastore primaire, sélectionné et vvol.
 
 .Étapes
-. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources, puis cliquez sur image:scpivs44_image39.png["Erreur : image graphique manquante"] *Modifier le groupe de ressources* pour démarrer l'assistant.
+. Dans le volet navigateur de gauche du module d'extension SCV, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources, puis cliquez sur image:scpivs44_image39.png["Erreur : image graphique manquante"] *Modifier le groupe de ressources* pour démarrer l'assistant.
 . Sur la page *Resource*, procédez comme suit :
 +
 .. Dans le champ datastores, accédez aux VM ou datastores que vous souhaitez ajouter.

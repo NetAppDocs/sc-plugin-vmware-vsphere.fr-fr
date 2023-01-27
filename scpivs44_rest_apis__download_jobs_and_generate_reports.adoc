@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_apis__download_jobs_and_generate_reports.html 
 keywords:  
-summary: 'Pour générer des rapports et télécharger les journaux des travaux du client Web VMware vSphere à l"aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez utiliser les appels de l"API REST pour VMware vSphere.' 
+summary: 'Pour générer des rapports et télécharger les journaux des tâches client VMware vSphere à l"aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez utiliser les appels d"API REST pour VMware vSphere.' 
 ---
 = API REST pour télécharger des travaux et générer des rapports
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Pour générer des rapports et télécharger les journaux des travaux 
 
 
 [role="lead"]
-Pour générer des rapports et télécharger les journaux des travaux du client Web VMware vSphere à l'aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez utiliser les appels de l'API REST pour VMware vSphere.
+Pour générer des rapports et télécharger les journaux des tâches client VMware vSphere à l'aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez utiliser les appels d'API REST pour VMware vSphere.
 
 Pour chaque API REST, ajoutez `https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
 

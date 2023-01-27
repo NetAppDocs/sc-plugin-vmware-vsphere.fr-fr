@@ -29,7 +29,7 @@ IMPORTANT: La fonction de restauration invité vous permet d'afficher et de rest
 
 .Étapes
 . Cliquez sur *Menu* et sélectionnez l'option de menu *hôtes et clusters*, puis sélectionnez une machine virtuelle, sélectionnez *NetApp SnapCenter*, puis cliquez sur *Restauration de fichiers invités*.
-. Dans le client Web VMware vSphere, cliquez sur *Guest File Restore* dans la liste déroulante secondaire pour démarrer l'assistant.
+. Dans le client VMware vSphere, cliquez sur *Guest File Restore* dans la liste déroulante secondaire pour démarrer l'assistant.
 . Sur la page *Restore Scope*, spécifiez la sauvegarde qui contient le disque virtuel que vous souhaitez associer en procédant comme suit :
 +
 .. Dans le tableau *Nom de la sauvegarde*, sélectionnez la sauvegarde qui contient le disque virtuel que vous souhaitez joindre.
@@ -69,7 +69,7 @@ Cette option est requise si vous souhaitez être averti à la fin de l'opératio
 TIP: Activez cette option, car la restauration d'un fichier invité est une opération asynchrone et une latence peut être nécessaire pour établir une session invité.
 
 +
-Cette option utilise les paramètres de messagerie configurés lors de la configuration du client Web VMware vSphere dans vCenter.
+Cette option utilise les paramètres de messagerie configurés lors de la configuration du client VMware vSphere dans vCenter.
 
 
 

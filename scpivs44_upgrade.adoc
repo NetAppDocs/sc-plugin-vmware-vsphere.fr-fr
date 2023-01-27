@@ -13,8 +13,10 @@ summary: 'Si vous utilisez le plug-in SnapCenter pour l"appliance virtuelle VMwa
 :imagesdir: ./media/
 
 
-[role="lead"]
-Si vous utilisez le plug-in SnapCenter pour l'appliance virtuelle VMware vSphere, vous pouvez effectuer la mise à niveau vers une version plus récente.
+
+NOTE: La mise à niveau vers le distributeur sélectif 4.8 n'est prise en charge que sur VMware vCenter Server 7 mise à jour 1 et versions ultérieures. Pour le serveur VMware vCenter antérieur à la mise à jour 1 version 7, vous devez continuer à utiliser le distributeur sélectif 4.7. La mise à niveau est perturbatrice sur des versions de serveur VMware vCenter non prises en charge.
+
+Si vous utilisez le plug-in SnapCenter pour l'appliance virtuelle VMware vSphere, vous pouvez effectuer la mise à niveau vers une version plus récente. Le processus de mise à niveau annule l'enregistrement du plug-in existant et déploie un plug-in compatible uniquement avec vSphere 7.0U1 et les versions ultérieures.
 
 Voir la link:scpivs44_release_notes.html["Notes de version du plug-in SnapCenter pour VMware vSphere"] pour plus d'informations sur les chemins de mise à niveau pris en charge.
 
@@ -41,7 +43,7 @@ NOTE: Le basculement de votre configuration réseau statique vers DHCP n'est pas
 . Installez la mise à niveau.
 +
 .. Dans votre navigateur, accédez à VMware vSphere vCenter.
-.. Dans l'interface graphique de vCenter, cliquez sur *vSphere Web client (HTML)*.
+.. Dans l'interface graphique de vCenter, cliquez sur *vSphere client (HTML)*.
 .. Connectez-vous à la page *Single Sign-on de VMware vCenter*.
 .. Dans le volet navigateur, cliquez sur la machine virtuelle à mettre à niveau, puis cliquez sur l'onglet *Résumé*.
 .. Dans le volet *Related Objects*, cliquez sur n'importe quel datastore dans la liste, puis cliquez sur l'onglet *Summary*.

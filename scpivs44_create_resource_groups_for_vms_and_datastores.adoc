@@ -58,7 +58,7 @@ IMPORTANT: N'ajoutez pas de VM inaccessibles. Bien qu'il soit possible de créer
 .Avant de commencer
 Les outils ONTAP pour VMware doivent être déployés avant de créer un groupe de ressources contenant des machines virtuelles vvol.
 
-Pour plus d'informations, voir https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Outils ONTAP pour VMware vSphere"^].
+Pour plus d'informations, voir https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Les outils ONTAP pour VMware vSphere"^].
 
 .Description de la tâche
 Vous pouvez à tout moment ajouter ou supprimer des ressources d'un groupe de ressources.
@@ -96,17 +96,12 @@ SnapCenter vérifie la compatibilité lors de la création d'un groupe de ressou
 
 
 .Étapes
-. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *groupes de ressources*, puis cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Créer* pour démarrer l'assistant.
-+
-image:scpivs44_image16.png["Erreur : image graphique manquante"]
+. Dans le volet navigateur de gauche du module d'extension SCV, cliquez sur *groupes de ressources*, puis cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Créer* pour démarrer l'assistant.
 
-+
+
 C'est la façon la plus simple de créer un groupe de ressources. Toutefois, vous pouvez également créer un groupe de ressources avec une ressource en effectuant l'une des opérations suivantes :
 
-+
-** Pour créer un groupe de ressources pour une machine virtuelle, cliquez sur *Menu* > *hôtes et clusters*, puis cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez SnapCenter NetApp, puis cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Créer un groupe de ressources*.
-** Pour créer un groupe de ressources pour un datastore, cliquez sur *Menu* > *hôtes et clusters*, puis cliquez avec le bouton droit de la souris sur un datastore, puis sélectionnez *NetApp SnapCenter*, puis cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Créer un groupe de ressources*.
-
++ ** pour créer un groupe de ressources pour une machine virtuelle, cliquez sur *Menu* > *hôtes et clusters*, puis cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez SnapCenter NetApp, puis cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Créer un groupe de ressources*. ** Pour créer un groupe de ressources pour un datastore, cliquez sur *Menu* > *hôtes et clusters*, puis cliquez avec le bouton droit de la souris sur un datastore, puis sélectionnez *NetApp SnapCenter*, puis cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Créer un groupe de ressources*.
 
 . Sur la page *Généralités et notification* de l'assistant, procédez comme suit :
 +
@@ -258,6 +253,6 @@ Pour corriger une erreur de compatibilité, procédez comme suit :
 
 . Vérifiez que la VM de stockage est exécutée.
 . Vérifier que le système de stockage sur lequel se trouvent les machines virtuelles a été ajouté au plug-in SnapCenter pour l'inventaire VMware vSphere.
-. Vérifier que la machine virtuelle de stockage est ajoutée à SnapCenter. Utilisez l'option Ajouter un système de stockage dans l'interface graphique du client Web VMware vSphere.
+. Vérifier que la machine virtuelle de stockage est ajoutée à SnapCenter. Utilisez l'option Ajouter un système de stockage dans l'interface utilisateur graphique du client VMware vSphere.
 . Si des machines virtuelles de type « Spanning » sont disponibles pour les VMDK sur les datastores NetApp et non NetApp, alors déplacez les VMDK vers les datastores NetApp.
 

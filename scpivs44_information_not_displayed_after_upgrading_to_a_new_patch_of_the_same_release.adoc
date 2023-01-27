@@ -26,17 +26,13 @@ Si le cache du plug-in n'est pas effacé, les travaux récents ne sont pas affic
 
 Le cache se trouve dans les emplacements suivants, en fonction du type de système d'exploitation du serveur :
 
-* VCenter Server pour Windows
-+
-`C:\ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenity\`
-
 * Appliance vCenter Server Linux
 +
 `/etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity/`
 
 * Windows
 +
-`%PROGRAMFILES%/VMware/vSphere Web Client/vc-packages/vsphere-client-serenity/`
+`%PROGRAMFILES%/VMware/vSphere client/vc-packages/vsphere-client-serenity/`
 
 
 
@@ -52,12 +48,12 @@ L'IP s'affiche lorsque vous déployez le plug-in SnapCenter VMware.
 +
 Le service de plug-in SnapCenter VMware est désactivé et l'extension n'est pas enregistrée dans vCenter.
 
-. Localisez le `vsphere-client-serenity` puis localisez le `com.netapp.scvm.webclient-<release-number>` et supprimez-le.
+. Localisez le `vsphere-client-serenity` puis localisez le `com.netapp.scv.client-<release-number>` et supprimez-le.
 +
 Le nom du dossier change pour chaque version.
 
 . Redémarrez vCenter Server.
-. Connectez-vous au client Web VMware vSphere.
+. Connectez-vous au client VMware vSphere.
 . Cliquez sur *Configuration* dans le volet de navigation de gauche, puis cliquez sur l'option Service dans la section *Détails du plug-in* pour activer le plug-in.
 +
 Le service du plug-in SnapCenter VMware est activé et l'extension est enregistrée dans vCenter.

@@ -1,6 +1,6 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere 4.7
+  name: SnapCenter Plug-in for VMware vSphere 4.8
   internal:
     pdf_enabled: true
   prod:
@@ -9,6 +9,9 @@ settings:
   versions:
   - name: Plug-in SnapCenter pour VMware vSphere
     url: "/sc-plugin-vmware-vsphere"
+    version-number: '4.8'
+  - name: Plug-in SnapCenter pour VMware vSphere
+    url: "/sc-plugin-vmware-vsphere-47"
     version-number: '4.7'
   - name: Plug-in SnapCenter pour VMware vSphere
     url: "/sc-plugin-vmware-vsphere-46"
@@ -19,7 +22,7 @@ settings:
   langs: fr-fr,us-en,ja-jp,zh-cn,zh-tw,ko-kr,de-de
 sidebar:
   entries:
-  - title: Documentation du plug-in SnapCenter pour VMware vSphere 4.7
+  - title: Documentation du plug-in SnapCenter pour VMware vSphere 4.8
     url: "/index.html"
   - title: Notes de mise à jour
     url: "/scpivs44_release_notes.html"
@@ -56,24 +59,23 @@ sidebar:
       entries:
       - title: Planification et exigences de déploiement
         url: "/scpivs44_deployment_planning_and_requirements.html"
-      - title: Privilèges minimum ONTAP requis
+      - title: Privilèges ONTAP requis
         url: "/scpivs44_minimum_ontap_privileges_required.html"
       - title: Privilèges vCenter minimum requis
         url: "/scpivs44_minimum_vcenter_privileges_required.html"
-    - title: Télécharger le plug-in SnapCenter pour VMware vSphere OVA (Appliance
-        virtuelle ouverte)
-      url: "/scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html"
+    - title: Télécharger Open Virtual Appliance(OVA)
+      url: "/scpivs44_download_the_ova_open_virtual_appliance.html"
     - title: Déployez le plug-in SnapCenter pour VMware vSphere
       url: "/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html"
     - title: Problèmes et opérations nécessaires après le déploiement
       url: "/scpivs44_post_deployment_required_operations_and_issues.html"
-    - title: Connectez-vous au client web VMware vSphere de SnapCenter
+    - title: Connectez-vous au client SnapCenter vSphere
       url: "/scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html"
   - title: Démarrage rapide
     entries:
     - title: Présentation
       url: "/scpivs44_quick_start_overview.html"
-    - title: Télécharger le fichier OVA (Open Virtual Appliance)
+    - title: Télécharger Open Virtual Appliance(OVA)
       url: "/scpivs44_download_the_ova_open_virtual_appliance.html"
     - title: Déployez le plug-in SnapCenter pour VMware vSphere
       url: "/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html"
@@ -98,6 +100,8 @@ sidebar:
       url: "/scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html"
     - title: Générez un bundle de support à partir de la console de maintenance
       url: "/scpivs44_generate_a_support_bundle_from_the_maintenance_console.html"
+    - title: Journaux d'audit
+      url: "/scv48_audit_logs.html"
   - title: Gérer le stockage
     entries:
     - title: Ajouter du stockage
@@ -156,6 +160,8 @@ sidebar:
       url: "/scpivs44_restore_the_most_recent_backup_of_the_mysql_database.html"
     - title: Restaurez une sauvegarde spécifique de la base de données MySQL
       url: "/scpivs44_restore_a_specific_backup_of_the_mysql_database.html"
+  - title: Attacher et détacher les VMDK
+    entries:
     - title: Attachement de VMDK à une machine virtuelle ou vvol
       url: "/scpivs44_attach_vmdks_to_a_vm.html"
     - title: Détachez un disque virtuel
@@ -177,7 +183,7 @@ sidebar:
       url: "/scpivs44_guest_file_restore_scenarios_you_might_encounter.html"
   - title: Gérez le plug-in SnapCenter pour l'appliance VMware vSphere
     entries:
-    - title: Redémarrez le service client Web VMware vSphere
+    - title: Redémarrez le service client VMware vSphere
       url: "/scpivs44_restart_the_vmware_vsphere_web_client_service.html"
     - title: Accéder à la console de maintenance
       url: "/scpivs44_access_the_maintenance_console.html"
@@ -239,6 +245,8 @@ sidebar:
       url: "/scpivs44_rest_api_workflows__modify_built-in_schedules.html"
     - title: L'API REST pour marquer les travaux bloqués comme ayant échoué
       url: "/scpivs44_rest_apis_fail_stuck_jobs.html"
+    - title: API REST pour générer des journaux d'audit
+      url: "/scpivs48_rest_apis_audit_logs.html"
   - title: Mise à niveau
     entries:
     - title: Mise à niveau à partir d'une version antérieure du plug-in SnapCenter
@@ -256,7 +264,7 @@ homepage:
   - title: Commencez
     links:
     - title: Notes de version
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883356
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885659
     - title: En savoir plus sur le distributeur sélectif
       url: "/scpivs44_concepts_overview.html"
     - title: De déploiement

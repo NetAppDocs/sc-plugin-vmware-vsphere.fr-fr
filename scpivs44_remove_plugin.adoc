@@ -28,15 +28,7 @@ L'adresse IP du plug-in SnapCenter pour VMware s'affiche lorsque vous déployez 
 
 . Cliquez sur *Configuration* dans le volet de navigation de gauche, puis désélectionnez l'option Service dans la section *Détails du plug-in* pour désactiver le plug-in.
 . Connectez-vous à VMware vSphere.
-. Dans l'écran de gauche du navigateur, cliquez avec le bouton droit de la souris sur l'instance du plug-in SnapCenter VMware (le nom du `.ova` Fichier utilisé lors du déploiement de l'appliance virtuelle) et sélectionnez *Supprimer du disque*.
-. Accédez à `/etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/com.netapp.scvm.webclient-4.5.0.5942045/plugins` Et supprimez manuellement les fichiers suivants dans le dossier d'enlèvement du serveur vCenter :
-+
-`vsc-httpclient3-security.jar`
-`scv-api-model.jar`
-`scvm_webui_service.jar`
-`scvm_webui_ui.war`
-`gson-2.5.jar`
-
+. Dans l'écran de gauche du navigateur, cliquez avec le bouton droit de la souris sur l'instance du plug-in SnapCenter VMware (le nom du `.tar` Fichier utilisé lors du déploiement de l'appliance virtuelle) et sélectionnez *Supprimer du disque*.
 . Si vous avez utilisé le plug-in SnapCenter VMware pour prendre en charge d'autres plug-ins SnapCenter pour des sauvegardes cohérentes avec les applications, connectez-vous à SnapCenter et supprimez l'hôte vSphere.
 
 

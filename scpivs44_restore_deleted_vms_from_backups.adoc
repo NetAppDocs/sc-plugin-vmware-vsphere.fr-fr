@@ -43,7 +43,7 @@ NOTE: Vous ne pouvez pas restaurer les machines virtuelles vvol vers un autre em
 NOTE: Lors de la restauration d'une machine virtuelle supprimée, toutes les balises ou tous les dossiers qui ont été attribués à l'origine à la machine virtuelle ne sont pas restaurés.
 
 .Avant de commencer
-* Le compte d'utilisateur du système de stockage, sur la page systèmes de stockage du client Web VMware vSphere, doit disposer du link:scpivs44_minimum_ontap_privileges_required.html["Privilèges minimum ONTAP requis pour ONTAP"].
+* Le compte d'utilisateur du système de stockage, sur la page Storage Systems du client VMware vSphere, doit disposer du link:scpivs44_minimum_ontap_privileges_required.html["Privilèges minimum ONTAP requis pour ONTAP"].
 * Le compte d'utilisateur dans vCenter doit avoir le link:scpivs44_minimum_vcenter_privileges_required.html["Minimum de privilèges vCenter requis pour le plug-in SnapCenter pour VMware vSphere"].
 * Une sauvegarde doit exister.
 +

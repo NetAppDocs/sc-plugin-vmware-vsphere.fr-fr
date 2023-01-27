@@ -1,0 +1,146 @@
+---
+sidebar: sidebar 
+permalink: scv48_audit_logs.html 
+keywords:  
+summary: 'Le journal d"audit assure la traçabilité des personnes qui ont fait quoi et quand. Le journal d"audit est un ensemble d"événements dans un ordre chronologique et il est écrit dans un fichier de l"appliance.' 
+---
+= Journaux d'audit
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le journal d'audit est un ensemble d'événements dans un ordre chronologique, qui est écrit dans un fichier de l'appliance. Les fichiers journaux d'audit sont générés à `/var/log/netapp/audit` l'emplacement et le nom des fichiers suivent l'une des conventions de dénomination ci-dessous :
+
+* Audit.log : fichier journal d'audit actif en cours d'utilisation.
+* Audit-%d{aaaa-MM-jj-HH-mm-ss}.log.gz : déployé sur le fichier journal d'audit. La date et l'heure du nom de fichier indiquent quand le fichier a été créé, par exemple : audit-2022-12-15-16-28-01.log.gz.
+
+
+Dans l'interface utilisateur du plug-in SCV, vous pouvez afficher et exporter les détails du journal d'audit à partir de l'onglet *Dashboard* > *Settings* > *Audit Logs*, vous pouvez afficher l'audit des opérations dans les journaux d'audit. Les journaux d'audit sont téléchargés avec le pack support.
+
+Si les paramètres de messagerie sont configurés, SCV envoie une notification par e-mail en cas d'échec de la vérification de l'intégrité du journal d'audit. Un échec de vérification de l'intégrité du journal d'audit peut se produire lorsque l'un des fichiers est altéré ou supprimé.
+
+Les configurations par défaut des fichiers d'audit sont les suivantes :
+
+* Le fichier journal d'audit utilisé peut atteindre un maximum de 10 Mo
+* Un maximum de 10 fichiers journaux d'audit sont conservés
+
+
+Pour modifier les configurations par défaut, ajoutez une paire de valeurs clés dans le fichier /opt/netapp/scvservice/autonome_AEGIS/etc/scbr/scbr.properties, puis redémarrez le service scvservice.
+
+Les configurations des fichiers journaux d'audit sont les suivantes :
+
+* AuditMaxROFiles=<xx>, où xx est le nombre maximum de fichiers journaux d'audit roulés, par exemple : auditMaxROFiles=15.
+* AuditLogSize=<XX>, où xx correspond à la taille du fichier en Mo, par exemple : auditLogSize=15 Mo.
+
+
+Les journaux sont régulièrement vérifiés pour leur intégrité. SCV fournit des API REST pour afficher les journaux et vérifier leur intégrité. Un planning intégré déclenche et attribue l'un des États d'intégrité suivants.
+
+|===
+
+
+| État | Description 
+
+
+| FALSIFIÉ | Le contenu du fichier journal d'audit est modifié 
+
+
+| NORMALE | Le fichier journal d'audit n'est pas modifié 
+
+
+| SUPPRIMER LE CURSEUR | * Le fichier journal d'audit est supprimé en fonction de la rétention * par défaut, seuls 10 fichiers sont conservés 
+
+
+| SUPPRESSION INATTENDUE | Le fichier journal d'audit est supprimé 
+
+
+| ACTIF | * Le fichier journal d'audit est en cours d'utilisation * uniquement applicable à audit.log 
+|===
+Les événements sont classés en trois catégories principales :
+
+* Événements de protection des données
+* Événements de la console de maintenance
+* Événements de la console d'administration
+
+
+
+
+== Événements de protection des données
+
+Les ressources du distributeur sélectif sont:
+
+* System de stockage
+* Groupe de ressources
+* Politique
+* Sauvegarde
+
+
+Le tableau suivant répertorie les opérations pouvant être effectuées sur chaque ressource :
+
+|===
+
+
+| Ressources | Exploitation 
+
+
+| System de stockage | Créé, modifié, supprimé 
+
+
+| Groupe de ressources | Créé, modifié, supprimé, suspendu, repris 
+
+
+| Politique | Créé, modifié, supprimé 
+
+
+| Sauvegarde | Créé, renommé, supprimé, monté, démonté, VMDK restauré, machine virtuelle restaurée, attacher un VMDK, détacher un VMDK, Restauration de fichiers invité 
+|===
+
+
+== Événements de la console de maintenance
+
+Les opérations administratives de la console de maintenance sont auditées. Les options de console de maintenance disponibles sont les suivantes :
+
+. Démarrer/Arrêter les services
+. Modifier le nom d'utilisateur et le mot de passe
+. Changer le mot de passe MySQL
+. Configurer la sauvegarde MySQL
+. Restaurez la sauvegarde MySQL
+. Modifier le mot de passe utilisateur « familiariser »
+. Modifier le fuseau horaire
+. Modifiez le serveur NTP
+. Désactiver l'accès SSH
+. Augmenter la taille des disques de prison
+. Mise à niveau
+. Installer VMware Tools (nous allons le remplacer par des outils de machines virtuelles ouvertes)
+. Modifier les paramètres d'adresse IP
+. Modifier les paramètres de recherche du nom de domaine
+. Modifier les routes statiques
+. Accéder au shell de diagnostic
+. Activer l'accès aux diagnostics à distance
+
+
+
+
+== Événements de la console d'administration
+
+Les opérations suivantes dans l'interface utilisateur de la console d'administration sont auditées :
+
+* Paramètres
++
+** Modifiez les informations d'identification administrateur
+** Modifier le fuseau horaire
+** Modifiez le serveur NTP
+** Modifiez les paramètres IPv4 / IPv6
+
+
+* Configuration
++
+** Modifiez les informations d'identification vCenter
+** Activation/désactivation du plug-in
+
+
+

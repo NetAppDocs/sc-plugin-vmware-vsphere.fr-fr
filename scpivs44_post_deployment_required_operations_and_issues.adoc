@@ -42,10 +42,7 @@ Pour corriger l'un de ces problèmes, procédez comme suit :
 
 . Effacez le cache du navigateur, puis vérifiez si l'interface graphique fonctionne correctement.
 +
-Si le problème persiste, redémarrez le service client Web VMware vSphere
-
-+
-image:scpivs44_image5.png["Erreur : image graphique manquante"]
+Si le problème persiste, redémarrez le service client VMware vSphere
 
 . Connectez-vous à vCenter, puis cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *Plug-in SnapCenter pour VMware vSphere*.
 

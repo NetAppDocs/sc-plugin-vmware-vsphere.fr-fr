@@ -22,7 +22,7 @@ Pour chaque API REST, ajoutez `https://<server>:<port>` Au niveau de l'API REST,
 | Étape | API REST | Commentaires 
 
 
-| 1 | `/4.1/resource-groups` | `Get List of Resource Groups` Obtient la liste des groupes de ressources du client Web VMware vSphere. Notez les *resourceGroupId* et *politiId* du groupe de ressources à sauvegarder. 
+| 1 | `/4.1/resource-groups` | `Get List of Resource Groups` Obtient la liste des groupes de ressources client VMware vSphere. Notez les *resourceGroupId* et *politiId* du groupe de ressources à sauvegarder. 
 
 
 | 2 | `/4.1/resource-groups/backupnow` | `Run a backup on a Resource Group` sauvegarde le groupe de ressources à la demande. Passer le *resourceGroupeId* et le *politiId* de l'étape 1. 

@@ -31,18 +31,15 @@ Pour plus d'informations sur la manière dont les administrateurs attribuent des
 
 
 
-* Si vous souhaitez des sauvegardes cohérentes avec les machines virtuelles, VMware Tools doit être installé et en cours d'exécution. VMware Tools est nécessaire pour arrêter les machines virtuelles. Les sauvegardes cohérentes avec les machines virtuelles ne sont pas prises en charge pour les machines virtuelles vvol.
+* Si vous souhaitez des sauvegardes cohérentes avec les machines virtuelles, vous devez avoir installé et en cours d'exécution les outils VMware. Les outils VMware sont nécessaires pour arrêter les machines virtuelles. Les sauvegardes cohérentes avec les machines virtuelles ne sont pas prises en charge pour les machines virtuelles vvol.
 
 
 .Description de la tâche
 La plupart des champs de ces pages de l'assistant sont explicites. Les informations suivantes décrivent certains des champs pour lesquels vous pouvez avoir besoin de conseils.
 
 .Étapes
-. Dans le volet navigateur de gauche du client Web VMware vSphere, cliquez sur *Policies*.
+. Dans le volet gauche du module d'extension SCV, cliquez sur *Policies*.
 . Sur la page *Policies*, cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Créer* pour démarrer l'assistant.
-+
-image:scpivs44_image15.png["Erreur : image graphique manquante"]
-
 . Sur la page *Nouvelle stratégie de sauvegarde*, sélectionnez le serveur vCenter qui utilisera la stratégie, puis entrez le nom de la stratégie et une description.
 +
 ** Mode lié
@@ -115,7 +112,7 @@ Cochez cette case pour arrêter les machines virtuelles et créer un snapshot VM
 Cette option n'est pas prise en charge pour vVvols. Pour les machines virtuelles vvol, seules des sauvegardes cohérentes avec les défaillances sont effectuées.
 
 
-IMPORTANT: Vous devez exécuter VMware Tools sur la machine virtuelle pour réaliser des sauvegardes cohérentes. Si VMware Tools n'est pas en cours d'exécution, une sauvegarde cohérente après panne est effectuée à la place.
+IMPORTANT: Vous devez disposer des outils VMware s'exécutant sur la machine virtuelle pour réaliser des sauvegardes cohérentes. Si VMware Tools n'est pas en cours d'exécution, une sauvegarde cohérente après panne est effectuée à la place.
 
 
 NOTE: Lorsque vous cochez la case de cohérence de la machine virtuelle, les opérations de sauvegarde peuvent prendre plus de temps et exiger plus d'espace de stockage. Dans ce scénario, les serveurs virtuels sont d'abord suspendus, puis VMware réalise un snapshot cohérent à une machine virtuelle. SnapCenter exécute alors son opération de sauvegarde, puis reprend les opérations liées aux serveurs virtuels. La mémoire invité de la machine virtuelle n'est pas incluse dans les snapshots de cohérence des machines virtuelles.

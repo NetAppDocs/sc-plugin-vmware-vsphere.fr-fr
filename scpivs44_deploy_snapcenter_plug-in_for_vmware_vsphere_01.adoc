@@ -18,7 +18,7 @@ summary:
 
 NOTE: Pour les clients web HTML IPv6, vous devez utiliser Chrome ou Firefox.
 
-. Sur l'écran VMware, cliquez sur *vSphere Web client (HTML5)*, puis connectez-vous à la page *VMware vCenter Single Sign-on page*.
+. Connectez-vous à la page d'ouverture de session unique *VMware vCenter*.
 . Cliquez avec le bouton droit de la souris sur un objet d'inventaire qui est un objet parent valide d'une machine virtuelle, tel qu'un centre de données, un dossier, un cluster ou un hôte, puis sélectionnez *déployer modèle OVF* pour démarrer l'assistant.
 . Sur la page *Sélectionner un modèle OVF*, indiquez l'emplacement du `.ova` (Comme indiqué dans le tableau suivant) et cliquez sur *Suivant*.
 +
@@ -73,7 +73,7 @@ L'écran affiche l'adresse IP à laquelle le plug-in SnapCenter VMware est dépl
 Utiliser le format `https://<appliance-IP-address>:8080` Pour accéder à l'interface graphique de gestion.
 
 +
-Par défaut, le nom d’utilisateur de la console de maintenance est défini sur “maint” et le mot de passe est défini sur “admin123”.
+Le nom d'utilisateur de la console de maintenance est défini sur `maint` par défaut, vous pouvez définir un mot de passe au moment de l'installation.
 
 . Connectez-vous au client HTML5 vCenter, puis cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *Plug-in SnapCenter pour VMware vSphere*
 

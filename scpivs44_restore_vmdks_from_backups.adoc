@@ -39,7 +39,7 @@ La machine virtuelle à restaurer ne doit pas être dans un état vMotion ou Sto
 
 
 .Étapes
-. Dans l'interface utilisateur graphique du client Web VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
+. Dans l'interface utilisateur graphique du client VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
 . Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *NetApp SnapCenter* dans la liste déroulante, puis sélectionnez *Restaurer* dans la liste déroulante secondaire.
 . Dans l'assistant *Restaurer*, sur la page Sélectionner une sauvegarde, sélectionnez la copie de sauvegarde à partir de laquelle vous souhaitez effectuer la restauration.
 +

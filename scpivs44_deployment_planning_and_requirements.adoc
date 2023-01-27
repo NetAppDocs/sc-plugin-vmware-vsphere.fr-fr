@@ -22,10 +22,7 @@ Il est important de connaître les conditions de déploiement requises avant de 
 
 Avant de commencer le déploiement du plug-in SnapCenter pour VMware vSphere, vous devez connaître les exigences de l'hôte.
 
-* Vous devez déployer le plug-in SnapCenter VMware en tant que VM Linux.
-+
-Le plug-in SnapCenter pour VMware est déployé en tant que machine virtuelle Linux, que vous utilisiez le plug-in pour protéger les données sur des systèmes Windows ou Linux.
-
+* Le plug-in SnapCenter pour VMware est déployé en tant que machine virtuelle Linux, que vous utilisiez le plug-in pour protéger les données sur des systèmes Windows ou Linux.
 * Vous devez déployer le plug-in SnapCenter VMware sur vCenter Server.
 +
 Les planifications de sauvegarde sont exécutées sur le fuseau horaire dans lequel le plug-in SnapCenter VMware est déployé. VCenter rapporte les données du fuseau horaire dans lequel se trouve le vCenter. Par conséquent, si le plug-in SnapCenter VMware et vCenter se trouvent dans différents fuseaux horaires, les données du plug-in SnapCenter VMware peuvent être différentes des données des rapports.
@@ -43,9 +40,9 @@ Par exemple, si vous souhaitez effectuer des sauvegardes à partir de six instan
 
 
 
-* Pour protéger les machines virtuelles vvol (ordinateurs virtuels sur les datastores VMware vvol), vous devez d'abord déployer les outils ONTAP pour VMware vSphere. ONTAP Tools provisionne et configure le stockage pour vVvols sur ONTAP et sur le client web VMware.
+* Pour protéger les machines virtuelles vvol (ordinateurs virtuels sur les datastores VMware vvol), vous devez d'abord déployer les outils ONTAP pour VMware vSphere. Les outils ONTAP provisionne et configurent le stockage pour vVvols sur ONTAP et sur le client web VMware.
 +
-Pour plus d'informations, voir https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Outils ONTAP pour VMware vSphere"^]
+Pour plus d'informations, voir https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Les outils ONTAP pour VMware vSphere"^]
 
 +
 Pour obtenir les dernières informations sur les versions prises en charge des outils ONTAP, reportez-vous au https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^].
@@ -110,10 +107,10 @@ Restauration d'une machine virtuelle complète lorsqu'un ou plusieurs VMDK se tr
 | Élément | Versions prises en charge 
 
 
-| VCenter vSphere | Client HTML5 : 6.5U2/U3, 6.7X, 7.0, 7.0U1, 7.0U2, 7,0U3 Flex client n'est pas pris en charge. 
+| VCenter vSphere | 7.0U1 et ultérieure 
 
 
-| VMware ESXi | 6.5U2 et versions ultérieures 
+| VMware ESXi | 7.0U1 et ultérieure 
 
 
 | Adresses IP | IPv4, IPv6 
@@ -163,7 +160,7 @@ Pour obtenir les dernières informations sur les versions prises en charge, repo
 
 
 | Plug-in SnapCenter pour port VMware vSphere  a| 
-8144 (HTTPS), bidirectionnel le port est utilisé pour les communications à partir du client web VMware vSphere et du serveur SnapCenter. 8080 bidirectionnel ce port est utilisé pour gérer l'appliance virtuelle.
+8144 (HTTPS), bidirectionnel le port est utilisé pour les communications à partir du client VMware vSphere et du serveur SnapCenter. 8080 bidirectionnel ce port est utilisé pour gérer l'appliance virtuelle.
 
 Remarque : vous ne pouvez pas modifier la configuration des ports.
 

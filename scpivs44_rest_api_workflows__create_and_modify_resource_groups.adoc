@@ -24,7 +24,7 @@ Pour créer des groupes de ressources, suivez ce flux de travail :
 | Étape | API REST | Commentaires 
 
 
-| 1 | `/4.1/policies` | `Get Policies` Obtient la liste des stratégies de client Web VMware vSphere. Notez la *politiqueId* que vous souhaitez utiliser lors de la création du groupe de ressources et de la règle *fréquence*. Si aucune stratégie n'est répertoriée, utilisez le `Create Policy` API REST pour créer une nouvelle règle. 
+| 1 | `/4.1/policies` | `Get Policies` Obtient la liste des règles du client VMware vSphere. Notez la *politiqueId* que vous souhaitez utiliser lors de la création du groupe de ressources et de la règle *fréquence*. Si aucune stratégie n'est répertoriée, utilisez le `Create Policy` API REST pour créer une nouvelle règle. 
 
 
 | 2 | `/4.1/resource-groups` | `Create a Resource Group` crée un groupe de ressources avec la règle spécifiée. Passez la *politiqueId* de l'étape 1 et entrez les détails de la police *fréquence* en plus de tous les autres attributs requis. 
@@ -35,10 +35,10 @@ Pour modifier des groupes de ressources, suivez ce flux de travail :
 | Étape | API REST | Commentaires 
 
 
-| 1 | `/4.1/resource-groups` | `Get List of Resource Groups` Obtient la liste des groupes de ressources du client Web VMware vSphere. Notez le *resourceGroupId* que vous souhaitez modifier. 
+| 1 | `/4.1/resource-groups` | `Get List of Resource Groups` Obtient la liste des groupes de ressources client VMware vSphere. Notez le *resourceGroupId* que vous souhaitez modifier. 
 
 
-| 2 | `/4.1/policies` | Si vous souhaitez modifier les règles attribuées, `Get Policies` Obtient la liste des stratégies de client Web VMware vSphere. Notez la *politiqueId* que vous souhaitez utiliser lors de la modification du groupe de ressources et de la règle *fréquence*. 
+| 2 | `/4.1/policies` | Si vous souhaitez modifier les règles attribuées, `Get Policies` Obtient la liste des règles du client VMware vSphere. Notez la *politiqueId* que vous souhaitez utiliser lors de la modification du groupe de ressources et de la règle *fréquence*. 
 
 
 | 3 | `/4.1/resource-groups/

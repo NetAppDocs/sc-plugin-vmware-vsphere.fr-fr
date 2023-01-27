@@ -37,7 +37,7 @@ Assurez-vous que les initiateurs du système de stockage sont mappés à l'hyper
 Une opération de montage peut échouer si le niveau de stockage de la FabricPool où se trouve le datastore n'est pas disponible.
 
 .Étapes
-. Dans le client Web VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *Storage* dans la liste déroulante.
+. Dans le client VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *Storage* dans la liste déroulante.
 . Cliquez avec le bouton droit de la souris sur un datastore et sélectionnez *NetApp SnapCenter* dans la liste déroulante, puis sélectionnez *Mount Backup* dans la liste déroulante secondaire.
 . Sur la page *Mount datastore*, sélectionnez une sauvegarde et un emplacement de sauvegarde (principal ou secondaire), puis cliquez sur *Finish*.
 . Facultatif : pour vérifier que le datastore est monté, effectuez les opérations suivantes :

@@ -52,7 +52,7 @@ Restaurez les fichiers ou dossiers sélectionnés à un emplacement spécifié.
 
 Avant de restaurer un ou plusieurs fichiers ou dossiers à partir d'un VMDK sur un système d'exploitation invité Windows, vous devez connaître toutes les exigences.
 
-* VMware Tools doit être installé et exécuté.
+* Les outils VMware doivent être installés et en cours d'exécution.
 +
 SnapCenter utilise les informations des outils VMware pour établir une connexion avec le système d'exploitation invité VMware.
 

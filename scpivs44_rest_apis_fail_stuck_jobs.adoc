@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_apis_fail_stuck_jobs.html 
 keywords:  
-summary: 'Pour rechercher les ID de tâche des travaux de client Web VMware vSphere à l"aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez utiliser les appels d"API REST pour VMware vSphere.' 
+summary: 'Pour rechercher les identifiants de travail des travaux des clients VMware vSphere à l"aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez utiliser les appels de l"API REST pour VMware vSphere.' 
 ---
 = L'API REST pour marquer les travaux bloqués comme ayant échoué
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Pour rechercher les ID de tâche des travaux de client Web VMware vSph
 
 
 [role="lead"]
-Pour rechercher les ID de tâche des travaux de client Web VMware vSphere à l'aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez utiliser les appels d'API REST pour VMware vSphere. Ces API REST ont été ajoutées au plug-in SnapCenter pour VMware vSphere 4.4.
+Pour rechercher les identifiants de travail des travaux des clients VMware vSphere à l'aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez utiliser les appels de l'API REST pour VMware vSphere. Ces API REST ont été ajoutées au plug-in SnapCenter pour VMware vSphere 4.4.
 
 Pour chaque API REST, ajoutez `https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
 

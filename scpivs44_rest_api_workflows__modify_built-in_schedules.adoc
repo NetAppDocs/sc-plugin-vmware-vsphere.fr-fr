@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__modify_built-in_schedules.html 
 keywords:  
-summary: 'Pour modifier les planifications intégrées pour les tâches client Web VMware vSphere à l"aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez suivre la séquence prescrite d"appels de l"API REST.' 
+summary: 'Pour modifier les planifications intégrées des tâches client VMware vSphere à l"aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez suivre la séquence prescrite d"appels de l"API REST.' 
 ---
 = Workflow d'API REST pour modifier les plannings intégrés
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Pour modifier les planifications intégrées pour les tâches client W
 
 
 [role="lead"]
-Pour modifier les planifications intégrées pour les tâches client Web VMware vSphere à l'aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez suivre la séquence prescrite d'appels de l'API REST.
+Pour modifier les planifications intégrées des tâches client VMware vSphere à l'aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez suivre la séquence prescrite d'appels de l'API REST.
 
 Les planifications intégrées sont les planifications fournies dans le cadre du produit ; par exemple, le planning de vidage de la base de données MySQL. Vous pouvez modifier les plannings suivants :
 `Schedule-DatabaseDump`

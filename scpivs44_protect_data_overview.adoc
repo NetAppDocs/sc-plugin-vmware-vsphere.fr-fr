@@ -14,7 +14,7 @@ summary: Toutes les opérations de sauvegarde sont effectuées sur des groupes d
 
 
 [role="lead"]
-Utilisez le client web SnapCenter vSphere pour effectuer des opérations de protection des données pour les machines virtuelles, les VMDK et les datastores. Toutes les opérations de sauvegarde sont effectuées sur des groupes de ressources qui peuvent contenir une ou plusieurs machines virtuelles et datastores. Vous pouvez effectuer des sauvegardes à la demande ou selon un planning de protection défini.
+Utilisez le client SnapCenter vSphere pour effectuer des opérations de protection des données pour les machines virtuelles, les disques VMDK et les datastores. Toutes les opérations de sauvegarde sont effectuées sur des groupes de ressources qui peuvent contenir une ou plusieurs machines virtuelles et datastores. Vous pouvez effectuer des sauvegardes à la demande ou selon un planning de protection défini.
 
 Lorsque vous sauvegardez un datastore, vous sauvegardez toutes les machines virtuelles de ce datastore.
 

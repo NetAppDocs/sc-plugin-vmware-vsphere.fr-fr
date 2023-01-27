@@ -50,8 +50,11 @@ Tous les plug-ins SnapCenter requièrent les privilèges minimaux suivants :
 | Commandes en lecture seule : privilèges minimum requis pour ONTAP 8.3 et versions ultérieures 
 
 
-| un vserver 
+| pairs vserver 
 |===
+
+NOTE: Vous pouvez ignorer les messages d'avertissement concernant les commandes vserver non prises en charge.
+
 
 
 == Autres informations sur ONTAP

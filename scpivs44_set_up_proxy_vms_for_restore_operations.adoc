@@ -17,7 +17,7 @@ summary: 'Si vous souhaitez utiliser une machine virtuelle proxy pour connecter 
 Si vous souhaitez utiliser une machine virtuelle proxy pour connecter un disque virtuel aux opérations de restauration de fichiers invités, vous devez configurer la machine virtuelle proxy avant de commencer l'opération de restauration. Bien que vous puissiez configurer une machine virtuelle proxy à tout moment, il peut être plus pratique de la configurer immédiatement une fois le déploiement du plug-in terminé.
 
 .Étapes
-. Dans le client Web VMware vSphere, cliquez sur *Restauration de fichiers invités*.
+. Dans le client VMware vSphere, cliquez sur *Restauration de fichiers invité*.
 . Dans la section *Exécuter en tant qu'informations d'identification*, effectuez l'une des opérations suivantes :
 +
 |===

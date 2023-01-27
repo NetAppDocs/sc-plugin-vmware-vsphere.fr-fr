@@ -20,5 +20,5 @@ Vous devez annuler l'enregistrement manuel des extensions du plug-in SnapCenter 
 .Étapes
 . Sur le serveur vCenter lié où le service de plug-in SnapCenter VMware est arrêté, accédez au gestionnaire MOB (Managed Object Reference).
 . Dans l'option Propriétés, sélectionnez *content* dans la colonne valeur, puis, dans l'écran suivant, sélectionnez *ExtensionManager* dans la colonne valeur pour afficher la liste des extensions enregistrées.
-. Annuler l'enregistrement des extensions `com.netapp.scvm.webclient` et `com.netapp.aegis`.
+. Annuler l'enregistrement des extensions `com.netapp.scv.client` et `com.netapp.aegis`.
 
