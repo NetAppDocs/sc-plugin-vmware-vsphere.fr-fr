@@ -11,9 +11,13 @@ summary: 'Le plug-in SnapCenter pour VMware vSphere est une appliance virtuelle 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:firstname: [.lead]
+:author: [.lead]
+:authorinitials: [
+:authors: [.lead]
+:revnumber: 
+:revdate: and supports data protection services for SnapCenter application-based plug-ins. This document describes how to deploy and use SnapCenter Plug-in for VMware vSphere and includes quick start information.
 
-
-Le plug-in SnapCenter pour VMware vSphere est une appliance virtuelle autonome (format Appliance virtuelle ouverte) qui offre des services de protection des données pour les machines virtuelles et les datastores, et prend en charge les services de protection des données pour les plug-ins applicatifs SnapCenter. Ce document explique comment déployer et utiliser le plug-in SnapCenter pour VMware vSphere. Il contient des informations de démarrage rapide.
 
 Le plug-in SnapCenter pour VMware vSphere est déployé en tant que dispositif virtuel basé sur Linux.
 
@@ -65,7 +69,7 @@ Bien que l'appliance virtuelle doive être installée en tant que machine virtue
 
 Outre ces fonctionnalités majeures, le plug-in SnapCenter pour VMware vSphere prend également en charge iSCSI, Fibre Channel, FCoE, VMDK sur NFS 3.0 et 4.1, et VMDK sur VMFS 5.0 et 6.0.
 
-Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=105164;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^] (IMT).
+Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^] (IMT).
 
 Pour plus d'informations sur les protocoles NFS et ESXi, consultez la documentation vSphere Storage fournie par VMware.
 

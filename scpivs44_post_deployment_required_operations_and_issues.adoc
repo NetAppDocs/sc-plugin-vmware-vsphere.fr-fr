@@ -13,9 +13,8 @@ summary: 'Une fois le plug-in SnapCenter déployé pour VMware vSphere, vous dev
 :imagesdir: ./media/
 
 
-
-
-== Opérations requises après le déploiement
+[role="lead"]
+Une fois le plug-in SnapCenter déployé pour VMware vSphere, vous devez terminer l'installation. == opérations requises après le déploiement
 
 Si vous êtes un nouvel utilisateur SnapCenter, vous devez ajouter des machines virtuelles de stockage à SnapCenter avant d'effectuer toute opération de protection des données. Lorsque vous ajoutez des VM de stockage, spécifiez la LIF de gestion. Vous pouvez également ajouter un cluster et spécifier la LIF de gestion du cluster. Pour plus d'informations sur l'ajout de stockage, reportez-vous à la section link:scpivs44_add_storage_01.html["Ajouter du stockage"^].
 

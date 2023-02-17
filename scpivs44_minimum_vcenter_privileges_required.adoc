@@ -26,4 +26,41 @@ System.Anonyme System.View System.Read datastore.Renommer datastore.Move datasto
 
 == Privilèges requis spécifiques au plug-in SnapCenter pour VMware vCenter
 
-NetappSCV.Guest.RestoreFile netappSCV.Recovery.MountundenetappSCV.Backup.DeleteBackupJob SCV.Configure.ConfigStorageSystems.Delete SCV.View SCV.Recovery.netappVM.netapp.netapp-fr.netapp-fr.netapp-fr.netapp-fr.netapp.com.Add.netapp.com.Backup.Backup.BackupVSCV.Guest.BackupSand.BackupSand.ConfigurationundeVSCV.ConfigurationundeVSCV.ConfigurationundeNetApp.Programmeest.Configurationdeaccès
+|===
+
+
+| *Privilèges* | *Étiquette* 
+
+
+| Fichier de restauration.netappSCV.Guest | Restauration de fichiers invités 
+
+
+| Montage du distributeur auxiliaire à récupération.netappDist | Monter/démonter 
+
+
+| NetappSCV.Backup.DeleteBackupJob | Supprimer le groupe de ressources/sauvegarde 
+
+
+| NetappSCV.Configure.ConfigenceStorageSystems.Delete | Supprimer les systèmes de stockage 
+
+
+| Vue du distributeur sélectif de NetApp | Afficher 
+
+
+| NetappSCV.Recovery.Recovery VM | Restaurer la machine virtuelle 
+
+
+| NetappSCV.Configure.ConfigureStorageSystems.AddUpdate | Ajouter/Modifier des systèmes de stockage 
+
+
+| NetappSCV.Backup.BackupNow | Sauvegarder maintenant 
+
+
+| NetappSCV.invité.configurer | Configuration invité 
+
+
+| NetappSCV.Configure.ConfigtureSnapCenterServer | Configurez SnapCenter Server 
+
+
+| Programmée pour le distributeur sélectif de NetApp. Sauvegarde | Créer un groupe de ressources 
+|===

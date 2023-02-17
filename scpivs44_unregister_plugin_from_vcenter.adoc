@@ -13,6 +13,7 @@ summary: 'Si vous arrêtez le service du plug-in SnapCenter VMware dans un vCent
 :imagesdir: ./media/
 
 
+[role="lead"]
 Si vous arrêtez le service du plug-in SnapCenter VMware dans un vCenter en mode lié, les groupes de ressources ne sont pas disponibles dans tous les vCenters liés, même lorsque le service du plug-in SnapCenter VMware s'exécute dans les autres vCenters liés.
 
 Vous devez annuler l'enregistrement manuel des extensions du plug-in SnapCenter VMware.

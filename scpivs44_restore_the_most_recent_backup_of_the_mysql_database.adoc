@@ -23,7 +23,7 @@ link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#access-the-maint
 
 . Dans le menu principal, entrez l'option *1) Configuration de l'application*.
 . Dans le menu Configuration de l'application, saisissez l'option *6) sauvegarde et restauration MySQL*.
-. Dans le menu de configuration de sauvegarde et de restauration MySQL, entrez l'option *3) Restaurer la sauvegarde MySQL*.
+. Dans le menu de configuration de sauvegarde et de restauration MySQL, entrez l'option *4) Restaurer la sauvegarde MySQL*.
 . À l’invite “Restaurer à l’aide de la sauvegarde la plus récente”, entrez *y*, puis appuyez sur *entrée*.
 +
 La base de données MySQL de sauvegarde est restaurée à son emplacement d'origine.

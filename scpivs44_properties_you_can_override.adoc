@@ -13,6 +13,9 @@ summary: 'Vous pouvez utiliser les propriétés répertoriées dans le `scbr.ove
 :imagesdir: ./media/
 
 
+[role="lead"]
+Vous pouvez utiliser les propriétés répertoriées dans le `scbr.override` fichier de configuration pour modifier les valeurs par défaut.
+
 * Par défaut, le modèle utilise le symbole de hachage pour commenter les propriétés de configuration. Pour utiliser une propriété pour modifier une valeur de configuration, vous devez supprimer `#` caractères.
 * Vous devez redémarrer le service sur l'hôte du plug-in SnapCenter pour VMware vSphere pour que les modifications soient appliquées.
 

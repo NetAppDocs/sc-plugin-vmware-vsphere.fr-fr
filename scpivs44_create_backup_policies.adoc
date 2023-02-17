@@ -13,6 +13,9 @@ summary:
 :imagesdir: ./media/
 
 
+[role="lead"]
+Suivez les instructions ci-dessous pour créer des politiques de sauvegarde
+
 . Dans le volet gauche du module d'extension SCV, cliquez sur *Policies*, puis cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Nouvelle politique*.
 . Sur la page *Nouvelle stratégie de sauvegarde*, entrez les informations de configuration de la stratégie, puis cliquez sur *Ajouter*.
 +

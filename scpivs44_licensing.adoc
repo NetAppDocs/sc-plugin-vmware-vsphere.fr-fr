@@ -13,6 +13,7 @@ summary: Cette section fournit des informations sur les licences du plug-in Snap
 :imagesdir: ./media/
 
 
+[role="lead"]
 Le plug-in SnapCenter pour VMware vSphere est gratuit si vous utilisez les systèmes de stockage suivants :
 
 * FAS

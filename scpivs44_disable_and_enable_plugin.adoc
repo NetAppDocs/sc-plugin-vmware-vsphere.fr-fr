@@ -13,6 +13,7 @@ summary: 'Si vous n"avez plus besoin des fonctionnalités de protection des donn
 :imagesdir: ./media/
 
 
+[role="lead"]
 Si vous n'avez plus besoin des fonctionnalités de protection des données SnapCenter, vous devez modifier la configuration du plug-in SnapCenter pour VMware. Par exemple, si vous avez déployé le plug-in dans un environnement de test, vous devrez peut-être désactiver les fonctionnalités SnapCenter de cet environnement et les activer dans un environnement de production.
 
 .Avant de commencer

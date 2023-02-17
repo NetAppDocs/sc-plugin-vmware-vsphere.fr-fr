@@ -13,6 +13,7 @@ summary: Lorsque le plug-in SnapCenter VMware est déployé, SSH est désactivé
 :imagesdir: ./media/
 
 
+[role="lead"]
 Lorsque le plug-in SnapCenter VMware est déployé, SSH est désactivé par défaut.
 
 .Étapes

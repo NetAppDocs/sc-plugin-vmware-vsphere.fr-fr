@@ -50,19 +50,19 @@ image:scpivs44_image11.png["Erreur : image graphique manquante"]
 +
 ** Option 1 : Configuration de l'application
 +
-Démarrage ou arrêt du service de plug-in SnapCenter VMware changer le nom d'utilisateur ou le mot de passe changer le mot de passe MySQL configurer la liste de sauvegarde MySQL Restaurer la sauvegarde MySQL
+1) Afficher le plug-in SnapCenter pour VMware vSphere résumé 2) Démarrer le plug-in SnapCenter pour VMware vSphere services 3) Arrêter le plug-in SnapCenter pour VMware vSphere services 4) Modifier le nom d'utilisateur et le mot de passe pour se connecter le plug-in SnapCenter pour VMware vSphere UI 5) changer le mot de passe MySQL 6) sauvegarde et restauration MySQL
 
 ** Option 2 : configuration du système
 +
-Redémarrage ou arrêt de la machine virtuelle Modifier le mot de passe utilisateur Modifier le fuseau horaire Modifier le serveur NTP Activer/Désactiver l'accès SSH augmenter la taille du disque de prison (/jail) mise à niveau installer VMware Tools
+1) redémarrer la machine virtuelle 2) Arrêter la machine virtuelle 3) changer le mot de passe utilisateur 4) changer le fuseau horaire 5) changer le serveur NTP 6) Désactiver l'accès SSH 7) augmenter la taille du disque jail (/jail) 8) mise à niveau 9) installer VMware Tools
 
 ** Option 3 : configuration réseau
 +
-Afficher ou modifier les paramètres d'adresse IP Afficher ou modifier les paramètres de recherche de nom de domaine Afficher ou modifier les routes statiques valider les changements Ping a host
+1) Afficher les paramètres d'adresse IP 2) Modifier les paramètres d'adresse IP 3) Afficher les paramètres de recherche de nom de domaine 4) changer les paramètres de recherche de nom de domaine 5) Afficher les routes statiques 6) changer les routes statiques 7) valider les changements 8) Envoyer un hôte par Ping
 
 ** Option 4 : assistance et diagnostic
 +
-Générer le support bundle accéder au shell de diagnostic Activer l'accès de diagnostic à distance générer le bundle de vidage de noyau
+1) générer le pack de support 2) accéder au shell de diagnostic 3) Activer l'accès de diagnostic à distance 4) générer le bundle de vidage de noyau
 
 
 
