@@ -36,13 +36,13 @@ The OVA deployment is supported in VMware vCenter 7u1 and above.
 Déployez le plug-in SnapCenter VMware dans le même fuseau horaire que vCenter. Les planifications de sauvegarde sont exécutées sur le fuseau horaire dans lequel le plug-in SnapCenter VMware est déployé. VCenter rapporte les données du fuseau horaire dans lequel se trouve le vCenter. Par conséquent, si le plug-in SnapCenter VMware et vCenter se trouvent dans différents fuseaux horaires, les données du plug-in SnapCenter VMware peuvent être différentes des données des rapports.
 
 .Étapes
+. Pour VMware vCenter 7.0.3 et versions ultérieures, suivez les étapes décrites dans link:scpivs44_download_the_ova_open_virtual_appliance.html["Télécharger Open Virtual Appliance (OVA)"^] Pour importer les certificats dans vCenter.
 . Dans votre navigateur, accédez à VMware vSphere vCenter.
 +
 
 NOTE: Pour les clients web HTML IPv6, vous devez utiliser Chrome ou Firefox.
 
 . Connectez-vous à la page *Single Sign-on de VMware vCenter*.
-. Pour VMware vCenter 7.0.3 et versions ultérieures, suivez les étapes décrites dans link:scpivs44_download_the_ova_open_virtual_appliance.html["Télécharger Open Virtual Appliance (OVA)"^] Pour importer les certificats dans vCenter.
 . Dans le volet navigateur, cliquez avec le bouton droit de la souris sur un objet d'inventaire qui est un objet parent valide d'une machine virtuelle, tel qu'un datacenter, un cluster ou un hôte, puis sélectionnez *déployer le modèle OVF* pour démarrer l'assistant de déploiement VMware.
 . Extrayez le fichier .tar, qui contient le fichier .ova dans votre système local. Sur la page *Sélectionner un modèle OVF*, indiquez l'emplacement du `.ova` fichier dans le dossier .tar extrait.
 . Cliquez sur *Suivant*.

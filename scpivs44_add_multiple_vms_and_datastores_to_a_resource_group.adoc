@@ -14,7 +14,7 @@ summary: 'Vous pouvez ajouter plusieurs ressources à un groupe de ressources ex
 
 
 [role="lead"]
-Vous pouvez ajouter plusieurs ressources à un groupe de ressources existant à l'aide de l'assistant de modification de groupe de ressources client SnapCenter vSphere.
+À l'aide de l'assistant Modifier le groupe de ressources du client SnapCenter vSphere, vous pouvez ajouter plusieurs ressources à un groupe de ressources existant.
 
 Un groupe de ressources peut contenir l'un des éléments suivants :
 
@@ -34,7 +34,7 @@ NOTE: Les machines virtuelles vvol réparties sur plusieurs datastores vvol ne s
 . Sur la page *Resource*, procédez comme suit :
 +
 .. Dans le champ datastores, accédez aux VM ou datastores que vous souhaitez ajouter.
-.. Dans la liste entités disponibles, sélectionnez un ou plusieurs VM ou datastores à ajouter au groupe de ressources, puis cliquez sur *>* pour déplacer votre sélection dans la liste entités sélectionnées. Vous pouvez déplacer toutes les entités disponibles en cliquant sur *>>*.
+.. Dans la liste entités disponibles, sélectionnez un ou plusieurs VM ou datastores à ajouter au groupe de ressources, puis cliquez sur *>* pour déplacer votre sélection dans la liste entités sélectionnées. Cliquez sur *>>* pour déplacer toutes les entités disponibles.
 +
 Par défaut, la liste entités disponibles affiche l'objet Datacenter. Vous pouvez cliquer sur un datastore pour afficher les machines virtuelles dans le datastore et les ajouter au groupe de ressources.
 

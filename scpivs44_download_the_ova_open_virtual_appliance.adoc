@@ -26,10 +26,17 @@ Dans VMware vCenter 7.0.3 et versions ultérieures, le fichier OVA signé par le
 ** Téléchargez le plug-in SnapCenter pour VMware vSphere `.tar` fichier à n'importe quel emplacement.
 
 
+. Extraire le contenu du fichier tar. Le fichier tar contient le dossier OVA et certs. Le dossier certificats contient les certificats racine et intermédiaire Entrust.
 . Connectez-vous avec le client vSphere au serveur vCenter.
 . Accédez à *Administration > certificats > gestion des certificats*.
-. En regard de *Trusted Root Store*, cliquez sur *Add*
-. Parcourez et sélectionnez l'emplacement des certificats racine et intermédiaire Entrust. Le certificat est ajouté dans un panneau sous *certificats racines de confiance*. Une fois les certificats installés, une OVA peut être vérifiée et déployée.
+. En regard de *certificats racine de confiance*, cliquez sur *Ajouter*
++
+** Accédez au dossier _certs_.
+** Sélectionnez les certificats racine et intermédiaire Entrust.
+** Installez chaque certificat un par un.
+
+
+. Les certificats sont ajoutés à un panneau sous *certificats racine approuvés*. Une fois les certificats installés, une OVA peut être vérifiée et déployée.
 
 
 
