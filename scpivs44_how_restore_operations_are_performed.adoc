@@ -69,4 +69,4 @@ Les opérations de restauration de fichiers invités sont effectuées à l'aide 
 
 IMPORTANT: Au cours d'une opération de restauration, l'erreur peut se produire `Host unresolved volumes is null` ou `Exception while calling pre-restore on SCV….Error mounting cloned LUN as datastore…` Cela se produit lorsque le plug-in SnapCenter VMware tente de resigner le clone. En raison des restrictions de VMware, le plug-in SnapCenter VMware ne peut pas contrôler la valeur de la resignature automatique dans les configurations ESXi avancées.
 
-Pour plus d'informations sur l'erreur, reportez-vous à {LINK-with-casouligner}[Article de la base de connaissances : échec du clonage ou des restaurations de distributeurs sélectifs avec l'erreur « les volumes non résolus de l'hôte sont nuls^].
+Voir https://kb.netapp.com/mgmt/SnapCenter/SCV_clone_or_restores_fail_with_error_'Host_Unresolved_volumes_is_null'#["Article de la base de connaissances : le clone ou les restaurations de SCV échouent avec l'erreur « les volumes non résolus de l'hôte sont nuls"^] pour plus d'informations sur l'erreur.

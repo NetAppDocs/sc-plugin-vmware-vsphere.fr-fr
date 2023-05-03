@@ -279,8 +279,6 @@ homepage:
       url: "/scpivs44_restore_from_backups_overview.html"
     - title: Utilisez des API REST
       url: "/scpivs44_rest_apis_overview.html"
-    - title: Migration à partir de distributeurs sélectifs Windows
-      url: "/scpivs44_migrate.html"
   - title: Communauté sur les blogs
     links:
     - title: Blog NetApp – distributeurs sélectifs
