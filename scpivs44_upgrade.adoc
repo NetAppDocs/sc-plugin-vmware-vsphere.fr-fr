@@ -35,7 +35,7 @@ NOTE: Le basculement de votre configuration réseau statique vers DHCP n'est pas
 
 . Téléchargez la mise à niveau `.iso` fichier.
 +
-.. Connectez-vous au site de support NetApp (https://mysupport.netapp.com/products/index.html)[].
+.. Connectez-vous au site de support NetApp .
 .. Dans la liste de produits, sélectionnez *Plug-in SnapCenter pour VMware vSphere*, puis cliquez sur le bouton *DOWNLOAD LATEST*.
 .. Téléchargez la mise à niveau du plug-in SnapCenter pour VMware vSphere `.iso` fichier à n'importe quel emplacement.
 
