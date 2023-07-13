@@ -28,7 +28,7 @@ Si vous souhaitez utiliser une machine virtuelle proxy pour connecter un disque 
 
 
 | Ajouter de nouvelles informations d'identification  a| 
-.. Cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Ajouter*.
+.. Sélectionnez *Ajouter*.
 .. Dans la boîte de dialogue *Exécuter en tant qu'informations d'identification*, entrez les informations d'identification.
 .. Cliquez sur *Sélectionner VM*, puis sélectionnez une VM dans la boîte de dialogue *Proxy VM*. Cliquez sur *Enregistrer* pour revenir à la boîte de dialogue *Exécuter en tant qu'informations d'identification*.
 .. Entrez les informations d'identification. Pour Nom d'utilisateur, vous devez entrer « Administrateur ».

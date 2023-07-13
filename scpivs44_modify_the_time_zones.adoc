@@ -20,10 +20,11 @@ summary: 'Lorsque vous configurez une planification de sauvegarde pour un groupe
 
 
 .Avant de commencer
-Vous devez connaître l'adresse IP et les identifiants de connexion de l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere.
+Vous devez connaître l'adresse IP et les identifiants de connexion de l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere. Vous devez également noter le jeton MFA généré à partir de la console de maintenance.
 
 * L'adresse IP était affichée lorsque le plug-in SnapCenter VMware a été déployé.
 * Utilisez les identifiants de connexion fournis lors du déploiement du plug-in SnapCenter VMware ou modifiés ultérieurement.
+* Générez un jeton MFA à 6 chiffres à l'aide des options de configuration du système de la console de maintenance.
 
 
 .Étapes
@@ -33,7 +34,7 @@ Utiliser le format `https://<appliance-IP-address>:8080`
 
 . Cliquez sur l'icône Paramètres dans la barre d'outils supérieure.
 +
-image:scpivs44_image28.jpg["Erreur : image graphique manquante"]
+image:scpivs44_image28.jpg["Plug-in SnapCenter pour VMware vSphere"]
 
 . Sur la page *Paramètres*, dans la section *Date et heure*, cliquez sur *Modifier*.
 . Sélectionnez le nouveau fuseau horaire et cliquez sur *Enregistrer*.

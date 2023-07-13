@@ -16,4 +16,4 @@ summary: 'Vous pouvez utiliser ce flux de travail si vous n"avez pas déjà util
 [role="lead"]
 Si vous n'avez pas utilisé SnapCenter auparavant et ne disposez d'aucune sauvegarde SnapCenter, utilisez le flux de travail suivant pour commencer.
 
-image:scpivs44_image2.png["Erreur : image graphique manquante"]
+image:scpivs44_image2.png["Flux de travail de déploiement pour les nouveaux utilisateurs"]

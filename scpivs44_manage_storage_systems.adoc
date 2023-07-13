@@ -29,10 +29,10 @@ IMPORTANT: Si vous avez ajouté des machines virtuelles de stockage pour les op�
 
 .Étapes
 . Dans le volet navigateur de gauche du module d'extension SCV, cliquez sur *Storage Systems*.
-. Sur la page *Storage Systems*, sélectionnez la VM de stockage à modifier, puis cliquez sur image:scpivs44_image25.png["Erreur : image graphique manquante"] *Modifier*.
+. Sur la page *systèmes de stockage*, sélectionnez la VM de stockage à modifier, puis sélectionnez *Modifier*.
 . Dans la fenêtre *Modifier le système de stockage*, entrez les nouvelles valeurs, puis cliquez sur *mettre à jour* pour appliquer les modifications.
 +
-image:scpivs44_image43.png["Erreur : image graphique manquante"]
+image:scpivs44_image43.png["Fenêtre Modifier les systèmes de stockage"]
 
 
 

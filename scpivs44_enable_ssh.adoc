@@ -23,7 +23,7 @@ Lorsque le plug-in SnapCenter VMware est déployé, SSH est désactivé par déf
 Pour plus d'informations sur l'accès et la connexion à la console de maintenance, reportez-vous à la section link:scpivs44_access_the_maintenance_console.html["Accéder à la Console de maintenance"^].
 
 +
-image:scpivs44_image11.png["Erreur : image graphique manquante"]
+image:scpivs44_image11.png["Console de maintenance"]
 
 . Dans le Menu principal, sélectionnez l'option de menu *2) Configuration du système*.
 . Dans le menu de configuration du système, sélectionnez l’option de menu *6) Activer l’accès SSH*, puis entrez “*y*” à l’invite de confirmation.

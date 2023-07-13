@@ -77,7 +77,7 @@ L'écran affiche l'adresse IP à laquelle le plug-in SnapCenter VMware est dépl
 Utiliser le format `https://<appliance-IP-address>:8080` Pour accéder à l'interface graphique de gestion.
 
 +
-Le nom d'utilisateur de la console de maintenance est défini sur `maint` par défaut, vous pouvez définir un mot de passe au moment de l'installation.
+Connectez-vous avec le nom d'utilisateur et le mot de passe administrateur définis au moment du déploiement, ainsi que le jeton MFA généré à l'aide de la console de maintenance.
 
 . Connectez-vous au client HTML5 vCenter, puis cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *Plug-in SnapCenter pour VMware vSphere*
 

@@ -21,7 +21,7 @@ summary: Vous pouvez générer un bundle de support à partir de la console de m
 Pour plus d'informations sur l'accès et la connexion à la console de maintenance, reportez-vous à la section link:scpivs44_access_the_maintenance_console.html["Accéder à la Console de maintenance"^].
 
 +
-image:scpivs44_image11.png["Erreur : image graphique manquante"]
+image:scpivs44_image11.png["Fenêtre de la console de maintenance"]
 
 . Dans le Menu principal, entrez l'option *4) support et diagnostic*.
 . Dans le menu support et Diagnostics, entrez l'option *1) générer le bundle de support*.

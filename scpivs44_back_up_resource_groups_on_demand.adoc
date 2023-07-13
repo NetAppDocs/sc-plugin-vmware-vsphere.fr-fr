@@ -26,7 +26,7 @@ IMPORTANT: Ne lancez pas de tâche de sauvegarde à la demande lorsqu'une tâche
 Dans les versions antérieures de Virtual Storage Console (VSC), vous pouvez effectuer une sauvegarde à la demande sans avoir à configurer une tâche de sauvegarde pour une machine virtuelle ou un datastore. Cependant, pour le plug-in SnapCenter VMware, les machines virtuelles et les datastores doivent se trouver dans un groupe de ressources avant de pouvoir effectuer des sauvegardes.
 
 .Étapes
-. Dans le volet navigateur de gauche du module d'extension SCV, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources, puis cliquez sur image:scpivs44_image38.png["Erreur : image graphique manquante"] *Exécuter maintenant* pour démarrer la sauvegarde.
+. Dans le volet de gauche du plug-in SCV, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources, puis sélectionnez image:scpivs44_image38.png["Icône de lecture"] *Exécuter maintenant* pour démarrer la sauvegarde.
 . Si plusieurs stratégies sont configurées dans le groupe de ressources, sélectionnez la stratégie à utiliser dans la boîte de dialogue *sauvegarde maintenant*.
 . Cliquez sur *OK* pour lancer la sauvegarde.
 . Facultatif : surveillez la progression de l'opération en cliquant sur *tâches récentes* en bas de la fenêtre ou sur le tableau de bord *moniteur des tâches* pour plus de détails. Résultat

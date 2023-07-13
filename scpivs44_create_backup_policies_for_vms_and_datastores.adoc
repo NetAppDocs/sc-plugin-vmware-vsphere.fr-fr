@@ -39,7 +39,7 @@ La plupart des champs de ces pages de l'assistant sont explicites. Les informati
 
 .Étapes
 . Dans le volet gauche du module d'extension SCV, cliquez sur *Policies*.
-. Sur la page *Policies*, cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Créer* pour démarrer l'assistant.
+. Sur la page *stratégies*, sélectionnez *Créer* pour lancer l'assistant.
 . Sur la page *Nouvelle stratégie de sauvegarde*, sélectionnez le serveur vCenter qui utilisera la stratégie, puis entrez le nom de la stratégie et une description.
 +
 ** Mode lié

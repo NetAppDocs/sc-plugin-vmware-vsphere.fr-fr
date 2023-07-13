@@ -16,4 +16,4 @@ summary: Vous pouvez utiliser ce flux de travail si vous êtes un utilisateur Sn
 [role="lead"]
 Si vous êtes un utilisateur SnapCenter et que vous disposez de sauvegardes SnapCenter, utilisez le workflow suivant pour commencer.
 
-image:scpivs44_image3.png["Erreur : image graphique manquante"]
+image:scpivs44_image3.png["Flux de travail de déploiement"]

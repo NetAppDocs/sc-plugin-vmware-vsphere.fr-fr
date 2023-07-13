@@ -16,10 +16,12 @@ summary: Pour utiliser les fonctionnalités de SnapCenter pour protéger les mac
 [role="lead"]
 Pour utiliser les fonctionnalités de SnapCenter pour protéger les machines virtuelles, les datastores et les bases de données cohérentes au niveau des applications sur les machines virtualisées, vous devez déployer le plug-in SnapCenter pour VMware vSphere.
 
-....
-[Note]
-The OVA deployment is supported in VMware vCenter 7u1 and above.
-....
+.Avant de commencer
+Cette section répertorie toutes les actions nécessaires que vous devez effectuer avant de commencer le déploiement.
+
+
+NOTE:  Le déploiement OVA est pris en charge dans VMware vCenter 7u1 et versions ultérieures.
+
 * Vous devez avoir lu les conditions de déploiement.
 * Vous devez exécuter une version prise en charge de vCenter Server.
 * Vous devez avoir configuré et configuré votre environnement vCenter Server.
@@ -141,7 +143,7 @@ L'écran affiche l'adresse IP à laquelle le plug-in SnapCenter VMware est dépl
 Utiliser le format `https://<appliance-IP-address>:8080` Pour accéder à l'interface graphique de gestion.
 
 +
-Connectez-vous en utilisant le nom d'utilisateur par défaut de la console de maintenance `maint` et le mot de passe que vous avez défini au moment de l'installation.
+Connectez-vous avec le nom d'utilisateur et le mot de passe administrateur définis au moment du déploiement, ainsi que le jeton MFA généré à l'aide de la console de maintenance.
 
 +
 Si le plug-in SnapCenter VMware n'est pas activé, reportez-vous à la section link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["Redémarrez le service client VMware vSphere"].

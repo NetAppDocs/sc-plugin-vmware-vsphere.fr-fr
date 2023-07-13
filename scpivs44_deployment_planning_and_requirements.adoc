@@ -45,7 +45,7 @@ Par exemple, si vous souhaitez effectuer des sauvegardes à partir de six instan
 Pour plus d'informations, voir https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Les outils ONTAP pour VMware vSphere"^]
 
 +
-Pour obtenir les dernières informations sur les versions prises en charge des outils ONTAP, reportez-vous au https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^].
+Pour obtenir les dernières informations sur les versions prises en charge des outils ONTAP, reportez-vous au https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^].
 
 * Le plug-in SnapCenter pour VMware assure une prise en charge limitée des périphériques PCI ou PCIe partagés (par exemple, NVIDIA Grid GPU) en raison d'une limitation des machines virtuelles prenant en charge Storage vMotion. Pour plus d'informations, consultez le document fournisseur - Guide de déploiement pour VMware.
 +
@@ -125,9 +125,9 @@ Restauration d'une machine virtuelle complète lorsqu'un ou plusieurs VMDK se tr
 | Application VMware vStorage API pour l'intégration de baies (VAAI) | Le plug-in SnapCenter pour VMware vSphere l'utilise pour améliorer les performances des opérations de restauration. Il améliore également les performances dans les environnements NFS. 
 
 
-| Outils ONTAP pour VMware | Le plug-in SnapCenter pour VMware vSphere l'utilise pour gérer les datastores vvol (volumes virtuels VMware). Pour les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^]. 
+| Outils ONTAP pour VMware | Le plug-in SnapCenter pour VMware vSphere l'utilise pour gérer les datastores vvol (volumes virtuels VMware). Pour les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^]. 
 |===
-Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^].
+Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^].
 
 
 
@@ -177,7 +177,7 @@ Remarque : vous ne pouvez pas modifier la configuration des ports.
 
 Chaque instance de plug-in ne prend en charge qu'un seul serveur vCenter. Les vCenters en mode lié sont pris en charge. Plusieurs instances de plug-in peuvent prendre en charge le même serveur SnapCenter, comme illustré dans la figure suivante.
 
-image:scpivs44_image4.png["Erreur : image graphique manquante"]
+image:scpivs44_image4.png["Représentation graphique de configuration prise en charge"]
 
 
 

@@ -16,6 +16,6 @@ summary:
 [role="lead"]
 Pour ajouter du stockage, suivez les étapes de cette section.
 
-. Dans le volet navigateur de gauche du module d'extension SCV, cliquez sur *Storage Systems*, puis cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Ajouter*.
-. Dans la boîte de dialogue Add Storage System (Ajouter un système de stockage), indiquez les informations de base sur le SVM ou le cluster, puis cliquez sur *Add* (Ajouter).
+. Dans le volet de gauche du plug-in SCV, cliquez sur *systèmes de stockage*, puis sélectionnez l'option *Ajouter*.
+. Dans la boîte de dialogue Add Storage System, entrer les informations de base sur le SVM ou le cluster, puis sélectionner *Add*.
 

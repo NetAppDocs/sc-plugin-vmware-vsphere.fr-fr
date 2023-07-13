@@ -19,9 +19,9 @@ Après avoir effectué toute opération de protection des données à l'aide du 
 .Étapes
 . Dans le volet navigateur de gauche du client vSphere, cliquez sur *Tableau de bord*, lorsque deux vCenters ou plus sont configurés en mode lié, sélectionnez un serveur vCenter, puis cliquez sur l'onglet *moniteur des tâches* dans le volet Tableau de bord. L'onglet moniteur de tâches répertorie chaque travail et son état, l'heure de début et l'heure de fin. Si les noms des travaux sont longs, vous devrez peut-être faire défiler vers la droite pour afficher les heures de début et de fin. L'affichage est actualisé toutes les 30 secondes.
 +
-** Cliquez sur le bouton image:scpivs44_image36.png["Erreur : image graphique manquante"] actualiser l'icône dans la barre d'outils pour actualiser l'affichage à la demande.
-** Cliquez sur le bouton image:scpivs44_image41.png["Erreur : image graphique manquante"] icône de filtre pour sélectionner la plage horaire, le type, la balise et l'état des travaux que vous souhaitez afficher. Le filtre est sensible à la casse.
-** Cliquez sur le bouton image:scpivs44_image36.png["Erreur : image graphique manquante"] Icône Actualiser dans la fenêtre Détails du travail pour actualiser l'affichage pendant l'exécution du travail.
+** Sélectionnez l'icône Actualiser dans la barre d'outils pour actualiser l'affichage à la demande.
+** Sélectionnez l'icône de filtre pour choisir la plage horaire, le type, la balise et l'état des travaux que vous souhaitez afficher. Le filtre est sensible à la casse.
+** Sélectionnez l'icône d'actualisation dans la fenêtre Détails du travail pour actualiser l'affichage pendant l'exécution du travail.
 
 
 

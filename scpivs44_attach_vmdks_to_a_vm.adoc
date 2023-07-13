@@ -40,11 +40,11 @@ Dans ce cas, ajoutez les contrôleurs SCSI manuellement et réessayez d'effectue
 . Dans l'interface utilisateur graphique du client VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *hôtes et clusters* dans la liste déroulante.
 . Dans le volet de navigation de gauche, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *NetApp SnapCenter* dans la liste déroulante, puis sélectionnez *attacher un disque virtuel* dans la liste déroulante secondaire.
 +
-image:scpivs44_image22.png["Erreur : image graphique manquante"]
+image:scpivs44_image22.png["Fenêtre rattacher un disque virtuel"]
 
 . Dans la fenêtre *Attach disque virtuel*, dans la section *Backup*, sélectionnez une sauvegarde.
 +
-Vous pouvez filtrer la liste de sauvegarde en cliquant sur le bouton image:scpivs44_image41.png["Erreur : image graphique manquante"] Icône de filtre et sélection d'une plage de date et d'heure, indiquant si vous souhaitez que les sauvegardes contiennent des copies Snapshot VMware, si vous souhaitez monter des sauvegardes et l'emplacement. Cliquez sur *OK*.
+Vous pouvez filtrer la liste des sauvegardes en sélectionnant l'icône de filtre et en choisissant une plage de date et d'heure, en indiquant si vous souhaitez des sauvegardes contenant des copies Snapshot VMware, si vous voulez monter des sauvegardes et l'emplacement. Cliquez sur *OK*.
 
 . Dans la section *Sélectionner des disques*, sélectionnez un ou plusieurs disques à relier et l'emplacement de connexion (primaire ou secondaire).
 +
@@ -62,7 +62,7 @@ Actualiser l'écran pour afficher les informations mises à jour.
 .. Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur une VM, puis sélectionnez *Modifier les paramètres* dans la liste déroulante.
 .. Dans la fenêtre *Modifier les paramètres*, développez la liste de chaque disque dur pour afficher la liste des fichiers de disque.
 +
-image:scpivs44_image23.png["Erreur : image graphique manquante"]
+image:scpivs44_image23.png["Fenêtre Modifier les paramètres"]
 
 +
 La page Modifier les paramètres répertorie les disques de la machine virtuelle. Vous pouvez développer les détails de chaque disque dur pour afficher la liste des disques virtuels connectés.

@@ -15,10 +15,11 @@ summary: 'Vous pouvez générer un bundle de prise en charge à partir du plug-i
 
 .Avant de commencer
 [role="lead"]
-Pour vous connecter à l'interface utilisateur graphique de gestion SnapCenter Plug-in for VMware vSphere, vous devez connaître l'adresse IP et les identifiants de connexion.
+Pour vous connecter à l'interface utilisateur graphique de gestion SnapCenter Plug-in for VMware vSphere, vous devez connaître l'adresse IP et les identifiants de connexion. Vous devez également noter le jeton MFA généré à partir de la console de maintenance.
 
 * L'adresse IP était affichée lorsque le plug-in SnapCenter VMware a été déployé.
 * Utilisez les identifiants de connexion fournis lors du déploiement du plug-in SnapCenter VMware ou modifiés ultérieurement.
+* Générez un jeton MFA à 6 chiffres à l'aide des options de configuration du système de la console de maintenance.
 
 
 .Étapes
@@ -28,7 +29,7 @@ Utiliser le format `https://<OVA-IP-address>:8080`.
 
 . Cliquez sur l'icône Paramètres dans la barre d'outils supérieure.
 +
-image:scpivs44_image10.png["Erreur : image graphique manquante"]
+image:scpivs44_image10.png["Plug-in SnapCenter pour l'interface VMware vSphere"]
 
 . Sur la page *Paramètres*, dans la section *support*, cliquez sur *générer support*.
 . Une fois le pack créé, cliquez sur le lien fourni pour télécharger le pack sur NetApp.

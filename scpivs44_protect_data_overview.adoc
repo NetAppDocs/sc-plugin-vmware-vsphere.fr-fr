@@ -30,4 +30,4 @@ Dans les configurations MetroCluster :
 
 La figure de workflow suivante montre l'ordre dans lequel vous devez effectuer des opérations de sauvegarde :
 
-image:scpivs44_image13.png["Erreur : image graphique manquante"]
+image:scpivs44_image13.png["Workflow des opérations de sauvegarde"]

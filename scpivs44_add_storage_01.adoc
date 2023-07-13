@@ -43,7 +43,7 @@ Le plug-in SnapCenter pour VMware réalise des opérations de sauvegarde et de r
 NOTE: Si vous utilisez le plug-in SnapCenter pour VMware pour prendre en charge les sauvegardes basées sur les applications sur des VMDK, vous devez utiliser l'interface graphique de SnapCenter pour entrer les détails de l'authentification du stockage et enregistrer les systèmes de stockage.
 
 * Pour les vCenters en mode lié, vous devez ajouter séparément des systèmes de stockage à chaque vCenter.
-* Les noms des VM de stockage doivent être résolus sur les LIF de gestion.
+* Si vous ajoutez un SVM, les noms des VM de stockage doivent résoudre en tant que LIF de gestion.
 +
 Si vous avez ajouté des entrées d'hôte etc pour les noms de machines virtuelles de stockage dans SnapCenter, vous devez vérifier qu'elles peuvent également être résolues à partir de l'appliance virtuelle.
 
@@ -55,7 +55,7 @@ Si vous ajoutez un serveur virtuel de stockage portant un nom qui ne peut pas ê
 
 .Étapes
 . Dans le volet navigateur de gauche du client vSphere, cliquez sur *Storage Systems*.
-. Sur la page Storage Systems (systèmes de stockage), cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Ajouter*.
+. Sur la page systèmes de stockage, sélectionnez l'option *Ajouter*.
 . Dans l'assistant *Add Storage System*, entrez les informations de base sur la machine virtuelle de stockage ou le cluster comme indiqué dans le tableau suivant :
 +
 |===
@@ -71,10 +71,10 @@ Si vous ajoutez un serveur virtuel de stockage portant un nom qui ne peut pas ê
 | Méthode d'authentification | Sélectionnez informations d'identification ou certificat. Deux types de certificats sont pris en charge : - https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["CERTIFICAT signé CA"^]- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["Certificat auto-signé"^] 
 
 
-| Nom d'utilisateur | Ce champ est visible lorsque vous sélectionnez informations d'identification comme méthode d'authentification. Entrez le nom d'utilisateur ONTAP utilisé pour vous connecter à la machine virtuelle de stockage. 
+| Nom d'utilisateur | Ce champ est visible lorsque vous sélectionnez informations d'identification comme méthode d'authentification. Entrez le nom d'utilisateur ONTAP utilisé pour vous connecter à la machine virtuelle de stockage ou au cluster. 
 
 
-| Mot de passe | Ce champ est visible lorsque vous sélectionnez informations d'identification comme méthode d'authentification. Entrez le mot de passe de connexion de la machine virtuelle de stockage. 
+| Mot de passe | Ce champ est visible lorsque vous sélectionnez informations d'identification comme méthode d'authentification. Entrez le mot de passe de connexion de la machine virtuelle de stockage ou du cluster. 
 
 
 | Certificat | Ce champ est visible lorsque vous sélectionnez certificat comme méthode d'authentification. Recherchez le fichier de certificat. 

@@ -34,7 +34,7 @@ Pour obtenir l'autorisation utilisateur root d'exécuter la commande, utilisez l
 Connectez-vous en utilisant le nom d'utilisateur par défaut de la console de maintenance `maint` et le mot de passe que vous avez défini au moment de l'installation.
 
 +
-image:scpivs44_image11.png["Erreur : image graphique manquante"]
+image:scpivs44_image11.png["Fenêtre de la console de maintenance"]
 
 . Vous pouvez effectuer les opérations suivantes :
 +
@@ -44,7 +44,20 @@ Afficher un résumé du plug-in SnapCenter VMware Démarrer ou arrêter le servi
 
 ** Option 2 : configuration du système
 +
-Redémarrage ou arrêt de la machine virtuelle Modifier le mot de passe utilisateur Modifier le fuseau horaire Modifier le serveur NTP Activer/Désactiver l'accès SSH augmenter la taille du disque de prison (/jail) mise à niveau installer VMware Tools
+Redémarrez la machine virtuelle
+Arrêter la machine virtuelle
+Modifier le mot de passe utilisateur « familiariser »
+Modifier le fuseau horaire
+Modifier le serveur NTP
+Activez l'accès SSH
+Augmentation de la taille des disques de prison (/prison)
+Mise à niveau
+Installez VMware Tools
+Générer un jeton MFA
+
++
+
+NOTE: MFA est toujours activé, vous ne pouvez pas désactiver MFA.
 
 ** Option 3 : configuration réseau
 +

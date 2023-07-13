@@ -59,4 +59,4 @@ Utilisez le workflow suivant pour configurer ONTAP et le RBAC d'SnapCenter :
 
 La figure suivante présente le workflow de validation des privilèges RBAC (vCenter et ONTAP) :
 
-image:scpivs44_image1.png["Erreur : image graphique manquante"]
+image:scpivs44_image1.png["Workflow de validation pour les privilèges RBAC"]

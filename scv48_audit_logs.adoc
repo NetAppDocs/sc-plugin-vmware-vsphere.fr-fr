@@ -52,13 +52,15 @@ Les journaux sont régulièrement vérifiés pour leur intégrité. SCV fournit 
 | NORMALE | Le fichier journal d'audit n'est pas modifié 
 
 
-| SUPPRIMER LE CURSEUR | * Le fichier journal d'audit est supprimé en fonction de la rétention * par défaut, seuls 10 fichiers sont conservés 
+| SUPPRIMER LE CURSEUR | - Le fichier journal d'audit est supprimé en fonction de la conservation
+- Par défaut, seuls 10 fichiers sont conservés 
 
 
 | SUPPRESSION INATTENDUE | Le fichier journal d'audit est supprimé 
 
 
-| ACTIF | * Le fichier journal d'audit est en cours d'utilisation * uniquement applicable à audit.log 
+| ACTIF | - Le fichier journal d'audit est en cours d'utilisation
+- Applicable uniquement à audit.log 
 |===
 Les événements sont classés en trois catégories principales :
 
@@ -143,4 +145,49 @@ Les opérations suivantes dans l'interface utilisateur de la console d'administr
 ** Activation/désactivation du plug-in
 
 
+
+
+
+
+== Configurer les serveurs syslog
+
+Les journaux d'audit sont stockés dans l'appliance et leur intégrité est régulièrement vérifiée. Le transfert d'événements vous permet d'obtenir des événements à partir de l'ordinateur source ou de transfert et de les stocker dans un ordinateur centralisé, qui est le serveur Syslog. Les données sont chiffrées en transit entre la source et la destination.
+
+.Avant de commencer
+Vous devez disposer des privilèges d'administrateur.
+
+.Description de la tâche
+Cette tâche vous aide à configurer le serveur syslog.
+
+.Étapes
+. Connectez-vous au plug-in SnapCenter pour VMware vSphere.
+. Dans le volet de navigation de gauche, sélectionnez *Paramètres* > *journaux d'audit* > *Paramètres*.
+. Dans le volet *Paramètres du journal d'audit*, sélectionnez *Envoyer les journaux d'audit au serveur Syslog*
+. Entrez les informations suivantes :
++
+** Adresse IP du serveur syslog
+** Port du serveur syslog
+** Format RFC
+** Certificat de serveur syslog
+
+
+. Cliquez sur *SAVE* pour enregistrer les paramètres du serveur Syslog.
+
+
+
+
+== Modifier les paramètres du journal d'audit
+
+Vous pouvez modifier les configurations par défaut des paramètres du journal.
+
+.Avant de commencer
+Vous devez disposer des privilèges d'administrateur.
+
+.Description de la tâche
+Cette tâche vous permet de modifier les paramètres du journal d'audit par défaut.
+
+.Étapes
+. Connectez-vous au plug-in SnapCenter pour VMware vSphere.
+. Dans le volet de navigation de gauche, sélectionnez *Paramètres* > *journaux d'audit* > *Paramètres*.
+. Dans le volet *Paramètres du journal d'audit*, entrez *nombre d'entrées d'audit* et *limite de taille du journal d'audit* en fonction de vos besoins.
 

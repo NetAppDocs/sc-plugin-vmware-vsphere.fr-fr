@@ -47,4 +47,4 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 Les fichiers de notification fournissent des informations sur les droits d'auteur et les licences de tiers utilisés dans le logiciel NetApp.
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2884815["Avis relatif au plug-in SnapCenter pour VMware vSphere 4.8"^]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2886210["Avis concernant le plug-in SnapCenter pour VMware vSphere 4.9"^]

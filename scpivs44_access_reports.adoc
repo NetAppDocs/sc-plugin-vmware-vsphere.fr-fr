@@ -24,7 +24,7 @@ L'onglet Rapports contient des informations sur les travaux sélectionnés sur l
 +
 .. Modifier le rapport
 +
-Cliquez sur le bouton image:scpivs44_image41.png["Erreur : image graphique manquante"] icône de filtre pour modifier la plage horaire, le type d'état du travail, les groupes de ressources et les stratégies à inclure dans le rapport.
+Sélectionnez l'icône de filtre pour modifier la plage horaire, le type d'état des travaux, les groupes de ressources et les stratégies à inclure dans le rapport.
 
 .. Générer un rapport détaillé
 +
@@ -34,7 +34,7 @@ Double-cliquez sur un travail pour générer un rapport détaillé pour ce trava
 
 . Facultatif : dans l'onglet Rapports, cliquez sur *Télécharger* et sélectionnez le format (HTML ou CSV).
 +
-Vous pouvez également cliquer sur image:scpivs44_image37.png["Erreur : image graphique manquante"] icône de téléchargement pour télécharger les journaux de plug-in.
+Vous pouvez également cliquer sur l'icône de téléchargement pour télécharger les journaux des plug-ins.
 
 
 

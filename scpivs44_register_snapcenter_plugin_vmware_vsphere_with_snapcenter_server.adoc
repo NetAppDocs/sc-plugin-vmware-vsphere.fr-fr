@@ -56,7 +56,7 @@ Vous pouvez enregistrer plusieurs instances du plug-in SnapCenter pour VMware vS
 +
 Lorsque l'hôte VM a été ajouté avec succès, il s'affiche dans l'onglet Managed Hosts.
 
-. Dans le volet de navigation de gauche, cliquez sur *Paramètres*, puis sur l'onglet *Credential*, puis cliquez sur image:scpivs44_image6.png["Erreur : image graphique manquante"] *Ajouter* pour ajouter des informations d'identification pour l'appliance virtuelle.
+. Dans le volet de navigation de gauche, cliquez sur *Paramètres*, puis sur l'onglet *informations d'identification*, puis sélectionnez *Ajouter* pour ajouter des informations d'identification pour l'appliance virtuelle.
 . Fournissez les informations d'identification spécifiées lors du déploiement du plug-in SnapCenter pour VMware vSphere.
 +
 
