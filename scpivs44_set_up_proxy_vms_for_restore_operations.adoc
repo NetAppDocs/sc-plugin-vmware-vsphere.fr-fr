@@ -44,3 +44,6 @@ Les informations d'identification Exécuter en tant que doivent être l'administ
 . Dans la section *Proxy Credentials*, cliquez sur *Add* pour ajouter une machine virtuelle à utiliser comme proxy.
 . Dans la boîte de dialogue *Proxy VM*, complétez les informations, puis cliquez sur *Enregistrer*.
 
+
+
+NOTE: Vous devez supprimer la machine virtuelle proxy de l'interface utilisateur du plug-in SnapCenter pour VMware vSphere avant de pouvoir la supprimer de VMware ESXi.

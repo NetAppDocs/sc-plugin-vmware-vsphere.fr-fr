@@ -1301,23 +1301,16 @@
   <block id="6086125ba3b16c9db6f89397f48fc616" category="paragraph">Le serveur ESXi, le plug-in SnapCenter VMware et chaque vCenter doivent être synchronisés en même temps. Si vous essayez d'ajouter du stockage mais que les paramètres d'heure de vos vCenters ne sont pas synchronisés, l'opération peut échouer avec une erreur de certificat Java.</block>
   <block id="9aac8d0b8942f0e2048e58de3b7be108" category="paragraph">Le plug-in SnapCenter pour VMware réalise des opérations de sauvegarde et de restauration sur les machines virtuelles de stockage directement connectées et sur les machines virtuelles de stockage dans un cluster de stockage.</block>
   <block id="b99edf353b52c5792e35401298cc1119" category="list-text">Pour les vCenters en mode lié, vous devez ajouter séparément des systèmes de stockage à chaque vCenter.</block>
-  <block id="9b0a1c41413ba0bd6082cc3e1b84f315" category="paragraph">Si vous avez ajouté des entrées d'hôte etc pour les noms de machines virtuelles de stockage dans SnapCenter, vous devez vérifier qu'elles peuvent également être résolues à partir de l'appliance virtuelle.</block>
   <block id="f6bf07ac5479cd87c5bc2e1e1e185478" category="paragraph">Si vous ajoutez un serveur virtuel de stockage portant un nom qui ne peut pas être résolu sur la LIF de gestion, les tâches de sauvegarde planifiées échouent, car le plug-in ne peut pas détecter les datastores ou les volumes de cette machine virtuelle de stockage. Le cas échéant, ajoutez la VM de stockage à SnapCenter et spécifiez la LIF de gestion ou ajoutez un cluster qui contient le VM de stockage et spécifiez la LIF de cluster management.</block>
   <block id="913caa3ee179d1d56a0a5a1d647e72c2" category="list-text">Dans l'assistant *Add Storage System*, entrez les informations de base sur la machine virtuelle de stockage ou le cluster comme indiqué dans le tableau suivant :</block>
   <block id="f31303ddb8ada38aed08c2bb8f9d8e6c" category="cell">Adieu les migrations de données onéreuses</block>
-  <block id="fad18723d417fce1e95c966edce6b387" category="cell">Entrez le nom de domaine complet ou l'adresse IP d'un cluster de stockage ou d'une machine virtuelle de stockage. Le plug-in SnapCenter pour VMware ne prend pas en charge plusieurs systèmes de stockage d'un même nom sur des clusters différents. Chaque système de stockage pris en charge par SnapCenter doit disposer d'une adresse IP de LIF de données unique.</block>
-  <block id="419f3742e6de8e0ec4b22cce005e7630" category="cell">Plateforme</block>
-  <block id="cd5a35c139a8f0beea540baf32ecc554" category="cell">Sélectionnez la plate-forme.</block>
   <block id="f6039d44b29456b20f8f373155ae4973" category="cell">Nom d'utilisateur</block>
   <block id="dc647eb65e6711e155375218212b3964" category="cell">Mot de passe</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">Protocole</block>
   <block id="cbb61ef47b30c9a254f01c17c56944ea" category="cell">Sélectionnez le protocole de stockage.</block>
   <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">Port</block>
-  <block id="62977e65c9be4b337db0dff68f2781a8" category="cell">Sélectionnez le port 443 (par défaut) ou le port 80 pour communiquer avec vCenter. Le port 443 est utilisé pour la communication entre l'hôte de machine virtuelle de stockage pour le plug-in SnapCenter pour VMware vSphere et vCenter lors des opérations de sauvegarde et de restauration des machines virtuelles et des datastores. Vous devez sélectionner le port par défaut 443 si vous prévoyez de protéger les VM vvol.</block>
   <block id="c85a251cc457840f1e032f1b733e9398" category="cell">Délai dépassé</block>
-  <block id="c123e7ec944a655ce6b0eb1994987cd7" category="cell">Entrez le nombre de secondes que vCenter doit attendre avant de mettre fin à l'opération. La valeur par défaut est 60 secondes.</block>
   <block id="13772e079123f6cc3b0a65f5912e0ac4" category="cell">Adresse IP préférée</block>
-  <block id="2870b54f4433265458cda5b06ab869ae" category="cell">Si la machine virtuelle de stockage possède plusieurs adresses IP de gestion, cochez cette case et entrez l'adresse IP que vous souhaitez utiliser SnapCenter. *Remarque :* n'utilisez pas de crochets ([]) lors de la saisie de l'adresse IP.</block>
   <block id="15cb2b9c090bdc4868f38d74b1626bca" category="cell">Consigner les événements du serveur SnapCenter dans syslog</block>
   <block id="c5f67140b8ebc3ad63f626b837c93a28" category="cell">Cochez la case pour consigner les événements du plug-in SnapCenter VMware.</block>
   <block id="0adf9b7ec7bd1bc34fa619474f6709e0" category="cell">Envoyer la notification AutoSupport en cas d'échec de l'opération dans le système de stockage</block>
@@ -1731,7 +1724,6 @@
   <block id="aa4d783fee816f8d21f67950ef7dcc20" category="paragraph">Si le plug-in SnapCenter VMware n'est pas activé, reportez-vous à la section <block ref="6f48ea8f284b5f5f2ad46612a3e37eec" category="inline-link-macro-rx"></block>.</block>
   <block id="1421137324c618036c21fb84413b93fd" category="list-text">Dans l'interface utilisateur graphique du client VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis accédez à la machine virtuelle ou au datastore que vous souhaitez ajouter.</block>
   <block id="26dc1678973cf898baa325abda96cb6d" category="paragraph">Utilisez le client VMware vSphere pour ajouter du stockage.</block>
-  <block id="1931a868e4e40f746c1be3fe292582d4" category="paragraph">Il vous faut d'abord ajouter le système de stockage vvols aux outils ONTAP pour VMware vSphere, puis ajouter le système de stockage vvols au plug-in SnapCenter pour VMware vSphere.</block>
   <block id="ed9018b2e8611a3d2c03bb6a205b9715" category="inline-link">Les outils ONTAP pour VMware vSphere</block>
   <block id="7598c46258085b3d4013c760f473771e" category="paragraph">Pour plus d'informations, voir<block ref="fdd966f4de047f12034d4cf35b0cc9b2" category="inline-link-rx"></block></block>
   <block id="de9e931cdaba9ca16191e1a4327cc0e8" category="admonition">Si vous utilisez le plug-in SnapCenter pour VMware pour prendre en charge les sauvegardes basées sur les applications sur des VMDK, vous devez utiliser l'interface graphique de SnapCenter pour entrer les détails de l'authentification du stockage et enregistrer les systèmes de stockage.</block>
@@ -2073,4 +2065,15 @@ Pour plus d'informations, voir<block ref="16263f44e6fc6cfd9b368310c2c86222" cate
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="d0ea0acf98adef65d75abe323fe90376" category="admonition">Vous devez supprimer la machine virtuelle proxy de l'interface utilisateur du plug-in SnapCenter pour VMware vSphere avant de pouvoir la supprimer de VMware ESXi.</block>
+  <block id="a06bb07ae4f38addfa216f1bf6d50271" category="paragraph">Vous devez d'abord ajouter le système de stockage vVols aux outils ONTAP pour VMware vSphere, puis l'ajouter au plug-in SnapCenter pour VMware vSphere.</block>
+  <block id="0d4068754a5316289f4fe4cb2c9f06ab" category="paragraph">Si vous avez ajouté des entrées au fichier _etc\hosts_ pour les noms de machines virtuelles de stockage dans SnapCenter, vous devez vous assurer qu'elles peuvent également être résolues à partir de l'appliance virtuelle. Si ce n'est pas le cas, vous devez ajouter des entrées similaires au fichier _etc/hosts_ de l'appliance.</block>
+  <block id="ec152cd63150806755f263280e145f0b" category="cell">Entrez l'adresse IP du FQDN ou de la LIF de gestion d'un cluster de stockage ou d'une VM de stockage.
+Le plug-in SnapCenter VMware ne prend pas en charge plusieurs machines virtuelles de stockage portant le même nom sur des clusters différents.</block>
+  <block id="5c75867322c5948bda582697a669534b" category="cell">Port accepté par le système de stockage.
+- 443 pour la connexion HTTPS
+- 80 pour la connexion HTTP</block>
+  <block id="1c5f9a41c5507d4adb0d486ee3d2b620" category="cell">Entrez le nombre de secondes d'attente du plug-in VMware SnapCenter avant de procéder à la temporisation de l'opération. La valeur par défaut est 60 secondes.</block>
+  <block id="2dc5e487794f729ff43e4206e76d5676" category="cell">Si la machine virtuelle de stockage possède plusieurs adresses IP de gestion, cochez cette case et entrez l'adresse IP que vous souhaitez utiliser le plug-in SnapCenter VMware.
+*Remarque :* n'utilisez pas de crochets ([]) lors de la saisie de l'adresse IP.</block>
 </blocks>
