@@ -14,7 +14,7 @@ summary: 'Si vous utilisez le plug-in SnapCenter pour l"appliance virtuelle VMwa
 
 
 
-NOTE: La mise à niveau vers SCV 4.9 est prise en charge uniquement sur VMware vCenter Server 7, mise à jour 1 et versions ultérieures. Pour le serveur VMware vCenter antérieur à la version 7, mise à jour 1, vous devez continuer à utiliser SCV 4.7. La mise à niveau est perturbatrice sur des versions de serveur VMware vCenter non prises en charge.
+NOTE: La mise à niveau vers SCV 5.0 est prise en charge uniquement sur VMware vCenter Server 7, mise à jour 1 et versions ultérieures. Pour le serveur VMware vCenter antérieur à la version 7, mise à jour 1, vous devez continuer à utiliser SCV 4.7. La mise à niveau est perturbatrice sur des versions de serveur VMware vCenter non prises en charge.
 
 Si vous utilisez le plug-in SnapCenter pour l'appliance virtuelle VMware vSphere, vous pouvez effectuer la mise à niveau vers une version plus récente. Le processus de mise à niveau annule l'enregistrement du plug-in existant et déploie un plug-in compatible uniquement avec vSphere 7.0U1 et les versions ultérieures.
 

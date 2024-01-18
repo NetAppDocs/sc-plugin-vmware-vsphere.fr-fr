@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_create_resource_groups_for_vms_and_datastores.html 
 keywords:  
-summary: Un groupe de ressources est le conteneur pour les machines virtuelles, les datastores ou les machines virtuelles vvols que vous souhaitez protéger. 
+summary: Un groupe de ressources est le conteneur pour les machines virtuelles, les datastores, les balises vSphere et les dossiers de machines virtuelles vSphere que vous souhaitez protéger. 
 ---
 = Créer des groupes de ressources
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Un groupe de ressources est le conteneur pour les machines virtuelles, 
 
 
 [role="lead"]
-Un groupe de ressources est le conteneur pour les machines virtuelles, les datastores et les machines virtuelles vvol que vous souhaitez protéger.
+Un groupe de ressources est le conteneur pour les machines virtuelles, les datastores, les balises vSphere et les dossiers de machines virtuelles vSphere que vous souhaitez protéger.
 
 Un groupe de ressources peut contenir les éléments suivants :
 
@@ -34,9 +34,9 @@ Un ou plusieurs datastores FlexVol. Les datastores Spanning sont pris en charge.
 +
 Une ou plusieurs machines virtuelles vvol. Les machines virtuelles vvol ne peuvent pas être combinées avec des machines virtuelles ou des datastores traditionnels.
 
-* Machines virtuelles vvol avec une balise
+* Balise vSphere
 +
-Toutes les machines virtuelles vvol avec une balise vCenter spécifiée. Les autres entités utilisant des balises, telles que les datastores ou les machines virtuelles classiques, avec le même tag dans le même vCenter ou dans un autre vCenter, ne sont pas prises en charge. Si la liste des machines virtuelles avec la balise spécifiée contient un mélange de machines virtuelles vvol et de machines virtuelles traditionnelles, le plug-in SnapCenter pour VMware vSphere sauvegarde les machines virtuelles vvol et ignore ces machines virtuelles classiques.
+Toutes les machines virtuelles et tous les datastores, à l'exception des datastores vVol, qui ont le tag vSphere spécifié.
 
 * Volumes virtuels dans un dossier
 +
@@ -84,7 +84,13 @@ Pour optimiser les copies Snapshot, il est conseillé de regrouper les VM et les
 
 * Politiques de sauvegarde
 +
-Bien qu'il soit possible de créer un groupe de ressources sans stratégie de sauvegarde, vous ne pouvez exécuter que des opérations de protection des données planifiées lorsqu'au moins une stratégie est attachée au groupe de ressources. Vous pouvez utiliser une stratégie existante ou créer une nouvelle stratégie lors de la création d'un groupe de ressources.
+Bien que vous puissiez créer un groupe de ressources sans règle de sauvegarde, les opérations de protection des données ne sont possibles que si au moins une règle est associée au groupe de ressources. Vous avez la possibilité d'utiliser une stratégie existante ou d'en créer une nouvelle lors du processus de création du groupe de ressources.
+
++
+
+NOTE: Si vous sélectionnez une règle de sauvegarde avec la période de verrouillage des snapshots, vous devez sélectionner ONTAP 9.12.1 ou une version ultérieure.
+
+
 
 * Contrôles de compatibilité
 +
@@ -154,7 +160,13 @@ Si vous souhaitez utiliser le format personnalisé des noms de copies Snapshot, 
 | Pour ce champ… | Faites cela… 
 
 
-| Portée | Sélectionnez le type de ressource à protéger : * datastores (toutes les machines virtuelles traditionnelles d'un ou plusieurs datastores spécifiés). Vous ne pouvez pas sélectionner un datastore vVol. * Machines virtuelles (machines virtuelles individuelles traditionnelles ou vvol ; dans le champ, vous devez naviguer vers le datastore contenant les machines virtuelles ou vvol). Vous ne pouvez pas sélectionner de machines virtuelles individuelles dans un datastore FlexGroup. * Tags (toutes les machines virtuelles vVol avec une seule balise VMware spécifiée ; dans la zone de liste, vous devez entrer le tag) * VM Folder (toutes les machines virtuelles vVol dans un dossier spécifié ; dans le champ contextuel, vous devez naviguer vers le centre de données dans lequel se trouve le dossier) 
+| Portée | Sélectionnez le type de ressource à protéger :
+* Datastores (toutes les machines virtuelles traditionnelles dans un ou plusieurs datastores spécifiés). Vous ne pouvez pas sélectionner un datastore vVol.
+* Machines virtuelles (machines virtuelles individuelles traditionnelles ou vvol ; dans le champ, vous devez naviguer vers le datastore contenant les machines virtuelles ou vvol).
+Vous ne pouvez pas sélectionner de machines virtuelles individuelles dans un datastore FlexGroup.
+* Tags
+La protection des datastores basée sur des balises est prise en charge uniquement pour les datastores NFS et VMFS, ainsi que pour les machines virtuelles et les machines virtuelles vVol.
+* Dossier VM (toutes les VM vVol dans un dossier spécifié ; dans le champ contextuel, vous devez naviguer jusqu'au centre de données dans lequel se trouve le dossier) 
 
 
 | Data Center | Accédez aux VM ou datastores ou au dossier que vous souhaitez ajouter. 
@@ -173,8 +185,8 @@ Pour exclure globalement un ou plusieurs datastores des sauvegardes, vous devez 
 
 .. Sur la page *Spanning disks*, sélectionnez une option pour les machines virtuelles avec plusieurs VMDK sur plusieurs datastores :
 +
-*** Toujours exclure tous les datastores de type « Spanning datastore » [c'est la valeur par défaut pour les datastores.]
-*** Incluez toujours tous les datastores Spanning datastore [c'est la valeur par défaut pour les machines virtuelles.]
+*** Toujours exclure tous les datastores à découpage (c'est la valeur par défaut pour les datastores).
+*** Incluez toujours tous les datastores Spanning (c'est la valeur par défaut pour les machines virtuelles).
 *** Sélectionnez manuellement les datastores à inclure
 +
 Les machines virtuelles Spanning ne sont pas prises en charge pour les datastores FlexGroup et vvol.

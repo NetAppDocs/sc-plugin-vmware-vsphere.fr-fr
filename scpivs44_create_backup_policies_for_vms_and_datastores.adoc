@@ -32,6 +32,19 @@ Pour plus d'informations sur la manière dont les administrateurs attribuent des
 
 
 * Si vous souhaitez des sauvegardes cohérentes avec les machines virtuelles, vous devez avoir installé et en cours d'exécution les outils VMware. Les outils VMware sont nécessaires pour arrêter les machines virtuelles. Les sauvegardes cohérentes avec les machines virtuelles ne sont pas prises en charge pour les machines virtuelles vvol.
+* SnapMirror Business Continuity (SM-BC) assure la continuité des services de l'entreprise même en cas de défaillance complète du site, permettant aux applications de basculer en toute transparence à l'aide d'une copie secondaire.
++
+
+NOTE: SM-BC n'est pris en charge que pour les datastores VMFS.
+
++
+Pour protéger un datastore VMFS sur un déploiement SM-BC, en tant qu'administrateur SnapCenter, vous devez :
+
++
+** Configurez les clusters et le médiateur comme décrit dans le rapport technique : https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["Tr-4878 : continuité de l'activité avec SnapMirror"].
+** Ajoutez le volume associé au datastore VMFS au groupe de cohérence et créez une relation de protection des données à l'aide de la règle de protection _AutomatedFailOver_ entre deux systèmes de stockage ONTAP.
+
+
 
 
 .Description de la tâche
@@ -55,6 +68,11 @@ Un caractère de soulignement (_) est autorisé.
 
 
 
+. Spécifiez les paramètres de fréquence.
++
+La stratégie spécifie uniquement la fréquence de sauvegarde. La planification de protection spécifique pour la sauvegarde est définie dans le groupe de ressources. Par conséquent, au moins deux groupes de ressources peuvent partager la même stratégie et la même fréquence de sauvegarde, mais ont des programmes de sauvegarde différents.
+
+. Cochez la case *Locking Period* pour activer le verrouillage des instantanés. Vous pouvez sélectionner la période de verrouillage des instantanés comme jours/mois/années.
 . Spécifiez les paramètres de rétention.
 +
 
@@ -63,10 +81,6 @@ IMPORTANT: Si vous prévoyez d'activer la réplication SnapVault, définissez le
 +
 
 NOTE: La valeur maximale de rétention est de 1018 sauvegardes pour les ressources sous ONTAP 9.4 ou version ultérieure et de 254 sauvegardes pour les ressources sous ONTAP 9.3 ou version antérieure. Les sauvegardes échouent si la conservation est définie sur une valeur supérieure à celle prise en charge par la version ONTAP sous-jacente. Cela s'applique également aux datastores Spanning. Si un datastore Spanning comprend des ressources à la fois sur ONTAP 9.3 et versions antérieures, et sur ONTAP 9.4 et versions ultérieures, veillez à définir la valeur de rétention ci-dessous 254.
-
-. Spécifiez les paramètres de fréquence.
-+
-La stratégie spécifie uniquement la fréquence de sauvegarde. La planification de protection spécifique pour la sauvegarde est définie dans le groupe de ressources. Par conséquent, au moins deux groupes de ressources peuvent partager la même stratégie et la même fréquence de sauvegarde, mais ont des programmes de sauvegarde différents.
 
 . Dans les champs *Replication*, spécifiez le type de réplication vers le stockage secondaire, comme indiqué dans le tableau suivant :
 +
@@ -79,6 +93,9 @@ Sélectionnez cette option pour créer des copies miroir des jeux de sauvegarde 
 
 
 NOTE: Cette option est prise en charge pour les datastores dans les volumes FlexGroup dans le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures.
+
+
+NOTE: Pour protéger le datastore VMFS sur un déploiement SM-BC, vous devez remplir les conditions préalables mentionnées dans la section _avant de commencer_ et activer *mettre à jour SnapMirror après la sauvegarde*.
 
 
 

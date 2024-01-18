@@ -25,7 +25,7 @@ Vous pouvez renommer le plug-in SnapCenter pour les sauvegardes VMware vSphere s
 .Étapes
 . Cliquez sur *Menu* et sélectionnez l'option de menu *hôtes et clusters*, puis sélectionnez une machine virtuelle, sélectionnez l'onglet *configurer*, puis cliquez sur *sauvegardes* dans la section *SnapCenter Plug-in pour VMware vSphere*.
 +
-image:scpivs44_image14.png["Écran client vSphere"]
+image:scv50_image1.png["Écran client vSphere"]
 
 . Dans l'onglet configurer, sélectionnez une sauvegarde et cliquez sur *Renommer*.
 . Dans la boîte de dialogue *Renommer la sauvegarde*, entrez le nouveau nom, puis cliquez sur *OK*.
@@ -48,7 +48,7 @@ Les copies Snapshot sur le stockage secondaire sont gérées par vos paramètres
 
 . Cliquez sur *Menu* et sélectionnez l'option de menu *hôtes et clusters*, puis sélectionnez une machine virtuelle, sélectionnez l'onglet *configurer*, puis cliquez sur *sauvegardes* dans la section *SnapCenter Plug-in pour VMware vSphere*.
 +
-image:scpivs44_image14.png["Fenêtre client vSphere"]
+image:scv50_image1.png["Fenêtre client vSphere"]
 
 . Sélectionnez une ou plusieurs sauvegardes et cliquez sur *Supprimer*.
 +

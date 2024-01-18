@@ -14,7 +14,7 @@ summary: 'Il est important de connaître les conditions de déploiement requises
 
 
 [role="lead"]
-Il est important de connaître les conditions de déploiement requises avant de déployer l'appliance virtuelle. Les exigences de déploiement sont répertoriées dans les cinq tableaux suivants.
+Il est important de connaître les conditions de déploiement requises avant de déployer l'appliance virtuelle. Les exigences de déploiement sont répertoriées dans les tableaux suivants.
 
 
 
@@ -162,7 +162,7 @@ Pour obtenir les dernières informations sur les versions prises en charge, repo
 | Plug-in SnapCenter pour port VMware vSphere  a| 
 8144 (HTTPS), bidirectionnel le port est utilisé pour les communications à partir du client VMware vSphere et du serveur SnapCenter. 8080 bidirectionnel ce port est utilisé pour gérer l'appliance virtuelle.
 
-Remarque : vous ne pouvez pas modifier la configuration des ports.
+Remarque : le port personnalisé pour l'ajout de l'hôte de distributeur sélectif à SnapCenter est pris en charge.
 
 
 

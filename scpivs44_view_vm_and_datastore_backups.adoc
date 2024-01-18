@@ -22,7 +22,7 @@ La navigation dans de grands dossiers de fichiers, par exemple des dossiers de f
 .Étapes
 . Cliquez sur *Menu* et sélectionnez l'option de menu *hôtes et clusters*, puis sélectionnez une machine virtuelle, sélectionnez l'onglet *configurer*, puis cliquez sur *sauvegardes* dans la section *SnapCenter Plug-in pour VMware vSphere*.
 +
-image:scpivs44_image14.png["Interface client vSphere"]
+image:scv50_image1.png["Interface client vSphere"]
 
 . Cliquez sur la sauvegarde que vous souhaitez afficher.
 

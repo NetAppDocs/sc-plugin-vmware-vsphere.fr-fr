@@ -30,14 +30,6 @@ Les configurations par défaut des fichiers d'audit sont les suivantes :
 * Un maximum de 10 fichiers journaux d'audit sont conservés
 
 
-Pour modifier les configurations par défaut, ajoutez une paire de valeurs clés dans le fichier /opt/netapp/scvservice/autonome_AEGIS/etc/scbr/scbr.properties, puis redémarrez le service scvservice.
-
-Les configurations des fichiers journaux d'audit sont les suivantes :
-
-* AuditMaxROFiles=<xx>, où xx est le nombre maximum de fichiers journaux d'audit roulés, par exemple : auditMaxROFiles=15.
-* AuditLogSize=<XX>, où xx correspond à la taille du fichier en Mo, par exemple : auditLogSize=15 Mo.
-
-
 Les journaux sont régulièrement vérifiés pour leur intégrité. SCV fournit des API REST pour afficher les journaux et vérifier leur intégrité. Un planning intégré déclenche et attribue l'un des États d'intégrité suivants.
 
 |===
@@ -79,6 +71,8 @@ Les ressources du distributeur sélectif sont:
 * Groupe de ressources
 * Politique
 * Sauvegarde
+* Abonnement
+* Compte
 
 
 Le tableau suivant répertorie les opérations pouvant être effectuées sur chaque ressource :
@@ -86,10 +80,16 @@ Le tableau suivant répertorie les opérations pouvant être effectuées sur cha
 |===
 
 
-| Ressources | Exploitation 
+| *Ressources* | * Opérations* 
 
 
 | System de stockage | Créé, modifié, supprimé 
+
+
+| Abonnement | Créé, modifié, supprimé 
+
+
+| Compte | Créé, modifié, supprimé 
 
 
 | Groupe de ressources | Créé, modifié, supprimé, suspendu, repris 
@@ -189,5 +189,5 @@ Cette tâche vous permet de modifier les paramètres du journal d'audit par déf
 .Étapes
 . Connectez-vous au plug-in SnapCenter pour VMware vSphere.
 . Dans le volet de navigation de gauche, sélectionnez *Paramètres* > *journaux d'audit* > *Paramètres*.
-. Dans le volet *Paramètres du journal d'audit*, entrez *nombre d'entrées d'audit* et *limite de taille du journal d'audit* en fonction de vos besoins.
+. Dans le volet *Paramètres du journal d'audit*, entrez le nombre maximal de fichiers journaux d'audit et la limite de taille du fichier journal d'audit.
 

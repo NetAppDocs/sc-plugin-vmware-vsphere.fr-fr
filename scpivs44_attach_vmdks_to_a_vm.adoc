@@ -39,9 +39,6 @@ Dans ce cas, ajoutez les contrôleurs SCSI manuellement et réessayez d'effectue
 .Étapes
 . Dans l'interface utilisateur graphique du client VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *hôtes et clusters* dans la liste déroulante.
 . Dans le volet de navigation de gauche, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *NetApp SnapCenter* dans la liste déroulante, puis sélectionnez *attacher un disque virtuel* dans la liste déroulante secondaire.
-+
-image:scpivs44_image22.png["Fenêtre rattacher un disque virtuel"]
-
 . Dans la fenêtre *Attach disque virtuel*, dans la section *Backup*, sélectionnez une sauvegarde.
 +
 Vous pouvez filtrer la liste des sauvegardes en sélectionnant l'icône de filtre et en choisissant une plage de date et d'heure, en indiquant si vous souhaitez des sauvegardes contenant des copies Snapshot VMware, si vous voulez monter des sauvegardes et l'emplacement. Cliquez sur *OK*.

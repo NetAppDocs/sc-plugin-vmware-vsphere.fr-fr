@@ -18,7 +18,4 @@ Suivez les instructions ci-dessous pour créer des politiques de sauvegarde
 
 . Dans le volet de gauche du plug-in SCV, cliquez sur *politiques*, puis sélectionnez *Nouvelle politique*.
 . Sur la page *Nouvelle stratégie de sauvegarde*, entrez les informations de configuration de la stratégie, puis cliquez sur *Ajouter*.
-+
-Si la stratégie sera utilisée pour les relations miroir-coffre-fort, alors dans le champ réplication, vous devez sélectionner uniquement l'option *mettre à jour SnapVault après sauvegarde* si vous souhaitez que les sauvegardes soient copiées vers les destinations miroir-coffre-fort.
-
 

@@ -53,7 +53,7 @@ Tous les plug-ins SnapCenter requièrent les privilèges minimaux suivants :
 | pairs vserver 
 |===
 
-NOTE: Vous pouvez ignorer les messages d'avertissement concernant les commandes vserver non prises en charge.
+NOTE: Vous pouvez ignorer les messages d'avertissement concernant les commandes vServer non prises en charge.
 
 
 
@@ -68,4 +68,14 @@ Vous devez vous connecter en tant que `vsadmin` Sur la machine virtuelle de stoc
 Vous devez vous connecter en tant que `vsadmin` ou avec un rôle dont les privilèges sont minimum indiqués dans les tableaux ci-dessus.
 
 * Vous devez être l'administrateur du cluster pour créer et gérer les rôles utilisateur. Vous pouvez associer les utilisateurs à la machine virtuelle de stockage du cluster ou à la machine virtuelle de stockage.
+* Vous avez besoin de ONTAP 9.12.1 ou de versions ultérieures pour utiliser la fonctionnalité SnapMirror Business Continuity (SM-BC).
+* Pour utiliser la fonction d'instantané inviolable (TPS) :
++
+** ONTAP 9.13.1 et versions ultérieures sont nécessaires pour SAN
+** ONTAP 9.12.1 et versions ultérieures sont nécessaires pour NFS
 
+
+
+
+
+NOTE: Pour ONTAP version 9.11.1 et ultérieure, la communication avec le cluster ONTAP s'effectue via des API REST. L'application http doit être activée pour l'utilisateur ONTAP. Cependant, si des problèmes sont détectés avec les API REST ONTAP, la clé de configuration 'FORCE_ZAPI' facilite le basculement vers le workflow ZAPI traditionnel. Vous devrez peut-être ajouter ou mettre à jour cette clé à l'aide des API DE configuration et la définir sur vrai. Voir l'article de la base de connaissances, https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV["Comment utiliser RestAPI pour modifier les paramètres de configuration dans SCV"].

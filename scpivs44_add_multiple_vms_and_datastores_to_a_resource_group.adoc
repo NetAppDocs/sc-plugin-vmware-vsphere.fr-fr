@@ -22,7 +22,7 @@ Un groupe de ressources peut contenir l'un des éléments suivants :
 * Un datastore FlexGroup (les machines virtuelles de connexion ne sont pas prises en charge).
 * Un ou plusieurs datastores FlexVol (serveurs virtuels pris en charge).
 * Une ou plusieurs machines virtuelles vvol.
-* Toutes les machines virtuelles vvol avec une balise vCenter spécifiée.
+* Toutes les VM vVol avec une balise vSphere spécifiée.
 * Toutes les machines virtuelles vvol dans un dossier spécifié.
 
 

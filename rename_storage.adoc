@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: rename_storage.html 
+keywords:  
+summary: 'Vous pouvez renommer le stockage à l"aide de l"API REST.' 
+---
+= Restaurer la sauvegarde du stockage renommé
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Lorsque le stockage est renommé, les flux de travail utilisant des sauvegardes prises avant le renommage utilisé échouent. Avec l'introduction de la fonctionnalité Renommer la sauvegarde, qui est exclusivement accessible via l'API REST, il est désormais possible d'utiliser les sauvegardes qui ont été effectuées avant de renommer le stockage. Le workflow et l'utilisation de l'API REST sont décrits ci-dessous.
+
+.Étapes
+. Ajouter ou mettre à jour la nouvelle connexion de stockage en s'assurant que le nouveau nom de cluster ou de SVM est reflété dans SCV.
+. Redémarrez le service pour actualiser les caches comme décrit dans l'article de la base de connaissances : https://kb.netapp.com/mgmt/SnapCenter/SCV_backups_fail_after_SVM_rename["Les sauvegardes des distributeurs sélectifs ont échoué après le renommage des SVM"]
+. Créez une nouvelle sauvegarde.
+. Utilisez les détails de la sauvegarde pour trouver l'ancien et le nouveau nom de stockage.
+. Dans l'écran *backups* du client vSphere, sélectionnez la sauvegarde pour en afficher les détails.
+. Accédez à swagger à partir de l'URL : https://<SCV-IP>:8144/api/swagger-ui/index.html[]
++
+Utilisez l'API suivante pour renommer le stockage :
+
++
+CORRECTIF
+/4.1/système-stockage
+
++
+Exemple :
+{
+  « ExistingSVM » : {
+    « nom » : « chaîne »
+  },
+  « NewSVM » : {
+    « nom » : « chaîne »
+  }
+}
+
++
+Réponse :
+
++
+{
+  « StatusMessage » : « OK »,
+  « StatusCode » : 200,
+  "ResponseMessage": [
+    « Le système de stockage a été renommé. »
+  ]
+}
+
++
+Après avoir exécuté cette API, vous pourrez exécuter tous les flux de travail, y compris l'opération de restauration à partir de l'ancienne sauvegarde.
+
+
