@@ -1333,7 +1333,6 @@
   <block id="dc9d5117fa27f9852d62a28174a9c1bf" category="paragraph">Tous les vvols dans un dossier vVol unique spécifié. Si le dossier contient plusieurs machines virtuelles vvol et des machines virtuelles classiques, le plug-in SnapCenter pour VMware vSphere sauvegarde les machines virtuelles vvol et ignore les machines virtuelles classiques.</block>
   <block id="c7fda16b0d034ce0f2afcab4d2064e02" category="paragraph">Pour tous les groupes de ressources :</block>
   <block id="32e5f7f976ca899df5a227d732f28456" category="admonition">Si vous utilisez VMware vSphere Cluster Service (vCLS), n'incluez pas les machines virtuelles gérées par vCLS dans les groupes de ressources du plug-in SnapCenter VMware.</block>
-  <block id="c8e385cc7a112ebc9131fa51b5a3767b" category="admonition">Le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures prend en charge les datastores dans des LUN de grande taille, jusqu'à 128 To sur des agrégats ASA. Si vous protégez des LUN volumineuses, utilisez uniquement des LUN à provisionnement lourd pour éviter la latence.</block>
   <block id="14a4c06df8c2378b5b2b307902f01931" category="admonition">N'ajoutez pas de VM inaccessibles. Bien qu'il soit possible de créer un groupe de ressources contenant des VM inaccessibles, les sauvegardes de ce groupe de ressources échoueront.</block>
   <block id="9cce6f26b63d9eb5d76faeab404389aa" category="paragraph">Vous pouvez à tout moment ajouter ou supprimer des ressources d'un groupe de ressources.</block>
   <block id="52fb0b971147f2d50f41f8affa7cbf5e" category="list-text">La sauvegarde d'une seule ressource</block>
@@ -1370,12 +1369,10 @@
   <block id="db483b4b52b624fc9163590680bfec11" category="cell">Format de snapshot personnalisé</block>
   <block id="cdd24b9d1a277d3a5383ba07346b9f5a" category="paragraph">Si vous souhaitez utiliser le format personnalisé des noms de copies Snapshot, cochez cette case et entrez le format du nom.</block>
   <block id="424f6337d74c16c2d02e5cb2e6d97f82" category="list-text">Par défaut, cette fonction est désactivée.</block>
-  <block id="b5fa0613e2fb44b25ee1739ace5e3746" category="list-text">Les noms de copie Snapshot par défaut utilisent le format<block ref="ba8f4cc4ace4f3315ea21bd52fbde9d9" prefix=" " category="inline-code"></block>Cependant, vous pouvez spécifier un format personnalisé à l'aide des variables $ResourceGroup, $Policy, $hostname, $ScheduleType et $CustomText. Utilisez la liste déroulante du champ Nom personnalisé pour sélectionner les variables que vous souhaitez utiliser et l'ordre dans lequel elles sont utilisées. Si vous sélectionnez $CustomText, le format du nom est<block ref="ad231838859064f0fe437a9669c0d36f" prefix=" " category="inline-code"></block>. Entrez le texte personnalisé dans la zone supplémentaire fournie. REMARQUE : si vous sélectionnez également le suffixe “_Recent”, vous devez vous assurer que les noms de snapshot personnalisés seront uniques dans le datastore. Par conséquent, vous devez ajouter les variables $ResourceGroup et $Policy au nom.</block>
   <block id="f6023484d4c2c1da1f8822ae43bc066a" category="list-text">Caractères spéciaux pour les caractères spéciaux dans les noms, suivez les mêmes directives que pour le champ Nom.</block>
   <block id="2b2620f1962d78eb23f6f754d96e6546" category="list-text">Sur la page *Ressources*, procédez comme suit :</block>
   <block id="5d113f2038d289f391614c39043629e8" category="cell">Portée</block>
   <block id="615707baa418ce315e44ac2a5d6164af" category="cell">Data Center</block>
-  <block id="d1fce2857d6a7747bc3a9e485e2cf30f" category="cell">Accédez aux VM ou datastores ou au dossier que vous souhaitez ajouter.</block>
   <block id="4c928d1c171b7d62d8f758ffa689710f" category="cell">Entités disponibles</block>
   <block id="0ae7bb79645eeb5721a499d2799dbf70" category="cell">Sélectionnez les ressources à protéger, puis cliquez sur *&gt;* pour déplacer vos sélections dans la liste des entités sélectionnées.</block>
   <block id="749435efb6e9940bcadad406e3a36d76" category="paragraph">Lorsque vous cliquez sur *Suivant*, le système vérifie d'abord que SnapCenter gère et est compatible avec le stockage sur lequel les ressources sélectionnées sont situées.</block>
@@ -2121,4 +2118,12 @@ Générez le bundle « core dump »</block>
   <block id="8857a92c9dd7ad8b9a97a4565e945efb" category="paragraph"><block ref="8857a92c9dd7ad8b9a97a4565e945efb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d8c6c8a7a8f9e330585c15378277631e" category="sidebar">Documentation du plug-in SnapCenter pour VMware vSphere 5.0</block>
   <block id="9f4e4670e68c9e84125d82202a3b5d12" category="sidebar">Renommer le stockage</block>
+  <block id="8cf2f0f05d235c9fc28a55c8caf77bb9" category="admonition">Le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures prend en charge les datastores sur des LUN volumineux et les fichiers jusqu'à 128 To avec des volumes jusqu'à 300 To. Si vous protégez des LUN volumineuses, utilisez uniquement des LUN à provisionnement lourd pour éviter la latence.</block>
+  <block id="ca70c61465600177453c8557e7c34dfb" category="list-text">Les noms de copie Snapshot par défaut utilisent le format<block ref="ba8f4cc4ace4f3315ea21bd52fbde9d9" prefix=" " category="inline-code"></block>
+Cependant, vous pouvez spécifier un format personnalisé à l'aide des variables $ResourceGroup, $Policy, $hostname, $ScheduleType et $CustomText. Utilisez la liste déroulante du champ Nom personnalisé pour sélectionner les variables que vous souhaitez utiliser et l'ordre dans lequel elles sont utilisées.
+Si vous sélectionnez $CustomText, le format du nom est<block ref="ad231838859064f0fe437a9669c0d36f" prefix=" " category="inline-code"></block>. Entrez le texte personnalisé dans la zone supplémentaire fournie.
+[REMARQUE] :
+Si vous sélectionnez également le suffixe “_Recent”, vous devez vous assurer que les noms de snapshots personnalisés seront uniques dans le datastore. Par conséquent, vous devez ajouter les variables $ResourceGroup et $Policy au nom.</block>
+  <block id="d07079db3fe1ac66c315b010e4b99b35" category="cell">Accédez aux VM ou datastores ou au dossier que vous souhaitez ajouter.
+Les noms de VM et de datastores d'un groupe de ressources doivent être uniques.</block>
 </blocks>

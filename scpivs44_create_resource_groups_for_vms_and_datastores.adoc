@@ -50,7 +50,7 @@ Pour tous les groupes de ressources :
 IMPORTANT: Si vous utilisez VMware vSphere Cluster Service (vCLS), n'incluez pas les machines virtuelles gérées par vCLS dans les groupes de ressources du plug-in SnapCenter VMware.
 
 
-TIP: Le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures prend en charge les datastores dans des LUN de grande taille, jusqu'à 128 To sur des agrégats ASA. Si vous protégez des LUN volumineuses, utilisez uniquement des LUN à provisionnement lourd pour éviter la latence.
+TIP: Le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures prend en charge les datastores sur des LUN volumineux et les fichiers jusqu'à 128 To avec des volumes jusqu'à 300 To. Si vous protégez des LUN volumineuses, utilisez uniquement des LUN à provisionnement lourd pour éviter la latence.
 
 
 IMPORTANT: N'ajoutez pas de VM inaccessibles. Bien qu'il soit possible de créer un groupe de ressources contenant des VM inaccessibles, les sauvegardes de ce groupe de ressources échoueront.
@@ -149,7 +149,11 @@ NOTE: A `_recent` la sauvegarde est créée pour chaque stratégie associée à 
 Si vous souhaitez utiliser le format personnalisé des noms de copies Snapshot, cochez cette case et entrez le format du nom.
 
 *** Par défaut, cette fonction est désactivée.
-*** Les noms de copie Snapshot par défaut utilisent le format `<ResourceGroup>_<Date-TimeStamp>`Cependant, vous pouvez spécifier un format personnalisé à l'aide des variables $ResourceGroup, $Policy, $hostname, $ScheduleType et $CustomText. Utilisez la liste déroulante du champ Nom personnalisé pour sélectionner les variables que vous souhaitez utiliser et l'ordre dans lequel elles sont utilisées. Si vous sélectionnez $CustomText, le format du nom est `<CustomName>_<Date-TimeStamp>`. Entrez le texte personnalisé dans la zone supplémentaire fournie. REMARQUE : si vous sélectionnez également le suffixe “_Recent”, vous devez vous assurer que les noms de snapshot personnalisés seront uniques dans le datastore. Par conséquent, vous devez ajouter les variables $ResourceGroup et $Policy au nom.
+*** Les noms de copie Snapshot par défaut utilisent le format `<ResourceGroup>_<Date-TimeStamp>`
+Cependant, vous pouvez spécifier un format personnalisé à l'aide des variables $ResourceGroup, $Policy, $hostname, $ScheduleType et $CustomText. Utilisez la liste déroulante du champ Nom personnalisé pour sélectionner les variables que vous souhaitez utiliser et l'ordre dans lequel elles sont utilisées.
+Si vous sélectionnez $CustomText, le format du nom est `<CustomName>_<Date-TimeStamp>`. Entrez le texte personnalisé dans la zone supplémentaire fournie.
+[REMARQUE] :
+Si vous sélectionnez également le suffixe “_Recent”, vous devez vous assurer que les noms de snapshots personnalisés seront uniques dans le datastore. Par conséquent, vous devez ajouter les variables $ResourceGroup et $Policy au nom.
 *** Caractères spéciaux pour les caractères spéciaux dans les noms, suivez les mêmes directives que pour le champ Nom.
 
 
@@ -169,7 +173,8 @@ La protection des datastores basée sur des balises est prise en charge uniqueme
 * Dossier VM (toutes les VM vVol dans un dossier spécifié ; dans le champ contextuel, vous devez naviguer jusqu'au centre de données dans lequel se trouve le dossier) 
 
 
-| Data Center | Accédez aux VM ou datastores ou au dossier que vous souhaitez ajouter. 
+| Data Center | Accédez aux VM ou datastores ou au dossier que vous souhaitez ajouter.
+Les noms de VM et de datastores d'un groupe de ressources doivent être uniques. 
 
 
 | Entités disponibles | Sélectionnez les ressources à protéger, puis cliquez sur *>* pour déplacer vos sélections dans la liste des entités sélectionnées. 
