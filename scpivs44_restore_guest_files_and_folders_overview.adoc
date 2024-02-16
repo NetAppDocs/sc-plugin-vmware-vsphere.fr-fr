@@ -58,7 +58,7 @@ SnapCenter utilise les informations des outils VMware pour établir une connexio
 
 * Le système d'exploitation invité Windows doit exécuter Windows Server 2008 R2 ou une version ultérieure.
 +
-Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp (IMT)"^].
+Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["Matrice d'interopérabilité NetApp (IMT)"^].
 
 * Les informations d'identification de la VM cible doivent spécifier le compte d'administrateur de domaine intégré ou le compte d'administrateur local intégré. Le nom d'utilisateur doit être « Administrateur ». Avant de lancer l'opération de restauration, les informations d'identification doivent être configurées pour la machine virtuelle à laquelle vous souhaitez connecter le disque virtuel. Les informations d'identification sont requises pour l'opération de connexion et l'opération de restauration suivante. Les utilisateurs de Workgroup peuvent utiliser le compte d'administrateur local intégré.
 +
@@ -83,7 +83,7 @@ Vous pouvez restaurer des fichiers avec des noms non alphabétiques, tels que Ka
 
 * La restauration à partir d'un système d'exploitation invité Linux n'est pas prise en charge
 +
-Vous ne pouvez pas restaurer des fichiers et des dossiers à partir d'une machine virtuelle exécutant le système d'exploitation invité Linux. Toutefois, vous pouvez joindre un VMDK, puis restaurer manuellement les fichiers et les dossiers. Pour obtenir les dernières informations sur les systèmes d'exploitation invités pris en charge, reportez-vous au https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp (IMT)"^].
+Vous ne pouvez pas restaurer des fichiers et des dossiers à partir d'une machine virtuelle exécutant le système d'exploitation invité Linux. Toutefois, vous pouvez joindre un VMDK, puis restaurer manuellement les fichiers et les dossiers. Pour obtenir les dernières informations sur les systèmes d'exploitation invités pris en charge, reportez-vous au https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["Matrice d'interopérabilité NetApp (IMT)"^].
 
 
 
@@ -98,7 +98,7 @@ Avant de restaurer un fichier ou un dossier à partir d'un système d'exploitati
 * La page Parcourir les fichiers invités affiche les fichiers et le dossier masqués que vous ne pouvez pas filtrer.
 * Vous ne pouvez pas restaurer à partir d'un système d'exploitation invité Linux.
 +
-Vous ne pouvez pas restaurer des fichiers et des dossiers à partir d'une machine virtuelle exécutant le système d'exploitation invité Linux. Toutefois, vous pouvez joindre un VMDK, puis restaurer manuellement les fichiers et les dossiers. Pour obtenir les dernières informations sur les systèmes d'exploitation invités pris en charge, reportez-vous au https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp (IMT)"^].
+Vous ne pouvez pas restaurer des fichiers et des dossiers à partir d'une machine virtuelle exécutant le système d'exploitation invité Linux. Toutefois, vous pouvez joindre un VMDK, puis restaurer manuellement les fichiers et les dossiers. Pour obtenir les dernières informations sur les systèmes d'exploitation invités pris en charge, reportez-vous au https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["Matrice d'interopérabilité NetApp (IMT)"^].
 
 * Vous ne pouvez pas restaurer un système de fichiers NTFS vers un système de fichiers FAT.
 +

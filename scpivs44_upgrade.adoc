@@ -18,8 +18,27 @@ NOTE: La mise à niveau vers SCV 5.0 est prise en charge uniquement sur VMware v
 
 Si vous utilisez le plug-in SnapCenter pour l'appliance virtuelle VMware vSphere, vous pouvez effectuer la mise à niveau vers une version plus récente. Le processus de mise à niveau annule l'enregistrement du plug-in existant et déploie un plug-in compatible uniquement avec vSphere 7.0U1 et les versions ultérieures.
 
-Voir la link:scpivs44_release_notes.html["Notes de version du plug-in SnapCenter pour VMware vSphere"] pour plus d'informations sur les chemins de mise à niveau pris en charge.
 
+
+== Chemins de mise à niveau
+
+|===
+
+
+| Si vous utilisez le plug-in SnapCenter pour la version VMware vSphere (SCV)... | Vous pouvez directement mettre à niveau le plug-in SnapCenter pour VMware vSphere vers... 
+
+
+| DISTRIBUTEUR AUXILIAIRE 4.9 | Mise à niveau vers le distributeur sélectif 5.0 
+
+
+| DISTRIBUTEUR AUXILIAIRE 4.8 | Mise à niveau vers les distributeurs sélectifs 4.9 et 5.0 
+
+
+| DISTRIBUTEUR AUXILIAIRE 4.7 | Mise à niveau vers les distributeurs sélectifs 4.8 et 4.9 
+
+
+| DISTRIBUTEUR AUXILIAIRE 4.6 | Mise à niveau vers les distributeurs sélectifs 4.7 et 4.8 
+|===
 
 TIP: Sauvegarder le plug-in SnapCenter pour VMware vSphere OVA avant de lancer une mise à niveau.
 
