@@ -16,11 +16,14 @@ summary: 'Le contrôle d"accès basé sur des rôles (RBAC) ONTAP s"applique uni
 [role="lead"]
 Le contrôle d'accès basé sur des rôles (RBAC) ONTAP s'applique uniquement aux tâches du serveur SnapCenter cohérentes au niveau des applications (application sur VMDK).
 
+
+NOTE: À partir du plug-in SnapCenter pour VMware (SCV) 5.0, vous devez ajouter des applications de type HTTP et ONTAPI comme méthodes de connexion utilisateur pour tous les utilisateurs ONTAP disposant d'un accès personnalisé basé sur les rôles au SCV. Sans accès à ces applications, les sauvegardes échoueront. Vous devez redémarrer le service SCV pour reconnaître les modifications apportées aux méthodes de connexion utilisateur ONTAP. Pour plus d'informations sur la création ou la modification de comptes de connexion, reportez-vous à la section https://docs.netapp.com/us-en/ontap/authentication/config-worksheets-reference.html["Feuilles de calcul pour l'authentification de l'administrateur et la configuration du RBAC"].
+
 Vous devez configurer le RBAC ONTAP sur le système de stockage si vous souhaitez l'utiliser avec le plug-in SnapCenter VMware. Depuis ONTAP, vous devez effectuer les tâches suivantes :
 
 * Créez un rôle unique.
 +
-http://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-adm-auth-rbac%2Fhome.html["Guide de l'authentification de l'administrateur ONTAP 9 et de l'alimentation RBAC"^]
+https://docs.netapp.com/us-en/ontap/concepts/administrator-authentication-rbac-concept.html["Authentification de l'administrateur et RBAC"]
 
 * Créez un nom d'utilisateur et un mot de passe (identifiants du système de stockage) dans ONTAP pour le rôle.
 +

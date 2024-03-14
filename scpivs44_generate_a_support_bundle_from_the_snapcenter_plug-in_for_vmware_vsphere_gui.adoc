@@ -25,7 +25,7 @@ Pour vous connecter à l'interface utilisateur graphique de gestion SnapCenter P
 .Étapes
 . Connectez-vous au plug-in SnapCenter pour l'interface utilisateur graphique VMware vSphere.
 +
-Utiliser le format `https://<OVA-IP-address>:8080`.
+Utiliser le format `\https://<OVA-IP-address>:8080`.
 
 . Cliquez sur l'icône Paramètres dans la barre d'outils supérieure.
 +

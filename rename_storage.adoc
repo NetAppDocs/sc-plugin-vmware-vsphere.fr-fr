@@ -22,7 +22,7 @@ Lorsque le stockage est renommé, les flux de travail utilisant des sauvegardes 
 . Créez une nouvelle sauvegarde.
 . Utilisez les détails de la sauvegarde pour trouver l'ancien et le nouveau nom de stockage.
 . Dans l'écran *backups* du client vSphere, sélectionnez la sauvegarde pour en afficher les détails.
-. Accédez à swagger à partir de l'URL : https://<SCV-IP>:8144/api/swagger-ui/index.html[]
+. Accédez à swagger à partir de l'URL : `\https://<SCV-IP>:8144/api/swagger-ui/index.html`
 +
 Utilisez l'API suivante pour renommer le stockage :
 

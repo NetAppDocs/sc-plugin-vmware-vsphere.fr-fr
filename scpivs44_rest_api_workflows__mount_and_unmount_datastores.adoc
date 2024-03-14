@@ -16,7 +16,7 @@ summary: 'Pour effectuer des opérations de montage et de démontage pour les sa
 [role="lead"]
 Pour effectuer des opérations de montage et de démontage pour les sauvegardes de datastores à l'aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez suivre la séquence prescrite d'appels de l'API REST.
 
-Pour chaque API REST, ajoutez `https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
+Pour chaque API REST, ajoutez `\https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
 
 
 
@@ -26,7 +26,7 @@ Pour chaque API REST, ajoutez `https://<server>:<port>` Au niveau de l'API REST,
 | Étape | API REST | Commentaires 
 
 
-| 1 | Accédez à `http://<vCenter-IP>/mob` | Recherchez le moref du datastore à partir de l'URL des objets gérés VMware. Notez le *moref* pour le datastore que vous souhaitez monter. 
+| 1 | Accédez à `\http://<vCenter-IP>/mob` | Recherchez le moref du datastore à partir de l'URL des objets gérés VMware. Notez le *moref* pour le datastore que vous souhaitez monter. 
 
 
 | 2 | `/4.1/datastores/{moref}/

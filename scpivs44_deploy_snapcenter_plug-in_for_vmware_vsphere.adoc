@@ -140,7 +140,7 @@ L'écran affiche l'adresse IP à laquelle le plug-in SnapCenter VMware est dépl
 
 . Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter VMware à l'aide de l'adresse IP affichée sur l'écran de déploiement et des informations d'identification fournies dans l'assistant de déploiement, puis vérifiez dans le tableau de bord que le plug-in SnapCenter VMware est correctement connecté à vCenter et activé.
 +
-Utiliser le format `https://<appliance-IP-address>:8080` Pour accéder à l'interface graphique de gestion.
+Utiliser le format `\https://<appliance-IP-address>:8080` Pour accéder à l'interface graphique de gestion.
 
 +
 Connectez-vous avec le nom d'utilisateur et le mot de passe administrateur définis au moment du déploiement, ainsi que le jeton MFA généré à l'aide de la console de maintenance.

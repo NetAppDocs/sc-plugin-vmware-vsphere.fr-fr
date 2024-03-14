@@ -63,7 +63,7 @@ sidebar:
         url: "/scpivs44_minimum_ontap_privileges_required.html"
       - title: Privilèges vCenter minimum requis
         url: "/scpivs44_minimum_vcenter_privileges_required.html"
-    - title: Télécharger Open Virtual Appliance(OVA)
+    - title: Télécharger Open Virtual Appliance (OVA)
       url: "/scpivs44_download_the_ova_open_virtual_appliance.html"
     - title: Déployez le plug-in SnapCenter pour VMware vSphere
       url: "/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html"
@@ -75,8 +75,6 @@ sidebar:
     entries:
     - title: Présentation
       url: "/scpivs44_quick_start_overview.html"
-    - title: Télécharger Open Virtual Appliance(OVA)
-      url: "/scpivs44_download_the_ova_open_virtual_appliance.html"
     - title: Déployez le plug-in SnapCenter pour VMware vSphere
       url: "/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html"
     - title: Ajouter du stockage

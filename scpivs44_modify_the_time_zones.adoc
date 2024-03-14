@@ -30,7 +30,7 @@ Vous devez connaître l'adresse IP et les identifiants de connexion de l'interfa
 .Étapes
 . Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware.
 +
-Utiliser le format `https://<appliance-IP-address>:8080`
+Utiliser le format `\https://<appliance-IP-address>:8080`
 
 . Cliquez sur l'icône Paramètres dans la barre d'outils supérieure.
 +

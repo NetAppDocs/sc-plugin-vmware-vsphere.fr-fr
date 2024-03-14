@@ -16,7 +16,7 @@ summary: 'Pour effectuer des opérations d"ajout et de modification de machines 
 [role="lead"]
 Pour effectuer des opérations d'ajout et de modification de machines virtuelles de stockage à l'aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez suivre la séquence prescrite d'appels d'API REST.
 
-Pour chaque API REST, ajoutez `https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
+Pour chaque API REST, ajoutez `\https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
 
 Pour ajouter des opérations de stockage VM, suivez ce workflow :
 

@@ -16,14 +16,14 @@ summary: 'Pour effectuer des opérations de restauration pour les sauvegardes de
 [role="lead"]
 Pour effectuer des opérations de restauration pour les sauvegardes de machines virtuelles à l'aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez suivre la séquence prescrite d'appels d'API REST.
 
-Pour chaque API REST, ajoutez `https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
+Pour chaque API REST, ajoutez `\https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
 
 |===
 | Étape | API REST | Commentaires 
 
 
 | 1 | Accédez à
-`http://<vCenter-IP>/mob` | Recherchez l'UUID de machine virtuelle à partir de l'URL des objets gérés VMware. Notez le *UUID* de la machine virtuelle à restaurer. 
+`\http://<vCenter-IP>/mob` | Recherchez l'UUID de machine virtuelle à partir de l'URL des objets gérés VMware. Notez le *UUID* de la machine virtuelle à restaurer. 
 
 
 | 2 | `/4.1/vm/{uuid}/backups` | `Get VM Backups` Obtient la liste des sauvegardes pour la machine virtuelle spécifiée. Passez le *UUID* de l'étape 1. Notez la *backupId* de la sauvegarde que vous souhaitez restaurer. 

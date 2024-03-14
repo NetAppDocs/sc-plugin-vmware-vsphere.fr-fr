@@ -23,7 +23,7 @@ Les planifications intégrées sont les planifications fournies dans le cadre du
 `Schedule-ComputeStorageSaving`
 `Schedule-PurgeJobs`
 
-Pour chaque API REST, ajoutez `https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
+Pour chaque API REST, ajoutez `\https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
 
 |===
 | Étape | API REST | Commentaires 

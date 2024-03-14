@@ -16,7 +16,7 @@ summary: 'Pour effectuer des opérations de sauvegarde à la demande à l"aide d
 [role="lead"]
 Pour effectuer des opérations de sauvegarde à la demande à l'aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez suivre la séquence prescrite d'appels d'API REST.
 
-Pour chaque API REST, ajoutez `https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
+Pour chaque API REST, ajoutez `\https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
 
 |===
 | Étape | API REST | Commentaires 

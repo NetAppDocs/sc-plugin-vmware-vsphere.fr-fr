@@ -17,19 +17,29 @@ summary: Les privilèges minimum ONTAP requis varient en fonction des plug-ins S
 Les privilèges minimum ONTAP requis varient en fonction des plug-ins SnapCenter utilisés pour la protection des données.
 
 
+NOTE: À partir du plug-in SnapCenter pour VMware (SCV) 5.0, vous devez ajouter des applications de type HTTP et ONTAPI comme méthodes de connexion utilisateur pour tous les utilisateurs ONTAP disposant d'un accès personnalisé basé sur les rôles au SCV. Sans accès à ces applications, les sauvegardes échoueront. Vous devez redémarrer le service SCV pour reconnaître les modifications apportées aux méthodes de connexion utilisateur ONTAP.
+
+
 
 == Privilèges minimum ONTAP requis
 
 Tous les plug-ins SnapCenter requièrent les privilèges minimaux suivants :
 
 |===
+
+
 | Commandes All-Access : privilèges minimum requis pour ONTAP 8.3 et versions ultérieures 
+
+
+| identité du cluster 
 
 
 | event generate-autosupport-log 
 
 
-| l'historique des tâches affiche l'arrêt des tâches 
+| l'historique des tâches s'affiche
+affichage du travail
+fin de la tâche 
 
 
 | lun create lun delete lun igroup add lun igroup create lun igroup delete lun igroup rename lun igroup show lun mapping add-reporting-nodes lun mapping create lun mapping create lun mapping delete lun mapping delete-reporting-nodes lun mapping show lun modify lun move-in-volume lun offline lun lun en ligne lun persistent-reservation clear lun resize série affichage de la lun 
@@ -41,7 +51,32 @@ Tous les plug-ins SnapCenter requièrent les privilèges minimaux suivants :
 | Version 
 
 
-| clone de volume créer un clone de volume affiche le clone de volume fractionnement du volume modifier le volume détruire le volume clone de volume créer un volume fichier show-disk-usage volume offline du volume modifier le volume qtree créer un volume qtree supprimer un volume qtree modifier le volume qtree afficher le volume restreindre le volume snapshot créer snapshot de volume supprimer l'instantané de volume modifier l'instantané de volume renommer le snapshot de volume restaurer l'instantané de volume de fichier de restauration snapshot de volume affiche le démontage de volume 
+| création de clones de volumes
+clone de volume affiche
+démarrage du fractionnement du clone de volume
+arrêt du fractionnement du clone de volume
+création de volumes
+suppression d'un volume
+destruction des volumes
+création d'un clone de fichiers de volumes
+volume fichier show-disk-usage
+volume hors ligne
+volume en ligne
+modification de volume
+création de qtree volume
+suppression qtree du volume
+modification de qtree volume
+volume qtree show
+restrictions de volume
+volume affiché
+création de copies snapshot de volume
+suppression du snapshot de volume
+modification de snapshot de volume
+renommage snapshot de volume
+restauration snapshot du volume
+fichier de restauration de snapshot de volume
+snapshot de volume apparaît
+démontage de volume 
 
 
 | vserver cifs vserver cifs share création vserver cifs share suppression vserver cifs shadwcopy show vserver cifs share show vserver cifs share show vserver cifs show vserver cifs show vserver show export-policy create vserver export-policy rule vserver export-policy create vserver export-policy show vserver export-policy show vserver iscsi vserver connection show vserver network interface show failover-group des interfaces réseau show 

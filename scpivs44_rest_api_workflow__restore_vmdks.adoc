@@ -16,13 +16,13 @@ summary: 'Pour effectuer des opérations de restauration pour les VMDK à l"aide
 [role="lead"]
 Pour effectuer des opérations de restauration pour les VMDK à l'aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez suivre la séquence prescrite d'appels d'API REST.
 
-Pour chaque API REST, ajoutez `https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
+Pour chaque API REST, ajoutez `\https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
 
 |===
 | Étape | API REST | Commentaires 
 
 
-| 1 | Accédez à `http://<vCenter-IP>/mob` | Recherchez le moref de la VM à partir de l'URL des objets gérés VMware. Notez le *moref* pour la machine virtuelle dans laquelle se trouve le VMDK. 
+| 1 | Accédez à `\http://<vCenter-IP>/mob` | Recherchez le moref de la VM à partir de l'URL des objets gérés VMware. Notez le *moref* pour la machine virtuelle dans laquelle se trouve le VMDK. 
 
 
 | 2 | `/4.1/vm/{moref}/backups` | `Get VM Backups` Obtient la liste des sauvegardes pour la machine virtuelle spécifiée. Passez le *moref* de l'étape 1. Notez la *backupId* de la sauvegarde que vous souhaitez restaurer. 

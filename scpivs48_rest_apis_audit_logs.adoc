@@ -27,7 +27,7 @@ Voici les API REST de swagger :
 
 Pour générer des journaux d'audit pour les tâches client VMware vSphere à l'aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez utiliser les appels d'API REST pour VMware vSphere.
 
-Pour chaque API REST, ajoutez `https://<server>:<port>/api` Au niveau de l'API REST, pour former un terminal complet.
+Pour chaque API REST, ajoutez `\https://<server>:<port>/api` Au niveau de l'API REST, pour former un terminal complet.
 
 Utilisez les API REST suivantes de la section travaux pour obtenir des informations détaillées sur les tâches :
 

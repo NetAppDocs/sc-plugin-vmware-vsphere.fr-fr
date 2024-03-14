@@ -57,7 +57,7 @@ Si le problème persiste, redémarrez le service client VMware vSphere
 Si vous n'utilisez pas les informations d'identification Admin, vous risquez de recevoir une erreur d'authentification après le déploiement du plug-in SnapCenter pour VMware vSphere ou après la migration. Si vous rencontrez une erreur d'authentification, vous devez redémarrer le service.
 
 .Étapes
-. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware à l'aide du format `https://<appliance-IP-address>:8080`. Pour vous connecter, utilisez le nom d'utilisateur admin, le mot de passe et les détails du jeton MFA. Le jeton MFA peut être généré à partir de la console de maintenance.
+. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware à l'aide du format `\https://<appliance-IP-address>:8080`. Pour vous connecter, utilisez le nom d'utilisateur admin, le mot de passe et les détails du jeton MFA. Le jeton MFA peut être généré à partir de la console de maintenance.
 . Redémarrez le service.
 
 

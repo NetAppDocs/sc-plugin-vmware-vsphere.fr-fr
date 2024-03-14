@@ -20,7 +20,7 @@ Il est important de connaître les conditions de déploiement requises avant de 
 
 == Configuration requise pour l'hôte
 
-Avant de commencer le déploiement du plug-in SnapCenter pour VMware vSphere, vous devez connaître les exigences de l'hôte.
+Avant de commencer le déploiement du plug-in SnapCenter pour VMware vSphere (SCV), vous devez vous familiariser avec la configuration requise pour l'hôte.
 
 * Le plug-in SnapCenter pour VMware est déployé en tant que machine virtuelle Linux, que vous utilisiez le plug-in pour protéger les données sur des systèmes Windows ou Linux.
 * Vous devez déployer le plug-in SnapCenter VMware sur vCenter Server.
