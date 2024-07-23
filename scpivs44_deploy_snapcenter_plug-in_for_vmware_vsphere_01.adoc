@@ -55,7 +55,7 @@ Dans *s'inscrire à vCenter* existant, saisissez les informations d'identificati
 
 NOTE: Notez le nom d'utilisateur et le mot de passe que vous spécifiez. Vous devez utiliser ces informations d'identification pour modifier ultérieurement la configuration du plug-in SnapCenter pour VMware vSphere.
 
-Dans *Setup Network Properties*, entrez les informations du réseau. Dans *Configuration Date et heure*, sélectionnez le fuseau horaire dans lequel se trouve le vCenter.
+Dans la section *Configuration des propriétés réseau*, entrez les informations réseau. Dans la section *Date et heure de configuration*, sélectionnez le fuseau horaire où se trouve le vCenter.
 
 
 
@@ -65,15 +65,15 @@ Dans *Setup Network Properties*, entrez les informations du réseau. Dans *Confi
 
 NOTE: Tous les hôtes doivent être configurés avec des adresses IP (les noms d'hôte FQDN ne sont pas pris en charge). L'opération de déploiement ne permet pas de valider vos informations avant le déploiement.
 
-. Accédez à la machine virtuelle sur laquelle le plug-in SnapCenter pour VMware vSphere a été déployé, puis cliquez sur l'onglet *Summary* (Résumé*), puis cliquez sur la case *Power On* (alimentation) pour démarrer le plug-in SnapCenter VMware.
-. Pendant la mise sous tension du plug-in SnapCenter VMware, cliquez avec le bouton droit de la souris sur le plug-in SnapCenter VMware déployé, sélectionnez *Guest OS*, puis cliquez sur *installer VMware Tools*.
+. Accédez à la machine virtuelle sur laquelle le plug-in SnapCenter pour VMware vSphere a été déployé, puis cliquez sur l'onglet *Résumé*, puis cliquez sur la case *mise sous tension* pour démarrer le plug-in SnapCenter pour VMware vSphere.
+. Pendant que le plug-in SnapCenter pour VMware vSphere est sous tension, cliquez avec le bouton droit de la souris sur le plug-in SnapCenter déployé pour VMware vSphere, sélectionnez *OS invité*, puis cliquez sur *installer les outils VMware*.
 +
-Le déploiement peut prendre quelques minutes. Un déploiement réussi est indiqué lorsque le plug-in SnapCenter VMware est sous tension, les outils VMware sont installés et vous êtes invité à vous connecter au plug-in SnapCenter VMware.
+Le déploiement peut prendre quelques minutes. Un déploiement réussi est indiqué lorsque le plug-in SnapCenter pour VMware vSphere est sous tension, que les outils VMware sont installés et que l'écran vous invite à vous connecter au plug-in SnapCenter pour VMware vSphere.
 
 +
-L'écran affiche l'adresse IP à laquelle le plug-in SnapCenter VMware est déployé. Notez l'adresse IP. Vous devez vous connecter à l'interface graphique de gestion du plug-in SnapCenter pour VMware si vous souhaitez modifier la configuration du plug-in SnapCenter pour VMware.
+L'écran affiche l'adresse IP à laquelle le plug-in SnapCenter pour VMware vSphere est déployé. Notez l'adresse IP. Vous devez vous connecter à l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere si vous souhaitez modifier la configuration du plug-in SnapCenter pour VMware vSphere.
 
-. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter VMware à l'aide de l'adresse IP affichée sur l'écran de déploiement à l'aide des informations d'identification fournies dans l'assistant de déploiement, puis vérifiez dans le tableau de bord que le plug-in SnapCenter VMware est correctement connecté à vCenter et activé.
+. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere à l'aide de l'adresse IP affichée sur l'écran de déploiement à l'aide des informations d'identification fournies dans l'assistant de déploiement, puis vérifiez sur le tableau de bord que le plug-in SnapCenter pour VMware vSphere est connecté à vCenter et activé.
 +
 Utiliser le format `\https://<appliance-IP-address>:8080` Pour accéder à l'interface graphique de gestion.
 

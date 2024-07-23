@@ -19,7 +19,7 @@ Si vous effectuez une mise à niveau vers un nouveau correctif de la même versi
 Si le cache du plug-in n'est pas effacé, les travaux récents ne sont pas affichés dans le tableau de bord et le moniteur de tâches dans les scénarios suivants :
 
 * Le plug-in SnapCenter pour VMware vSphere a été déployé à l'aide de vCenter, puis mis à niveau ultérieurement vers un correctif dans la même version.
-* L'appliance virtuelle SnapCenter VMware a été déployée dans vCenter 1. Plus tard, ce plug-in SnapCenter pour VMware a été enregistré pour un nouveau vCenter 2. Une nouvelle instance du plug-in SnapCenter pour VMware est créée avec un correctif et enregistrée pour vCenter 1. Cependant, vCenter 1 étant toujours le plug-in en cache depuis le premier plug-in VMware de SnapCenter sans correctif, le cache doit être effacé.
+* L'appliance virtuelle SnapCenter VMware a été déployée dans vCenter 1. Par la suite, ce plug-in SnapCenter pour VMware vSphere a été enregistré dans un nouveau vCenter2. Une nouvelle instance du plug-in SnapCenter pour VMware vSphere est créée avec un correctif et enregistrée dans vCenter1. Toutefois, comme vCenter1 dispose toujours du plug-in en cache du premier plug-in SnapCenter pour VMware vSphere sans le correctif, le cache doit être effacé.
 
 
 
@@ -31,10 +31,10 @@ Si le cache du plug-in n'est pas effacé, les travaux récents ne sont pas affic
 Le nom du dossier change pour chaque version.
 
 +
-Reportez-vous à la documentation VMware pour connaître l'emplacement du `vsphere-client-serenity` dossier de votre système d'exploitation.
+Reportez-vous à la documentation VMware pour connaître l'emplacement du `vsphere-client-serenity` dossier correspondant à votre système d'exploitation.
 
 . Redémarrez vCenter Server.
 +
-Vous pouvez ensuite mettre à niveau le plug-in SnapCenter pour VMware.
+Vous pouvez ensuite mettre à niveau le plug-in SnapCenter pour VMware vSphere.
 
 

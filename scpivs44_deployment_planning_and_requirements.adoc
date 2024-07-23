@@ -22,32 +22,32 @@ Il est important de connaître les conditions de déploiement requises avant de 
 
 Avant de commencer le déploiement du plug-in SnapCenter pour VMware vSphere (SCV), vous devez vous familiariser avec la configuration requise pour l'hôte.
 
-* Le plug-in SnapCenter pour VMware est déployé en tant que machine virtuelle Linux, que vous utilisiez le plug-in pour protéger les données sur des systèmes Windows ou Linux.
-* Vous devez déployer le plug-in SnapCenter VMware sur vCenter Server.
+* Le plug-in SnapCenter pour VMware vSphere est déployé en tant que VM Linux, que vous utilisiez le plug-in pour protéger les données sur des systèmes Windows ou Linux.
+* Vous devez déployer le plug-in SnapCenter pour VMware vSphere sur le serveur vCenter.
 +
-Les planifications de sauvegarde sont exécutées sur le fuseau horaire dans lequel le plug-in SnapCenter VMware est déployé. VCenter rapporte les données du fuseau horaire dans lequel se trouve le vCenter. Par conséquent, si le plug-in SnapCenter VMware et vCenter se trouvent dans différents fuseaux horaires, les données du plug-in SnapCenter VMware peuvent être différentes des données des rapports.
+Les plannings de sauvegarde sont exécutés dans le fuseau horaire dans lequel le plug-in SnapCenter pour VMware vSphere est déployé. VCenter rapporte les données dans le fuseau horaire dans lequel se trouve vCenter. Par conséquent, si le plug-in SnapCenter pour VMware vSphere et vCenter se trouve dans des fuseaux horaires différents, les données du plug-in SnapCenter pour VMware vSphere Dashboard peuvent ne pas être identiques aux données des rapports.
 
-* Vous ne devez pas déployer le plug-in SnapCenter VMware dans un dossier portant un nom comportant des caractères spéciaux.
+* Vous ne devez pas déployer le plug-in SnapCenter pour VMware vSphere dans un dossier dont le nom comporte des caractères spéciaux.
 +
 Le nom du dossier ne doit pas contenir les caractères spéciaux suivants : $!@#%^&()_+{}';.,*?"<>|
 
-* Vous devez déployer et enregistrer une instance unique et distincte du plug-in SnapCenter VMware pour chaque serveur vCenter.
+* Vous devez déployer et enregistrer une instance unique distincte du plug-in SnapCenter pour VMware vSphere pour chaque serveur vCenter.
 +
-** Chaque serveur vCenter, qu'il soit en mode lié ou non, doit être associé à une instance distincte du plug-in SnapCenter pour VMware.
-** Chaque instance du plug-in SnapCenter VMware doit être déployée en tant que VM Linux distincte.
+** Chaque serveur vCenter, qu'il soit en mode lié ou non, doit être associé à une instance distincte du plug-in SnapCenter pour VMware vSphere.
+** Chaque instance du plug-in SnapCenter pour VMware vSphere doit être déployée en tant que VM Linux distincte.
 +
-Par exemple, si vous souhaitez effectuer des sauvegardes à partir de six instances différentes de vCenter Server, vous devez déployer le plug-in SnapCenter VMware sur six hôtes et chaque serveur vCenter doit être associé à une instance unique du plug-in SnapCenter VMware.
+Par exemple, si vous souhaitez effectuer des sauvegardes à partir de six instances différentes du serveur vCenter, vous devez déployer le plug-in SnapCenter pour VMware vSphere sur six hôtes et chaque serveur vCenter doit être associé à une instance unique du plug-in SnapCenter pour VMware vSphere.
 
 
 
 * Pour protéger les machines virtuelles vvol (ordinateurs virtuels sur les datastores VMware vvol), vous devez d'abord déployer les outils ONTAP pour VMware vSphere. Les outils ONTAP provisionne et configurent le stockage pour vVvols sur ONTAP et sur le client web VMware.
 +
-Pour plus d'informations, voir https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Les outils ONTAP pour VMware vSphere"^]
+Pour plus d'informations, reportez-vous à la section https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Les outils ONTAP pour VMware vSphere"^]
 
 +
-Pour obtenir les dernières informations sur les versions prises en charge des outils ONTAP, reportez-vous au https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^].
+Pour obtenir les informations les plus récentes sur les versions prises en charge des outils ONTAP, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^].
 
-* Le plug-in SnapCenter pour VMware assure une prise en charge limitée des périphériques PCI ou PCIe partagés (par exemple, NVIDIA Grid GPU) en raison d'une limitation des machines virtuelles prenant en charge Storage vMotion. Pour plus d'informations, consultez le document fournisseur - Guide de déploiement pour VMware.
+* Le plug-in SnapCenter pour VMware vSphere offre une prise en charge limitée des périphériques PCI ou PCIe partagés (par exemple, processeur graphique NVIDIA Grid), car les machines virtuelles prennent uniquement en charge Storage vMotion. Pour plus d'informations, consultez le document fournisseur - Guide de déploiement pour VMware.
 +
 ** Ce qui est pris en charge :
 +
@@ -77,7 +77,7 @@ Restauration d'une machine virtuelle complète lorsqu'un ou plusieurs VMDK se tr
 
 
 
-* Pour obtenir une liste détaillée des restrictions du plug-in SnapCenter pour VMware, consultez le link:scpivs44_release_notes.html["Notes de version du plug-in SnapCenter pour VMware vSphere"^].
+* Pour obtenir une liste détaillée du plug-in SnapCenter dans les limites de VMware vSphere, reportez-vous à la section link:scpivs44_release_notes.html["Notes de version du plug-in SnapCenter pour VMware vSphere"^].
 
 
 
@@ -107,10 +107,10 @@ Restauration d'une machine virtuelle complète lorsqu'un ou plusieurs VMDK se tr
 | Élément | Versions prises en charge 
 
 
-| VCenter vSphere | 7.0U1 et ultérieure 
+| VCenter vSphere | 7.0U1 et ultérieure. 
 
 
-| VMware ESXi | 7.0U1 et ultérieure 
+| Serveur ESXi | 7.0U1 et ultérieure. 
 
 
 | Adresses IP | IPv4, IPv6 
@@ -119,15 +119,26 @@ Restauration d'une machine virtuelle complète lorsqu'un ou plusieurs VMDK se tr
 | VMware TLS | 1.2 février 1.3 
 
 
-| TLS sur le serveur SnapCenter | 1.2, 1.3 le serveur SnapCenter utilise ce protocole pour communiquer avec le plug-in SnapCenter VMware pour les opérations de protection des données d'application sur VMDK. 
+| TLS sur le serveur SnapCenter | 1.2, 1.3 le serveur SnapCenter utilise cette fonctionnalité pour communiquer avec le plug-in SnapCenter pour VMware vSphere pour les opérations de protection des données VMDK. 
 
 
 | Application VMware vStorage API pour l'intégration de baies (VAAI) | Le plug-in SnapCenter pour VMware vSphere l'utilise pour améliorer les performances des opérations de restauration. Il améliore également les performances dans les environnements NFS. 
 
 
-| Outils ONTAP pour VMware | Le plug-in SnapCenter pour VMware vSphere l'utilise pour gérer les datastores vvol (volumes virtuels VMware). Pour les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^]. 
+| Outils ONTAP pour VMware | Le plug-in SnapCenter pour VMware vSphere l'utilise pour gérer les datastores vvol (volumes virtuels VMware). Pour connaître les versions prises en charge, reportez-vous à https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^]. 
 |===
 Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^].
+
+
+
+==== Configuration requise pour le protocole NVMe over TCP
+
+Configuration logicielle minimale requise pour la prise en charge du protocole NVMe over TCP :
+
+* VCenter vSphere 7.0U3
+* ESXi 7.0U3
+* ONTAP 9.10.1
+
 
 
 
@@ -160,7 +171,7 @@ Pour obtenir les dernières informations sur les versions prises en charge, repo
 
 
 | Plug-in SnapCenter pour port VMware vSphere  a| 
-8144 (HTTPS), bidirectionnel le port est utilisé pour les communications à partir du client VMware vSphere et du serveur SnapCenter. 8080 bidirectionnel ce port est utilisé pour gérer l'appliance virtuelle.
+8144 (HTTPS), bidirectionnel le port est utilisé pour les communications à partir du client VMware vSphere et du serveur SnapCenter. 8080 bidirectionnel ce port est utilisé pour gérer les appliances virtuelles.
 
 Remarque : le port personnalisé pour l'ajout de l'hôte de distributeur sélectif à SnapCenter est pris en charge.
 
@@ -210,4 +221,4 @@ Extension
 
 == AutoSupport
 
-Le plug-in SnapCenter pour VMware vSphere fournit un minimum d'informations pour le suivi de son utilisation, notamment l'URL du plug-in. AutoSupport comprend un tableau des plug-ins installés qui est affiché par le visualiseur AutoSupport.
+Le plug-in SnapCenter pour VMware vSphere fournit un minimum d'informations pour suivre son utilisation, y compris l'URL du plug-in. AutoSupport comprend un tableau des plug-ins installés qui est affiché par le visualiseur AutoSupport.

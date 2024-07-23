@@ -30,7 +30,7 @@ Un groupe de ressources peut contenir l'un des éléments suivants :
 NOTE: Les machines virtuelles vvol réparties sur plusieurs datastores vvol ne sont pas prises en charge car SnapCenter sauvegarde uniquement les volumes vVvols dans le datastore primaire, sélectionné et vvol.
 
 .Étapes
-. Dans le volet navigateur de gauche du module d'extension SCV, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources, puis cliquez sur image:scpivs44_image39.png["icône modifier"] *Modifier le groupe de ressources* pour démarrer l'assistant.
+. Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources, puis cliquez sur image:scpivs44_image39.png["icône modifier"] *Modifier le groupe de ressources* pour démarrer l'assistant.
 . Sur la page *Resource*, procédez comme suit :
 +
 .. Dans le champ datastores, accédez aux VM ou datastores que vous souhaitez ajouter.
@@ -39,7 +39,7 @@ NOTE: Les machines virtuelles vvol réparties sur plusieurs datastores vvol ne s
 Par défaut, la liste entités disponibles affiche l'objet Datacenter. Vous pouvez cliquer sur un datastore pour afficher les machines virtuelles dans le datastore et les ajouter au groupe de ressources.
 
 +
-Lorsque vous cliquez sur *Suivant*, le système vérifie d'abord que SnapCenter gère et est compatible avec le stockage sur lequel les VM ou datastores sélectionnés sont situés. Si le message s'affiche `Some entities are not SnapCenter compatible` S'affiche alors qu'un VM ou un datastore sélectionné n'est pas compatible avec SnapCenter. Voir link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["Gérer les échecs de contrôle de compatibilité"] pour en savoir plus.
+Lorsque vous cliquez sur *Suivant*, le système vérifie d'abord que SnapCenter gère et est compatible avec le stockage sur lequel les VM ou datastores sélectionnés sont situés. Si le message `Some entities are not SnapCenter compatible` s'affiche, la machine virtuelle ou le datastore sélectionné n'est pas compatible avec SnapCenter. Pour plus d'informations, reportez-vous à la section link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["Gérer les échecs de contrôle de compatibilité"] .
 
 
 

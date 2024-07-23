@@ -32,7 +32,7 @@ Vous pouvez utiliser le plug-in SnapCenter pour les API REST VMware vSphere pour
 * Opérations qui ne sont pas prises en charge par les API REST pour VMware vSphere
 +
 ** Restauration des fichiers invités
-** Installation et configuration du plug-in SnapCenter pour VMware
+** Installation et configuration du plug-in SnapCenter pour VMware vSphere
 ** Attribuez des rôles RBAC ou accordez un accès aux utilisateurs
 
 

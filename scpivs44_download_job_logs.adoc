@@ -22,7 +22,8 @@ Si vous rencontrez un comportement inattendu lors de l'utilisation du client VMw
 NOTE: La valeur par défaut pour la conservation des journaux de travaux est de 30 jours ; la valeur par défaut pour les travaux de conservation est de 90 jours. Les journaux des travaux et les travaux antérieurs à la conservation configurée sont purgés toutes les six heures. Vous pouvez utiliser la configuration `jobs/cleanup` API REST permettant de modifier la durée de conservation des tâches et des journaux de tâches. Vous ne pouvez pas modifier la planification de purge.
 
 .Étapes
-. Dans le volet navigateur de gauche du client vSphere, cliquez sur *Tableau de bord*, sélectionnez un serveur vCenter, puis cliquez sur l'onglet *moniteur des tâches* dans le volet Tableau de bord.
+. Sur la page de raccourci du client vCenter, sélectionnez SnapCenter Plug-in for VMware vSphere (SCV).
+. Dans le volet de navigation de gauche de SCV, sélectionnez *Tableau de bord* > *moniteur de tâche*.
 . Sélectionnez l'icône de téléchargement dans la barre de titre de Job Monitor.
 +
 Vous devrez peut-être faire défiler l'icône vers la droite.
@@ -33,6 +34,6 @@ Vous pouvez également double-cliquer sur un travail pour accéder à la fenêtr
 
 
 .Résultat
-Les journaux de tâches sont situés sur l'hôte VM Linux où le plug-in SnapCenter VMware est déployé. L'emplacement par défaut du journal des travaux est `/var/log/netapp`.
+Les journaux de tâches sont situés sur l'hôte VM Linux sur lequel le plug-in SnapCenter pour VMware vSphere est déployé. L'emplacement par défaut du journal des travaux est `/var/log/netapp`.
 
 Si vous avez essayé de télécharger des journaux de travaux mais que le fichier journal nommé dans le message d'erreur a été supprimé, vous pouvez rencontrer l'erreur suivante : `HTTP ERROR 500 Problem accessing /export-scv-logs`. Pour corriger cette erreur, vérifiez l'état d'accès au fichier et les autorisations pour le fichier nommé dans le message d'erreur et corrigez le problème d'accès.

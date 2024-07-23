@@ -67,9 +67,9 @@ Une opération de restauration peut échouer si le niveau de stockage de la Fabr
 +
 Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partiel, ou filtrer la liste des sauvegardes en cliquant sur l'icône du filtre et en sélectionnant une plage de dates et d'heures, en sélectionnant si vous souhaitez que les sauvegardes contiennent des snapshots VMware, si vous souhaitez des sauvegardes montées ou l'emplacement. Cliquez sur *OK* pour revenir à l'assistant.
 
-. Sur la page *Select Scope*, sélectionnez *machine virtuelle entière* dans le champ *Restore scope*, puis sélectionnez l'emplacement de restauration, puis entrez les informations destination ESXi dans lesquelles la sauvegarde doit être montée.
+. Sur la page *Select Scope*, sélectionnez *entièreté de la machine virtuelle* dans le champ *Restore scope*, puis sélectionnez l'emplacement de restauration, puis entrez les informations de l'hôte de destination ESXi sur lequel la sauvegarde doit être montée.
 +
-La destination de restauration peut être tout hôte ESXi ajouté à SnapCenter. Cette option restaure le contenu de la sauvegarde sélectionnée où la machine virtuelle résidait depuis une copie Snapshot avec l'heure et la date spécifiées. La case *redémarrer VM* est cochée si vous sélectionnez cette option et que la VM sera mise sous tension.
+La destination de restauration peut être tout hôte ESXi ajouté à SnapCenter. Cette option restaure le contenu de la sauvegarde sélectionnée dans laquelle la machine virtuelle résidait à partir d'un Snapshot avec la date et l'heure spécifiées. La case *redémarrer VM* est cochée si vous sélectionnez cette option et que la VM sera mise sous tension.
 
 +
 Si vous restaurez une machine virtuelle dans un datastore NFS sur un autre hôte ESXi situé dans un cluster ESXi, elle est enregistrée après la restauration de la machine virtuelle sur l'hôte secondaire.

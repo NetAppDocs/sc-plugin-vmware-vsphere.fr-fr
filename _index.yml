@@ -1,0 +1,52 @@
+---
+indexpage:
+  title: Documentation du plug-in SnapCenter pour VMware vSphere
+  summary: Le plug-in SnapCenter pour VMware vSphere (SCV) est une appliance virtuelle
+    basée sur Linux. En tant que autonome, elle permet d'effectuer des opérations
+    de sauvegarde et de restauration rapides, compactes et cohérentes avec les défaillances
+    des machines virtuelles pour les machines virtuelles, les datastores et les VMDK.
+    Il fonctionne aussi avec SnapCenter Server pour prendre en charge les opérations
+    de sauvegarde et de restauration basées sur les applications dans les environnements
+    VMware pour les plug-ins spécifiques aux applications SnapCenter.
+  keywords: SnapCenter Plug-in for VMware vSphere, SCV
+  lead: Le plug-in SnapCenter pour VMware vSphere (SCV) est une appliance virtuelle
+    basée sur Linux. En tant que autonome, elle permet d'effectuer des opérations
+    de sauvegarde et de restauration rapides, compactes et cohérentes avec les défaillances
+    des machines virtuelles pour les machines virtuelles, les datastores et les VMDK.
+    Il fonctionne aussi avec SnapCenter Server pour prendre en charge les opérations
+    de sauvegarde et de restauration basées sur les applications dans les environnements
+    VMware pour les plug-ins spécifiques aux applications SnapCenter. Cette bibliothèque
+    de documentation décrit le plug-in SnapCenter pour VMware vSphere version 6.0.
+  tiles:
+  - title: Commencez
+    links:
+    - title: Notes de version
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664
+    - title: En savoir plus sur le distributeur sélectif
+      url: "/scpivs44_concepts_overview.html"
+    - title: De déploiement
+      url: "/scpivs44_deployment_planning_and_requirements.html"
+    - title: Démarrage rapide
+      url: "/scpivs44_quick_start_overview.html"
+  - title: Protection des machines virtuelles, des VMDK et des datastores
+    links:
+    - title: Protégez vos données
+      url: "/scpivs44_protect_data_overview.html"
+    - title: Restaurer des sauvegardes
+      url: "/scpivs44_restore_from_backups_overview.html"
+    - title: Utilisez des API REST
+      url: "/scpivs44_rest_apis_overview.html"
+  - title: Blogs et communauté
+    links:
+    - title: Blog NetApp – distributeurs sélectifs
+      url: https://blog.netapp.com/tag/snapcenter/
+    - title: Communauté NetApp - distributeur auxiliaire
+      url: https://community.netapp.com/t5/forums/filteredbylabelpage/board-id/backup-and-restore-discussions/label-name/snapcenter
+  - title: Ressources supplémentaires
+    links:
+    - title: Documentation du logiciel SnapCenter
+      url: https://docs.netapp.com/us-en/snapcenter/index.html
+    - title: Documentation pour les versions antérieures du distributeur auxiliaire
+      url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=63240
+    - title: Base de connaissances NetApp – distributeur auxiliaire
+      url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter

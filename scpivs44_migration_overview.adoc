@@ -43,7 +43,7 @@ Pour garantir la réussite de la migration, la commande de migration suspend tou
 
 * Processus de l'applet de commande de migration
 +
-Vous devez utiliser la cmdlet Windows PowerShell `invoke-SCVOVAMigration` Pour chaque instance du plug-in SnapCenter VMware enregistré auprès de SnapCenter.
+Vous devez utiliser l'applet de commande Windows PowerShell `invoke-SCVOVAMigration` pour chaque instance du plug-in SnapCenter pour VMware vSphere enregistré auprès de SnapCenter.
 
 +
 L'applet de commande effectue les opérations suivantes :
@@ -54,15 +54,15 @@ L'applet de commande effectue les opérations suivantes :
 ** Crée des planifications de sauvegarde pour les sauvegardes post-migration.
 ** Désinstalle le plug-in SnapCenter existant pour VMware vSphere à partir de l'hôte Windows.
 +
-Si le plug-in SnapCenter VMware est installé sur l'hôte SnapCenter Server et que la protection est configurée pour le référentiel SnapCenter, le processus de migration désinstalle également le package du plug-in Windows contenant le plug-in SnapCenter pour VMware vSphere et le plug-in SnapCenter pour Windows, Puis réinstalle la dernière version du plug-in SnapCenter pour Windows afin de prendre en charge la protection du référentiel. Le type d'hôte dans l'interface utilisateur graphique SnapCenter passe de vSphere à Windows.
+Si le plug-in SnapCenter pour VMware vSphere est installé sur l'hôte SnapCenter Server et que la protection est configurée pour le référentiel SnapCenter, le processus de migration désinstalle également le package de plug-in Windows contenant le plug-in SnapCenter pour VMware vSphere et le plug-in SnapCenter pour Windows, puis réinstalle la dernière version du plug-in SnapCenter pour Windows afin de prendre en charge la protection du référentiel. Le type d'hôte dans l'interface utilisateur graphique SnapCenter passe de vSphere à Windows.
 
 ** Supprime l'hôte vSphere et les groupes de ressources du serveur SnapCenter Windows.
-** Active les tâches de sauvegarde sur le plug-in VMware SnapCenter basé sur Linux.
-** Enregistre l'hôte vSphere pour le plug-in SnapCenter VMware `avec SnapCenter pour prendre en charge les sauvegardes basées sur les applications de bases de données virtualisées et de systèmes de fichiers (application sur sauvegardes VMDK).
+** Active les tâches de sauvegarde sur le plug-in SnapCenter basé sur Linux pour VMware vSphere.
+** Enregistre l'hôte vSphere pour le plug-in SnapCenter pour VMware vSphere avec SnapCenter afin de prendre en charge les sauvegardes basées sur les applications de bases de données et de systèmes de fichiers virtualisés (application sur sauvegardes VMDK).
 
 
 * L'emplacement de stockage des métadonnées
 +
-Les métadonnées pour les sauvegardes VMDK basées sur les applications sont stockées dans le référentiel SnapCenter Server. Les métadonnées pour la sauvegarde des machines virtuelles et des datastores sont stockées dans le référentiel MySQL du plug-in SnapCenter VMware.
+Les métadonnées pour les sauvegardes VMDK basées sur les applications sont stockées dans le référentiel SnapCenter Server. Les métadonnées pour les sauvegardes des machines virtuelles et des datastores sont stockées dans le référentiel MySQL du plug-in SnapCenter pour VMware vSphere.
 
 

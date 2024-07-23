@@ -20,13 +20,13 @@ Les opérations de sauvegarde sont effectuées sur toutes les ressources défini
 Vous devez avoir créé un groupe de ressources associé à une stratégie.
 
 
-IMPORTANT: Ne lancez pas de tâche de sauvegarde à la demande lorsqu'une tâche de sauvegarde de la base de données MySQL du plug-in VMware de SnapCenter est déjà en cours d'exécution. Utilisez la console de maintenance pour voir le planning de sauvegarde configuré pour la base de données MySQL.
+IMPORTANT: Ne lancez pas de tâche de sauvegarde à la demande lorsqu'une tâche de sauvegarde du plug-in SnapCenter pour la base de données MySQL VMware vSphere est déjà en cours d'exécution. Utilisez la console de maintenance pour voir le planning de sauvegarde configuré pour la base de données MySQL.
 
 .Description de la tâche
-Dans les versions antérieures de Virtual Storage Console (VSC), vous pouvez effectuer une sauvegarde à la demande sans avoir à configurer une tâche de sauvegarde pour une machine virtuelle ou un datastore. Cependant, pour le plug-in SnapCenter VMware, les machines virtuelles et les datastores doivent se trouver dans un groupe de ressources avant de pouvoir effectuer des sauvegardes.
+Dans les versions antérieures de Virtual Storage Console (VSC), vous pouvez effectuer une sauvegarde à la demande sans avoir à configurer une tâche de sauvegarde pour une machine virtuelle ou un datastore. Toutefois, pour le plug-in SnapCenter pour VMware vSphere, les machines virtuelles et les datastores doivent faire partie d'un groupe de ressources avant de pouvoir effectuer des sauvegardes.
 
 .Étapes
-. Dans le volet de gauche du plug-in SCV, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources, puis sélectionnez image:scpivs44_image38.png["Icône de lecture"] *Exécuter maintenant* pour démarrer la sauvegarde.
+. Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources, puis sélectionnez image:scpivs44_image38.png["Icône de lecture"] *Exécuter maintenant* pour lancer la sauvegarde.
 . Si plusieurs stratégies sont configurées dans le groupe de ressources, sélectionnez la stratégie à utiliser dans la boîte de dialogue *sauvegarde maintenant*.
 . Cliquez sur *OK* pour lancer la sauvegarde.
 . Facultatif : surveillez la progression de l'opération en cliquant sur *tâches récentes* en bas de la fenêtre ou sur le tableau de bord *moniteur des tâches* pour plus de détails. Résultat

@@ -47,7 +47,7 @@ Tous les vvols dans un dossier vVol unique spécifié. Si le dossier contient pl
 Pour tous les groupes de ressources :
 
 
-IMPORTANT: Si vous utilisez VMware vSphere Cluster Service (vCLS), n'incluez pas les machines virtuelles gérées par vCLS dans les groupes de ressources du plug-in SnapCenter VMware.
+IMPORTANT: Si vous utilisez VMware vSphere Cluster Service (vCLS), n'incluez pas les machines virtuelles gérées par vCLS dans les groupes de ressources du plug-in SnapCenter pour VMware vSphere.
 
 
 TIP: Le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures prend en charge les datastores sur des LUN volumineux et les fichiers jusqu'à 128 To avec des volumes jusqu'à 300 To. Si vous protégez des LUN volumineuses, utilisez uniquement des LUN à provisionnement lourd pour éviter la latence.
@@ -58,7 +58,7 @@ IMPORTANT: N'ajoutez pas de VM inaccessibles. Bien qu'il soit possible de créer
 .Avant de commencer
 Les outils ONTAP pour VMware doivent être déployés avant de créer un groupe de ressources contenant des machines virtuelles vvol.
 
-Pour plus d'informations, voir https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Les outils ONTAP pour VMware vSphere"^].
+Pour plus d'informations, reportez-vous https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Les outils ONTAP pour VMware vSphere"^]à .
 
 .Description de la tâche
 Vous pouvez à tout moment ajouter ou supprimer des ressources d'un groupe de ressources.
@@ -73,14 +73,14 @@ Pour sauvegarder plusieurs ressources, vous devez créer un groupe de ressources
 
 * Groupes de ressources contenant des volumes FlexGroup dans les environnements MetroCluster
 +
-Si vous exécutez ONTAP 9.8 ou ONTAP 9.9, après un basculement ou un rétablissement automatique, vous devez redémarrer le service du plug-in SnapCenter VMware et resynchroniser les relations SnapMirror avant de sauvegarder les groupes de ressources dans des environnements MetroCluster.
+Si vous exécutez ONTAP 9.8 ou ONTAP 9.9, après un basculement ou un rétablissement, vous devez redémarrer le service du plug-in SnapCenter pour VMware vSphere et resynchroniser les relations SnapMirror avant de sauvegarder les groupes de ressources dans les environnements MetroCluster.
 
 +
 Dans ONTAP 9.8, les sauvegardes sont suspendues après le rétablissement. Ce problème est résolu dans ONTAP 9.9.
 
-* Optimisez les copies Snapshot
+* Optimisation des snapshots
 +
-Pour optimiser les copies Snapshot, il est conseillé de regrouper les VM et les datastores associés au même volume dans un seul groupe de ressources.
+Pour optimiser les snapshots, vous devez regrouper les machines virtuelles et les datastores associés au même volume dans un seul groupe de ressources.
 
 * Politiques de sauvegarde
 +
@@ -102,13 +102,13 @@ SnapCenter vérifie la compatibilité lors de la création d'un groupe de ressou
 
 
 .Étapes
-. Dans le volet de gauche du plug-in SCV, cliquez sur *groupes de ressources*, puis sélectionnez *Créer* pour démarrer l'assistant.
+. Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, puis sélectionnez *Créer* pour démarrer l'assistant.
 
 
 C'est la façon la plus simple de créer un groupe de ressources. Toutefois, vous pouvez également créer un groupe de ressources avec une ressource en effectuant l'une des opérations suivantes :
 
-* Pour créer un groupe de ressources pour une machine virtuelle, cliquez sur *Menu* > *hôtes et clusters*, puis cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez NetApp SnapCenter, puis *Créer un groupe de ressources*.
-* Pour créer un groupe de ressources pour un datastore, cliquez sur *Menu* > *hôtes et clusters*, puis cliquez avec le bouton droit de la souris sur un datastore, sélectionnez *NetApp SnapCenter*, puis sélectionnez *Créer un groupe de ressources*.
+* Pour créer un groupe de ressources pour une machine virtuelle, sur la page des raccourcis, sélectionnez *hosts and clusters*, puis cliquez avec le bouton droit de la souris sur une machine virtuelle, sélectionnez *SnapCenter Plug-in for VMware vSphere* > *Create Resource Group*.
+* Pour créer un groupe de ressources pour un datastore, sur la page des raccourcis, sélectionnez *hosts and clusters*, puis cliquez avec le bouton droit de la souris sur un datastore, sélectionnez *SnapCenter Plug-in for VMware vSphere* > *Create Resource Group*.
 +
 .. Sur la page *Généralités et notification* de l'assistant, procédez comme suit :
 +
@@ -119,7 +119,7 @@ C'est la façon la plus simple de créer un groupe de ressources. Toutefois, vou
 | Serveur vCenter | Sélectionnez un serveur vCenter. 
 
 
-| Nom | Entrez un nom pour le groupe de ressources. N'utilisez pas les caractères spéciaux suivants dans les noms VM, datastore, stratégie, sauvegarde ou groupe de ressources : % & * $ # @ ! \ / : * ? " < > - [barre verticale] ; ' , . Un caractère de soulignement (_) est autorisé. Les noms de VM ou de datastores contenant des caractères spéciaux sont tronqués, ce qui rend difficile la recherche d'une sauvegarde spécifique. En mode lié, chaque vCenter dispose d'un référentiel distinct de plug-in SnapCenter VMware. Par conséquent, vous pouvez utiliser des noms dupliqués dans les vCenters. 
+| Nom | Entrez un nom pour le groupe de ressources. N'utilisez pas les caractères spéciaux suivants dans les noms VM, datastore, stratégie, sauvegarde ou groupe de ressources : % & * $ # @ ! \ / : * ? " < > - [barre verticale] ; ' , . Un caractère de soulignement (_) est autorisé. Les noms de VM ou de datastores contenant des caractères spéciaux sont tronqués, ce qui rend difficile la recherche d'une sauvegarde spécifique. En mode lié, chaque vCenter dispose d'un plug-in SnapCenter distinct pour le référentiel VMware vSphere. Par conséquent, vous pouvez utiliser des noms dupliqués dans les vCenters. 
 
 
 | Description | Entrez une description du groupe de ressources. 
@@ -138,7 +138,7 @@ C'est la façon la plus simple de créer un groupe de ressources. Toutefois, vou
 
 
 | Dernier nom de snapshot  a| 
-Si vous souhaitez ajouter le suffixe “_Recent” à la dernière copie Snapshot, cochez cette case. Le suffixe “_Recent” remplace la date et l’horodatage.
+Si vous souhaitez ajouter le suffixe «_Recent » au dernier snapshot, cochez cette case. Le suffixe “_Recent” remplace la date et l’horodatage.
 
 
 NOTE: A `_recent` la sauvegarde est créée pour chaque stratégie associée à un groupe de ressources. Par conséquent, un groupe de ressources avec plusieurs stratégies aura plusieurs `_recent` sauvegardes. Ne pas renommer manuellement `_recent` sauvegardes.
@@ -146,14 +146,10 @@ NOTE: A `_recent` la sauvegarde est créée pour chaque stratégie associée à 
 
 
 | Format de snapshot personnalisé  a| 
-Si vous souhaitez utiliser le format personnalisé des noms de copies Snapshot, cochez cette case et entrez le format du nom.
+Si vous souhaitez utiliser un format personnalisé pour les noms des instantanés, cochez cette case et entrez le format du nom.
 
 *** Par défaut, cette fonction est désactivée.
-*** Les noms de copie Snapshot par défaut utilisent le format `<ResourceGroup>_<Date-TimeStamp>`
-Cependant, vous pouvez spécifier un format personnalisé à l'aide des variables $ResourceGroup, $Policy, $hostname, $ScheduleType et $CustomText. Utilisez la liste déroulante du champ Nom personnalisé pour sélectionner les variables que vous souhaitez utiliser et l'ordre dans lequel elles sont utilisées.
-Si vous sélectionnez $CustomText, le format du nom est `<CustomName>_<Date-TimeStamp>`. Entrez le texte personnalisé dans la zone supplémentaire fournie.
-[REMARQUE] :
-Si vous sélectionnez également le suffixe “_Recent”, vous devez vous assurer que les noms de snapshots personnalisés seront uniques dans le datastore. Par conséquent, vous devez ajouter les variables $ResourceGroup et $Policy au nom.
+*** Les noms de snapshot par défaut utilisent le format `<ResourceGroup>_<Date-TimeStamp>` . Toutefois, vous pouvez spécifier un format personnalisé à l'aide des variables $ResourceGroup, $Policy, $hostname, $ScheduleType et $CustomText. Utilisez la liste déroulante du champ Nom personnalisé pour sélectionner les variables que vous souhaitez utiliser et l'ordre dans lequel elles sont utilisées. Si vous sélectionnez $CustomText, le format du nom est `<CustomName>_<Date-TimeStamp>`. Entrez le texte personnalisé dans la zone supplémentaire fournie. [REMARQUE] : si vous sélectionnez également le suffixe “_Recent”, vous devez vous assurer que les noms de snapshots personnalisés seront uniques dans le datastore. Par conséquent, vous devez ajouter les variables $ResourceGroup et $Policy au nom.
 *** Caractères spéciaux pour les caractères spéciaux dans les noms, suivez les mêmes directives que pour le champ Nom.
 
 
@@ -183,10 +179,10 @@ Les noms de VM et de datastores d'un groupe de ressources doivent être uniques.
 Lorsque vous cliquez sur *Suivant*, le système vérifie d'abord que SnapCenter gère et est compatible avec le stockage sur lequel les ressources sélectionnées sont situées.
 
 +
-Si le message s'affiche `Selected <resource-name> is not SnapCenter compatible` S'affiche. Une ressource sélectionnée n'est alors pas compatible avec SnapCenter. Voir <<Gérer les échecs de contrôle de compatibilité>> pour en savoir plus.
+Si le message `Selected <resource-name> is not SnapCenter compatible` s'affiche, une ressource sélectionnée n'est pas compatible avec SnapCenter.
 
 +
-Pour exclure globalement un ou plusieurs datastores des sauvegardes, vous devez spécifier le ou les noms de datastores dans le `global.ds.exclusion.pattern` propriété dans le `scbr.override` fichier de configuration. Voir <<scpivs44_properties_you_can_override.adoc#Properties you can override,Propriétés que vous pouvez remplacer>>.
+Pour exclure globalement un ou plusieurs datastores des sauvegardes, vous devez spécifier le(s) nom(s) du datastore `global.ds.exclusion.pattern` dans la propriété du `scbr.override` fichier de configuration. Reportez-vous à la link:scpivs44_properties_you_can_override.html["Propriétés que vous pouvez remplacer"].
 
 .. Sur la page *Spanning disks*, sélectionnez une option pour les machines virtuelles avec plusieurs VMDK sur plusieurs datastores :
 +
@@ -224,10 +220,10 @@ image:scpivs44_image18.png["Créer un groupe de ressources"]
 Dans le champ heure de début, entrez une date et une heure autres que zéro. La date doit être au format `day/month/year`.
 
 +
-Lorsque vous sélectionnez un nombre de jours dans le champ *tous les*, les sauvegardes sont effectuées le jour 1 du mois, puis à chaque intervalle spécifié. Par exemple, si vous sélectionnez l'option *tous les 2 jours*, les sauvegardes sont effectuées le jour 1, 3, 5, 7, etc. Tout au long du mois, que la date de début soit paire ou impaire.
+Lorsque vous sélectionnez un nombre de jours dans chaque champ, les sauvegardes sont effectuées le premier jour du mois, puis à chaque intervalle spécifié. Par exemple, si vous sélectionnez l'option *tous les 2 jours*, les sauvegardes sont effectuées le jour 1, 3, 5, 7, etc. Tout au long du mois, que la date de début soit paire ou impaire.
 
 +
-Vous devez renseigner chaque champ. Le plug-in SnapCenter VMware crée des planifications dans le fuseau horaire dans lequel le plug-in SnapCenter VMware est déployé. Vous pouvez modifier le fuseau horaire à l'aide de l'interface graphique du plug-in SnapCenter pour VMware vSphere.
+Vous devez renseigner chaque champ. Le plug-in SnapCenter pour VMware vSphere crée des plannings dans le fuseau horaire dans lequel le plug-in SnapCenter pour VMware vSphere est déployé. Vous pouvez modifier le fuseau horaire à l'aide de l'interface graphique du plug-in SnapCenter pour VMware vSphere.
 
 +
 link:scpivs44_modify_the_time_zones.html["Modifier les fuseaux horaires pour les sauvegardes"].
@@ -261,18 +257,18 @@ Les raisons de l'incompatibilité peuvent être :
 SnapCenter version 4.x prend en charge ONTAP 8.3.1 et versions ultérieures.
 
 +
-Le plug-in SnapCenter pour VMware vSphere n'effectue pas de vérification de compatibilité pour toutes les versions de ONTAP, uniquement pour ONTAP versions 8.2.1 et ultérieures. Par conséquent, toujours voir le https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["Matrice d'interopérabilité NetApp (IMT)"^] Pour obtenir les dernières informations sur la prise en charge de SnapCenter.
+Le plug-in SnapCenter pour VMware vSphere ne vérifie pas la compatibilité pour toutes les versions de ONTAP, uniquement pour ONTAP versions 8.2.1 et antérieures. Par conséquent, consultez toujours le https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["Matrice d'interopérabilité NetApp (IMT)"^] pour obtenir les informations les plus récentes sur le support SnapCenter.
 
 * Un périphérique PCI partagé est connecté à un serveur virtuel.
-* Une adresse IP préférée n'est pas configurée dans SnapCenter.
-* Vous n'avez pas ajouté l'IP de gestion SVM (Storage VM) à SnapCenter.
+* L'adresse IP préférée n'est pas configurée dans SnapCenter.
+* Vous n'avez pas ajouté l'adresse IP de gestion de la machine virtuelle de stockage (SVM) à SnapCenter.
 * La VM de stockage est en panne.
 
 
 Pour corriger une erreur de compatibilité, procédez comme suit :
 
 . Vérifiez que la VM de stockage est exécutée.
-. Vérifier que le système de stockage sur lequel se trouvent les machines virtuelles a été ajouté au plug-in SnapCenter pour l'inventaire VMware vSphere.
+. Assurez-vous que le système de stockage sur lequel se trouvent les VM a été ajouté à l'inventaire du plug-in SnapCenter pour VMware vSphere.
 . Vérifier que la machine virtuelle de stockage est ajoutée à SnapCenter. Utilisez l'option Ajouter un système de stockage dans l'interface utilisateur graphique du client VMware vSphere.
 . Si des machines virtuelles de type « Spanning » sont disponibles pour les VMDK sur les datastores NetApp et non NetApp, alors déplacez les VMDK vers les datastores NetApp.
 

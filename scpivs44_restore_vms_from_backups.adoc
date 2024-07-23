@@ -45,11 +45,11 @@ TIP: Pour améliorer les performances des opérations de restauration dans les e
 .Avant de commencer
 * Une sauvegarde doit exister.
 +
-Vous devez avoir créé une sauvegarde de la machine virtuelle à l'aide du plug-in SnapCenter pour pouvoir restaurer cette machine virtuelle.
+Pour pouvoir restaurer la machine virtuelle, vous devez avoir créé une sauvegarde de la machine virtuelle à l'aide du plug-in SnapCenter pour VMware vSphere.
 
 +
 
-NOTE: Les opérations de restauration ne peuvent pas se terminer correctement si d'autres copies Snapshot de la machine virtuelle ont été effectuées par d'autres logiciels que le plug-in SnapCenter pour VMware vSphere.
+NOTE: Les opérations de restauration ne peuvent pas se terminer correctement si des snapshots de la machine virtuelle ont été réalisés par un logiciel autre que le plug-in SnapCenter pour VMware vSphere.
 
 * Le datastore de destination doit être prêt.
 +
@@ -76,7 +76,7 @@ Assurez-vous qu'aucune erreur de configuration HA ne s'affiche sur l'écran réc
 .Description de la tâche
 * La machine virtuelle n'est pas enregistrée et elle est à nouveau enregistrée
 +
-L'opération de restauration pour les VM désinscrit la machine virtuelle d'origine, restaure la machine virtuelle à partir d'une copie Snapshot de sauvegarde, et enregistre la machine virtuelle restaurée avec le même nom et la même configuration sur le même serveur ESXi. Vous devez ajouter manuellement les machines virtuelles aux groupes de ressources après la restauration.
+L'opération de restauration pour les machines virtuelles annule l'enregistrement de la machine virtuelle d'origine, restaure la machine virtuelle à partir d'un Snapshot de sauvegarde et enregistre la machine virtuelle restaurée avec le même nom et la même configuration sur le même serveur ESXi. Vous devez ajouter manuellement les machines virtuelles aux groupes de ressources après la restauration.
 
 * Restauration des datastores
 +
@@ -100,10 +100,10 @@ Même en cas de défaillance d'un snapshot de cohérence VMware pour une machine
 . Dans l'interface utilisateur graphique du client VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
 +
 
-NOTE: Si vous restaurez une machine virtuelle supprimée, les informations d'identification de la machine virtuelle de stockage ajoutées au plug-in SnapCenter VMware doivent être `vsadmin` ou un compte utilisateur disposant des mêmes privilèges que `vsadmin`. L'hôte doit se trouver sur un système de stockage qui exécute ONTAP 8.2.2 ou une version ultérieure.
+NOTE: Si vous restaurez une machine virtuelle supprimée, les informations d'identification de la machine virtuelle de stockage qui ont été ajoutées au plug-in SnapCenter pour VMware vSphere doivent être ou être `vsadmin` un compte d'utilisateur disposant de tous les mêmes privilèges que `vsadmin`. L'hôte doit se trouver sur un système de stockage qui exécute ONTAP 8.2.2 ou une version ultérieure.
 
-. Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *NetApp SnapCenter* dans la liste déroulante, puis sélectionnez *Restaurer* dans la liste déroulante secondaire pour démarrer l'assistant.
-. Dans l'assistant *Restore*, sur la page *Select Backup*, sélectionnez la copie Snapshot de sauvegarde que vous souhaitez restaurer.
+. Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la liste déroulante, puis sélectionnez *Restore* dans la liste déroulante secondaire pour démarrer l'assistant.
+. Dans l'assistant *Restore*, sur la page *Select Backup*, sélectionnez l'instantané de sauvegarde que vous souhaitez restaurer.
 +
 Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partiel, ou filtrer la liste des sauvegardes en cliquant sur l'icône du filtre et en sélectionnant une plage de dates et d'heures, en sélectionnant si vous souhaitez que les sauvegardes contiennent des snapshots VMware, si vous souhaitez des sauvegardes montées ou l'emplacement. Cliquez sur *OK* pour revenir à l'assistant.
 

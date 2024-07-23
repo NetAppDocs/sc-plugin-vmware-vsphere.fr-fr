@@ -28,12 +28,9 @@ Si vous modifiez une machine virtuelle de stockage qui a été automatiquement a
 IMPORTANT: Si vous avez ajouté des machines virtuelles de stockage pour les opérations de protection des données basées sur les applications à l'aide de l'interface graphique de SnapCenter, vous devez utiliser la même interface pour modifier ces machines virtuelles de stockage.
 
 .Étapes
-. Dans le volet navigateur de gauche du module d'extension SCV, cliquez sur *Storage Systems*.
+. Dans le volet gauche du plug-in SCV, cliquez sur *systèmes de stockage*.
 . Sur la page *systèmes de stockage*, sélectionnez la VM de stockage à modifier, puis sélectionnez *Modifier*.
 . Dans la fenêtre *Modifier le système de stockage*, entrez les nouvelles valeurs, puis cliquez sur *mettre à jour* pour appliquer les modifications.
-+
-image:scpivs44_image43.png["Fenêtre Modifier les systèmes de stockage"]
-
 
 
 
@@ -52,9 +49,9 @@ Vous devez démonter tous les datastores de la machine virtuelle de stockage ava
 Si un groupe de ressources contient des sauvegardes qui résident sur une machine virtuelle de stockage que vous supprimez, les sauvegardes suivantes de ce groupe de ressources échouent.
 
 .Étapes
-. Dans le volet navigateur de gauche du module d'extension SCV, cliquez sur *Storage Systems*.
+. Dans le volet gauche du plug-in SCV, cliquez sur *systèmes de stockage*.
 . Sur la page *Storage Systems*, sélectionnez la VM de stockage à supprimer, puis cliquez sur *Supprimer*.
-. Dans la case de confirmation *Remove Storage System*, cochez la case *Delete Storage system(s)* (Supprimer le(s) système(s) de stockage*), puis cliquez sur *Yes* (Oui) pour confirmer. *Remarque :* seules les versions ESXi 7.0U1 et ultérieures sont prises en charge.
+. Dans la case de confirmation *Remove Storage System*, cochez la case *Delete Storage system(s)* (Supprimer le(s) système(s) de stockage*), puis cliquez sur *Yes* (Oui) pour confirmer. *Remarque :* seuls les hôtes ESXi 7.0U1 et les versions ultérieures sont pris en charge.
 +
 link:scpivs44_manage_the_vmware_vsphere_web_client_service.html["Redémarrez le service client VMware vSphere"].
 

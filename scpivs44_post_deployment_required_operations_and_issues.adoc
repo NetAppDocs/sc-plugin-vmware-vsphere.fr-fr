@@ -30,7 +30,7 @@ Si vous êtes un nouvel utilisateur SnapCenter, vous devez ajouter des machines 
 +
 ** Vous exécutez IPv4 et avez deux adresses IP pour l'hôte SnapCenter VMware vSphere. Par conséquent, la demande de travail est envoyée à une adresse IP qui n'est pas reconnue par le serveur SnapCenter. Pour éviter ce problème, ajoutez l'adresse IP que vous souhaitez utiliser comme suit :
 +
-... Naviguez jusqu'à l'emplacement où le plug-in SnapCenter VMware est déployé : `/opt/netapp/scvservice/standalone_aegis/etc`
+... Accédez à l'emplacement où le plug-in SnapCenter pour VMware vSphere est déployé : `/opt/netapp/scvservice/standalone_aegis/etc`
 ... Ouvrez le réseau de fichiers - interface.properties.
 ... Dans le `network.interface=10.10.10.10` Ajoutez l'adresse IP que vous souhaitez utiliser.
 
@@ -38,7 +38,7 @@ Si vous êtes un nouvel utilisateur SnapCenter, vous devez ajouter des machines 
 ** Vous avez deux cartes réseau.
 
 
-* Après le déploiement du plug-in SnapCenter pour VMware, l'entrée MOB du plug-in vCenter pour SnapCenter pour VMware vSphere peut toujours afficher l'ancien numéro de version. Cela peut se produire lorsque d'autres travaux sont en cours d'exécution dans vCenter. VCenter mettra fin à la mise à jour de l'entrée.
+* Après le déploiement du plug-in SnapCenter pour VMware vSphere, l'entrée MOB du plug-in vCenter pour SnapCenter pour VMware vSphere peut toujours afficher l'ancien numéro de version. Cela peut se produire lorsque d'autres tâches sont en cours d'exécution dans vCenter. VCenter mettra à jour l'entrée.
 
 
 Pour corriger l'un de ces problèmes, procédez comme suit :
@@ -54,10 +54,10 @@ Si le problème persiste, redémarrez le service client VMware vSphere
 
 == Gérer les erreurs d'authentification
 
-Si vous n'utilisez pas les informations d'identification Admin, vous risquez de recevoir une erreur d'authentification après le déploiement du plug-in SnapCenter pour VMware vSphere ou après la migration. Si vous rencontrez une erreur d'authentification, vous devez redémarrer le service.
+Si vous n'utilisez pas les informations d'identification admin, il se peut que vous receviez une erreur d'authentification après le déploiement du plug-in SnapCenter pour VMware vSphere ou après la migration. Si vous rencontrez une erreur d'authentification, vous devez redémarrer le service.
 
 .Étapes
-. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware à l'aide du format `\https://<appliance-IP-address>:8080`. Pour vous connecter, utilisez le nom d'utilisateur admin, le mot de passe et les détails du jeton MFA. Le jeton MFA peut être généré à partir de la console de maintenance.
+. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere au format `\https://<appliance-IP-address>:8080`. Pour vous connecter, utilisez le nom d'utilisateur admin, le mot de passe et les détails du jeton MFA. Le jeton MFA peut être généré à partir de la console de maintenance.
 . Redémarrez le service.
 
 
@@ -75,7 +75,7 @@ Si vous souhaitez effectuer des workflows application sur VMDK dans SnapCenter (
 .Description de la tâche
 * Vous enregistrez le plug-in SnapCenter pour VMware vSphere avec SnapCenter Server à l'aide de l'interface graphique de SnapCenter pour ajouter un hôte de type « vsphere ».
 +
-Le port 8144 est prédéfini pour la communication au sein du plug-in SnapCenter VMware.
+Le port 8144 est prédéfini pour la communication au sein du plug-in SnapCenter pour VMware vSphere.
 
 +
 Vous pouvez enregistrer plusieurs instances du plug-in SnapCenter pour VMware vSphere sur le même serveur SnapCenter pour prendre en charge les opérations de protection des données basées sur les applications sur les machines virtuelles. Vous ne pouvez pas enregistrer le même plug-in SnapCenter pour VMware vSphere sur plusieurs serveurs SnapCenter.
@@ -99,7 +99,7 @@ Vous pouvez enregistrer plusieurs instances du plug-in SnapCenter pour VMware vS
 | Nom d'hôte | Vérifiez l'adresse IP de l'appliance virtuelle. 
 
 
-| Informations d'identification | Entrez le nom d'utilisateur et le mot de passe du plug-in SnapCenter VMware fourni lors du déploiement. 
+| Informations d'identification | Entrez le nom d'utilisateur et le mot de passe du plug-in SnapCenter pour VMware vSphere fourni lors du déploiement. 
 |===
 . Cliquez sur *soumettre*.
 +

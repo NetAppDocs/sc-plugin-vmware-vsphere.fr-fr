@@ -20,11 +20,11 @@ Lorsque vous sauvegardez un datastore, vous sauvegardez toutes les machines virt
 
 Les opérations de sauvegarde et de restauration ne peuvent pas être exécutées simultanément sur le même groupe de ressources.
 
-Consultez les informations sur ce que le plug-in SnapCenter VMware fonctionne et ne prend pas en charge.link:scpivs44_deployment_planning_and_requirements.html["Planification et exigences de déploiement"]
+Consultez les informations fournies par le plug-in SnapCenter pour VMware vSphere. link:scpivs44_deployment_planning_and_requirements.html["Planification et exigences de déploiement"]
 
 Dans les configurations MetroCluster :
 
-* Le plug-in SnapCenter pour VMware pourrait ne pas détecter une relation de protection après un basculement. Voir https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover["Article de la base de connaissances : impossible de détecter la relation SnapMirror ou SnapVault après le basculement de MetroCluster"^].
+* Le plug-in SnapCenter pour VMware vSphere peut ne pas être en mesure de détecter une relation de protection après un basculement. Pour plus d'informations, reportez-vous à la section https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover["Article de la base de connaissances : impossible de détecter la relation SnapMirror ou SnapVault après le basculement de MetroCluster"^] .
 * Si les sauvegardes échouent avec l'erreur `Unable to discover resources on SCV: <xxx>…` Pour les machines virtuelles NFS et VMFS après un basculement/switch interne, redémarrez les services VMware SnapCenter à partir de la console de maintenance.
 
 

@@ -29,18 +29,18 @@ Le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures prend en 
 Vous devez ajouter des clusters de stockage au plug-in SnapCenter pour VMware vSphere et aux outils ONTAP pour VMware vSphere pour vVol Dataprotection.
 
 +
-Pour plus d'informations, voir https://docs.netapp.com/vapp-98/index.jsp["Les outils ONTAP pour VMware vSphere"^]
+Pour plus d'informations, reportez-vous à la section https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Les outils ONTAP pour VMware vSphere"^]
 
 
 
 .Avant de commencer
-Le serveur ESXi, le plug-in SnapCenter VMware et chaque vCenter doivent être synchronisés en même temps. Si vous essayez d'ajouter du stockage mais que les paramètres d'heure de vos vCenters ne sont pas synchronisés, l'opération peut échouer avec une erreur de certificat Java.
+Le serveur ESXi, le plug-in SnapCenter pour VMware vSphere et chaque vCenter doivent être synchronisés en même temps. Si vous essayez d'ajouter du stockage mais que les paramètres d'heure de vos vCenters ne sont pas synchronisés, l'opération peut échouer avec une erreur de certificat Java.
 
 .Description de la tâche
-Le plug-in SnapCenter pour VMware réalise des opérations de sauvegarde et de restauration sur les machines virtuelles de stockage directement connectées et sur les machines virtuelles de stockage dans un cluster de stockage.
+Le plug-in SnapCenter pour VMware vSphere effectue des opérations de sauvegarde et de restauration sur les machines virtuelles de stockage directement connectées, ainsi que sur les machines virtuelles de stockage d'un cluster de stockage.
 
 
-NOTE: Si vous utilisez le plug-in SnapCenter pour VMware pour prendre en charge les sauvegardes basées sur les applications sur des VMDK, vous devez utiliser l'interface graphique de SnapCenter pour entrer les détails de l'authentification du stockage et enregistrer les systèmes de stockage.
+NOTE: Si vous utilisez le plug-in SnapCenter pour VMware vSphere pour prendre en charge les sauvegardes basées sur les applications sur des VMDK, vous devez utiliser l'interface graphique SnapCenter pour entrer les détails d'authentification du stockage et enregistrer les systèmes de stockage.
 
 * Pour les vCenters en mode lié, vous devez ajouter séparément des systèmes de stockage à chaque vCenter.
 * Si vous ajoutez un SVM, les noms des VM de stockage doivent résoudre en tant que LIF de gestion.
@@ -50,11 +50,12 @@ Si vous avez ajouté des entrées au fichier _etc\hosts_ pour les noms de machin
 +
 Si vous ajoutez un serveur virtuel de stockage portant un nom qui ne peut pas être résolu sur la LIF de gestion, les tâches de sauvegarde planifiées échouent, car le plug-in ne peut pas détecter les datastores ou les volumes de cette machine virtuelle de stockage. Le cas échéant, ajoutez la VM de stockage à SnapCenter et spécifiez la LIF de gestion ou ajoutez un cluster qui contient le VM de stockage et spécifiez la LIF de cluster management.
 
-* Les informations d'authentification du stockage ne sont pas partagées entre plusieurs instances du plug-in SnapCenter VMware ou entre Windows SnapCenter Server et le plug-in SnapCenter sur vCenter.
+* Les détails de l'authentification du stockage ne sont pas partagés entre plusieurs instances du plug-in SnapCenter pour VMware vSphere ni entre Windows SnapCenter Server et le plug-in SnapCenter sur vCenter.
 
 
 .Étapes
-. Dans le volet navigateur de gauche du client vSphere, cliquez sur *Storage Systems*.
+. Sur la page de raccourci du client vCenter, sélectionnez SnapCenter Plug-in for VMware vSphere (SCV).
+. Dans le volet de navigation de gauche de SCV, sélectionnez *Tableau de bord* > *systèmes de stockage*.
 . Sur la page systèmes de stockage, sélectionnez l'option *Ajouter*.
 . Dans l'assistant *Add Storage System*, entrez les informations de base sur la machine virtuelle de stockage ou le cluster comme indiqué dans le tableau suivant :
 +
@@ -62,11 +63,10 @@ Si vous ajoutez un serveur virtuel de stockage portant un nom qui ne peut pas ê
 | Pour ce champ… | Faites cela… 
 
 
-| Adieu les migrations de données onéreuses | Entrez l'adresse IP du FQDN ou de la LIF de gestion d'un cluster de stockage ou d'une VM de stockage.
-Le plug-in SnapCenter VMware ne prend pas en charge plusieurs machines virtuelles de stockage portant le même nom sur des clusters différents. 
+| Adieu les migrations de données onéreuses | Entrez l'adresse IP du FQDN ou de la LIF de gestion d'un cluster de stockage ou d'une VM de stockage. Le plug-in SnapCenter pour VMware vSphere ne prend pas en charge plusieurs machines virtuelles de stockage du même nom sur des clusters différents. 
 
 
-| Méthode d'authentification | Sélectionnez informations d'identification ou certificat. Deux types de certificats sont pris en charge : - https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["CERTIFICAT signé CA"^]- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["Certificat auto-signé"^] 
+| Méthode d'authentification | Sélectionnez informations d'identification ou certificat. Deux types de certificats sont pris en charge : - https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["Certificat auto-signé"^] - https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["CERTIFICAT signé CA"]. 
 
 
 | Nom d'utilisateur | Ce champ est visible lorsque vous sélectionnez informations d'identification comme méthode d'authentification. Entrez le nom d'utilisateur ONTAP utilisé pour vous connecter à la machine virtuelle de stockage ou au cluster. 
@@ -89,17 +89,16 @@ Le plug-in SnapCenter VMware ne prend pas en charge plusieurs machines virtuelle
 - 80 pour la connexion HTTP 
 
 
-| Délai dépassé | Entrez le nombre de secondes d'attente du plug-in VMware SnapCenter avant de procéder à la temporisation de l'opération. La valeur par défaut est 60 secondes. 
+| Délai dépassé | Entrez le nombre de secondes d'attente du plug-in SnapCenter pour VMware vSphere avant de procéder à la temporisation de l'opération. La valeur par défaut est 60 secondes. 
 
 
-| Adresse IP préférée | Si la machine virtuelle de stockage possède plusieurs adresses IP de gestion, cochez cette case et entrez l'adresse IP que vous souhaitez utiliser le plug-in SnapCenter VMware.
-*Remarque :* n'utilisez pas de crochets ([]) lors de la saisie de l'adresse IP. 
+| Adresse IP préférée | Si la machine virtuelle de stockage possède plusieurs adresses IP de gestion, cochez cette case et entrez l'adresse IP que vous souhaitez utiliser le plug-in SnapCenter pour VMware vSphere. *Remarque :* n'utilisez pas de crochets ([]) lors de la saisie de l'adresse IP. 
 
 
 | Système de gestion des événements (EMS) et paramètres AutoSupport | Pour envoyer des messages EMS au syslog du système de stockage ou pour que des messages AutoSupport soient envoyés au système de stockage à des fins de protection appliquée, de restauration terminée ou d'échec, cochez la case appropriée. Cochez la case *Envoyer la notification AutoSupport pour les opérations ayant échoué au système de stockage* et la case *Log SnapCenter Server events to syslog* pour activer les notifications AutoSupport. 
 
 
-| Consigner les événements du serveur SnapCenter dans syslog | Cochez la case pour consigner les événements du plug-in SnapCenter VMware. 
+| Consigner les événements du serveur SnapCenter dans syslog | Cochez la case pour consigner les événements du plug-in SnapCenter pour VMware vSphere. 
 
 
 | Envoyer la notification AutoSupport en cas d'échec de l'opération dans le système de stockage | Cochez la case si vous souhaitez que la notification AutoSupport pour les tâches de protection des données ayant échoué. Vous devez également activer AutoSupport sur la machine virtuelle de stockage et configurer les paramètres de messagerie AutoSupport. 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html 
 keywords:  
-summary: Vous pouvez rapidement ajouter un seul serveur virtuel ou datastore à tout groupe de ressources existant géré par le plug-in SnapCenter pour VMware vSphere. 
+summary: 'Vous pouvez ajouter rapidement une machine virtuelle ou un datastore unique à n"importe quel groupe de ressources existant géré par le plug-in SnapCenter pour VMware vSphere.' 
 ---
 = Ajoutez un seul serveur virtuel ou datastore à un groupe de ressources
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: Vous pouvez rapidement ajouter un seul serveur virtuel ou datastore à 
 
 
 [role="lead"]
-Vous pouvez rapidement ajouter un seul serveur virtuel ou datastore à tout groupe de ressources existant géré par le plug-in SnapCenter pour VMware vSphere.
+Vous pouvez ajouter rapidement une machine virtuelle ou un datastore unique à n'importe quel groupe de ressources existant géré par le plug-in SnapCenter pour VMware vSphere.
 
 .Description de la tâche
 Vous pouvez ajouter des datastores SAN et NAS, mais pas des datastores VSAN ou VVOL.
 
 .Étapes
-. Dans l'interface utilisateur graphique du client VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis accédez à la machine virtuelle ou au datastore que vous souhaitez ajouter.
-. Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur la machine virtuelle ou le datastore, sélectionnez *NetApp SnapCenter* dans la liste déroulante, puis sélectionnez *Ajouter au groupe de ressources* dans la liste déroulante secondaire.
+. Dans l'interface graphique du client vSphere, cliquez sur *Menu* dans la barre d'outils et accédez à la machine virtuelle ou au datastore que vous souhaitez ajouter.
+. Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur la machine virtuelle ou le datastore, sélectionnez *SnapCenter Plug-in pour VMware vSphere* > *Ajouter au groupe de ressources* dans la liste déroulante secondaire.
 +
 Le système vérifie d'abord que SnapCenter gère et est compatible avec le système de stockage sur lequel se trouve la machine virtuelle sélectionnée, puis affiche la page *Ajouter au groupe de ressources*. Si le message s'affiche `SnapCenter Compatibility Error` S'affiche, la VM sélectionnée n'est pas compatible avec SnapCenter et vous devez d'abord ajouter la VM de stockage appropriée à SnapCenter.
 
@@ -30,6 +30,6 @@ Le système vérifie d'abord que SnapCenter gère et est compatible avec le syst
 Lorsque vous cliquez sur *OK*, le système vérifie d'abord que SnapCenter gère et est compatible avec le stockage sur lequel les machines virtuelles ou datastores sélectionnés sont situés.
 
 +
-Si le message s'affiche `Selected <resource-name> is not SnapCenter compatible` S'affiche alors qu'un VM ou un datastore sélectionné n'est pas compatible avec SnapCenter. Voir link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["Gérer les échecs de contrôle de compatibilité"] pour en savoir plus.
+Si le message `Selected <resource-name> is not SnapCenter compatible` s'affiche, la machine virtuelle ou le datastore sélectionné n'est pas compatible avec SnapCenter. Pour plus d'informations, reportez-vous à la section link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["Gérer les échecs de contrôle de compatibilité"] .
 
 

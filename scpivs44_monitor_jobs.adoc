@@ -17,7 +17,9 @@ summary: 'Après avoir effectué toute opération de protection des données à 
 Après avoir effectué toute opération de protection des données à l'aide du client VMware vSphere, vous pouvez surveiller l'état des tâches à partir de l'onglet surveillance des tâches du tableau de bord et afficher les détails des tâches.
 
 .Étapes
-. Dans le volet navigateur de gauche du client vSphere, cliquez sur *Tableau de bord*, lorsque deux vCenters ou plus sont configurés en mode lié, sélectionnez un serveur vCenter, puis cliquez sur l'onglet *moniteur des tâches* dans le volet Tableau de bord. L'onglet moniteur de tâches répertorie chaque travail et son état, l'heure de début et l'heure de fin. Si les noms des travaux sont longs, vous devrez peut-être faire défiler vers la droite pour afficher les heures de début et de fin. L'affichage est actualisé toutes les 30 secondes.
+. Sur la page de raccourci du client vCenter, sélectionnez SnapCenter Plug-in for VMware vSphere (SCV).
+. Dans le volet de navigation de gauche de SCV, sélectionnez *Tableau de bord*.
+. Lorsque deux instances vCenter ou plus sont configurées en mode lié, sélectionner l'instance du plug-in SCV et sélectionner l'onglet *Job Monitor*. L'onglet moniteur de tâches répertorie chaque travail et son état, l'heure de début et l'heure de fin. Si les noms des travaux sont longs, vous devrez peut-être faire défiler vers la droite pour afficher les heures de début et de fin. L'affichage est actualisé toutes les 30 secondes.
 +
 ** Sélectionnez l'icône Actualiser dans la barre d'outils pour actualiser l'affichage à la demande.
 ** Sélectionnez l'icône de filtre pour choisir la plage horaire, le type, la balise et l'état des travaux que vous souhaitez afficher. Le filtre est sensible à la casse.
@@ -26,4 +28,4 @@ Après avoir effectué toute opération de protection des données à l'aide du 
 
 
 
-Si le tableau de bord n'affiche pas d'informations sur les tâches, reportez-vous à la section https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_vSphere_web_client_dashboard_does_not_display_jobs["Article de la base de connaissances : le tableau de bord du client SnapCenter vSphere n'affiche pas les tâches"^].
+Si le tableau de bord n'affiche pas les informations sur les travaux, reportez-vous à la https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_vSphere_web_client_dashboard_does_not_display_jobs["Article de la base de connaissances : le tableau de bord du client SnapCenter vSphere n'affiche pas les tâches"^].

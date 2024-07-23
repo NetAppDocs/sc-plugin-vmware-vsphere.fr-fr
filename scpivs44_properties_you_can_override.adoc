@@ -52,21 +52,21 @@ La valeur par défaut est « 5 ».
 
 * *GuestFileRestore.monitorInterval=30*
 +
-Spécifie l'intervalle de temps, en minutes, que le plug-in SnapCenter VMware surveille pour les sessions de restauration de fichiers invités expirées. Toute session exécutée au-delà de l'heure configurée de la session est déconnectée.
+Spécifie l'intervalle de temps, en minutes, que le plug-in SnapCenter pour VMware vSphere surveille pour les sessions de restauration de fichiers invités expirées. Toute session exécutée au-delà de l'heure configurée de la session est déconnectée.
 
 +
 La valeur par défaut est « 30 ».
 
 * *GuestFileRestore.online.disk.timeout=100*
 +
-Spécifie le temps, en secondes, pendant lequel le plug-in SnapCenter VMware attend la fin d'une opération de disque en ligne sur une machine virtuelle invitée. Notez que le temps d'attente supplémentaire de 30 secondes avant les sondages du plug-in est écoulé pour la fin du fonctionnement du disque en ligne.
+Spécifie le temps, en secondes, pendant lequel le plug-in SnapCenter pour VMware vSphere attend la fin d'une opération de disque en ligne sur une machine virtuelle invitée. Notez que le temps d'attente supplémentaire de 30 secondes avant les sondages du plug-in est écoulé pour la fin du fonctionnement du disque en ligne.
 
 +
 La valeur par défaut est « 100 ».
 
 * *GuestFileRestore.restore.files.timeout=3600*
 +
-Spécifie le temps, en secondes, pendant lequel le plug-in SnapCenter VMware attend la fin de l'opération de restauration des fichiers sur une machine virtuelle invitée. Si l'heure est dépassée, le processus est terminé et le travail est marqué comme ayant échoué.
+Spécifie le temps, en secondes, pendant lequel le plug-in SnapCenter pour VMware vSphere attend la fin d'une opération de restauration de fichiers sur une machine virtuelle invitée. Si l'heure est dépassée, le processus est terminé et le travail est marqué comme ayant échoué.
 
 +
 La valeur par défaut est « 3600 » (1 heure).
@@ -113,7 +113,7 @@ La valeur par défaut est « false ».
 
 * *include.esx.initiator.id.from.cluster=true*
 +
-Spécifie que le plug-in SnapCenter VMware doit inclure les ID d'initiateur iSCSI et FCP de tous les hôtes ESXi du cluster dans l'application via les flux de travail VMDK.
+Spécifie que le plug-in SnapCenter pour VMware vSphere doit inclure des ID d'initiateur iSCSI et FCP de tous les hôtes ESXi du cluster dans l'application via des flux de production VMDK.
 
 +
 La valeur par défaut est « false ».
@@ -124,18 +124,18 @@ Quand `disable.weakCiphers` est défini sur `true`, spécifie le chiffrement fai
 
 * *max.max.concurrentes.ds.storage.query.count=15*
 +
-Spécifie le nombre maximal d'appels simultanés que le plug-in SnapCenter VMware peut faire au serveur SnapCenter pour détecter l'encombrement du stockage pour les datastores. Le plug-in effectue ces appels lorsque vous redémarrez le service Linux sur l'hôte de machine virtuelle du plug-in SnapCenter VMware.
+Spécifie le nombre maximal d'appels simultanés que le plug-in SnapCenter pour VMware vSphere peut effectuer sur le serveur SnapCenter pour détecter l'empreinte du stockage des datastores. Le plug-in effectue ces appels lorsque vous redémarrez le service Linux sur l'hôte VM SnapCenter Plug-in pour VMware vSphere.
 
 * *nfs.datastore.mount.retry.count=3*
 +
-Spécifie le nombre maximal de tentatives de montage d'un volume en tant que datastore NFS dans vCenter par le plug-in SnapCenter VMware.
+Spécifie le nombre maximal de fois que le plug-in SnapCenter pour VMware vSphere tente de monter un volume en tant que datastore NFS dans vCenter.
 
 +
 La valeur par défaut est « 3 ».
 
 * *nfs.datastore.mount.retry.delay=60000*
 +
-Spécifie le temps, en millisecondes, que le plug-in SnapCenter VMware attend entre les tentatives de montage d'un volume en tant que datastore NFS dans vCenter.
+Spécifie le temps, en millisecondes, pendant lequel le plug-in SnapCenter pour VMware vSphere attend entre deux tentatives de montage d'un volume en tant que datastore NFS dans vCenter.
 
 +
 La valeur par défaut est « 60000 » (60 secondes).
@@ -173,17 +173,17 @@ La valeur par défaut est « 600000 » (10 minutes).
 
 * *vmware.esx.ip.kernel.ip.map*
 +
-Il n'y a pas de valeur par défaut. Cette valeur permet de mapper l'adresse IP VMware ESXi à l'adresse IP VMkernel. Par défaut, le plug-in VMware de SnapCenter utilise l'adresse IP de l'adaptateur VMkernel de gestion de l'hôte ESXi. Si vous souhaitez que le plug-in SnapCenter VMware utilise une autre adresse IP d'adaptateur VMkernel, vous devez fournir une valeur de remplacement.
+Il n'y a pas de valeur par défaut. Vous utilisez cette valeur pour mapper l'adresse IP de l'hôte ESXi à l'adresse IP du VMkernel. Par défaut, le plug-in SnapCenter pour VMware vSphere utilise l'adresse IP de l'adaptateur VMkernel de gestion de l'hôte VMware ESXi. Si vous souhaitez que le plug-in SnapCenter pour VMware vSphere utilise une adresse IP d'adaptateur VMkernel différente, vous devez fournir une valeur de remplacement.
 
 +
-Dans l'exemple suivant, l'adresse IP de l'adaptateur VMkernel de gestion est 10.225.10.56 ; cependant, le plug-in VMware de SnapCenter utilise l'adresse spécifiée de 10.225.11.57 et 10.225.11.58. Et si l'adresse IP de l'adaptateur VMkernel de gestion est 10.225.10.60, le plug-in utilise l'adresse 10.225.11.61.
+Dans l'exemple suivant, l'adresse IP de l'adaptateur VMkernel de gestion est 10.225.10.56 ; cependant, le plug-in SnapCenter pour VMware vSphere utilise les adresses spécifiées 10.225.11.57 et 10.225.11.58. Et si l'adresse IP de l'adaptateur VMkernel de gestion est 10.225.10.60, le plug-in utilise l'adresse 10.225.11.61.
 
 +
 `vmware.esx.ip.kernel.ip.map=10.225.10.56:10.225.11.57,10.225.11.58; 10.225.10.60:10.225.11.61`
 
 * *vmware.max.concurrent.snapshots=30*
 +
-Spécifie le nombre maximal de snapshots VMware simultanés que le plug-in SnapCenter VMware effectue sur le serveur.
+Spécifie le nombre maximal de snapshots VMware simultanés exécutés par le plug-in SnapCenter pour VMware vSphere sur le serveur.
 
 +
 Ce numéro est vérifié par datastore et n'est vérifié que si la stratégie a « VM cohérente » sélectionnée. Si vous effectuez des sauvegardes cohérentes avec les défaillances, ce paramètre ne s'applique pas.
@@ -193,7 +193,7 @@ La valeur par défaut est « 30 ».
 
 * *vmware.max.concurrent.snapshots.delete=30*
 +
-Spécifie le nombre maximal d'opérations de suppression de snapshots VMware simultanées, par datastore, que le plug-in SnapCenter VMware effectue sur le serveur.
+Spécifie le nombre maximal d'opérations simultanées de suppression de snapshots VMware par datastore que le plug-in SnapCenter pour VMware vSphere exécute sur le serveur.
 
 +
 Ce numéro est vérifié par datastore.
@@ -203,56 +203,56 @@ La valeur par défaut est « 30 ».
 
 * *vmware.query.unresolved.retry.count=10*
 +
-Spécifie le nombre maximal de tentatives du plug-in SnapCenter VMware d'envoi d'une requête sur des volumes non résolus en raison des erreurs «...limite de temps pour la rétention d'E/S. ».
+Spécifie le nombre maximal de tentatives du plug-in SnapCenter pour VMware vSphere d'envoyer une requête sur les volumes non résolus en raison de la «...limite de temps pour la mise en attente des E/S.. » erreurs.
 
 +
 La valeur par défaut est « 10 ».
 
 * *vmware.quiesce.retry.count=0*
 +
-Spécifie le nombre maximal de tentatives du plug-in SnapCenter VMware pour envoyer une requête à propos des snapshots VMware en raison de la « limite de temps pour la rétention des E/S. » erreurs lors d'une sauvegarde.
+Spécifie le nombre maximum de tentatives du plug-in SnapCenter pour VMware vSphere d'envoyer une requête sur les snapshots VMware en raison de la «...limite de temps pour la conservation des E/S.. » erreurs lors d'une sauvegarde.
 
 +
 La valeur par défaut est « 0 ».
 
 * *vmware.quiesce.retry.interval=5*
 +
-Spécifie le temps que le plug-in SnapCenter VMware attend, en secondes, entre l'envoi des requêtes relatives au snapshot VMware «...limite de temps pour contenir les erreurs d'E/S. » pendant une sauvegarde.
+Spécifie le temps, en secondes, que le plug-in SnapCenter pour VMware vSphere attend entre l'envoi des requêtes concernant le snapshot VMware «...délai de conservation des E/S. ». erreurs lors d'une sauvegarde.
 
 +
 La valeur par défaut est « 5 ».
 
 * *vmware.query.unresolved.retry.delay= 60000*
 +
-Spécifie le temps, en millisecondes, que le plug-in SnapCenter VMware attend entre l'envoi des requêtes relatives aux volumes non résolus en raison d'une limite de temps «...pour contenir les erreurs E/S. ». Cette erreur se produit lors du clonage d'un datastore VMFS.
+Spécifie la durée, en millisecondes, pendant laquelle le plug-in SnapCenter pour VMware vSphere attend entre l'envoi des requêtes concernant les volumes non résolus en raison du «...délai de conservation des E/S.. » erreurs. Cette erreur se produit lors du clonage d'un datastore VMFS.
 
 +
 La valeur par défaut est « 60000 » (60 secondes).
 
 * *vmware.reconfig.vm.retry.count=10*
 +
-Spécifie le nombre maximal de tentatives du plug-in SnapCenter VMware d'envoi d'une requête sur la reconfiguration d'un ordinateur virtuel en raison des erreurs «...limite de temps pour la conservation des E/S. ».
+Spécifie le nombre maximal de tentatives du plug-in SnapCenter pour VMware vSphere d'envoyer une requête sur la reconfiguration d'une machine virtuelle en raison de la «...limite de temps pour la conservation des E/S.. » erreurs.
 
 +
 La valeur par défaut est « 10 ».
 
 * *vmware.reconfig.vm.retry.delay=30000*
 +
-Spécifie le temps maximal, en millisecondes, que le plug-in SnapCenter VMware attend entre l'envoi des requêtes concernant la reconfiguration d'une machine virtuelle en raison de la «...limite de temps pour contenir les erreurs des E/S. ».
+Spécifie le délai maximal, en millisecondes, d'attente du plug-in SnapCenter pour VMware vSphere entre l'envoi de requêtes concernant la reconfiguration d'un serveur virtuel en raison du «...délai de conservation des E/S. ». erreurs.
 
 +
 La valeur par défaut est « 30000 » (30 secondes).
 
 * *vmware.rescan.hba.retry.count=3*
 +
-Spécifie le temps, en millisecondes, que le plug-in SnapCenter VMware attend entre l'envoi des requêtes relatives à la remise en état de l'adaptateur de bus hôte en raison des erreurs «...délai limite pour la rétention des E/S. ».
+Spécifie le temps, en millisecondes, que le plug-in SnapCenter pour VMware vSphere attend entre l'envoi des requêtes concernant la nouvelle analyse de l'adaptateur de bus hôte en raison du «...délai de conservation des E/S. ». erreurs.
 
 +
 La valeur par défaut est « 3 ».
 
 * *vmware.rescan.hba.retry.delay=30000*
 +
-Spécifie le nombre maximal de tentatives de relance des requêtes par le plug-in SnapCenter VMware pour relancer l'analyse de l'adaptateur de bus hôte.
+Spécifie le nombre maximal de tentatives du plug-in SnapCenter pour VMware vSphere pour relancer les demandes de nouvelle analyse de l'adaptateur de bus hôte.
 
 +
 La valeur par défaut est « 30000 ».

@@ -17,7 +17,8 @@ summary: 'Si vous souhaitez utiliser une machine virtuelle proxy pour connecter 
 Si vous souhaitez utiliser une machine virtuelle proxy pour connecter un disque virtuel aux opérations de restauration de fichiers invités, vous devez configurer la machine virtuelle proxy avant de commencer l'opération de restauration. Bien que vous puissiez configurer une machine virtuelle proxy à tout moment, il peut être plus pratique de la configurer immédiatement une fois le déploiement du plug-in terminé.
 
 .Étapes
-. Dans le client VMware vSphere, cliquez sur *Restauration de fichiers invité*.
+. Dans la fenêtre des raccourcis client vSphere, sélectionnez *SnapCenter Plug-in pour VMware vSphere* sous Plug-ins.
+. Dans le menu de navigation de gauche, sélectionnez *Guest File Restore*.
 . Dans la section *Exécuter en tant qu'informations d'identification*, effectuez l'une des opérations suivantes :
 +
 |===
@@ -36,7 +37,7 @@ Si vous souhaitez utiliser une machine virtuelle proxy pour connecter un disque 
 
 |===
 +
-Le plug-in SnapCenter VMware utilise les informations d'identification sélectionnées pour se connecter à la machine virtuelle proxy sélectionnée.
+Le plug-in SnapCenter pour VMware vSphere utilise les informations d'identification sélectionnées pour se connecter à la machine virtuelle proxy sélectionnée.
 
 +
 Les informations d'identification Exécuter en tant que doivent être l'administrateur de domaine par défaut fourni par Windows ou par l'administrateur local intégré. Les utilisateurs de Workgroup peuvent utiliser le compte d'administrateur local intégré.
@@ -46,4 +47,4 @@ Les informations d'identification Exécuter en tant que doivent être l'administ
 
 
 
-NOTE: Vous devez supprimer la machine virtuelle proxy de l'interface utilisateur du plug-in SnapCenter pour VMware vSphere avant de pouvoir la supprimer de VMware ESXi.
+NOTE: Vous devez supprimer la machine virtuelle proxy de l'interface utilisateur du plug-in SnapCenter pour VMware vSphere avant de pouvoir la supprimer de l'hôte VMware ESXi.

@@ -26,7 +26,7 @@ NOTE: Ces groupes de ressources sont appelés tâches de sauvegarde dans Virtual
 Vous pouvez désactiver temporairement les opérations planifiées de démarrer sur un groupe de ressources. Vous pouvez activer ces opérations plus tard que vous le souhaitez.
 
 .Étapes
-. Dans le volet navigateur de gauche du module d'extension SCV, cliquez sur *groupes de ressources*, puis cliquez avec le bouton droit de la souris sur un groupe de ressources et cliquez sur *suspendre* (ou cliquez sur *reprendre*).
+. Dans le volet gauche du plug-in SCV, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources et cliquez sur *suspendre* (ou cliquez sur *reprendre*).
 . Dans la zone de confirmation, cliquez sur *OK* pour confirmer.
 
 
@@ -49,7 +49,7 @@ Si vous souhaitez modifier le nom d'un groupe de ressources, n'utilisez pas les 
 Un caractère de soulignement (_) est autorisé.
 
 .Étapes
-. Dans le volet navigateur de gauche du module d'extension SCV, cliquez sur *groupes de ressources*, puis sélectionnez un groupe de ressources et cliquez sur *Modifier*.
+. Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, puis sélectionnez un groupe de ressources et cliquez sur *Modifier*.
 . Dans la liste de gauche de l'assistant *Modifier le groupe de ressources*, cliquez sur la catégorie que vous souhaitez modifier et entrez vos modifications.
 +
 Vous pouvez modifier plusieurs catégories.
@@ -64,12 +64,12 @@ Vous pouvez modifier plusieurs catégories.
 Vous pouvez supprimer un groupe de ressources dans vCenter si vous n'avez plus besoin de protéger les ressources du groupe de ressources. Vous devez vous assurer que tous les groupes de ressources sont supprimés avant de supprimer le plug-in SnapCenter pour VMware vSphere de vCenter.
 
 .Description de la tâche
-Toutes les opérations de suppression de groupe de ressources sont effectuées en tant que suppressions de force. L'opération de suppression détache toutes les règles du groupe de ressources vCenter, supprime le groupe de ressources du plug-in SnapCenter pour VMware vSphere et supprime toutes les sauvegardes et copies Snapshot du groupe de ressources.
+Toutes les opérations de suppression de groupe de ressources sont effectuées en tant que suppressions de force. L'opération de suppression dissocie toutes les règles du groupe de ressources vCenter, supprime le groupe de ressources du plug-in SnapCenter pour VMware vSphere et supprime toutes les sauvegardes et instantanés du groupe de ressources.
 
 
-NOTE: Dans une relation SnapVault, la dernière copie Snapshot ne peut pas être supprimée. Le groupe de ressources ne peut donc pas être supprimé. Avant de supprimer un groupe de ressources faisant partie d'une relation SnapVault, vous devez utiliser OnCommand System Manager ou l'interface de ligne de commandes de ONTAP pour supprimer la relation SnapVault, puis supprimer la dernière copie Snapshot.
+NOTE: Dans une relation SnapVault, le dernier snapshot ne peut pas être supprimé. Par conséquent, le groupe de ressources ne peut pas être supprimé. Avant de supprimer un groupe de ressources faisant partie d'une relation SnapVault, vous devez utiliser OnCommand System Manager ou l'interface de ligne de commandes de ONTAP pour supprimer la relation SnapVault. Vous devez ensuite supprimer la dernière copie Snapshot.
 
 .Étapes
-. Dans le volet navigateur de gauche du module d'extension SCV, cliquez sur *groupes de ressources*, puis sélectionnez un groupe de ressources et cliquez sur *Supprimer*.
+. Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, puis sélectionnez un groupe de ressources et cliquez sur *Supprimer*.
 . Dans la zone de confirmation *Supprimer le groupe de ressources*, cliquez sur *OK* pour confirmer.
 

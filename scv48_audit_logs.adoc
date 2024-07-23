@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scv48_audit_logs.html 
 keywords:  
-summary: 'Le journal d"audit assure la traçabilité des personnes qui ont fait quoi et quand. Le journal d"audit est un ensemble d"événements dans un ordre chronologique et il est écrit dans un fichier de l"appliance.' 
+summary: 'Le journal d"audit assure la traçabilité des personnes qui ont fait quoi et quand. Un journal d"audit est un ensemble d"événements classés par ordre chronologique, qui est écrit dans un fichier de l"appliance.' 
 ---
 = Journaux d'audit
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Le journal d"audit assure la traçabilité des personnes qui ont fait 
 
 
 [role="lead"]
-Le journal d'audit est un ensemble d'événements dans un ordre chronologique, qui est écrit dans un fichier de l'appliance. Les fichiers journaux d'audit sont générés à `/var/log/netapp/audit` l'emplacement et le nom des fichiers suivent l'une des conventions de dénomination ci-dessous :
+Un journal d'audit est un ensemble d'événements classés par ordre chronologique, écrits dans un fichier au sein de l'appliance. Les fichiers journaux d'audit sont générés à l' `/var/log/netapp/audit` emplacement, et les noms de fichiers suivent l'une des conventions de dénomination suivantes :
 
 * Audit.log : fichier journal d'audit actif en cours d'utilisation.
 * Audit-%d{aaaa-MM-jj-HH-mm-ss}.log.gz : déployé sur le fichier journal d'audit. La date et l'heure du nom de fichier indiquent quand le fichier a été créé, par exemple : audit-2022-12-15-16-28-01.log.gz.
@@ -190,4 +190,6 @@ Cette tâche vous permet de modifier les paramètres du journal d'audit par déf
 . Connectez-vous au plug-in SnapCenter pour VMware vSphere.
 . Dans le volet de navigation de gauche, sélectionnez *Paramètres* > *journaux d'audit* > *Paramètres*.
 . Dans le volet *Paramètres du journal d'audit*, entrez le nombre maximal de fichiers journaux d'audit et la limite de taille du fichier journal d'audit.
+. Sélectionnez l'option *Envoyer les journaux d'audit au serveur Syslog* si vous choisissez d'envoyer les journaux au serveur syslog. Entrez les détails du serveur.
+. Enregistrez les paramètres.
 

@@ -21,15 +21,17 @@ Vous ne pouvez pas monter un datastore vVol.
 .Avant de commencer
 * Assurez-vous que l'hôte ESXi alternatif peut se connecter au stockage
 +
-Si vous souhaitez monter sur un autre hôte ESXi, vous devez vous assurer que l'hôte ESXi secondaire peut se connecter au stockage et que : ** ID unique et GID identique à celui de l'hôte d'origine ** même appliance virtuelle pour le plug-in SnapCenter pour la version VMware vSphere que pour l'hôte d'origine
+Si vous souhaitez effectuer un montage sur un autre hôte ESXi, vous devez vous assurer que l'autre hôte ESXi peut se connecter au stockage et dispose des éléments suivants :
 
-* Mappe les initiateurs de stockage sur ESXi
 +
-Assurez-vous que les initiateurs du système de stockage sont mappés à l'hyperviseur ESXi.
+** Mêmes UID et GID que l'hôte d'origine
+** Même appliance virtuelle pour le plug-in SnapCenter pour VMware vSphere que celle de l'hôte d'origine
 
-* Nettoyez les LUN obsolètes
+
+* Lorsque vous utilisez le protocole iSCSI, assurez-vous que les initiateurs du système de stockage sont mappés sur l'hôte ESXi. Lorsque vous utilisez le protocole NVMe, ajoutez des contrôleurs pour mapper le sous-système requis sur l'hôte ESXi.
+* Nettoyez la LUN/l'espace de noms obsolète
 +
-Étant donné que l'hyperviseur ESXi ne peut détecter qu'une seule LUN par datastore, l'opération échoue s'il en trouve plusieurs. Cette situation peut se produire si vous démarrez une opération de montage avant la fin d'une opération de montage précédente, ou si vous clonez manuellement des LUN, ou si les clones ne sont pas supprimés du stockage lors d'une opération de démontage. Afin d'éviter la découverte de plusieurs clones, vous devez nettoyer toutes les LUN obsolètes du stockage.
+Étant donné que l'hôte ESXi ne peut détecter qu'une seule LUN/espace de nom par datastore, l'opération échoue si elle en trouve plusieurs. Cela peut se produire si vous démarrez une opération de montage avant la fin d'une opération de montage précédente, si vous clonez manuellement une LUN/un espace de noms ou si les clones ne sont pas supprimés du stockage pendant une opération de démontage. Pour éviter la détection de plusieurs clones, nettoyez toutes les LUN/espaces de nom obsolètes du stockage.
 
 
 
@@ -37,18 +39,18 @@ Assurez-vous que les initiateurs du système de stockage sont mappés à l'hyper
 Une opération de montage peut échouer si le niveau de stockage de la FabricPool où se trouve le datastore n'est pas disponible.
 
 .Étapes
-. Dans le client VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *Storage* dans la liste déroulante.
-. Cliquez avec le bouton droit de la souris sur un datastore et sélectionnez *NetApp SnapCenter* dans la liste déroulante, puis sélectionnez *Mount Backup* dans la liste déroulante secondaire.
+. Sur la page des raccourcis client VMware vSphere, sélectionnez *Storage*.
+. Cliquez avec le bouton droit de la souris sur un datastore et sélectionnez *SnapCenter Plug-in pour VMware vSphere* > *Mount Backup*.
 . Sur la page *Mount datastore*, sélectionnez une sauvegarde et un emplacement de sauvegarde (principal ou secondaire), puis cliquez sur *Finish*.
 . Facultatif : pour vérifier que le datastore est monté, effectuez les opérations suivantes :
 +
 .. Cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *stockage* dans la liste déroulante.
 .. Le volet gauche du navigateur affiche le datastore que vous avez monté en haut de la liste.
 +
-Si vous effectuez une opération de rattachement ou de montage sur un volume de destination SnapVault protégé par des planifications SnapVault et qu'il exécute ONTAP 8.3, une copie Snapshot supplémentaire peut s'afficher dans la boîte de dialogue d'ajout ou de montage. En effet, l'opération de rattachement ou de montage cloner le volume de destination SnapVault et ONTAP met à jour le volume en créant une nouvelle copie Snapshot.
+Si vous effectuez une opération de rattachement ou de montage sur un volume de destination SnapVault protégé par des planifications SnapVault et exécutant ONTAP 8.3, il se peut qu'un instantané supplémentaire apparaisse dans l'écran de la boîte de dialogue de rattachement ou de montage. Cela se produit parce que l'opération de rattachement ou de montage clone le volume de destination SnapVault et que ONTAP met à jour le volume en créant une nouvelle copie Snapshot.
 
 +
-Pour éviter la création de nouvelles copies Snapshot lors du clonage du volume, désactivez la planification ONTAP du volume SnapVault. Les copies Snapshot existantes ne sont pas supprimées.
+Pour empêcher la création de nouveaux snapshots lorsque vous clonez le volume, désactivez la planification ONTAP du volume SnapVault. Les instantanés existants précédemment ne sont pas supprimés.
 
 
 

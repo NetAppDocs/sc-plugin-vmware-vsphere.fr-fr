@@ -29,7 +29,7 @@ Pour chaque API REST, ajoutez `\https://<server>:<port>` Au niveau de l'API REST
 
 
 | 3 | `/4.1/vm/backups/{backupId}/
-snapshotlocations` | `Get snapshot locations` Obtient l'emplacement de la copie Snapshot pour la sauvegarde spécifiée. Passez le *backupId* de l'étape 2. Notez les informations *snapshotLocationsList*. 
+snapshotlocations` | `Get snapshot locations` Obtient l'emplacement du snapshot pour la sauvegarde spécifiée. Passez le *backupId* de l'étape 2. Notez les informations *snapshotLocationsList*. 
 
 
 | 4 | `/4.1/vm/{moref}/backups/

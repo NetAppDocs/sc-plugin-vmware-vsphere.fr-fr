@@ -28,7 +28,7 @@ Pour corriger le problème, remettez manuellement les VMDK en ligne dans le syst
 
 == Échec de l'opération de rattachement de la restauration du fichier invité
 
-Ce problème survient lorsque vous démarrez une opération de restauration de fichier invité, mais l'opération de connexion de disque échoue même si VMware Tools est en cours d'exécution et que les informations d'identification du système d'exploitation invité sont correctes. Si cela se produit, l'erreur suivante est renvoyée :
+Ce problème se produit lorsque vous démarrez une opération de restauration de fichier invité, mais que l'opération de connexion de disque échoue même si les outils VMware sont en cours d'exécution et que les informations d'identification du système d'exploitation invité sont correctes. Si cela se produit, l'erreur suivante est renvoyée :
 
 `Error while validating guest credentials, failed to access guest system using specified credentials: Verify VMWare tools is running properly on system and account used is Administrator account, Error is SystemError vix error codes = (3016, 0).`
 

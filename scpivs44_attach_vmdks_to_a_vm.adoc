@@ -33,21 +33,30 @@ Les limitations suivantes s'appliquent à la connexion de disques virtuels :
 Dans ce cas, ajoutez les contrôleurs SCSI manuellement et réessayez d'effectuer l'opération de connexion.
 
 * Vous ne pouvez pas joindre manuellement un disque virtuel qui a été attaché ou monté dans le cadre d'une opération de restauration de fichier invité.
-* Les opérations de liaison et de restauration connectent les VMDK à l'aide du contrôleur SCSI par défaut. Les VMDK connectés à une machine virtuelle avec contrôleur NVME sont sauvegardés, mais pour les opérations de connexion et de restauration, ils sont connectés de nouveau à l'aide d'un contrôleur SCSI.
+* Les opérations de liaison et de restauration connectent les VMDK à l'aide du contrôleur SCSI par défaut. Cependant, lorsque des VMDK reliés à une machine virtuelle avec un disque NVMe sont sauvegardés, les opérations de connexion et de restauration utilisent le contrôleur NVMe si disponible.
+
+
+.Avant de commencer
+Suivez les étapes ci-dessous pour ajouter le contrôleur NVMe au disque.
+
+. Connectez-vous au client vCenter
+. Sélectionnez la machine virtuelle dans le datastore VMFS
+. Cliquez avec le bouton droit de la souris sur la machine virtuelle et accédez à *Modifier les paramètres*
+. Dans la fenêtre de modification des paramètres, sélectionnez *Ajouter nouveau périphérique* > *contrôleur NVMe*
 
 
 .Étapes
 . Dans l'interface utilisateur graphique du client VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *hôtes et clusters* dans la liste déroulante.
-. Dans le volet de navigation de gauche, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *NetApp SnapCenter* dans la liste déroulante, puis sélectionnez *attacher un disque virtuel* dans la liste déroulante secondaire.
+. Dans le volet de navigation de gauche, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* > *connecter un ou plusieurs disques virtuels*.
 . Dans la fenêtre *Attach disque virtuel*, dans la section *Backup*, sélectionnez une sauvegarde.
 +
-Vous pouvez filtrer la liste des sauvegardes en sélectionnant l'icône de filtre et en choisissant une plage de date et d'heure, en indiquant si vous souhaitez des sauvegardes contenant des copies Snapshot VMware, si vous voulez monter des sauvegardes et l'emplacement. Cliquez sur *OK*.
+Vous pouvez filtrer la liste des sauvegardes en sélectionnant l'icône de filtre et en choisissant une plage de date et d'heure, en sélectionnant si vous souhaitez des sauvegardes contenant des snapshots VMware, si vous voulez monter des sauvegardes et l'emplacement. Cliquez sur *OK*.
 
 . Dans la section *Sélectionner des disques*, sélectionnez un ou plusieurs disques à relier et l'emplacement de connexion (primaire ou secondaire).
 +
 Vous pouvez changer le filtre pour afficher les emplacements principal et secondaire.
 
-. Par défaut, les disques virtuels sélectionnés sont connectés à la machine virtuelle parent. Pour attacher les disques virtuels sélectionnés à une autre machine virtuelle dans le même hôte ESXi, cliquez sur *cliquez ici pour l'associer à une autre machine virtuelle* et spécifier l'autre machine virtuelle.
+. Par défaut, les disques virtuels sélectionnés sont connectés à la machine virtuelle parent. Pour relier les disques virtuels sélectionnés à une autre machine virtuelle dans le même hôte ESXi, sélectionnez *cliquez ici pour vous connecter à une autre machine virtuelle* et spécifiez la machine virtuelle secondaire.
 . Cliquez sur *attacher*.
 . Facultatif : surveillez la progression de l'opération dans la section *tâches récentes*.
 +
@@ -56,7 +65,7 @@ Actualiser l'écran pour afficher les informations mises à jour.
 . Vérifiez que le disque virtuel est connecté en effectuant les opérations suivantes :
 +
 .. Cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
-.. Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur une VM, puis sélectionnez *Modifier les paramètres* dans la liste déroulante.
+.. Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur un serveur virtuel, puis sélectionnez *Modifier les paramètres* dans la liste déroulante.
 .. Dans la fenêtre *Modifier les paramètres*, développez la liste de chaque disque dur pour afficher la liste des fichiers de disque.
 +
 image:scpivs44_image23.png["Fenêtre Modifier les paramètres"]

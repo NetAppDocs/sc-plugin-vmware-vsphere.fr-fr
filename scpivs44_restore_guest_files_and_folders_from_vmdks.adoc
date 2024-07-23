@@ -28,8 +28,8 @@ IMPORTANT: Seule une opération de rattachement ou de restauration peut être ex
 IMPORTANT: La fonction de restauration invité vous permet d'afficher et de restaurer des fichiers système et masqués et d'afficher des fichiers cryptés. N'essayez pas d'écraser un fichier système existant ou de restaurer des fichiers cryptés vers un dossier crypté. Pendant l'opération de restauration, les attributs masqués, système et cryptés des fichiers invités ne sont pas conservés dans le fichier restauré. L'affichage ou la navigation dans les partitions réservées peut provoquer une erreur.
 
 .Étapes
-. Cliquez sur *Menu* et sélectionnez l'option de menu *hôtes et clusters*, puis sélectionnez une machine virtuelle, sélectionnez *NetApp SnapCenter*, puis cliquez sur *Restauration de fichiers invités*.
-. Dans le client VMware vSphere, cliquez sur *Guest File Restore* dans la liste déroulante secondaire pour démarrer l'assistant.
+. Dans la fenêtre des raccourcis client vSphere, sélectionnez *hosts and clusters* et sélectionnez une machine virtuelle.
+. Cliquez avec le bouton droit de la souris sur la machine virtuelle et sélectionnez *SnapCenter Plug-in pour VMware vSphere* > *Guest File Restore*.
 . Sur la page *Restore Scope*, spécifiez la sauvegarde qui contient le disque virtuel que vous souhaitez associer en procédant comme suit :
 +
 .. Dans le tableau *Nom de la sauvegarde*, sélectionnez la sauvegarde qui contient le disque virtuel que vous souhaitez joindre.
@@ -81,7 +81,8 @@ Avant de cliquer sur *Finish*, vous pouvez revenir à n'importe quelle page de l
 +
 Vous pouvez afficher la progression de l'opération dans le moniteur des tâches du tableau de bord, ou vous pouvez attendre la notification par e-mail.
 
-. Pour trouver les fichiers à restaurer à partir du disque virtuel joint, cliquez sur *Menu > Plug-in SnapCenter pour VMware vSphere*, puis dans le volet gauche du navigateur, cliquez sur *Restauration de fichiers invités* et sélectionnez l'onglet *Configuration invité*.
+. Pour rechercher les fichiers à restaurer à partir du disque virtuel joint, sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la fenêtre des raccourcis client vSphere.
+. Dans le volet gauche du navigateur, sélectionnez *Restauration de fichiers invités* > *Configuration invité*.
 +
 Dans le tableau moniteur de session invité, vous pouvez afficher des informations supplémentaires sur une session en cliquant sur *... *dans la colonne de droite.
 

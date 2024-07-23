@@ -14,7 +14,7 @@ summary: 'Si vous utilisez le plug-in SnapCenter pour l"appliance virtuelle VMwa
 
 
 
-NOTE: La mise à niveau vers SCV 5.0 est prise en charge uniquement sur VMware vCenter Server 7, mise à jour 1 et versions ultérieures. Pour le serveur VMware vCenter antérieur à la version 7, mise à jour 1, vous devez continuer à utiliser SCV 4.7. La mise à niveau est perturbatrice sur des versions de serveur VMware vCenter non prises en charge.
+NOTE: La mise à niveau vers SCV 6.0 est prise en charge uniquement sur VMware vCenter Server 7, mise à jour 1 et versions ultérieures. Pour le serveur VMware vCenter antérieur à la version 7, mise à jour 1, vous devez continuer à utiliser SCV 4.7. La mise à niveau est perturbatrice sur des versions de serveur VMware vCenter non prises en charge.
 
 Si vous utilisez le plug-in SnapCenter pour l'appliance virtuelle VMware vSphere, vous pouvez effectuer la mise à niveau vers une version plus récente. Le processus de mise à niveau annule l'enregistrement du plug-in existant et déploie un plug-in compatible uniquement avec vSphere 7.0U1 et les versions ultérieures.
 
@@ -25,10 +25,13 @@ Si vous utilisez le plug-in SnapCenter pour l'appliance virtuelle VMware vSphere
 |===
 
 
-| Si vous utilisez le plug-in SnapCenter pour la version VMware vSphere (SCV)... | Vous pouvez directement mettre à niveau le plug-in SnapCenter pour VMware vSphere vers... 
+| Si vous utilisez le plug-in SnapCenter pour la version de VMware vSphere (SCV)... | Vous pouvez directement mettre à niveau le plug-in SnapCenter pour VMware vSphere vers... 
 
 
-| DISTRIBUTEUR AUXILIAIRE 4.9 | Mise à niveau vers le distributeur sélectif 5.0 
+| DISTRIBUTEUR AUXILIAIRE 5.0 | Mise à niveau vers le distributeur sélectif 6.0 
+
+
+| DISTRIBUTEUR AUXILIAIRE 4.9 | Mise à niveau vers les distributeurs sélectifs 5.0 et 6.0 
 
 
 | DISTRIBUTEUR AUXILIAIRE 4.8 | Mise à niveau vers les distributeurs sélectifs 4.9 et 5.0 
@@ -48,7 +51,7 @@ NOTE: Le basculement de votre configuration réseau statique vers DHCP n'est pas
 .Étapes
 . Préparation à la mise à niveau en désactivant le plug-in SnapCenter pour VMware vSphere.
 +
-.. Connectez-vous au plug-in SnapCenter pour l'interface graphique de gestion VMware vSphere. L'IP s'affiche lorsque vous déployez le plug-in SnapCenter VMware.
+.. Connectez-vous au plug-in SnapCenter pour l'interface graphique de gestion VMware vSphere. L'adresse IP s'affiche lorsque vous déployez le plug-in SnapCenter pour VMware vSphere.
 .. Cliquez sur *Configuration* dans le volet de navigation de gauche, puis cliquez sur l'option *Service* dans la section Détails du plug-in pour désactiver le plug-in.
 
 
@@ -64,7 +67,7 @@ NOTE: Le basculement de votre configuration réseau statique vers DHCP n'est pas
 .. Dans votre navigateur, accédez à VMware vSphere vCenter.
 .. Dans l'interface graphique de vCenter, cliquez sur *vSphere client (HTML)*.
 .. Connectez-vous à la page *Single Sign-on de VMware vCenter*.
-.. Dans le volet navigateur, cliquez sur la machine virtuelle à mettre à niveau, puis cliquez sur l'onglet *Résumé*.
+.. Dans le volet du navigateur, cliquez sur le serveur virtuel que vous souhaitez mettre à niveau, puis cliquez sur l'onglet *Résumé*.
 .. Dans le volet *Related Objects*, cliquez sur n'importe quel datastore dans la liste, puis cliquez sur l'onglet *Summary*.
 .. Dans l'onglet *fichiers* du datastore sélectionné, cliquez sur n'importe quel dossier de la liste, puis cliquez sur *Télécharger fichiers*.
 .. Sur l'écran contextuel de téléchargement, accédez à l'emplacement où vous avez téléchargé le `.iso` cliquez sur le fichier `.iso` Image du fichier, puis cliquez sur *Ouvrir*. Le fichier est chargé dans le datastore.

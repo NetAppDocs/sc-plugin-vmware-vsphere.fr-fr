@@ -35,12 +35,12 @@ La machine virtuelle à restaurer ne doit pas être dans un état vMotion ou Sto
 .Description de la tâche
 * Si le VMDK est supprimé ou détaché de la machine virtuelle, l'opération de restauration le lie à la machine virtuelle.
 * Une opération de restauration peut échouer si le niveau de stockage de la FabricPool où se trouve la machine virtuelle est indisponible.
-* Les opérations de liaison et de restauration connectent les VMDK à l'aide du contrôleur SCSI par défaut. Les VMDK connectés à une machine virtuelle avec contrôleur NVME sont sauvegardés, mais pour les opérations de connexion et de restauration, ils sont connectés de nouveau à l'aide d'un contrôleur SCSI.
+* Les opérations de liaison et de restauration connectent les VMDK à l'aide du contrôleur SCSI par défaut. Cependant, lorsque des VMDK reliés à une machine virtuelle avec un disque NVMe sont sauvegardés, les opérations de connexion et de restauration utilisent le contrôleur NVMe si disponible.
 
 
 .Étapes
 . Dans l'interface utilisateur graphique du client VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
-. Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *NetApp SnapCenter* dans la liste déroulante, puis sélectionnez *Restaurer* dans la liste déroulante secondaire.
+. Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la liste déroulante, puis sélectionnez *Restore* dans la liste déroulante secondaire.
 . Dans l'assistant *Restaurer*, sur la page Sélectionner une sauvegarde, sélectionnez la copie de sauvegarde à partir de laquelle vous souhaitez effectuer la restauration.
 +
 Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partiel, ou filtrer la liste des sauvegardes en cliquant sur l'icône du filtre et en sélectionnant une plage de dates et d'heures, en sélectionnant si vous souhaitez que les sauvegardes contenant des snapshots VMware soient montées ou non, et emplacement principal ou secondaire. Cliquez sur *OK* pour revenir à l'assistant.
@@ -56,7 +56,7 @@ Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde 
 
 | Un autre datastore dans un autre emplacement | Cliquez sur le datastore de destination et sélectionnez un autre datastore dans la liste. 
 |===
-. Sur la page *Sélectionner l'emplacement*, sélectionnez la copie Snapshot que vous souhaitez restaurer (primaire ou secondaire).
+. Sur la page *Sélectionner un emplacement*, sélectionnez l'instantané à restaurer (principal ou secondaire).
 . Vérifiez la page Résumé, puis cliquez sur *Terminer*.
 . Facultatif : surveillez la progression de l'opération en cliquant sur *tâches récentes* en bas de l'écran.
 . Actualiser l'écran pour afficher les informations mises à jour.
