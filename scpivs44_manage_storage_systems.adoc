@@ -53,6 +53,6 @@ Si un groupe de ressources contient des sauvegardes qui résident sur une machin
 . Sur la page *Storage Systems*, sélectionnez la VM de stockage à supprimer, puis cliquez sur *Supprimer*.
 . Dans la case de confirmation *Remove Storage System*, cochez la case *Delete Storage system(s)* (Supprimer le(s) système(s) de stockage*), puis cliquez sur *Yes* (Oui) pour confirmer. *Remarque :* seuls les hôtes ESXi 7.0U1 et les versions ultérieures sont pris en charge.
 +
-link:scpivs44_manage_the_vmware_vsphere_web_client_service.html["Redémarrez le service client VMware vSphere"].
+link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["Redémarrez le service client VMware vSphere"].
 
 
