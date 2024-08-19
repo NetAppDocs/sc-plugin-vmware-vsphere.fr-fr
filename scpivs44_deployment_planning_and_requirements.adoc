@@ -45,7 +45,7 @@ Par exemple, si vous souhaitez effectuer des sauvegardes à partir de six instan
 Pour plus d'informations, reportez-vous à la section https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Les outils ONTAP pour VMware vSphere"^]
 
 +
-Pour obtenir les informations les plus récentes sur les versions prises en charge des outils ONTAP, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^].
+Pour obtenir les informations les plus récentes sur les versions prises en charge des outils ONTAP, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^].
 
 * Le plug-in SnapCenter pour VMware vSphere offre une prise en charge limitée des périphériques PCI ou PCIe partagés (par exemple, processeur graphique NVIDIA Grid), car les machines virtuelles prennent uniquement en charge Storage vMotion. Pour plus d'informations, consultez le document fournisseur - Guide de déploiement pour VMware.
 +
@@ -125,9 +125,9 @@ Restauration d'une machine virtuelle complète lorsqu'un ou plusieurs VMDK se tr
 | Application VMware vStorage API pour l'intégration de baies (VAAI) | Le plug-in SnapCenter pour VMware vSphere l'utilise pour améliorer les performances des opérations de restauration. Il améliore également les performances dans les environnements NFS. 
 
 
-| Outils ONTAP pour VMware | Le plug-in SnapCenter pour VMware vSphere l'utilise pour gérer les datastores vvol (volumes virtuels VMware). Pour connaître les versions prises en charge, reportez-vous à https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^]. 
+| Outils ONTAP pour VMware | Le plug-in SnapCenter pour VMware vSphere l'utilise pour gérer les datastores vvol (volumes virtuels VMware). Pour connaître les versions prises en charge, reportez-vous à https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^]. 
 |===
-Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^].
+Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^].
 
 
 
