@@ -84,6 +84,8 @@ démontage de volume
 
 | l'identité du cluster show network interface show vserver peer vserver show 
 |===
+Vous pouvez ignorer la commande _cluster Identity show_ cluster level lors de la création d'un rôle à associer au vServer de données.
+
 
 NOTE: Vous pouvez ignorer les messages d'avertissement concernant les commandes vServer non prises en charge.
 

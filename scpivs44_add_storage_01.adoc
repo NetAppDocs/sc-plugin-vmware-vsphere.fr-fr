@@ -29,7 +29,7 @@ Le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures prend en 
 Vous devez ajouter des clusters de stockage au plug-in SnapCenter pour VMware vSphere et aux outils ONTAP pour VMware vSphere pour vVol Dataprotection.
 
 +
-Pour plus d'informations, reportez-vous à la section https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Les outils ONTAP pour VMware vSphere"^]
+Pour plus d'informations, reportez-vous à la documentation relative aux outils ONTAP pour VMware vSphere. De plus, reportez-vous https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^] à pour obtenir les dernières informations sur les versions prises en charge par les outils ONTAP.
 
 
 

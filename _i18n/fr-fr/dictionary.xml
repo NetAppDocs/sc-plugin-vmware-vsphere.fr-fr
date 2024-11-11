@@ -1427,14 +1427,12 @@
   <block id="fb8bd58cdb7ac31c3811b2fe027bffa6" category="list-text">Vous devez avoir téléchargé le fichier .tar du plug-in SnapCenter pour VMware vSphere.</block>
   <block id="1d64e062aa9b27dfa30eef1596250248" category="list-text">Vous devez disposer des informations d'authentification de connexion pour votre instance de vCenter Server.</block>
   <block id="e17b96bbe7517cc19e507278493adec4" category="inline-link">Gestion des certificats de stockage</block>
-  <block id="aad79d639f6c735bc78843f60f60e25b" category="list-text">Pour protéger les machines virtuelles sur les datastores vvol, vous devez d'abord déployer les outils ONTAP pour VMware vSphere. Les outils ONTAP pour VMware vSphere versions 9.10 et supérieures sont pris en charge. Les outils ONTAP provisionne et configurent le stockage sur ONTAP et sur le client web VMware.</block>
   <block id="4ac856ec3b3bf79b5253ad31fba9ff73" category="list-text">Extrayez le fichier .tar, qui contient le fichier .ova dans votre système local. Sur la page *Sélectionner un modèle OVF*, indiquez l'emplacement du<block ref="8d8b01a4d628953e7a2225813c8edb3f" prefix=" " category="inline-code"></block> fichier dans le dossier .tar extrait.</block>
   <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">Cliquez sur *Suivant*.</block>
   <block id="31591abf36a652a46358b5bdff318135" category="paragraph">Cette étape indique où importer le<block ref="58963a595c988dc6f693cb3238dc907a" prefix=" " category="inline-code"></block> Fichier dans vCenter. Le nom par défaut de la machine virtuelle est identique au nom de la machine virtuelle sélectionnée<block ref="8d8b01a4d628953e7a2225813c8edb3f" prefix=" " category="inline-code"></block> fichier. Si vous modifiez le nom par défaut, choisissez un nom unique dans chaque dossier de VM de vCenter Server.</block>
   <block id="16968b47795e306884c69e20183f8679" category="list-text">Sur la page *Review details*, vérifiez<block ref="58963a595c988dc6f693cb3238dc907a" prefix=" " category="inline-code"></block> Détails du modèle et cliquez sur *Suivant*.</block>
   <block id="61a8dab3f6aedb51e104e8b3324b04ea" category="list-text">Saisissez les informations d'identification de l'utilisateur principal.</block>
   <block id="26dc1678973cf898baa325abda96cb6d" category="paragraph">Utilisez le client VMware vSphere pour ajouter du stockage.</block>
-  <block id="ed9018b2e8611a3d2c03bb6a205b9715" category="inline-link">Les outils ONTAP pour VMware vSphere</block>
   <block id="fef1c0adcbd39f7cb971d3e78b3179af" category="cell">Méthode d'authentification</block>
   <block id="bc569f01dc1e74e8c4597896eda09b37" category="inline-link">CERTIFICAT signé CA</block>
   <block id="a712fb0a9d4b8e985d1e6af194d051cb" category="inline-link">Certificat auto-signé</block>
@@ -1756,21 +1754,6 @@ La protection des datastores basée sur des balises est prise en charge uniqueme
   <block id="06c615df2f8ec55473b26eed4f5eedbd" category="paragraph">Le tableau suivant indique les opérations effectuées par l'interface graphique de SnapCenter.</block>
   <block id="ac3ea74e69b4d64c5b8bf99577a62f58" category="cell">Sauvegardes des machines virtuelles et des datastores à l'aide de l'interface utilisateur graphique du client VMware vSphere.</block>
   <block id="3fa2e8f88aacbc5e01f08deeabb35c7b" category="cell">Sauvegardes effectuées à l'aide de l'interface graphique de SnapCenter.</block>
-  <block id="05515bf0519f34381e6466f01c282678" category="paragraph">+
-* Option 3 : Configuration réseau</block>
-  <block id="ff261448949c973f9f063cf77445b8d1" category="paragraph">+
-Afficher ou modifier les paramètres d'adresse IP
-Afficher ou modifier les paramètres de recherche de nom de domaine
-Afficher ou modifier des itinéraires statiques
-Valider les modifications
-Envoyez une requête ping à un hôte</block>
-  <block id="cee76f4df6b5dbfa117c54383d070d0f" category="paragraph">+
-* Option 4 : support et diagnostic</block>
-  <block id="0724cc6860049b7b304c5747fdff089a" category="paragraph">+
-Générez un bundle de support
-Accéder au shell de diagnostic
-Activer l'accès aux diagnostics à distance
-Générez le bundle « core dump »</block>
   <block id="e3c333b91de412cbe4acc72a0b293a5f" category="paragraph"><block ref="e3c333b91de412cbe4acc72a0b293a5f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8857a92c9dd7ad8b9a97a4565e945efb" category="paragraph"><block ref="8857a92c9dd7ad8b9a97a4565e945efb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9f4e4670e68c9e84125d82202a3b5d12" category="sidebar">Renommer le stockage</block>
@@ -1859,7 +1842,6 @@ Le <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"
   <block id="35dcc595a54f8d79fea5fe64f1afa216" category="list-text">Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources, puis cliquez sur <block ref="f4ee71cd89b2b235a395ca347e92f957" category="inline-image-macro-rx" type="image"></block> *Modifier le groupe de ressources* pour démarrer l'assistant.</block>
   <block id="17703492b9c14634026aba1ce2eba4be" category="paragraph">Lorsque vous cliquez sur *Suivant*, le système vérifie d'abord que SnapCenter gère et est compatible avec le stockage sur lequel les VM ou datastores sélectionnés sont situés. Si le message<block ref="c238c6c4153d32597097e3ae5ddc6f78" prefix=" " category="inline-code"></block> s'affiche, la machine virtuelle ou le datastore sélectionné n'est pas compatible avec SnapCenter. Pour plus d'informations, reportez-vous à la section <block ref="83219d9586902f9891ecf56cd903fe4b" category="inline-link-macro-rx"></block> .</block>
   <block id="1a9f29efd8808d12b52443b2a7c2345c" category="list-text">Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *systèmes de stockage*, puis sélectionnez l'option *Ajouter*.</block>
-  <block id="6959136d9bbe341d018c5b1972d2ad84" category="paragraph">Pour plus d'informations, reportez-vous à la section<block ref="803b0580f102da00b07f33d2f17fdadb" category="inline-link-rx"></block></block>
   <block id="46d6be65c26292b8a7b6abc4d4608ab0" category="paragraph">Le serveur ESXi, le plug-in SnapCenter pour VMware vSphere et chaque vCenter doivent être synchronisés en même temps. Si vous essayez d'ajouter du stockage mais que les paramètres d'heure de vos vCenters ne sont pas synchronisés, l'opération peut échouer avec une erreur de certificat Java.</block>
   <block id="2065b3ffa5ea044c72d7fd30a206b5f8" category="paragraph">Le plug-in SnapCenter pour VMware vSphere effectue des opérations de sauvegarde et de restauration sur les machines virtuelles de stockage directement connectées, ainsi que sur les machines virtuelles de stockage d'un cluster de stockage.</block>
   <block id="3090c6393064b77b009ddfb43dc67322" category="admonition">Si vous utilisez le plug-in SnapCenter pour VMware vSphere pour prendre en charge les sauvegardes basées sur les applications sur des VMDK, vous devez utiliser l'interface graphique SnapCenter pour entrer les détails d'authentification du stockage et enregistrer les systèmes de stockage.</block>
@@ -1924,7 +1906,6 @@ Le <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"
   <block id="b2c10ceccf2ef38cfd16b235e94e66ca" category="paragraph">Entrez le chemin complet du prescripteur ou du postscript que vous souhaitez exécuter le plug-in SnapCenter pour VMware vSphere avant ou après les opérations de sauvegarde. Par exemple, vous pouvez exécuter un script pour mettre à jour les traps SNMP, automatiser les alertes et envoyer des logs. Le chemin du script est validé au moment de l'exécution du script.</block>
   <block id="3e75833fca9e76ef6912688f5fce699b" category="list-text">Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, puis sélectionnez *Créer*.</block>
   <block id="5bda43473e266bd8432257626473549a" category="admonition">Si vous utilisez VMware vSphere Cluster Service (vCLS), n'incluez pas les machines virtuelles gérées par vCLS dans les groupes de ressources du plug-in SnapCenter pour VMware vSphere.</block>
-  <block id="27031270e8731adaad52d4c23ac29e91" category="paragraph">Pour plus d'informations, reportez-vous<block ref="803b0580f102da00b07f33d2f17fdadb" category="inline-link-rx"></block>à .</block>
   <block id="55bc441bdeb0f43c60379f5dc78f6abf" category="paragraph">Si vous exécutez ONTAP 9.8 ou ONTAP 9.9, après un basculement ou un rétablissement, vous devez redémarrer le service du plug-in SnapCenter pour VMware vSphere et resynchroniser les relations SnapMirror avant de sauvegarder les groupes de ressources dans les environnements MetroCluster.</block>
   <block id="4695e455608ec835ee8afbf8897a2f9c" category="list-text">Optimisation des snapshots</block>
   <block id="f46c0979021c8025122fff51faa81bd8" category="paragraph">Pour optimiser les snapshots, vous devez regrouper les machines virtuelles et les datastores associés au même volume dans un seul groupe de ressources.</block>
@@ -2188,10 +2169,18 @@ Le <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"
   <block id="a8873f8f7715ad49732b43f6bdd600b5" category="paragraph">Pour obtenir les informations les plus récentes sur les versions prises en charge, reportez-vous à la section<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block> (IMT).</block>
   <block id="20f6a12d4ccfce9e9c6f58459fac2777" category="admonition">En configuration « Fan-Out », le groupe de cohérence n'est pas pris en charge pour le site tertiaire.</block>
   <block id="3458fc42f0b377624eb1de9c23c10655" category="paragraph">Le plug-in SnapCenter pour VMware vSphere ne vérifie pas la compatibilité pour toutes les versions de ONTAP, uniquement pour ONTAP versions 8.2.1 et antérieures. Par conséquent, consultez toujours le<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block> pour obtenir les informations les plus récentes sur le support SnapCenter.</block>
-  <block id="b1213a15d0ce0cefa635cb9a1238b7ad" category="paragraph">Pour obtenir les informations les plus récentes sur les versions prises en charge des outils ONTAP, reportez-vous à la section<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>.</block>
   <block id="8c9e5a8991367cd2b398f6da00fcacea" category="cell">Le plug-in SnapCenter pour VMware vSphere l'utilise pour gérer les datastores vvol (volumes virtuels VMware). Pour connaître les versions prises en charge, reportez-vous à<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>.</block>
   <block id="14f6e09e94edb505729ffc8766177413" category="paragraph">Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à la section<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>.</block>
   <block id="9a8a39bfd809f914e270e3aa295af606" category="paragraph">Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à la section<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block>.</block>
   <block id="3759b6e9ee7be120a52636d5811b2cb5" category="paragraph">Vous ne pouvez pas restaurer des fichiers et des dossiers à partir d'une machine virtuelle exécutant le système d'exploitation invité Linux. Toutefois, vous pouvez joindre un VMDK, puis restaurer manuellement les fichiers et les dossiers. Pour obtenir les informations les plus récentes sur le système d'exploitation invité pris en charge, reportez-vous à la section<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block>.</block>
   <block id="6b98cc6c5d2c3be456270dd9cd0c49b3" category="paragraph">Vous ne pouvez pas restaurer des fichiers et des dossiers à partir d'une machine virtuelle exécutant le système d'exploitation invité Linux. Toutefois, vous pouvez joindre un VMDK, puis restaurer manuellement les fichiers et les dossiers. Pour obtenir les informations les plus récentes sur le système d'exploitation invité pris en charge, reportez-vous au<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block>.</block>
+  <block id="99227cc56eb10094b5911955997594bd" category="list-text">Option 3 : configuration réseau</block>
+  <block id="eb6403fe72c82873180af4e1fbe24094" category="paragraph">Afficher ou modifier les paramètres d'adresse IP Afficher ou modifier les paramètres de recherche de nom de domaine Afficher ou modifier les routes statiques valider les changements Ping a host</block>
+  <block id="85fe6d094a622a1eeb362f8dda82c97e" category="list-text">Option 4 : assistance et diagnostic</block>
+  <block id="d34a5ffb5a21003f9819a1371ce31cc8" category="paragraph">Générer le support bundle accéder au shell de diagnostic Activer l'accès de diagnostic à distance générer le bundle de vidage de noyau</block>
+  <block id="b60beee083dba233367ef7318fb10b25" category="paragraph">Pour plus d'informations, reportez-vous à la documentation relative aux outils ONTAP pour VMware vSphere. De plus, reportez-vous<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block> à pour obtenir les dernières informations sur les versions prises en charge par les outils ONTAP.</block>
+  <block id="33e4404acb572de935dae083d63033a8" category="inline-link">SCV Impossible de sauvegarder les VM vCLS après la mise à jour de vCenter vers la version 7.0.x.</block>
+  <block id="8c2a5a560e2f4170197d66660fb8d4f9" category="paragraph">Pour plus d'informations, reportez-vous à la section<block ref="a5f674bd21d863d8804d3aaee35bd7df" category="inline-link-rx"></block></block>
+  <block id="e6f2686f361e5123b41a78ec7cf82976" category="list-text">Pour protéger les machines virtuelles sur les datastores vvol, vous devez d'abord déployer les outils ONTAP pour VMware vSphere. Pour obtenir les informations les plus récentes sur les versions prises en charge des outils ONTAP, reportez-vous à la section<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>. Les outils ONTAP provisionne et configurent le stockage sur ONTAP et sur le client web VMware.</block>
+  <block id="c162715bd54906edd2726c5a128225ec" category="paragraph">Vous pouvez ignorer la commande _cluster Identity show_ cluster level lors de la création d'un rôle à associer au vServer de données.</block>
 </blocks>

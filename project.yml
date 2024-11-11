@@ -21,7 +21,7 @@ settings:
     url: "/sc-plugin-vmware-vsphere-46"
   - version-number: '4.5'
     url: "/sc-plugin-vmware-vsphere-45"
-  langs: fr-fr,us-en,de-de,es-es,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
+  langs: fr-fr,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,it-it
 sidebar:
   entries:
   - title: Plug-in SnapCenter pour VMware vSphere 6.0

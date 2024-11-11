@@ -42,10 +42,7 @@ Par exemple, si vous souhaitez effectuer des sauvegardes à partir de six instan
 
 * Pour protéger les machines virtuelles vvol (ordinateurs virtuels sur les datastores VMware vvol), vous devez d'abord déployer les outils ONTAP pour VMware vSphere. Les outils ONTAP provisionne et configurent le stockage pour vVvols sur ONTAP et sur le client web VMware.
 +
-Pour plus d'informations, reportez-vous à la section https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["Les outils ONTAP pour VMware vSphere"^]
-
-+
-Pour obtenir les informations les plus récentes sur les versions prises en charge des outils ONTAP, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^].
+Pour plus d'informations, reportez-vous à la documentation relative aux outils ONTAP pour VMware vSphere. De plus, reportez-vous https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^] à pour obtenir les dernières informations sur les versions prises en charge par les outils ONTAP.
 
 * Le plug-in SnapCenter pour VMware vSphere offre une prise en charge limitée des périphériques PCI ou PCIe partagés (par exemple, processeur graphique NVIDIA Grid), car les machines virtuelles prennent uniquement en charge Storage vMotion. Pour plus d'informations, consultez le document fournisseur - Guide de déploiement pour VMware.
 +

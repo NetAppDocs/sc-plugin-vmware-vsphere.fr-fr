@@ -59,25 +59,14 @@ Générer un jeton MFA
 
 NOTE: MFA est toujours activé, vous ne pouvez pas désactiver MFA.
 
-
-
-
-
+** Option 3 : configuration réseau
 +
-* Option 3 : Configuration réseau
+Afficher ou modifier les paramètres d'adresse IP Afficher ou modifier les paramètres de recherche de nom de domaine Afficher ou modifier les routes statiques valider les changements Ping a host
 
+** Option 4 : assistance et diagnostic
 +
-Afficher ou modifier les paramètres d'adresse IP
-Afficher ou modifier les paramètres de recherche de nom de domaine
-Afficher ou modifier des itinéraires statiques
-Valider les modifications
-Envoyez une requête ping à un hôte
+Générer le support bundle accéder au shell de diagnostic Activer l'accès de diagnostic à distance générer le bundle de vidage de noyau
 
-+
-* Option 4 : support et diagnostic
 
-+
-Générez un bundle de support
-Accéder au shell de diagnostic
-Activer l'accès aux diagnostics à distance
-Générez le bundle « core dump »
+
+
