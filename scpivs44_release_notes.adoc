@@ -14,4 +14,4 @@ summary: Les notes de version fournissent des informations importantes sur cette
 
 
 [role="lead"]
-Les notes de version fournissent des informations importantes sur cette version du plug-in SnapCenter pour VMware vSphere, notamment les exigences de licence, les problèmes connus, les précautions, les limites et toutes les mises à jour ou corrections de la documentation. Pour plus d'informations, reportez-vous à la section https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664["Notes de version du plug-in SnapCenter pour VMware vSphere 6.0"^]
+Les notes de version fournissent des informations importantes sur cette version du plug-in SnapCenter pour VMware vSphere, notamment les exigences de licence, les problèmes connus, les précautions, les limites et toutes les mises à jour ou corrections de la documentation. Pour plus d'informations, reportez-vous à la section https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664["Notes de version du plug-in SnapCenter pour VMware vSphere 6.0 et 6.0.1"^]
