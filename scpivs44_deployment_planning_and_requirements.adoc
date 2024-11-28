@@ -128,9 +128,9 @@ Pour obtenir les dernières informations sur les versions prises en charge, repo
 
 
 
-==== Configuration requise pour le protocole NVMe over TCP
+==== Configuration requise pour les protocoles NVMe over TCP et NVMe over FC
 
-Configuration logicielle minimale requise pour la prise en charge du protocole NVMe over TCP :
+La configuration logicielle minimale requise pour la prise en charge des protocoles NVMe over TCP et NVMe over FC est la suivante :
 
 * VCenter vSphere 7.0U3
 * ESXi 7.0U3
