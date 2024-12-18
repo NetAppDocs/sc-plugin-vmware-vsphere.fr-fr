@@ -1,0 +1,92 @@
+---
+permalink: scv60_rn_upgrade_paths.html 
+sidebar: sidebar 
+keywords: upgrade paths, scv, 6.0, 6.0.1 
+summary: Découvrez les nouvelles fonctionnalités disponibles dans le plug-in SnapCenter pour VMware vSphere 6.0. 
+---
+= Chemins de mise à niveau
+:allow-uri-read: 
+
+
+[role="lead"]
+La version du plug-in SnapCenter pour VMware vSphere (SCV) vers laquelle vous pouvez effectuer la mise à niveau dépend de la version en cours d'exécution.
+
+[NOTE]
+====
+La mise à niveau vers le plug-in SnapCenter pour VMware vSphere (SCV) 4.8 et versions ultérieures est uniquement prise en charge sur VMware vCenter Server 7, mise à jour 1 et versions ultérieures. Pour le serveur VMware vCenter antérieur à la mise à jour 1 de la version 7, vous devez continuer à utiliser SCV 4.7.
+
+====
+[cols="50%,50%"]
+|===
+| Si vous êtes sur la version SCV… | Vous pouvez directement mettre à niveau SCV vers… 
+
+
+ a| 
+DISTRIBUTEUR AUXILIAIRE 5.0
+ a| 
+DISTRIBUTEUR AUXILIAIRE 6.0
+
+
+
+ a| 
+DISTRIBUTEUR AUXILIAIRE 4.9
+ a| 
+Distributeurs sélectifs 5.0 et 6.0
+
+
+
+ a| 
+DISTRIBUTEUR AUXILIAIRE 4.8
+ a| 
+Distributeurs sélectifs 4.9 et 5.0
+
+
+
+ a| 
+DISTRIBUTEUR AUXILIAIRE 4.7
+ a| 
+Distributeurs sélectifs 4.8 et 4.9
+
+|===
+Pour les bases de données virtualisées et les systèmes de fichiers intégrés à SnapCenter, il s'agit du chemin de mise à niveau :
+
+[cols="30%,30%,40%"]
+|===
+| Si vous utilisez | Si votre plug-in VMware est... | Vous pouvez effectuer une mise à niveau directe vers… 
+
+
+ a| 
+SnapCenter 6.0
+ a| 
+DISTRIBUTEUR AUXILIAIRE 5.0
+ a| 
+DISTRIBUTEUR AUXILIAIRE 6.0
+
+
+
+ a| 
+SnapCenter 5.0
+ a| 
+DISTRIBUTEUR AUXILIAIRE 4.9
+ a| 
+DISTRIBUTEUR AUXILIAIRE 5.0
+
+
+
+ a| 
+SnapCenter 4.9
+ a| 
+DISTRIBUTEUR AUXILIAIRE 4.8
+ a| 
+DISTRIBUTEUR AUXILIAIRE 4.9
+
+
+
+ a| 
+SnapCenter 4.8
+ a| 
+DISTRIBUTEUR AUXILIAIRE 4.7
+ a| 
+DISTRIBUTEUR AUXILIAIRE 4.8
+
+|===
