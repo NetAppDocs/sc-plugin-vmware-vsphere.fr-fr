@@ -23,6 +23,6 @@ Le plug-in SnapCenter pour VMware vSphere 6.0.1 prend désormais en charge le pr
  a| 
 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_concepts_overview.html["Intégration des outils ONTAP pour VMware vSphere 10.x avec SCV 6.0.1"]
  a| 
-Les outils ONTAP pour VMware vSphere 10.x permettent de configurer les volumes virtuels VMware vSphere. Cette intégration vous permet de configurer, sauvegarder et restaurer des machines virtuelles résidant sur des datastores vVols basés sur NFS.
+Les outils ONTAP pour VMware vSphere 10.x permettent de configurer les volumes virtuels VMware vSphere. Grâce à cette intégration, vous pouvez configurer, sauvegarder et restaurer des machines virtuelles résidant sur des datastores vVols basés sur NFS.
 
 |===
