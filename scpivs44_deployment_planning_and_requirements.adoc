@@ -139,7 +139,7 @@ La configuration logicielle minimale requise pour la prise en charge des protoco
 
 
 
-== Les besoins en termes d'espace et de dimensionnement
+== Besoins en termes d'espace, de dimensionnement et d'évolutivité
 
 |===
 | Élément | De formation 
@@ -148,13 +148,16 @@ La configuration logicielle minimale requise pour la prise en charge des protoco
 | Système d'exploitation | Linux 
 
 
-| Nombre minimal de processeurs | 4 cœurs 
+| Nombre de processeurs recommandés | 8 cœurs 
 
 
-| RAM minimale | Minimum: 12 Go recommandé: 16 Go 
+| RAM recommandée | 24 GO 
 
 
 | Espace disque minimum pour le plug-in SnapCenter pour VMware vSphere, les journaux et la base de données MySQL | 100 GO 
+
+
+| Taille maximale du segment de mémoire du service vmcontrol dans l'appliance | 8 Go 
 |===
 
 

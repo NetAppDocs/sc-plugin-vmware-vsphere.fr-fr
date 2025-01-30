@@ -48,41 +48,22 @@ fin de la tâche
 | Version 
 
 
-| création de clones de volumes
-clone de volume affiche
-démarrage du fractionnement du clone de volume
-arrêt du fractionnement du clone de volume
-création de volumes
-suppression d'un volume
-destruction des volumes
-création d'un clone de fichiers de volumes
-volume fichier show-disk-usage
-volume hors ligne
-volume en ligne
-modification de volume
-création de qtree volume
-suppression qtree du volume
-modification de qtree volume
-volume qtree show
-restrictions de volume
-volume affiché
-création de copies snapshot de volume
-suppression du snapshot de volume
-modification de snapshot de volume
-renommage snapshot de volume
-restauration snapshot du volume
-fichier de restauration de snapshot de volume
-snapshot de volume apparaît
-démontage de volume 
+| Clone de volume créer clone de volume show volume clone split volume clone split status volume clone split stop volume create volume delete volume delete volume clone fichier clone create volume show-disk-usage volume offline volume online volume volume volume Managed SnapLock-feature modifier volume qtree créer volume qtree supprimer volume qtree modifier volume qtree modifier volume snapshot volume show volume snapshot volume snapshot show volume snapshot volume volume expiration show volume 
 
 
-| vserver cifs vserver cifs share cifs share create vserver cifs share delete vserver cifs shadowcopy show vserver cifs share show vserver cifs show vserver cifs vserver export-policy vserver export-policy create vserver export-policy delete vserver export-policy rule create vserver export-policy rule show vserver export-policy show vserver iscsi connection show vserver iscsi subsystem controller vserver nvme subsystem controller show vserver nvme subsystem map vserver nvme subsystem map show vserver nvme subsystem map add vserver nvme subsystem map remove vserver subsystem nvme subsystem host show vserver nvme subsystem host show vserver nvme subsystem host add nvme subsystem host delete vserver subsystem nvme namespace affiche les failover-groups de l'interface réseau de l'interface réseau 
+| vserver vserver cifs vserver vserver vserver vserver cifs share create vserver cifs share delete vserver cifs shadowcopy show vserver cifs share show vserver cifs show vserver export-policy vserver vserver export-policy create vserver export-policy delete vserver export-policy rule create vserver export-policy rule show vserver export-policy show nvme subsystem nvme host policy show nvme subsystem nvme host policy show nvme subsystem nvme host system connection show nvme system vserver system vserver system vgme system 
 |===
 |===
 | Commandes en lecture seule : privilèges minimum requis pour ONTAP 8.3 et versions ultérieures 
 
 
 | l'identité du cluster show network interface show vserver peer vserver show 
+|===
+|===
+| Commandes All-Access : privilèges minimum requis pour ONTAP 9 et versions ultérieures. 
+
+
+| unité de stockage du groupe de cohérence show 
 |===
 Vous pouvez ignorer la commande _cluster Identity show_ cluster level lors de la création d'un rôle à associer au vServer de données.
 

@@ -27,7 +27,7 @@ Pour créer des groupes de ressources, suivez ce flux de travail :
 | 1 | `/4.1/policies` | `Get Policies` Obtient la liste des règles du client VMware vSphere. Notez la *politiqueId* que vous souhaitez utiliser lors de la création du groupe de ressources et de la règle *fréquence*. Si aucune stratégie n'est répertoriée, utilisez le `Create Policy` API REST pour créer une nouvelle règle. 
 
 
-| 2 | `/4.1/resource-groups` | `Create a Resource Group` crée un groupe de ressources avec la règle spécifiée. Passez la *politiqueId* de l'étape 1 et entrez les détails de la police *fréquence* en plus de tous les autres attributs requis. 
+| 2 | `/4.1/resource-groups` | `Create a Resource Group` crée un groupe de ressources avec la stratégie spécifiée. Passez la *politiqueId* de l'étape 1 et entrez les détails de la police *fréquence* en plus de tous les autres attributs requis. Vous pouvez activer la protection secondaire à l'aide de cette API REST. 
 |===
 Pour modifier des groupes de ressources, suivez ce flux de travail :
 

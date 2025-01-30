@@ -136,7 +136,7 @@ Les opérations suivantes dans l'interface utilisateur de la console d'administr
 ** Modifiez les informations d'identification administrateur
 ** Modifier le fuseau horaire
 ** Modifiez le serveur NTP
-** Modifiez les paramètres IPv4 / IPv6
+** Modifiez les paramètres d'adresse IPv4/IPv6
 
 
 * Configuration

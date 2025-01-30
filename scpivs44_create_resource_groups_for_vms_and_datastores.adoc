@@ -42,6 +42,10 @@ Toutes les machines virtuelles et tous les datastores, à l'exception des datast
 +
 Tous les vvols dans un dossier vVol unique spécifié. Si le dossier contient plusieurs machines virtuelles vvol et des machines virtuelles classiques, le plug-in SnapCenter pour VMware vSphere sauvegarde les machines virtuelles vvol et ignore les machines virtuelles classiques.
 
+* Machines virtuelles et datastores sur ASA r2
++
+Vous ne pouvez pas combiner des VM et des datastores ASA r2 avec d'autres VM et datastores.
+
 
 
 Pour tous les groupes de ressources :
@@ -92,8 +96,6 @@ Bien que vous puissiez créer un groupe de ressources sans règle de sauvegarde,
 
 NOTE: Si vous sélectionnez une règle de sauvegarde avec la période de verrouillage des snapshots, vous devez sélectionner ONTAP 9.12.1 ou une version ultérieure.
 
-
-
 * Contrôles de compatibilité
 +
 SnapCenter vérifie la compatibilité lors de la création d'un groupe de ressources.
@@ -101,7 +103,13 @@ SnapCenter vérifie la compatibilité lors de la création d'un groupe de ressou
 +
 <<Gérer les échecs de contrôle de compatibilité>>
 
+* Créer une protection secondaire pour un groupe de ressources
++
+La protection secondaire s'occupe de la création d'une relation de réplication pour les ressources ajoutées dans le groupe de ressources. Vous devez créer une relation SnapMirror basée sur un groupe de cohérence dans le cluster et le SVM préférés en utilisant une politique spécifiée du volume principal. La protection secondaire est prise en charge uniquement pour les datastores et les machines virtuelles basés sur le système ASA r2. Le peering de cluster et de SVM doivent être préconfigurés. La protection secondaire autorise uniquement les règles SnapMirror asynchrones. Vous devez indiquer le suffixe de groupe de cohérence lors de la création de la protection secondaire.
 
+
+
+La protection secondaire s'occupe de la création d'une relation de réplication pour les ressources ajoutées dans le groupe de ressources.
 
 .Étapes
 . Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, puis sélectionnez *Créer* pour démarrer l'assistant.
@@ -144,6 +152,9 @@ Si vous souhaitez ajouter le suffixe «_Recent » au dernier snapshot, cochez ce
 
 
 NOTE: A `_recent` la sauvegarde est créée pour chaque stratégie associée à un groupe de ressources. Par conséquent, un groupe de ressources avec plusieurs stratégies aura plusieurs `_recent` sauvegardes. Ne pas renommer manuellement `_recent` sauvegardes.
+
+
+NOTE: Le système de stockage ASA r2 ne prend pas en charge le changement de nom des snapshots et, par conséquent, les fonctionnalités de renommage de SCV et de dénomination des snapshots récents ne sont pas prises en charge.
 
 
 
@@ -202,7 +213,7 @@ Les machines virtuelles Spanning ne sont pas prises en charge pour les datastore
 | Pour utiliser… | Faites cela… 
 
 
-| Stratégie existante | Sélectionnez une ou plusieurs stratégies dans la liste. 
+| Stratégie existante | Sélectionnez une ou plusieurs stratégies dans la liste. La protection secondaire s'applique aux règles existantes et nouvelles lorsque vous avez sélectionné à la fois les mises à jour SnapMirror et SnapVault. 
 
 
 | Une nouvelle politique  a| 
@@ -214,10 +225,32 @@ Les machines virtuelles Spanning ne sont pas prises en charge pour les datastore
 +
 En mode lié, la liste inclut des stratégies dans tous les vCenters liés. Vous devez sélectionner une règle se trouve sur le même vCenter que le groupe de ressources.
 
-.. Sur la page *Schedules*, configurez la planification de sauvegarde pour chaque stratégie sélectionnée.
-+
-image:scpivs44_image18.png["Créer un groupe de ressources"]
+.. Sur la page *protection secondaire*, la liste des ressources sélectionnées s'affiche avec leur état de protection. Pour protéger les ressources non protégées, sélectionner le type de politique de réplication, le suffixe du groupe de cohérence, le cluster de destination et le SVM de destination dans la liste déroulante. Lors de la création d'un groupe de ressources, un travail distinct est créé pour la protection secondaire et vous pouvez le voir dans la fenêtre du moniteur de travaux.
 
+
+
+
+|===
+| Champs | Description 
+
+
+| Nom de la règle de réplication | Nom de la règle SnapMirror. Seules les stratégies secondaires *Asynchronous* et *Mirror et Vault* sont prises en charge. 
+
+
+| Suffixe du groupe de cohérence | Paramètre de destination utilisé pour ajouter au groupe de cohérence principal afin de former le nom du groupe de cohérence de destination. Par exemple : si le nom du groupe de cohérence principal est sccg_2024-11-28_120918 et que vous entrez _dest comme suffixe, le groupe de cohérence secondaire sera créé sous la forme sccg_2024-11-28_120918_dest. Ce suffixe s'applique uniquement aux groupes de cohérence non protégés. 
+
+
+| Cluster de destination | Pour toutes les unités de stockage non protégées, SCV affiche les noms de groupe(s) à peering dans la liste déroulante. Si le stockage ajouté à SCV est dans le périmètre du SVM, en raison de la limitation de ONTAP, l'ID de cluster est affiché à la place du nom. 
+
+
+| SVM de destination | Pour toutes les unités de stockage non protégées, SCV affiche les noms des SVM(s) peering. Cluster et SVM sont sélectionnés automatiquement lorsque l'une des unités de stockage faisant partie du groupe de cohérence est sélectionnée. Il en va de même pour toutes les autres unités de stockage du même groupe de cohérence. 
+
+
+| Ressources protégées secondaires | Pour toutes les unités de stockage protégées des ressources ajoutées à la page des ressources, les détails de la relation secondaire, y compris le cluster, le SVM et le type de réplication sont affichés. 
+|===
+image:secondary_protection.png["Créer un groupe de ressources"]
+
+. Sur la page *Schedules*, configurez la planification de sauvegarde pour chaque stratégie sélectionnée.
 +
 Dans le champ heure de début, entrez une date et une heure autres que zéro. La date doit être au format `day/month/year`.
 
@@ -230,7 +263,7 @@ Vous devez renseigner chaque champ. Le plug-in SnapCenter pour VMware vSphere cr
 +
 link:scpivs44_modify_the_time_zones.html["Modifier les fuseaux horaires pour les sauvegardes"].
 
-.. Vérifiez le résumé, puis cliquez sur *Terminer*.
+. Passez en revue le résumé, puis cliquez sur *Terminer*. À partir de SCV 6.1, les ressources de protection secondaire pour les systèmes ASA r2 sont visibles dans la page de résumé.
 +
 Avant de cliquer sur *Finish*, vous pouvez revenir à n'importe quelle page de l'assistant et modifier les informations.
 
@@ -240,8 +273,6 @@ Après avoir cliqué sur *Terminer*, le nouveau groupe de ressources est ajouté
 +
 
 NOTE: Si l'opération de mise au repos échoue pour l'une des machines virtuelles de la sauvegarde, alors la sauvegarde est marquée comme non cohérente avec les machines virtuelles, même si la stratégie sélectionnée possède la cohérence de la machine virtuelle. Dans ce cas, il est possible que certains serveurs virtuels aient été suspendus avec succès.
-
-
 
 
 

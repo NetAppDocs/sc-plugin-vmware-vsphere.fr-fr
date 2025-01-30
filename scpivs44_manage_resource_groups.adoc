@@ -52,7 +52,7 @@ Un caractère de soulignement (_) est autorisé.
 . Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, puis sélectionnez un groupe de ressources et cliquez sur *Modifier*.
 . Dans la liste de gauche de l'assistant *Modifier le groupe de ressources*, cliquez sur la catégorie que vous souhaitez modifier et entrez vos modifications.
 +
-Vous pouvez modifier plusieurs catégories.
+Vous pouvez modifier plusieurs catégories. Vous pouvez également modifier des ressources protégées secondaires dans cette option.
 
 . Cliquez sur *Suivant* jusqu'à ce que la page Résumé s'affiche, puis cliquez sur *Terminer*.
 

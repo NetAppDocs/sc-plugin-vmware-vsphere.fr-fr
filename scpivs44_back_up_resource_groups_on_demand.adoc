@@ -16,6 +16,9 @@ summary: 'Les opérations de sauvegarde sont effectuées sur toutes les ressourc
 [role="lead"]
 Les opérations de sauvegarde sont effectuées sur toutes les ressources définies dans un groupe de ressources. Si une stratégie est associée à un groupe de ressources et qu'une planification est configurée, les sauvegardes sont automatiquement effectuées en fonction de la planification.
 
+
+NOTE: La sauvegarde ASA r2 crée des snapshots de groupe de cohérence et provisionne le groupe de cohérence principal si la ressource donnée ne l'est pas déjà.
+
 .Avant de commencer
 Vous devez avoir créé un groupe de ressources associé à une stratégie.
 

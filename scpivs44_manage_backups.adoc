@@ -22,6 +22,9 @@ Vous pouvez renommer et supprimer les sauvegardes effectuées par le plug-in Sna
 
 Vous pouvez renommer le plug-in SnapCenter pour les sauvegardes VMware vSphere si vous souhaitez fournir un meilleur nom afin d'améliorer la possibilité de recherche.
 
+
+NOTE: Le système de stockage ASA r2 ne prend pas en charge le renommage des sauvegardes.
+
 .Étapes
 . Cliquez sur *Menu* et sélectionnez l'option de menu *hôtes et clusters*, puis sélectionnez une machine virtuelle, sélectionnez l'onglet *configurer*, puis cliquez sur *sauvegardes* dans la section *SnapCenter Plug-in pour VMware vSphere*.
 +

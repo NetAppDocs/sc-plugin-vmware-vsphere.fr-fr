@@ -21,7 +21,7 @@ Le link:scpivs44_download_the_ova_open_virtual_appliance.html["Télécharger Ope
 . Dans votre navigateur, accédez à VMware vSphere vCenter.
 +
 
-NOTE: Pour les clients web HTML IPv6, vous devez utiliser Chrome ou Firefox.
+NOTE: Pour les clients Web HTML d'adresse IPv6, vous devez utiliser Chrome ou Firefox.
 
 . Connectez-vous à la page d'ouverture de session unique *VMware vCenter*.
 . Dans le volet navigation, cliquez avec le bouton droit de la souris sur un objet d'inventaire qui est un objet parent valide d'une machine virtuelle, tel qu'un datacenter, un dossier, un cluster ou un hôte, puis sélectionnez *déployer modèle OVF* pour démarrer l'assistant de déploiement VMware.

@@ -44,5 +44,5 @@ Lorsque vous cliquez sur *Suivant*, le système vérifie d'abord que SnapCenter 
 
 
 . Répétez l'étape 2 pour chaque machine virtuelle ou datastore à ajouter.
-. Cliquez sur *Suivant* jusqu'à la page *Résumé*, puis consultez le résumé et cliquez sur *Terminer*.
+. Cliquez sur *Suivant* jusqu'à ce que vous atteigniez la page *Résumé*, puis passez en revue le résumé et cliquez sur *Terminer*.
 

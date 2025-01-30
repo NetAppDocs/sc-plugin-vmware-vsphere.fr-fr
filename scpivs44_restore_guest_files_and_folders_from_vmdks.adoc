@@ -73,7 +73,7 @@ Cette option utilise les paramètres de messagerie configurés lors de la config
 
 
 
-. Vérifiez le résumé, puis cliquez sur *Terminer*.
+. Passez en revue le résumé, puis cliquez sur *Terminer*.
 +
 Avant de cliquer sur *Finish*, vous pouvez revenir à n'importe quelle page de l'assistant et modifier les informations.
 
@@ -150,7 +150,7 @@ Les fichiers et les dossiers à restaurer sont répertoriés dans la table des f
 | Option | Description 
 
 
-| Restaurez le chemin d'accès | Entrez le chemin du partage UNC vers l'invité où les fichiers sélectionnés seront restaurés. Exemple IPv4 : `\\10.60.136.65\c$`Exemple IPv6 : `\\fd20-8b1e-b255-832e--61.ipv6-literal.net\C\restore` 
+| Restaurez le chemin d'accès | Entrez le chemin du partage UNC vers l'invité où les fichiers sélectionnés seront restaurés. Exemple d'adresse IPv4 : `\\10.60.136.65\c$` adresse IPv6 exemple : `\\fd20-8b1e-b255-832e--61.ipv6-literal.net\C\restore` 
 
 
 | S'il existe un ou plusieurs fichiers d'origine  a| 

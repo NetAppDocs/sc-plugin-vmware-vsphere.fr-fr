@@ -14,7 +14,7 @@ summary: 'Si vous utilisez le plug-in SnapCenter pour l"appliance virtuelle VMwa
 
 
 
-NOTE: La mise à niveau vers SCV 6.0 est prise en charge uniquement sur VMware vCenter Server 7, mise à jour 1 et versions ultérieures. Pour le serveur VMware vCenter antérieur à la version 7, mise à jour 1, vous devez continuer à utiliser SCV 4.7. La mise à niveau est perturbatrice sur des versions de serveur VMware vCenter non prises en charge.
+NOTE: La mise à niveau vers SCV 6.1 est prise en charge uniquement sur VMware vCenter Server 7, mise à jour 1 et versions ultérieures. Pour le serveur VMware vCenter antérieur à la version 7, mise à jour 1, vous devez continuer à utiliser SCV 4.7. La mise à niveau est perturbatrice sur des versions de serveur VMware vCenter non prises en charge.
 
 Si vous utilisez le plug-in SnapCenter pour l'appliance virtuelle VMware vSphere, vous pouvez effectuer la mise à niveau vers une version plus récente. Le processus de mise à niveau annule l'enregistrement du plug-in existant et déploie un plug-in compatible uniquement avec vSphere 7.0U1 et les versions ultérieures.
 
@@ -28,7 +28,10 @@ Si vous utilisez le plug-in SnapCenter pour l'appliance virtuelle VMware vSphere
 | Si vous utilisez le plug-in SnapCenter pour la version de VMware vSphere (SCV)... | Vous pouvez directement mettre à niveau le plug-in SnapCenter pour VMware vSphere vers... 
 
 
-| DISTRIBUTEUR AUXILIAIRE 5.0 | Mise à niveau vers le distributeur sélectif 6.0 
+| DISTRIBUTEUR AUXILIAIRE 6.0 | Mise à niveau vers le distributeur sélectif 6.1 
+
+
+| DISTRIBUTEUR AUXILIAIRE 5.0 | Mise à niveau vers les distributeurs sélectifs 6.0 et 6.1 
 
 
 | DISTRIBUTEUR AUXILIAIRE 4.9 | Mise à niveau vers les distributeurs sélectifs 5.0 et 6.0 
@@ -47,6 +50,8 @@ TIP: Sauvegarder le plug-in SnapCenter pour VMware vSphere OVA avant de lancer u
 
 
 NOTE: Le basculement de votre configuration réseau statique vers DHCP n'est pas pris en charge.
+
+Pour obtenir les informations les plus récentes sur les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^] (IMT).
 
 .Étapes
 . Préparation à la mise à niveau en désactivant le plug-in SnapCenter pour VMware vSphere.

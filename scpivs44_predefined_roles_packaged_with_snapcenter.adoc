@@ -28,10 +28,10 @@ Vous pouvez voir les rôles prédéfinis dans l'interface utilisateur graphique 
 | Rôle | Description 
 
 
-| Administrateur de distributeurs sélectifs | Fournit tous les privilèges natifs vCenter Server et spécifiques à SnapCenter nécessaires pour effectuer toutes les tâches du plug-in SnapCenter pour VMware vSphere. 
+| Administrateur de distributeurs sélectifs | Fournit tous les privilèges natifs vCenter Server et spécifiques à SnapCenter nécessaires pour effectuer toutes les tâches du plug-in SnapCenter pour VMware vSphere. À partir de la version du distributeur sélectif 6.1, un nouveau privilège de création de protection secondaire est ajouté à ce rôle. 
 
 
-| Secours du distributeur auxiliaire | Fournit tous les privilèges natifs vCenter Server et spécifiques à SnapCenter nécessaires pour sauvegarder des objets vSphere (machines virtuelles et datastores). L'utilisateur a également accès au privilège de configuration. L'utilisateur ne peut pas restaurer les sauvegardes. 
+| Secours du distributeur auxiliaire | Fournit tous les privilèges natifs vCenter Server et spécifiques à SnapCenter nécessaires pour sauvegarder des objets vSphere (machines virtuelles et datastores). L'utilisateur a également accès au privilège de configuration. L'utilisateur ne peut pas restaurer les sauvegardes. À partir de la version du distributeur sélectif 6.1, un nouveau privilège de création de protection secondaire est ajouté à ce rôle. 
 
 
 | Restauration du fichier invité du distributeur auxiliaire | Fournit tous les privilèges natifs de vCenter Server et spécifiques à SnapCenter nécessaires à la restauration des fichiers et dossiers invités. L'utilisateur ne peut pas restaurer des machines virtuelles ou des VMDK. 
