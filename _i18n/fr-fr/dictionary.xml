@@ -48,7 +48,6 @@
   <block id="253b40ae359ba25b56231803430c4873" category="cell">ONTAP</block>
   <block id="3560c7ef415d0e13191c33fa995b7005" category="cell">L'une d'entre elles : SnapMirror ou SnapVault (pour la protection des données secondaires, quel que soit le type de relation)</block>
   <block id="2b5932460c4f1e726c2fe5eb4c84cf64" category="cell">Autres produits</block>
-  <block id="9f7e37bd05b30c134ff1660c6d52c186" category="cell">VSphere Standard, Enterprise ou Enterprise plus Une licence vSphere est requise pour effectuer les opérations de restauration utilisant Storage vMotion. Les licences vSphere Essentials ou Essentials plus n'incluent pas Storage vMotion.</block>
   <block id="6c1ccb0198e251b6df82fd2d169fdcf0" category="cell">Destinations principales</block>
   <block id="9c864fe971ea9ba615c7a517d7552160" category="cell">Norme SnapCenter : indispensable pour une protection basée sur les applications via VMware SnapRestore : opérations de restauration uniquement pour les machines virtuelles et les datastores VMware FlexClone : utilisée pour le montage et la connexion sur les machines virtuelles et les datastores VMware uniquement</block>
   <block id="5be74f1e9c3cdce99e50c0e439ec19b3" category="cell">Destinations secondaires</block>
@@ -65,13 +64,10 @@
   <block id="91a33043fc7eebee30634cb063fa6e2c" category="cell">Application VMware vStorage API pour l'intégration de baies (VAAI)</block>
   <block id="16e729ceefd4cd71e291d0800dd9e9c0" category="cell">Le plug-in SnapCenter pour VMware vSphere l'utilise pour améliorer les performances des opérations de restauration. Il améliore également les performances dans les environnements NFS.</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="cell">De formation</block>
-  <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">Système d'exploitation</block>
-  <block id="edc9f0a5a5d57797bf68e37364743831" category="cell">Linux</block>
   <block id="3cb874290f06f3c2d44ce2e858bb041f" category="cell">Espace disque minimum pour le plug-in SnapCenter pour VMware vSphere, les journaux et la base de données MySQL</block>
   <block id="dcfebc6fbca2c5316f55c914e6593d2d" category="cell">100 GO</block>
   <block id="9a0980e2d2a75eb076f41f7a4d439162" category="section-title">Connexion et port requis</block>
   <block id="3672cca688eb0474cd3fee2add1a2067" category="cell">Type de port</block>
-  <block id="1af12a0ed126e7e6b194370c0c0be5eb" category="cell">Port préconfiguré</block>
   <block id="2cb2843b629d315325aac076907ec4b9" category="cell">Port du serveur VMware ESXi</block>
   <block id="ad676153bac7535311261fab671b77b9" category="cell">443 (HTTPS), bidirectionnel la fonction Restauration de fichiers invités utilise ce port.</block>
   <block id="926bafe6b6d4e07892751c7ca73ad20d" category="cell">Plug-in SnapCenter pour port VMware vSphere</block>
@@ -79,11 +75,8 @@
   <block id="7c1239972879fe0b69b4bb6d5c9a743e" category="cell">Port du serveur VMware vSphere vCenter</block>
   <block id="1f5ccbd5c3e6d6be1c440296630a5678" category="cell">Vous devez utiliser le port 443 si vous protégez les machines virtuelles vvol.</block>
   <block id="131b9f1c14d26ba7a0cce7389e7679a9" category="cell">Cluster de stockage ou port de VM de stockage</block>
-  <block id="4ebb46027adb5b26fc62dffc3aab358e" category="cell">443 (HTTPS), bidirectionnel 80 (HTTP), le port est utilisé pour la communication entre l'appliance virtuelle et la machine virtuelle de stockage ou le cluster contenant la machine virtuelle de stockage.</block>
   <block id="bd6873be6e44dbd5504531679d8ca1ef" category="section-title">Configurations prises en charge</block>
-  <block id="f377fb769eb12fc39f5abb7af2a27054" category="paragraph">Chaque instance de plug-in ne prend en charge qu'un seul serveur vCenter. Les vCenters en mode lié sont pris en charge. Plusieurs instances de plug-in peuvent prendre en charge le même serveur SnapCenter, comme illustré dans la figure suivante.</block>
   <block id="44245d918ad9aae8ea6514501fcfa0e8" category="section-title">Privilèges RBAC requis</block>
-  <block id="59e5a4ee48160cd7955828dd0c4db401" category="paragraph">Le compte administrateur vCenter doit disposer des privilèges vCenter requis, comme indiqué dans le tableau suivant.</block>
   <block id="3226b4d551073b03b6999f2db6d26c26" category="cell">Pour effectuer cette opération…</block>
   <block id="ebbed56187bf88c2773b58885cb13924" category="cell">Vous devez disposer de ces privilèges vCenter…</block>
   <block id="246180f43b6fb5d5b8945e640f176b32" category="cell">Déploiement et enregistrement du plug-in SnapCenter pour VMware vSphere dans vCenter</block>
@@ -1729,7 +1722,6 @@ La protection des datastores basée sur des balises est prise en charge uniqueme
   <block id="f85e08b125832fc8dae732e6790fa120" category="cell">* Opérations*</block>
   <block id="bf59ac9161d0f4561a155103d8ea2d10" category="list-text">Dans le volet *Paramètres du journal d'audit*, entrez le nombre maximal de fichiers journaux d'audit et la limite de taille du fichier journal d'audit.</block>
   <block id="beebc895773b56339a9e46c0233ba7cd" category="list-text">Cochez la case *Locking Period* pour activer le verrouillage des instantanés. Vous pouvez sélectionner la période de verrouillage des instantanés comme jours/mois/années.</block>
-  <block id="db2aeb24ed12922fe15bc09cfd1f528b" category="paragraph">Il est important de connaître les conditions de déploiement requises avant de déployer l'appliance virtuelle. Les exigences de déploiement sont répertoriées dans les tableaux suivants.</block>
   <block id="716306984040e1bf7dc3b8c1b0a05422" category="paragraph">Remarque : le port personnalisé pour l'ajout de l'hôte de distributeur sélectif à SnapCenter est pris en charge.</block>
   <block id="06c615df2f8ec55473b26eed4f5eedbd" category="paragraph">Le tableau suivant indique les opérations effectuées par l'interface graphique de SnapCenter.</block>
   <block id="ac3ea74e69b4d64c5b8bf99577a62f58" category="cell">Sauvegardes des machines virtuelles et des datastores à l'aide de l'interface utilisateur graphique du client VMware vSphere.</block>
@@ -1917,14 +1909,9 @@ Le <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"
   <block id="c8cdfbb3a52561000ef7cad338743cef" category="list-text">Accédez à la machine virtuelle sur laquelle le plug-in SnapCenter pour VMware vSphere a été déployé, puis cliquez sur l'onglet *Résumé*, puis cliquez sur la case *mise sous tension* pour démarrer le plug-in SnapCenter pour VMware vSphere.</block>
   <block id="0e1333d2629e7e53b7c0c41245a5c98c" category="paragraph">Le déploiement peut prendre quelques minutes. Un déploiement réussi est indiqué lorsque le plug-in SnapCenter pour VMware vSphere est sous tension, que les outils VMware sont installés et que l'écran vous invite à vous connecter au plug-in SnapCenter pour VMware vSphere.</block>
   <block id="145fd808d1976421d581e3373669426b" category="list-text">Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere à l'aide de l'adresse IP affichée sur l'écran de déploiement à l'aide des informations d'identification fournies dans l'assistant de déploiement, puis vérifiez sur le tableau de bord que le plug-in SnapCenter pour VMware vSphere est connecté à vCenter et activé.</block>
-  <block id="d4ff2a4ba3e5af06f352373f50430bce" category="list-text">Le plug-in SnapCenter pour VMware vSphere est déployé en tant que VM Linux, que vous utilisiez le plug-in pour protéger les données sur des systèmes Windows ou Linux.</block>
   <block id="5897423e9fe4df49061445b3104d9dbb" category="list-text">Vous devez déployer le plug-in SnapCenter pour VMware vSphere sur le serveur vCenter.</block>
-  <block id="77e6a5095dbf7f9171bcc524ed6e1476" category="paragraph">Les plannings de sauvegarde sont exécutés dans le fuseau horaire dans lequel le plug-in SnapCenter pour VMware vSphere est déployé. VCenter rapporte les données dans le fuseau horaire dans lequel se trouve vCenter. Par conséquent, si le plug-in SnapCenter pour VMware vSphere et vCenter se trouve dans des fuseaux horaires différents, les données du plug-in SnapCenter pour VMware vSphere Dashboard peuvent ne pas être identiques aux données des rapports.</block>
-  <block id="5d7c1f071b8bebdb7a96ab764852bb32" category="list-text">Vous ne devez pas déployer le plug-in SnapCenter pour VMware vSphere dans un dossier dont le nom comporte des caractères spéciaux.</block>
   <block id="43685458a1d84184e89d6917bc3f3a30" category="list-text">Vous devez déployer et enregistrer une instance unique distincte du plug-in SnapCenter pour VMware vSphere pour chaque serveur vCenter.</block>
-  <block id="18ddbf443f973a535ca1b5fb7410cf19" category="list-text">Chaque serveur vCenter, qu'il soit en mode lié ou non, doit être associé à une instance distincte du plug-in SnapCenter pour VMware vSphere.</block>
   <block id="a893739e55ea1f12f5171b7f54a73977" category="list-text">Chaque instance du plug-in SnapCenter pour VMware vSphere doit être déployée en tant que VM Linux distincte.</block>
-  <block id="6475183430549d8c41dcdf49b6e454d9" category="paragraph">Par exemple, si vous souhaitez effectuer des sauvegardes à partir de six instances différentes du serveur vCenter, vous devez déployer le plug-in SnapCenter pour VMware vSphere sur six hôtes et chaque serveur vCenter doit être associé à une instance unique du plug-in SnapCenter pour VMware vSphere.</block>
   <block id="ce5825ca299ec1e545f124bbf257a2c7" category="list-text">Le plug-in SnapCenter pour VMware vSphere offre une prise en charge limitée des périphériques PCI ou PCIe partagés (par exemple, processeur graphique NVIDIA Grid), car les machines virtuelles prennent uniquement en charge Storage vMotion. Pour plus d'informations, consultez le document fournisseur - Guide de déploiement pour VMware.</block>
   <block id="9dda9990139fd29842c044b5c5471a76" category="list-text">Pour obtenir une liste détaillée du plug-in SnapCenter dans les limites de VMware vSphere, reportez-vous à la section <block ref="bdbfb8bb150c7bdb16e7ed7779280aad" category="inline-link-macro-rx"></block>.</block>
   <block id="d20cc380823f43f0acf872e3020e3bd2" category="cell">7.0U1 et ultérieure.</block>
@@ -1933,7 +1920,6 @@ Le <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"
   <block id="128a673672e69a9c3a9a57cd50e753fd" category="list-text">VCenter vSphere 7.0U3</block>
   <block id="83796d186e6e678e53d65b677d9068ca" category="list-text">ESXi 7.0U3</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="list-text">ONTAP 9.10.1</block>
-  <block id="ea35a5ceed1579f5b902ce081cd9eba5" category="paragraph">8144 (HTTPS), bidirectionnel le port est utilisé pour les communications à partir du client VMware vSphere et du serveur SnapCenter. 8080 bidirectionnel ce port est utilisé pour gérer les appliances virtuelles.</block>
   <block id="ddc2e0749914d96ecd066bc2875c2383" category="paragraph">Le plug-in SnapCenter pour VMware vSphere fournit un minimum d'informations pour suivre son utilisation, y compris l'URL du plug-in. AutoSupport comprend un tableau des plug-ins installés qui est affiché par le visualiseur AutoSupport.</block>
   <block id="5ca88d87d091c40a67888db17ab09200" category="list-text">Dans le volet gauche du navigateur, sélectionnez un serveur virtuel.</block>
   <block id="21ee10f4cd70125e8dd3b917d6c4dec7" category="list-text">Dans le volet de navigation de gauche, cliquez avec le bouton droit de la souris sur la machine virtuelle, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la liste déroulante, puis sélectionnez *détacher le disque virtuel* dans la liste déroulante secondaire.</block>
@@ -2220,4 +2206,16 @@ Le <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"
   <block id="06f856f616715d0e20b174cd2c7fb47a" category="sidebar">Le plug-in SnapCenter pour VMware vSphere (SCV) est une appliance virtuelle basée sur Linux. En tant que autonome, elle permet d'effectuer des opérations de sauvegarde et de restauration rapides, compactes et cohérentes avec les défaillances des machines virtuelles pour les machines virtuelles, les datastores et les VMDK. Il fonctionne aussi avec SnapCenter Server pour prendre en charge les opérations de sauvegarde et de restauration basées sur les applications dans les environnements VMware pour les plug-ins spécifiques aux applications SnapCenter. Cette bibliothèque de documentation décrit le plug-in SnapCenter pour VMware vSphere version 6.1.</block>
   <block id="94e8421982a2fb673cf72156837a22d4" category="sidebar">Plug-in SnapCenter pour VMware vSphere 6.1</block>
   <block id="a90ceefdbe215fb84520872833bfb5a2" category="sidebar">Nouveautés du plug-in SnapCenter pour VMware vSphere 6.1</block>
+  <block id="7ba297bc556c4bd891e83b1943e116d5" category="paragraph">Vous devez connaître les exigences suivantes avant de commencer à déployer le plug-in SnapCenter pour VMware vSphere (SCV).</block>
+  <block id="ca7b78e6e086f02d5ea9e3c5f9719822" category="list-text">Le plug-in SnapCenter pour VMware vSphere est déployé en tant que VM Linux, qu'il soit utilisé pour protéger des données sur des systèmes Windows ou Linux.</block>
+  <block id="ea84ccf1b1b24d5d18322d9bcac320d5" category="paragraph">Les plannings de sauvegarde sont exécutés dans le fuseau horaire dans lequel le plug-in SnapCenter pour VMware vSphere est déployé, et vCenter signale les données dans le fuseau horaire dans lequel il se trouve. Par conséquent, si le plug-in SnapCenter pour VMware vSphere et vCenter se trouve dans des fuseaux horaires différents, les données du plug-in SnapCenter pour VMware vSphere Dashboard peuvent ne pas être identiques aux données des rapports.</block>
+  <block id="c8ab109ee626a90547277ef790b2ecc5" category="list-text">Vous ne devez pas déployer le plug-in SnapCenter pour VMware vSphere dans un dossier contenant des caractères spéciaux.</block>
+  <block id="b8d538e51a79520b3157b17c50b7394d" category="list-text">Chaque serveur vCenter, en mode lié ou non, doit être couplé à une instance distincte du plug-in SnapCenter pour VMware vSphere.</block>
+  <block id="bfd5317e73c9442ee1915a6588c0366c" category="paragraph">Supposons, par exemple, que vous souhaitiez effectuer des sauvegardes à partir de six instances différentes du serveur vCenter. Dans ce cas, vous devez déployer le plug-in SnapCenter pour VMware vSphere sur six hôtes, et chaque serveur vCenter doit être associé à une instance unique du plug-in SnapCenter pour VMware vSphere.</block>
+  <block id="94065d09aa28da13308f15b08c2c3e89" category="cell">VSphere Standard, Enterprise ou Enterprise plus Une licence vSphere est requise pour effectuer des opérations de restauration à l'aide de Storage vMotion. Les licences vSphere Essentials ou Essentials plus n'incluent pas Storage vMotion.</block>
+  <block id="99ddf0e823c1be51589f68696f62cf56" category="cell">Port préconfiguré</block>
+  <block id="f96e5ffe0e86002fbdb3cab444ac57b9" category="paragraph">8144 (HTTPS), bidirectionnelle le port est utilisé pour les communications à partir du client VMware vSphere et du serveur SnapCenter. 8080 bidirectionnel ce port est utilisé pour gérer les appliances virtuelles.</block>
+  <block id="ffa5dd2af4873dbfd89f9ae07a815104" category="cell">443 (HTTPS), bidirectionnelle 80 (HTTP), le port est utilisé pour communiquer entre l'appliance virtuelle et la machine virtuelle de stockage ou le cluster contenant la machine virtuelle de stockage.</block>
+  <block id="822926837c6e218e71716b72e1a7017f" category="paragraph">Chaque instance de plug-in ne prend en charge qu'un seul serveur vCenter, qui est en mode lié. Cependant, plusieurs instances de plug-in peuvent prendre en charge le même serveur SnapCenter, comme indiqué dans la figure suivante.</block>
+  <block id="1c0894625a89e433ba87d14aebdc6088" category="paragraph">Le compte d'administrateur vCenter doit avoir le vCenter Privileges requis répertorié dans le tableau suivant.</block>
 </blocks>
