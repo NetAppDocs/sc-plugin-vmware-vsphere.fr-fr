@@ -32,6 +32,6 @@ Vous pouvez rechercher et trouver une sauvegarde spécifique d'une machine virtu
 . Facultatif : cliquez avec le bouton droit de la souris sur une machine virtuelle ou un datastore, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la liste déroulante, puis sélectionnez *Restore* dans la liste déroulante secondaire.
 . Dans l'assistant *Restore*, entrez un nom de recherche et cliquez sur *Search*.
 +
-Vous pouvez filtrer la liste de sauvegarde en sélectionnant l'icône de filtre et en sélectionnant une plage de date et d'heure, en indiquant si vous souhaitez que les sauvegardes contiennent des snapshots VMware, si vous voulez monter des sauvegardes et l'emplacement. Cliquez sur *OK*.
+Vous pouvez filtrer la liste de sauvegarde en sélectionnant l'icône de filtre et en sélectionnant une plage de date et d'heure, en sélectionnant si vous souhaitez que les sauvegardes contenant des snapshots VMware, si vous voulez monter des sauvegardes et l'emplacement. Cliquez sur *OK*.
 
 

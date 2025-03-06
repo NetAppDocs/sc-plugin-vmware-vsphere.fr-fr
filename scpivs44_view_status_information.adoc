@@ -67,7 +67,7 @@ Nombre total de chaque type d'objet géré par le plug-in SnapCenter pour VMware
  a| 
 Stockage
  a| 
-Le nombre total de snapshots, de SnapVault et de snapshots SnapMirror générés et la quantité de stockage utilisée pour les snapshots primaires et secondaires. Le graphique linéaire trace séparément la consommation de stockage primaire et secondaire, jour par jour, sur une période de 90 jours. Les informations de stockage sont mises à jour toutes les 24 heures à 1:08. Les économies de stockage représentent le rapport entre la capacité logique (économies de Snapshot et stockage consommé) et la capacité physique du stockage primaire. Le graphique à barres illustre les économies de stockage.
+Le nombre total de snapshots, de SnapVault et de snapshots SnapMirror générés et la quantité de stockage utilisée pour les snapshots primaires et secondaires. Le graphique linéaire trace séparément la consommation de stockage primaire et secondaire, jour par jour, sur une période de 90 jours. Les informations de stockage sont mises à jour toutes les 24 heures à 1:08. Les économies de stockage représentent le rapport entre la capacité logique (économies de snapshots et stockage consommé) et la capacité physique du stockage primaire. Le graphique à barres illustre les économies de stockage.
 
 Placez le curseur sur une ligne de la carte pour afficher les résultats quotidiens détaillés.
 

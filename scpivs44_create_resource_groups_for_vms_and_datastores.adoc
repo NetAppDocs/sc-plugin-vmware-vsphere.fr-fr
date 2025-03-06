@@ -94,7 +94,7 @@ Bien que vous puissiez créer un groupe de ressources sans règle de sauvegarde,
 
 +
 
-NOTE: Si vous sélectionnez une règle de sauvegarde avec la période de verrouillage des snapshots, vous devez sélectionner ONTAP 9.12.1 ou une version ultérieure.
+NOTE: Si vous sélectionnez une règle de sauvegarde avec période de verrouillage des snapshots, vous devez sélectionner ONTAP 9.12.1 ou une version ultérieure.
 
 * Contrôles de compatibilité
 +
@@ -147,14 +147,14 @@ C'est la façon la plus simple de créer un groupe de ressources. Toutefois, vou
 | Objet de l'e-mail | Saisissez l'objet que vous souhaitez recevoir dans les e-mails de notification. 
 
 
-| Dernier nom de snapshot  a| 
+| Nom du dernier snapshot  a| 
 Si vous souhaitez ajouter le suffixe «_Recent » au dernier snapshot, cochez cette case. Le suffixe “_Recent” remplace la date et l’horodatage.
 
 
 NOTE: A `_recent` la sauvegarde est créée pour chaque stratégie associée à un groupe de ressources. Par conséquent, un groupe de ressources avec plusieurs stratégies aura plusieurs `_recent` sauvegardes. Ne pas renommer manuellement `_recent` sauvegardes.
 
 
-NOTE: Le système de stockage ASA r2 ne prend pas en charge le changement de nom des snapshots et, par conséquent, les fonctionnalités de renommage de SCV et de dénomination des snapshots récents ne sont pas prises en charge.
+NOTE: Le système de stockage ASA r2 ne prend pas en charge le renommage des snapshots et, par conséquent, les fonctionnalités de renommage de la sauvegarde SCV et de dénomination des snapshots récents ne sont pas prises en charge.
 
 
 
@@ -162,7 +162,7 @@ NOTE: Le système de stockage ASA r2 ne prend pas en charge le changement de nom
 Si vous souhaitez utiliser un format personnalisé pour les noms des instantanés, cochez cette case et entrez le format du nom.
 
 *** Par défaut, cette fonction est désactivée.
-*** Les noms de snapshot par défaut utilisent le format `<ResourceGroup>_<Date-TimeStamp>` . Toutefois, vous pouvez spécifier un format personnalisé à l'aide des variables $ResourceGroup, $Policy, $hostname, $ScheduleType et $CustomText. Utilisez la liste déroulante du champ Nom personnalisé pour sélectionner les variables que vous souhaitez utiliser et l'ordre dans lequel elles sont utilisées. Si vous sélectionnez $CustomText, le format du nom est `<CustomName>_<Date-TimeStamp>`. Entrez le texte personnalisé dans la zone supplémentaire fournie. [REMARQUE] : si vous sélectionnez également le suffixe “_Recent”, vous devez vous assurer que les noms de snapshots personnalisés seront uniques dans le datastore. Par conséquent, vous devez ajouter les variables $ResourceGroup et $Policy au nom.
+*** Les noms de snapshot par défaut utilisent le format `<ResourceGroup>_<Date-TimeStamp>`. Toutefois, vous pouvez spécifier un format personnalisé à l'aide des variables $ResourceGroup, $Policy, $hostname, $ScheduleType et $CustomText. Utilisez la liste déroulante du champ Nom personnalisé pour sélectionner les variables que vous souhaitez utiliser et l'ordre dans lequel elles sont utilisées. Si vous sélectionnez $CustomText, le format du nom est `<CustomName>_<Date-TimeStamp>`. Entrez le texte personnalisé dans la zone supplémentaire fournie. [REMARQUE] : si vous sélectionnez également le suffixe “_Recent”, vous devez vous assurer que les noms personnalisés des snapshots seront uniques dans le datastore. Par conséquent, vous devez ajouter les variables $ResourceGroup et $Policy au nom.
 *** Caractères spéciaux pour les caractères spéciaux dans les noms, suivez les mêmes directives que pour le champ Nom.
 
 

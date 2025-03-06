@@ -41,11 +41,11 @@ Vous pouvez utiliser l'interface graphique d'SnapCenter et les plug-ins d'applic
 SnapCenter exploite de manière native le plug-in SnapCenter pour VMware vSphere pour toutes les opérations de protection des données sur des VMDK, des mappages de périphériques bruts (RDM) et des datastores NFS. Une fois l'appliance virtuelle déployée, le plug-in gère toutes les interactions avec vCenter. Le plug-in SnapCenter pour VMware vSphere prend en charge tous les plug-ins applicatifs SnapCenter.
 
 +
-SnapCenter ne prend pas en charge les snapshots uniques des bases de données et des machines virtuelles ensemble. Les sauvegardes des VM et des bases de données doivent être planifiées et exécutées de manière indépendante, ce qui crée des snapshots distincts, même si les bases de données et les VM sont hébergées sur le même volume. Planifier les sauvegardes des applications de base de données à l'aide de l'interface graphique SnapCenter ; planifier les sauvegardes de la machine virtuelle et du datastore à l'aide de l'interface graphique du client VMware vSphere.
+SnapCenter ne prend pas en charge les snapshots uniques des bases de données et des machines virtuelles ensemble. Les sauvegardes des VM et des bases de données doivent être planifiées et exécutées indépendamment, ce qui crée des snapshots distincts, même si les bases de données et les VM sont hébergées sur le même volume. Planifier les sauvegardes des applications de base de données à l'aide de l'interface graphique SnapCenter ; planifier les sauvegardes de la machine virtuelle et du datastore à l'aide de l'interface graphique du client VMware vSphere.
 
 * Des outils VMware sont nécessaires pour les snapshots cohérents avec les machines virtuelles
 +
-Si les outils VMware ne sont pas installés et s'exécutent, le système de fichiers n'est pas suspendu et un Snapshot cohérent au niveau des défaillances est créé.
+Si les outils VMware ne sont pas installés et en cours d'exécution, le système de fichiers n'est pas suspendu et un snapshot cohérent après panne est créé.
 
 * VMware Storage vMotion est nécessaire pour les opérations de restauration dans des environnements SAN (VMFS)
 +

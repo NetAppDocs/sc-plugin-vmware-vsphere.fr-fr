@@ -50,7 +50,7 @@ Suivez les étapes ci-dessous pour ajouter le contrôleur NVMe au disque.
 . Dans le volet de navigation de gauche, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* > *connecter un ou plusieurs disques virtuels*.
 . Dans la fenêtre *Attach disque virtuel*, dans la section *Backup*, sélectionnez une sauvegarde.
 +
-Vous pouvez filtrer la liste des sauvegardes en sélectionnant l'icône de filtre et en choisissant une plage de date et d'heure, en sélectionnant si vous souhaitez des sauvegardes contenant des snapshots VMware, si vous voulez monter des sauvegardes et l'emplacement. Cliquez sur *OK*.
+Vous pouvez filtrer la liste de sauvegarde en sélectionnant l'icône de filtre et en choisissant une plage de date et d'heure, en sélectionnant si vous souhaitez que les sauvegardes contenant des snapshots VMware, si vous voulez monter des sauvegardes et l'emplacement. Cliquez sur *OK*.
 
 . Dans la section *Sélectionner des disques*, sélectionnez un ou plusieurs disques à relier et l'emplacement de connexion (primaire ou secondaire).
 +

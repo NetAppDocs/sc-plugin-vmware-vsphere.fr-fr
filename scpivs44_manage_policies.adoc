@@ -38,7 +38,7 @@ Vous pouvez également ajouter une stratégie au groupe de ressources en cochant
 
 == Modifier des règles
 
-Vous pouvez modifier les règles d'un plug-in SnapCenter pour un groupe de ressources VMware vSphere. Vous pouvez modifier la fréquence, les options de réplication, les paramètres de rétention des snapshots ou les informations relatives aux scripts pendant qu'une règle est attachée à un groupe de ressources.
+Vous pouvez modifier les règles d'un plug-in SnapCenter pour un groupe de ressources VMware vSphere. Vous pouvez modifier la fréquence, les options de réplication, les paramètres de rétention des snapshots ou les informations relatives aux scripts lorsqu'une règle est associée à un groupe de ressources.
 
 .Description de la tâche
 La modification des règles de sauvegarde du plug-in SnapCenter pour VMware vSphere ne diffère pas de la modification des règles de sauvegarde pour les plug-ins applicatifs SnapCenter. Il n'est pas nécessaire de dissocier les stratégies des groupes de ressources lorsque vous modifiez les stratégies du plug-in.

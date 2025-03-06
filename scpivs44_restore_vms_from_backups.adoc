@@ -76,7 +76,7 @@ Assurez-vous qu'aucune erreur de configuration HA ne s'affiche sur l'écran réc
 .Description de la tâche
 * La machine virtuelle n'est pas enregistrée et elle est à nouveau enregistrée
 +
-L'opération de restauration pour les machines virtuelles annule l'enregistrement de la machine virtuelle d'origine, restaure la machine virtuelle à partir d'un Snapshot de sauvegarde et enregistre la machine virtuelle restaurée avec le même nom et la même configuration sur le même serveur ESXi. Vous devez ajouter manuellement les machines virtuelles aux groupes de ressources après la restauration.
+L'opération de restauration pour les machines virtuelles annule l'enregistrement de la machine virtuelle d'origine, restaure la machine virtuelle à partir d'un snapshot de sauvegarde et enregistre la machine virtuelle restaurée avec le même nom et la même configuration sur le même serveur ESXi. Vous devez ajouter manuellement les machines virtuelles aux groupes de ressources après la restauration.
 
 * Restauration des datastores
 +
@@ -105,7 +105,7 @@ NOTE: Si vous restaurez une machine virtuelle supprimée, les informations d'ide
 . Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la liste déroulante, puis sélectionnez *Restore* dans la liste déroulante secondaire pour démarrer l'assistant.
 . Dans l'assistant *Restore*, sur la page *Select Backup*, sélectionnez l'instantané de sauvegarde que vous souhaitez restaurer.
 +
-Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partiel, ou filtrer la liste des sauvegardes en cliquant sur l'icône du filtre et en sélectionnant une plage de dates et d'heures, en sélectionnant si vous souhaitez que les sauvegardes contiennent des snapshots VMware, si vous souhaitez des sauvegardes montées ou l'emplacement. Cliquez sur *OK* pour revenir à l'assistant.
+Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partielle, ou bien filtrer la liste des sauvegardes en cliquant sur l'icône de filtre et en sélectionnant une plage de date et d'heure, en indiquant si vous souhaitez que les sauvegardes contiennent des snapshots VMware, si vous voulez monter des sauvegardes et l'emplacement. Cliquez sur *OK* pour revenir à l'assistant.
 
 . Sur la page *Select Scope*, sélectionnez *machine virtuelle entière* dans le champ *Restore scope*, puis sélectionnez l'emplacement de restauration, puis entrez les informations de destination où la sauvegarde doit être montée.
 +

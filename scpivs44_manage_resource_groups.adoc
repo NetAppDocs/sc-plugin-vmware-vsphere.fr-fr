@@ -67,7 +67,7 @@ Vous pouvez supprimer un groupe de ressources dans vCenter si vous n'avez plus b
 Toutes les opérations de suppression de groupe de ressources sont effectuées en tant que suppressions de force. L'opération de suppression dissocie toutes les règles du groupe de ressources vCenter, supprime le groupe de ressources du plug-in SnapCenter pour VMware vSphere et supprime toutes les sauvegardes et instantanés du groupe de ressources.
 
 
-NOTE: Dans une relation SnapVault, le dernier snapshot ne peut pas être supprimé. Par conséquent, le groupe de ressources ne peut pas être supprimé. Avant de supprimer un groupe de ressources faisant partie d'une relation SnapVault, vous devez utiliser OnCommand System Manager ou l'interface de ligne de commandes de ONTAP pour supprimer la relation SnapVault. Vous devez ensuite supprimer la dernière copie Snapshot.
+NOTE: Dans une relation SnapVault, le dernier snapshot ne peut pas être supprimé. Par conséquent, le groupe de ressources ne peut pas être supprimé. Avant de supprimer un groupe de ressources faisant partie d'une relation SnapVault, vous devez utiliser OnCommand System Manager ou l'interface de ligne de commandes de ONTAP pour supprimer la relation SnapVault. Vous devez ensuite supprimer le dernier snapshot.
 
 .Étapes
 . Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, puis sélectionnez un groupe de ressources et cliquez sur *Supprimer*.

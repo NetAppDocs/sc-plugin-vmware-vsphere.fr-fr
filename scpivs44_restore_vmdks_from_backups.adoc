@@ -43,7 +43,7 @@ La machine virtuelle à restaurer ne doit pas être dans un état vMotion ou Sto
 . Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la liste déroulante, puis sélectionnez *Restore* dans la liste déroulante secondaire.
 . Dans l'assistant *Restaurer*, sur la page Sélectionner une sauvegarde, sélectionnez la copie de sauvegarde à partir de laquelle vous souhaitez effectuer la restauration.
 +
-Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partiel, ou filtrer la liste des sauvegardes en cliquant sur l'icône du filtre et en sélectionnant une plage de dates et d'heures, en sélectionnant si vous souhaitez que les sauvegardes contenant des snapshots VMware soient montées ou non, et emplacement principal ou secondaire. Cliquez sur *OK* pour revenir à l'assistant.
+Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partielle, ou bien filtrer la liste des sauvegardes en cliquant sur l'icône de filtre et en sélectionnant une plage de date et d'heure, en indiquant si vous voulez des sauvegardes contenant des snapshots VMware, si vous voulez des sauvegardes montées et un emplacement principal ou secondaire. Cliquez sur *OK* pour revenir à l'assistant.
 
 . Sur la page *Sélectionner l'étendue*, sélectionnez la destination de restauration.
 +
