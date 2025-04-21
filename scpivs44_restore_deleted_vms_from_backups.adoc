@@ -60,12 +60,13 @@ Vous ne pouvez pas restaurer un datastore, mais vous pouvez restaurer une machin
 Une opération de restauration peut échouer si le niveau de stockage de la FabricPool où se trouve la machine virtuelle est indisponible.
 
 .Étapes
-. Sélectionnez *Menu* et l'option de menu *stockage*, puis sélectionnez un datastore, puis l'onglet *configurer*, puis sélectionnez *sauvegardes* dans la section *plug-in SnapCenter pour VMware vSphere*.
+. Dans vCenter Server, accédez à *Inventory* > *datastores* et sélectionnez un datastore.
+. Sélectionnez *configurer* > *sauvegardes* dans la section Plug-in SnapCenter pour VMware vSphere.
 . Double-cliquez sur une sauvegarde pour afficher la liste de toutes les machines virtuelles incluses dans la sauvegarde.
 . Sélectionnez la machine virtuelle supprimée dans la liste de sauvegarde et sélectionnez *Restaurer*.
 . Dans l'assistant *Restore*, sur la page *Select Backup*, sélectionnez la copie de sauvegarde à partir de laquelle vous souhaitez restaurer.
 +
-Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partielle, ou bien filtrer la liste des sauvegardes en cliquant sur l'icône de filtre et en sélectionnant une plage de date et d'heure, en indiquant si vous souhaitez que les sauvegardes contiennent des snapshots VMware, si vous voulez monter des sauvegardes et l'emplacement. Sélectionnez *OK* pour revenir à l'assistant.
+Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partielle, ou bien filtrer la liste de sauvegarde en sélectionnant l'icône de filtre et en sélectionnant une plage de date et d'heure, en indiquant si vous souhaitez que les sauvegardes contiennent des snapshots VMware, si vous voulez monter des sauvegardes et l'emplacement. Sélectionnez *OK* pour revenir à l'assistant.
 
 . Sur la page *Select Scope*, sélectionnez *entièreté de la machine virtuelle* dans le champ *Restore scope*, puis sélectionnez l'emplacement de restauration, puis entrez les informations de l'hôte de destination ESXi sur lequel la sauvegarde doit être montée.
 +

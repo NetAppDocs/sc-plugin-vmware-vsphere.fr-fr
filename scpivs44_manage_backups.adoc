@@ -58,5 +58,5 @@ image:scv50_image1.png["Fenêtre client vSphere"]
 Vous pouvez sélectionner jusqu'à 40 sauvegardes à supprimer.
 
 . Sélectionnez *OK* pour confirmer l'opération de suppression.
-. Actualisez la liste des sauvegardes en cliquant sur l'icône d'actualisation dans la barre de menus vSphere de gauche.
+. Actualisez la liste des sauvegardes en sélectionnant l'icône d'actualisation dans la barre de menus de gauche de vSphere.
 

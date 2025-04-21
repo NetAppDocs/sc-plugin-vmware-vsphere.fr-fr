@@ -84,7 +84,7 @@ Vous pouvez afficher la progression de l'opération dans le moniteur des tâches
 . Pour rechercher les fichiers à restaurer à partir du disque virtuel joint, sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la fenêtre des raccourcis client vSphere.
 . Dans le volet gauche du navigateur, sélectionnez *Restauration de fichiers invités* > *Configuration invité*.
 +
-Dans le tableau moniteur de session invité, vous pouvez afficher des informations supplémentaires sur une session en cliquant sur *... *dans la colonne de droite.
+Dans le tableau moniteur de session invité, vous pouvez afficher des informations supplémentaires sur une session en sélectionnant *... *dans la colonne de droite.
 
 . Sélectionnez la session de restauration des fichiers invités pour le disque virtuel répertorié dans l'e-mail de notification.
 +

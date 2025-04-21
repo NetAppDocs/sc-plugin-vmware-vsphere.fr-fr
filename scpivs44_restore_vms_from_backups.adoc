@@ -105,7 +105,7 @@ NOTE: Si vous restaurez une machine virtuelle supprimée, les informations d'ide
 . Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la liste déroulante, puis sélectionnez *Restore* dans la liste déroulante secondaire pour démarrer l'assistant.
 . Dans l'assistant *Restore*, sur la page *Select Backup*, sélectionnez l'instantané de sauvegarde que vous souhaitez restaurer.
 +
-Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partielle, ou bien filtrer la liste des sauvegardes en cliquant sur l'icône de filtre et en sélectionnant une plage de date et d'heure, en indiquant si vous souhaitez que les sauvegardes contiennent des snapshots VMware, si vous voulez monter des sauvegardes et l'emplacement. Sélectionnez *OK* pour revenir à l'assistant.
+Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partielle, ou bien filtrer la liste de sauvegarde en sélectionnant l'icône de filtre et en sélectionnant une plage de date et d'heure, en indiquant si vous souhaitez que les sauvegardes contiennent des snapshots VMware, si vous voulez monter des sauvegardes et l'emplacement. Sélectionnez *OK* pour revenir à l'assistant.
 
 . Sur la page *Select Scope*, sélectionnez *machine virtuelle entière* dans le champ *Restore scope*, puis sélectionnez l'emplacement de restauration, puis entrez les informations de destination où la sauvegarde doit être montée.
 +
@@ -119,7 +119,7 @@ Lors de la restauration de sauvegardes partielles, l'opération de restauration 
 Dans le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures, vous pouvez sélectionner le stockage secondaire pour les volumes FlexGroup.
 
 . Consultez la page Résumé, puis sélectionnez *Terminer*.
-. Facultatif : surveillez la progression de l'opération en cliquant sur *tâches récentes* en bas de l'écran.
+. Facultatif : surveillez la progression de l'opération en sélectionnant *tâches récentes* au bas de l'écran.
 +
 Actualiser l'écran pour afficher les informations mises à jour.
 

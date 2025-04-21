@@ -32,7 +32,7 @@ Dans les versions antérieures de Virtual Storage Console (VSC), vous pouvez eff
 . Dans le volet de navigation de gauche du plug-in SCV, sélectionnez *groupes de ressources*, puis sélectionnez un groupe de ressources, puis sélectionnez image:scpivs44_image38.png["Icône de lecture"] *Exécuter maintenant* pour lancer la sauvegarde.
 . Si plusieurs stratégies sont configurées dans le groupe de ressources, sélectionnez la stratégie à utiliser dans la boîte de dialogue *sauvegarde maintenant*.
 . Sélectionnez *OK* pour démarrer la sauvegarde.
-. Facultatif : surveillez la progression de l'opération en cliquant sur *tâches récentes* en bas de la fenêtre ou sur le tableau de bord *moniteur des tâches* pour plus de détails. Résultat
+. Facultatif : surveillez la progression de l'opération en sélectionnant *tâches récentes* en bas de la fenêtre ou sur le tableau de bord *moniteur de tâche* pour plus de détails. Résultat
 
 
 Si l'opération de mise au repos échoue pour l'une des machines virtuelles de la sauvegarde, la sauvegarde se termine par un avertissement et est marquée comme non cohérente au niveau de la machine virtuelle, même si la règle sélectionnée contient la cohérence de la machine virtuelle. Dans ce cas, il est possible que certains serveurs virtuels aient été suspendus avec succès. Sur le moniteur des tâches, les détails de la machine virtuelle ayant échoué indiquent que la mise en veille a échoué.
