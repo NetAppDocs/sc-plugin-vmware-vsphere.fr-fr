@@ -27,5 +27,5 @@ Si vous tentez de monter une copie de sauvegarde d'un datastore NFS sur une mach
 
 IMPORTANT: Assurez-vous de sélectionner le datastore approprié à démonter. Sinon, vous pourriez avoir un impact sur le travail de production.
 
-. Dans la boîte de dialogue *Unmount cloné datastore*, sélectionnez un datastore, cochez la case *Unmount le datastore cloné*, puis cliquez sur *Unmount*.
+. Dans la boîte de dialogue *démonter le datastore cloné*, sélectionnez un datastore, cochez la case *démonter le datastore cloné*, puis sélectionnez *démonter*.
 

@@ -23,7 +23,7 @@ Ne démarrez pas un travail pour sauvegarder la base de données MySQL lorsqu'un
 
 .Étapes
 . Depuis le client VMware vSphere, sélectionnez la machine virtuelle sur laquelle se trouve le plug-in SnapCenter pour VMware vSphere.
-. Dans l'onglet *Résumé* de l'appliance virtuelle, cliquez sur *lancer la console distante* *ou lancer la console Web* pour ouvrir une fenêtre de console de maintenance.
+. Dans l'onglet *Résumé* de l'appliance virtuelle, sélectionnez *lancer la console distante* *ou lancer la console Web* pour ouvrir une fenêtre de console de maintenance.
 +
 image:scpivs44_image21.png["fenêtre de la console de maintenance"]
 

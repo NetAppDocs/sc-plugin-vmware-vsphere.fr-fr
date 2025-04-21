@@ -171,7 +171,7 @@ Cette tâche vous aide à configurer le serveur syslog.
 ** Certificat de serveur syslog
 
 
-. Cliquez sur *SAVE* pour enregistrer les paramètres du serveur Syslog.
+. Sélectionnez *SAVE* pour enregistrer les paramètres du serveur Syslog.
 
 
 

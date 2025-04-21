@@ -19,7 +19,7 @@ Vous pouvez afficher les informations d'état dans le tableau de bord du client 
 .Étapes
 . Sur la page de raccourci du client vCenter, sélectionnez SnapCenter Plug-in for VMware vSphere (SCV).
 . Dans le volet de navigation de gauche de SCV, sélectionnez *Tableau de bord* > *État*.
-. Affichez les informations sur l'état de la vue d'ensemble ou cliquez sur un lien pour plus de détails, comme indiqué dans le tableau suivant.
+. Afficher les informations d'état de la vue d'ensemble ou sélectionner un lien pour plus de détails, comme indiqué dans le tableau suivant.
 +
 |===
 | Cette mosaïque de tableau de bord… | Affiche les informations suivantes… 
@@ -30,8 +30,8 @@ Activités récentes du poste
  a| 
 Les trois à cinq tâches de sauvegarde, de restauration et de montage les plus récentes.
 
-** Cliquez sur un ID de travail pour afficher plus de détails sur ce travail.
-** Cliquez sur *Voir tout* pour accéder à l'onglet moniteur de travaux pour plus de détails sur tous les travaux.
+** Sélectionnez sur un ID de travail pour afficher plus de détails sur ce travail.
+** Sélectionnez *Voir tout* pour accéder à l'onglet moniteur des travaux pour plus de détails sur tous les travaux.
 
 
 
@@ -48,7 +48,7 @@ Dernière synthèse de la protection
  a| 
 Récapitulatifs de l'état de protection des données des machines virtuelles ou datastores primaires et secondaires dans la fenêtre de temps sélectionnée.
 
-** Cliquez sur le menu déroulant pour sélectionner *VM* ou *datastores*.
+** Sélectionnez le menu déroulant pour sélectionner *VM* ou *datastores*.
 ** Pour le stockage secondaire, sélectionnez *SnapVault* ou *SnapMirror*.
 ** Passez le curseur de la souris sur une section d'un graphique pour consulter le nombre de VM ou de datastores dans cette catégorie. Dans la catégorie réussite, la sauvegarde la plus récente est répertoriée pour chaque ressource.
 ** Vous pouvez modifier la fenêtre de temps en modifiant le fichier de configuration. La valeur par défaut est 7 jours. Pour plus d'informations, reportez-vous link:scpivs44_customize_your_configuration.html["Personnalisez votre configuration"]à .

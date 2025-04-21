@@ -24,7 +24,7 @@ Le protocole TLS (transport Layer Security) doit être activé dans vCenter. Voi
 . Connectez-vous à la page *Single Sign-on de VMware vCenter*.
 +
 
-IMPORTANT: Cliquez sur le bouton *connexion*. En raison d'un problème VMware connu, n'utilisez pas la clé ENTER pour vous connecter. Pour plus d'informations, reportez-vous à la documentation VMware sur les problèmes liés au client hôte intégré ESXi.
+IMPORTANT: Sélectionnez le bouton *connexion*. En raison d'un problème VMware connu, n'utilisez pas la clé ENTER pour vous connecter. Pour plus d'informations, reportez-vous à la documentation VMware sur les problèmes liés au client hôte intégré ESXi.
 
-. Sur la page *VMware vSphere client*, cliquez sur Menu dans la barre d'outils, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere*.
+. Sur la page *VMware vSphere client*, sélectionnez Menu dans la barre d'outils, puis *SnapCenter Plug-in pour VMware vSphere*.
 

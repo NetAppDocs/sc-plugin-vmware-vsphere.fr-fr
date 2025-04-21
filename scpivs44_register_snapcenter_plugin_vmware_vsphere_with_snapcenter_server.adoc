@@ -35,9 +35,9 @@ Vous pouvez enregistrer plusieurs instances du plug-in SnapCenter pour VMware vS
 
 
 .Étapes
-. Dans le volet de navigation gauche de l'interface graphique SnapCenter, cliquez sur *hosts*.
+. Dans le volet de navigation gauche de l'interface graphique SnapCenter, sélectionnez *hosts*.
 . Vérifiez que l'onglet *Managed Hosts* est sélectionné en haut, puis localisez le nom d'hôte de l'appliance virtuelle et vérifiez qu'il résout à partir du serveur SnapCenter.
-. Cliquez sur *Ajouter* pour lancer l'assistant.
+. Sélectionnez *Ajouter* pour démarrer l'assistant.
 . Dans la boîte de dialogue *Ajouter des hôtes*, spécifiez l'hôte à ajouter au serveur SnapCenter comme indiqué dans le tableau suivant :
 +
 |===
@@ -52,11 +52,11 @@ Vous pouvez enregistrer plusieurs instances du plug-in SnapCenter pour VMware vS
 
 | Informations d'identification | Entrez le nom d'utilisateur et le mot de passe du plug-in SnapCenter pour VMware vSphere fourni lors du déploiement. 
 |===
-. Cliquez sur *soumettre*.
+. Sélectionnez *soumettre*.
 +
 Lorsque l'hôte VM a été ajouté avec succès, il s'affiche dans l'onglet Managed Hosts.
 
-. Dans le volet de navigation de gauche, cliquez sur *Paramètres*, puis sur l'onglet *informations d'identification*, puis sélectionnez *Ajouter* pour ajouter des informations d'identification pour l'appliance virtuelle.
+. Dans le volet de navigation de gauche, sélectionnez *Paramètres*, puis l'onglet *informations d'identification*, puis sélectionnez *Ajouter* pour ajouter des informations d'identification pour l'appliance virtuelle.
 . Fournissez les informations d'identification spécifiées lors du déploiement du plug-in SnapCenter pour VMware vSphere.
 +
 

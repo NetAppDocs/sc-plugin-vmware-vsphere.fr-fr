@@ -35,7 +35,7 @@ link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.h
 +
 L'adresse IP du plug-in SnapCenter pour VMware vSphere s'affiche lorsque vous déployez le plug-in.
 
-. Cliquez sur *Configuration* dans le volet de navigation de gauche, puis désélectionnez l'option Service dans la section *Détails du plug-in* pour désactiver le plug-in.
+. Sélectionnez *Configuration* dans le volet de navigation de gauche, puis désélectionnez l'option Service dans la section *Détails du plug-in* pour désactiver le plug-in.
 . Confirmez votre choix.
 +
 ** Si vous n'avez utilisé que le plug-in SnapCenter pour VMware vSphere pour effectuer des sauvegardes cohérentes avec les machines virtuelles

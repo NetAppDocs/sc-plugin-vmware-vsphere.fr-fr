@@ -20,14 +20,14 @@ Vous pouvez ajouter rapidement une machine virtuelle ou un datastore unique à n
 Vous pouvez ajouter des datastores SAN et NAS, mais pas des datastores VSAN ou VVOL.
 
 .Étapes
-. Dans l'interface graphique du client vSphere, cliquez sur *Menu* dans la barre d'outils et accédez à la machine virtuelle ou au datastore que vous souhaitez ajouter.
+. Dans l'interface graphique du client vSphere, sélectionnez *Menu* dans la barre d'outils, puis accédez à la machine virtuelle ou au datastore que vous souhaitez ajouter.
 . Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur la machine virtuelle ou le datastore, sélectionnez *SnapCenter Plug-in pour VMware vSphere* > *Ajouter au groupe de ressources* dans la liste déroulante secondaire.
 +
 Le système vérifie d'abord que SnapCenter gère et est compatible avec le système de stockage sur lequel se trouve la machine virtuelle sélectionnée, puis affiche la page *Ajouter au groupe de ressources*. Si le message s'affiche `SnapCenter Compatibility Error` S'affiche, la VM sélectionnée n'est pas compatible avec SnapCenter et vous devez d'abord ajouter la VM de stockage appropriée à SnapCenter.
 
 . Dans la page *Ajouter au groupe de ressources*, sélectionnez un groupe de ressources, puis cliquez sur *OK*.
 +
-Lorsque vous cliquez sur *OK*, le système vérifie d'abord que SnapCenter gère et est compatible avec le stockage sur lequel les machines virtuelles ou datastores sélectionnés sont situés.
+Lorsque vous sélectionnez *OK*, le système vérifie d'abord que SnapCenter gère et est compatible avec le stockage sur lequel se trouvent les machines virtuelles ou datastores sélectionnés.
 
 +
 Si le message `Selected <resource-name> is not SnapCenter compatible` s'affiche, la machine virtuelle ou le datastore sélectionné n'est pas compatible avec SnapCenter. Pour plus d'informations, reportez-vous à la section link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["Gérer les échecs de contrôle de compatibilité"] .

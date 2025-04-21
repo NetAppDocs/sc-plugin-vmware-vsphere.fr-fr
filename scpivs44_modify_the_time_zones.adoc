@@ -32,12 +32,12 @@ Vous devez connaître l'adresse IP et les identifiants de connexion de l'interfa
 +
 Utiliser le format `\https://<appliance-IP-address>:8080`
 
-. Cliquez sur l'icône Paramètres dans la barre d'outils supérieure.
+. Sélectionnez l'icône Paramètres dans la barre d'outils supérieure.
 +
 image:scpivs44_image28.jpg["Plug-in SnapCenter pour VMware vSphere"]
 
-. Sur la page *Paramètres*, dans la section *Date et heure*, cliquez sur *Modifier*.
-. Sélectionnez le nouveau fuseau horaire et cliquez sur *Enregistrer*.
+. Sur la page *Paramètres*, dans la section *Date et heure*, sélectionnez *Modifier*.
+. Sélectionnez le nouveau fuseau horaire et sélectionnez *Enregistrer*.
 +
 Le nouveau fuseau horaire sera utilisé pour toutes les sauvegardes effectuées par le plug-in SnapCenter pour VMware vSphere.
 

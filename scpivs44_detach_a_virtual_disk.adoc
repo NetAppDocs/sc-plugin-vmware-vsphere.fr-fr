@@ -17,10 +17,10 @@ summary: Une fois que vous avez attaché un disque virtuel pour restaurer des fi
 Une fois que vous avez attaché un disque virtuel pour restaurer des fichiers individuels, vous pouvez détacher le disque virtuel de la machine virtuelle parent.
 
 .Étapes
-. Dans l'interface utilisateur graphique du client VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
+. Dans l'interface graphique du client VMware vSphere, sélectionnez *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
 . Dans le volet gauche du navigateur, sélectionnez un serveur virtuel.
 . Dans le volet de navigation de gauche, cliquez avec le bouton droit de la souris sur la machine virtuelle, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la liste déroulante, puis sélectionnez *détacher le disque virtuel* dans la liste déroulante secondaire.
-. Sur l'écran *détacher disque virtuel*, sélectionnez un ou plusieurs disques à détacher, puis cochez la case *détacher le(s) disque(s) sélectionné(s)* et cliquez sur *DÉTACHER*.
+. Sur l'écran *détacher le disque virtuel*, sélectionnez un ou plusieurs disques à détacher, puis cochez la case *détacher le ou les disques sélectionnés* et sélectionnez *détacher*.
 +
 
 IMPORTANT: Assurez-vous de sélectionner le bon disque virtuel. Le fait de sélectionner un disque incorrect peut affecter le travail de production.
@@ -31,7 +31,7 @@ Actualiser l'écran pour afficher les informations mises à jour.
 
 . Vérifiez que le disque virtuel est détaché en effectuant les opérations suivantes :
 +
-.. Cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
+.. Sélectionnez *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
 .. Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur un serveur virtuel, puis sélectionnez *Modifier les paramètres* dans la liste déroulante.
 .. Dans la fenêtre *Modifier les paramètres*, développez la liste de chaque disque dur pour afficher la liste des fichiers de disque.
 +

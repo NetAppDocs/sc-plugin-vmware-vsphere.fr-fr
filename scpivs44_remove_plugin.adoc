@@ -26,7 +26,7 @@ Si vous n'avez plus besoin d'utiliser les fonctionnalités de protection des don
 +
 L'adresse IP du plug-in SnapCenter pour VMware vSphere s'affiche lorsque vous déployez le plug-in.
 
-. Cliquez sur *Configuration* dans le volet de navigation de gauche, puis désélectionnez l'option Service dans la section *Détails du plug-in* pour désactiver le plug-in.
+. Sélectionnez *Configuration* dans le volet de navigation de gauche, puis désélectionnez l'option Service dans la section *Détails du plug-in* pour désactiver le plug-in.
 . Connectez-vous à VMware vSphere.
 . Dans l'écran de navigation de gauche, cliquez avec le bouton droit de la souris sur l'instance du plug-in SnapCenter pour VMware vSphere (le nom du `.tar` fichier utilisé lors du déploiement de l'appliance virtuelle) et sélectionnez *Supprimer du disque*.
 . Si vous avez utilisé le plug-in SnapCenter pour VMware vSphere pour prendre en charge d'autres plug-ins SnapCenter pour des sauvegardes cohérentes avec les applications, connectez-vous à SnapCenter et supprimez l'hôte vSphere.

@@ -73,9 +73,9 @@ Cette option utilise les paramètres de messagerie configurés lors de la config
 
 
 
-. Passez en revue le résumé, puis cliquez sur *Terminer*.
+. Passez en revue le résumé, puis sélectionnez *Terminer*.
 +
-Avant de cliquer sur *Finish*, vous pouvez revenir à n'importe quelle page de l'assistant et modifier les informations.
+Avant de sélectionner *Terminer*, vous pouvez revenir à n'importe quelle page de l'assistant et modifier les informations.
 
 . Attendre la fin de l'opération d'attache.
 +
@@ -90,9 +90,9 @@ Dans le tableau moniteur de session invité, vous pouvez afficher des informatio
 +
 Une lettre de lecteur est attribuée à toutes les partitions, y compris les partitions réservées par le système. Si un VMDK possède plusieurs partitions, vous pouvez sélectionner un lecteur spécifique en sélectionnant le lecteur dans la liste déroulante du champ de lecteur en haut de la page Parcourir les fichiers invités.
 
-. Cliquez sur l'icône *Parcourir les fichiers* pour afficher une liste de fichiers et de dossiers sur le disque virtuel.
+. Sélectionnez l'icône *Parcourir les fichiers* pour afficher une liste de fichiers et de dossiers sur le disque virtuel.
 +
-Lorsque vous double-cliquez sur un dossier pour parcourir et sélectionner des fichiers individuels, il peut y avoir un temps de latence lors de l'extraction de la liste des fichiers car l'opération de récupération est effectuée au moment de l'exécution.
+Lorsque vous double-sélectionnez un dossier pour parcourir et sélectionner des fichiers individuels, il peut y avoir un temps de latence lors de l'extraction de la liste des fichiers car l'opération de récupération est effectuée au moment de l'exécution.
 
 +
 Pour faciliter la navigation, vous pouvez utiliser des filtres dans votre chaîne de recherche. Les filtres sont des expressions Perl sensibles à la casse sans espaces. La chaîne de recherche par défaut est `.`*. Le tableau suivant présente quelques exemples d'expressions de recherche Perl.
@@ -140,7 +140,7 @@ Pour faciliter la navigation, vous pouvez utiliser des filtres dans votre chaîn
 +
 La page Parcourir les fichiers invités affiche tous les fichiers et dossiers cachés en plus de tous les autres fichiers et dossiers.
 
-. Sélectionnez un ou plusieurs fichiers ou dossiers à restaurer, puis cliquez sur *Sélectionner l'emplacement de restauration*.
+. Sélectionnez un ou plusieurs fichiers ou dossiers que vous souhaitez restaurer, puis sélectionnez *Sélectionner l'emplacement de restauration*.
 +
 Les fichiers et les dossiers à restaurer sont répertoriés dans la table des fichiers sélectionnés.
 
@@ -163,7 +163,7 @@ NOTE: Si le dossier existe déjà, le contenu du dossier est fusionné avec le d
 
 | Déconnecter la session invité après la restauration réussie | Sélectionnez cette option si vous souhaitez supprimer la session de restauration du fichier invité une fois l'opération de restauration terminée. 
 |===
-. Cliquez sur *Restaurer*.
+. Sélectionnez *Restaurer*.
 +
 Vous pouvez afficher la progression de l'opération de restauration dans le moniteur des tâches du tableau de bord, ou vous pouvez attendre la notification par e-mail. Le temps nécessaire à l'envoi de la notification par e-mail dépend de la durée de l'opération de restauration.
 

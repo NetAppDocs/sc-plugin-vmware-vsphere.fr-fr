@@ -17,21 +17,21 @@ summary: 'Vous pouvez rechercher et trouver une sauvegarde spécifique d"une mac
 Vous pouvez rechercher et trouver une sauvegarde spécifique d'une machine virtuelle ou d'un datastore à l'aide de l'assistant de restauration. Une fois que vous avez trouvé une sauvegarde, vous pouvez la restaurer.
 
 .Étapes
-. Dans l'interface utilisateur graphique du client VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis effectuez l'une des opérations suivantes :
+. Dans l'interface graphique du client VMware vSphere, sélectionnez *Menu* dans la barre d'outils, puis effectuez l'une des opérations suivantes :
 +
 |===
 | Pour afficher les sauvegardes pour… | Procédez comme suit… 
 
 
-| VM | Cliquez sur l'option de menu *hosts and clusters*, puis sélectionnez une VM, puis cliquez sur l'onglet *Configure*, puis sur *backups* dans la section *SnapCenter Plug-in for VMware vSphere*. 
+| VM | Sélectionnez l'option de menu *hosts and clusters*, puis sélectionnez une machine virtuelle, puis l'onglet *Configure*, puis sélectionnez *backups* dans la section *SnapCenter Plug-in for VMware vSphere*. 
 
 
-| Datastore | Cliquez sur l'option de menu *Storage*, sélectionnez un datastore, puis cliquez sur l'onglet *Configure*, puis sur *backups* dans la section *SnapCenter Plug-in pour VMware vSphere*. 
+| Datastore | Sélectionnez l'option de menu *stockage*, puis sélectionnez un datastore, puis l'onglet *configurer*, puis sélectionnez *sauvegardes* dans la section *plug-in SnapCenter pour VMware vSphere*. 
 |===
 . Dans le volet gauche du navigateur, développez le centre de données qui contient la machine virtuelle ou le datastore.
 . Facultatif : cliquez avec le bouton droit de la souris sur une machine virtuelle ou un datastore, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la liste déroulante, puis sélectionnez *Restore* dans la liste déroulante secondaire.
-. Dans l'assistant *Restore*, entrez un nom de recherche et cliquez sur *Search*.
+. Dans l'assistant *Restore*, entrez un nom de recherche et sélectionnez *Search*.
 +
-Vous pouvez filtrer la liste de sauvegarde en sélectionnant l'icône de filtre et en sélectionnant une plage de date et d'heure, en sélectionnant si vous souhaitez que les sauvegardes contenant des snapshots VMware, si vous voulez monter des sauvegardes et l'emplacement. Cliquez sur *OK*.
+Vous pouvez filtrer la liste de sauvegarde en sélectionnant l'icône de filtre et en sélectionnant une plage de date et d'heure, en sélectionnant si vous souhaitez que les sauvegardes contenant des snapshots VMware, si vous voulez monter des sauvegardes et l'emplacement. Sélectionnez *OK*.
 
 

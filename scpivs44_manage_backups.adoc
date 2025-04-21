@@ -26,12 +26,12 @@ Vous pouvez renommer le plug-in SnapCenter pour les sauvegardes VMware vSphere s
 NOTE: Le système de stockage ASA r2 ne prend pas en charge le renommage des sauvegardes.
 
 .Étapes
-. Cliquez sur *Menu* et sélectionnez l'option de menu *hôtes et clusters*, puis sélectionnez une machine virtuelle, sélectionnez l'onglet *configurer*, puis cliquez sur *sauvegardes* dans la section *SnapCenter Plug-in pour VMware vSphere*.
+. Sélectionnez *Menu* et l'option de menu *hôtes et clusters*, puis sélectionnez une machine virtuelle, puis l'onglet *configurer*, puis sélectionnez *sauvegardes* dans la section *SnapCenter Plug-in pour VMware vSphere*.
 +
 image:scv50_image1.png["Écran client vSphere"]
 
-. Dans l'onglet configurer, sélectionnez une sauvegarde et cliquez sur *Renommer*.
-. Dans la boîte de dialogue *Renommer la sauvegarde*, entrez le nouveau nom, puis cliquez sur *OK*.
+. Dans l'onglet configurer, sélectionnez une sauvegarde, puis sélectionnez *Renommer*.
+. Dans la boîte de dialogue *Renommer la sauvegarde*, entrez le nouveau nom et sélectionnez *OK*.
 +
 N'utilisez pas les caractères spéciaux suivants dans les noms VM, datastore, stratégie, sauvegarde ou groupe de ressources : & * $ # @ ! \ / : * ? " < > - | ; ' , . Un caractère de soulignement (_) est autorisé.
 
@@ -49,14 +49,14 @@ Vous ne pouvez pas supprimer les sauvegardes montées. Vous devez démonter une 
 .Description de la tâche
 Les copies Snapshot présentes sur le stockage secondaire sont gérées par vos paramètres de conservation ONTAP, et non par le plug-in SnapCenter pour VMware vSphere. Par conséquent, lorsque vous utilisez le plug-in SnapCenter pour VMware vSphere pour supprimer une sauvegarde, les snapshots sur le stockage primaire sont supprimés, mais les snapshots sur le stockage secondaire ne sont pas supprimés. Si un snapshot existe toujours sur un stockage secondaire, le plug-in SnapCenter pour VMware vSphere conserve les métadonnées associées à la sauvegarde pour prendre en charge les demandes de restauration. Lorsque le processus de conservation ONTAP supprime le snapshot secondaire, le plug-in SnapCenter pour VMware vSphere supprime les métadonnées en utilisant une tâche de purge, qui est exécutée à intervalles réguliers.
 
-. Cliquez sur *Menu* et sélectionnez l'option de menu *hôtes et clusters*, puis sélectionnez une machine virtuelle, sélectionnez l'onglet *configurer*, puis cliquez sur *sauvegardes* dans la section *SnapCenter Plug-in pour VMware vSphere*.
+. Sélectionnez *Menu* et l'option de menu *hôtes et clusters*, puis sélectionnez une machine virtuelle, puis l'onglet *configurer*, puis sélectionnez *sauvegardes* dans la section *SnapCenter Plug-in pour VMware vSphere*.
 +
 image:scv50_image1.png["Fenêtre client vSphere"]
 
-. Sélectionnez une ou plusieurs sauvegardes et cliquez sur *Supprimer*.
+. Sélectionnez une ou plusieurs sauvegardes et sélectionnez *Supprimer*.
 +
 Vous pouvez sélectionner jusqu'à 40 sauvegardes à supprimer.
 
-. Cliquez sur *OK* pour confirmer l'opération de suppression.
+. Sélectionnez *OK* pour confirmer l'opération de suppression.
 . Actualisez la liste des sauvegardes en cliquant sur l'icône d'actualisation dans la barre de menus vSphere de gauche.
 

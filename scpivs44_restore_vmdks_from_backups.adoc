@@ -39,11 +39,11 @@ La machine virtuelle à restaurer ne doit pas être dans un état vMotion ou Sto
 
 
 .Étapes
-. Dans l'interface utilisateur graphique du client VMware vSphere, cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
+. Dans l'interface graphique du client VMware vSphere, sélectionnez *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
 . Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la liste déroulante, puis sélectionnez *Restore* dans la liste déroulante secondaire.
 . Dans l'assistant *Restaurer*, sur la page Sélectionner une sauvegarde, sélectionnez la copie de sauvegarde à partir de laquelle vous souhaitez effectuer la restauration.
 +
-Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partielle, ou bien filtrer la liste des sauvegardes en cliquant sur l'icône de filtre et en sélectionnant une plage de date et d'heure, en indiquant si vous voulez des sauvegardes contenant des snapshots VMware, si vous voulez des sauvegardes montées et un emplacement principal ou secondaire. Cliquez sur *OK* pour revenir à l'assistant.
+Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde partielle, ou bien filtrer la liste des sauvegardes en cliquant sur l'icône de filtre et en sélectionnant une plage de date et d'heure, en indiquant si vous voulez des sauvegardes contenant des snapshots VMware, si vous voulez des sauvegardes montées et un emplacement principal ou secondaire. Sélectionnez *OK* pour revenir à l'assistant.
 
 . Sur la page *Sélectionner l'étendue*, sélectionnez la destination de restauration.
 +
@@ -51,13 +51,13 @@ Vous pouvez rechercher un nom de sauvegarde spécifique ou un nom de sauvegarde 
 | Pour restaurer... | Spécifiez la destination de restauration… 
 
 
-| Le datastore d'origine | Sélectionnez *disque particulier* dans la liste déroulante, puis cliquez sur *Suivant*. Dans la table de sélection du datastore, vous pouvez sélectionner ou désélectionner tout VMDK. 
+| Le datastore d'origine | Sélectionnez *disque particulier* dans la liste déroulante, puis sélectionnez *Suivant*. Dans la table de sélection du datastore, vous pouvez sélectionner ou désélectionner tout VMDK. 
 
 
-| Un autre datastore dans un autre emplacement | Cliquez sur le datastore de destination et sélectionnez un autre datastore dans la liste. 
+| Un autre datastore dans un autre emplacement | Sélectionnez le datastore de destination et sélectionnez un autre datastore dans la liste. 
 |===
 . Sur la page *Sélectionner un emplacement*, sélectionnez l'instantané à restaurer (principal ou secondaire).
-. Vérifiez la page Résumé, puis cliquez sur *Terminer*.
+. Consultez la page Résumé, puis sélectionnez *Terminer*.
 . Facultatif : surveillez la progression de l'opération en cliquant sur *tâches récentes* en bas de l'écran.
 . Actualiser l'écran pour afficher les informations mises à jour.
 

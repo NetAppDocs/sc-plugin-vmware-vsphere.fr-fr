@@ -21,7 +21,7 @@ Dans VMware vCenter 7.0.3 et versions ultérieures, le fichier OVA signé par le
 .Étapes
 . Connectez-vous avec le client vSphere au serveur vCenter.
 . Accédez à *Administration > certificats > gestion des certificats*.
-. En regard de *Trusted Root Store*, cliquez sur *Add*
+. En regard de *Trusted Root Store*, sélectionnez *Ajouter*
 . Parcourez et sélectionnez l'emplacement des certificats racine et intermédiaire Entrust. Le certificat est ajouté dans un panneau sous *certificats racines de confiance*. Une fois les certificats installés, une OVA peut être vérifiée et déployée.
 
 

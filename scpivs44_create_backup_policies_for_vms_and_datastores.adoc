@@ -54,7 +54,7 @@ NOTE: En configuration « Fan-Out », le groupe de cohérence n'est pas pris en 
 La plupart des champs de ces pages de l'assistant sont explicites. Les informations suivantes décrivent certains des champs pour lesquels vous pouvez avoir besoin de conseils.
 
 .Étapes
-. Dans le volet gauche du plug-in SCV, cliquez sur *politiques*.
+. Dans le volet gauche du plug-in SCV, sélectionnez *politiques*.
 . Sur la page *stratégies*, sélectionnez *Créer* pour lancer l'assistant.
 . Sur la page *Nouvelle stratégie de sauvegarde*, entrez le nom de la stratégie et une description.
 +
@@ -153,7 +153,7 @@ Entrez le chemin complet du prescripteur ou du postscript que vous souhaitez ex�
 NOTE: Les scripts d'écriture et post-scripts doivent être situés sur la machine virtuelle de l'appliance virtuelle. Pour entrer plusieurs scripts, appuyez sur *entrée* après chaque chemin de script pour répertorier chaque script sur une ligne distincte. Le caractère « ; » n'est pas autorisé.
 
 |===
-. Cliquez sur *Ajouter.*
+. Sélectionnez *Ajouter.*
 +
 Vous pouvez vérifier que la stratégie est créée et vérifier la configuration de la stratégie en sélectionnant la stratégie dans la page stratégies.
 

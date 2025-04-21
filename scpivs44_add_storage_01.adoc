@@ -29,7 +29,7 @@ Le plug-in SnapCenter pour VMware vSphere 4.5 et versions ultérieures prend en 
 Vous devez ajouter des clusters de stockage au plug-in SnapCenter pour VMware vSphere et aux outils ONTAP pour VMware vSphere pour vVol Dataprotection.
 
 +
-Pour plus d'informations, reportez-vous à la documentation relative aux outils ONTAP pour VMware vSphere. De plus, reportez-vous https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^] à pour obtenir les dernières informations sur les versions prises en charge par les outils ONTAP.
+Pour plus d'informations, reportez-vous à la documentation relative aux outils ONTAP pour VMware vSphere. De plus, reportez-vous https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^] à pour obtenir les dernières informations sur les versions prises en charge par les outils ONTAP.
 
 
 
@@ -103,7 +103,7 @@ Si vous ajoutez un serveur virtuel de stockage portant un nom qui ne peut pas ê
 
 | Envoyer la notification AutoSupport en cas d'échec de l'opération dans le système de stockage | Cochez la case si vous souhaitez que la notification AutoSupport pour les tâches de protection des données ayant échoué. Vous devez également activer AutoSupport sur la machine virtuelle de stockage et configurer les paramètres de messagerie AutoSupport. 
 |===
-. Cliquez sur *Ajouter*.
+. Sélectionnez *Ajouter*.
 +
 Si vous avez ajouté un cluster de stockage, toutes les machines virtuelles de stockage de ce cluster sont automatiquement ajoutées. Les machines virtuelles de stockage ajoutées automatiquement (parfois appelées machines virtuelles de stockage « implicites ») sont affichées sur la page de résumé du cluster avec un tiret (-) au lieu d'un nom d'utilisateur. Les noms d'utilisateur sont affichés uniquement pour les entités de stockage explicites.
 

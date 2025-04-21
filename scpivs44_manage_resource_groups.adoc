@@ -26,8 +26,8 @@ NOTE: Ces groupes de ressources sont appelés tâches de sauvegarde dans Virtual
 Vous pouvez désactiver temporairement les opérations planifiées de démarrer sur un groupe de ressources. Vous pouvez activer ces opérations plus tard que vous le souhaitez.
 
 .Étapes
-. Dans le volet gauche du plug-in SCV, cliquez sur *groupes de ressources*, sélectionnez un groupe de ressources et cliquez sur *suspendre* (ou cliquez sur *reprendre*).
-. Dans la zone de confirmation, cliquez sur *OK* pour confirmer.
+. Dans le volet de navigation de gauche du plug-in SCV, sélectionnez *groupes de ressources*, sélectionnez un groupe de ressources et sélectionnez *suspendre* (ou sélectionnez *reprendre*).
+. Dans la boîte de confirmation, sélectionnez *OK* pour confirmer.
 
 
 .Une fois que vous avez terminé
@@ -49,12 +49,12 @@ Si vous souhaitez modifier le nom d'un groupe de ressources, n'utilisez pas les 
 Un caractère de soulignement (_) est autorisé.
 
 .Étapes
-. Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, puis sélectionnez un groupe de ressources et cliquez sur *Modifier*.
-. Dans la liste de gauche de l'assistant *Modifier le groupe de ressources*, cliquez sur la catégorie que vous souhaitez modifier et entrez vos modifications.
+. Dans le volet de navigation de gauche du plug-in SCV, sélectionnez *groupes de ressources*, puis sélectionnez un groupe de ressources et sélectionnez *Modifier*.
+. Dans la liste de gauche de l'assistant *Modifier le groupe de ressources*, sélectionnez la catégorie que vous souhaitez modifier et entrez vos modifications.
 +
 Vous pouvez modifier plusieurs catégories. Vous pouvez également modifier des ressources protégées secondaires dans cette option.
 
-. Cliquez sur *Suivant* jusqu'à ce que la page Résumé s'affiche, puis cliquez sur *Terminer*.
+. Sélectionnez *Suivant* jusqu'à ce que la page Résumé s'affiche, puis sélectionnez *Terminer*.
 
 
 
@@ -70,6 +70,6 @@ Toutes les opérations de suppression de groupe de ressources sont effectuées e
 NOTE: Dans une relation SnapVault, le dernier snapshot ne peut pas être supprimé. Par conséquent, le groupe de ressources ne peut pas être supprimé. Avant de supprimer un groupe de ressources faisant partie d'une relation SnapVault, vous devez utiliser OnCommand System Manager ou l'interface de ligne de commandes de ONTAP pour supprimer la relation SnapVault. Vous devez ensuite supprimer le dernier snapshot.
 
 .Étapes
-. Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, puis sélectionnez un groupe de ressources et cliquez sur *Supprimer*.
-. Dans la zone de confirmation *Supprimer le groupe de ressources*, cliquez sur *OK* pour confirmer.
+. Dans le volet de navigation de gauche du plug-in SCV, sélectionnez *groupes de ressources*, puis sélectionnez un groupe de ressources et sélectionnez *Supprimer*.
+. Dans la zone de confirmation *Supprimer le groupe de ressources*, sélectionnez *OK* pour confirmer.
 

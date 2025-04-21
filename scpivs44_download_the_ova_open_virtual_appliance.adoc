@@ -29,7 +29,7 @@ Dans VMware vCenter 7.0.3 et versions ultérieures, le fichier OVA signé par le
 . Extraire le contenu du fichier tar. Le fichier tar contient le dossier OVA et certs. Le dossier certificats contient les certificats racine et intermédiaire Entrust.
 . Connectez-vous avec le client vSphere au serveur vCenter.
 . Accédez à *Administration > certificats > gestion des certificats*.
-. En regard de *certificats racine de confiance*, cliquez sur *Ajouter*
+. En regard de *certificats racine approuvés*, sélectionnez *Ajouter*
 +
 ** Accédez au dossier _certs_.
 ** Sélectionnez les certificats racine et intermédiaire Entrust.

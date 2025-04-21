@@ -16,6 +16,6 @@ summary:
 [role="lead"]
 Suivez les instructions ci-dessous pour créer des politiques de sauvegarde
 
-. Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *stratégies*, puis sélectionnez *Nouvelle politique*.
-. Sur la page *Nouvelle stratégie de sauvegarde*, entrez les informations de configuration de la stratégie, puis cliquez sur *Ajouter*.
+. Dans le volet de navigation de gauche du plug-in SCV, sélectionnez *politiques*, puis *Nouvelle politique*.
+. Sur la page *Nouvelle stratégie de sauvegarde*, entrez les informations de configuration de la stratégie, puis sélectionnez *Ajouter*.
 

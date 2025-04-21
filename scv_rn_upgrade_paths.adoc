@@ -106,4 +106,4 @@ DISTRIBUTEUR AUXILIAIRE 4.7
 DISTRIBUTEUR AUXILIAIRE 4.8
 
 |===
-Pour obtenir les informations les plus récentes sur les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^] (IMT).
+Pour obtenir les informations les plus récentes sur les versions prises en charge, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^] (IMT).

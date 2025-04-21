@@ -27,10 +27,10 @@ Pour vous connecter à l'interface utilisateur graphique de gestion SnapCenter P
 +
 Utiliser le format `\https://<OVA-IP-address>:8080`.
 
-. Cliquez sur l'icône Paramètres dans la barre d'outils supérieure.
+. Sélectionnez l'icône Paramètres dans la barre d'outils supérieure.
 +
 image:scpivs44_image10.png["Plug-in SnapCenter pour l'interface VMware vSphere"]
 
-. Sur la page *Paramètres*, dans la section *support*, cliquez sur *générer support*.
-. Une fois le pack créé, cliquez sur le lien fourni pour télécharger le pack sur NetApp.
+. Sur la page *Paramètres*, dans la section *support*, sélectionnez *Generate support* Bundle.
+. Une fois le pack de support généré, sélectionnez le lien fourni pour le télécharger vers NetApp.
 

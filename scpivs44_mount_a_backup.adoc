@@ -41,10 +41,10 @@ Une opération de montage peut échouer si le niveau de stockage de la FabricPoo
 .Étapes
 . Sur la page des raccourcis client VMware vSphere, sélectionnez *Storage*.
 . Cliquez avec le bouton droit de la souris sur un datastore et sélectionnez *SnapCenter Plug-in pour VMware vSphere* > *Mount Backup*.
-. Sur la page *Mount datastore*, sélectionnez une sauvegarde et un emplacement de sauvegarde (principal ou secondaire), puis cliquez sur *Finish*.
+. Sur la page *Mount datastore*, sélectionnez une sauvegarde et un emplacement de sauvegarde (principal ou secondaire), puis sélectionnez *Finish*.
 . Facultatif : pour vérifier que le datastore est monté, effectuez les opérations suivantes :
 +
-.. Cliquez sur *Menu* dans la barre d'outils, puis sélectionnez *stockage* dans la liste déroulante.
+.. Sélectionnez *Menu* dans la barre d'outils, puis sélectionnez *stockage* dans la liste déroulante.
 .. Le volet gauche du navigateur affiche le datastore que vous avez monté en haut de la liste.
 +
 Si vous effectuez une opération de rattachement ou de montage sur un volume de destination SnapVault protégé par des planifications SnapVault et exécutant ONTAP 8.3, il est possible qu'un instantané supplémentaire apparaisse dans l'écran de la boîte de dialogue joindre ou monter. Cela se produit parce que l'opération de rattachement ou de montage clone le volume de destination SnapVault et que ONTAP met à jour le volume en créant un nouveau snapshot.

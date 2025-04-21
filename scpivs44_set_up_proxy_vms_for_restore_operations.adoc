@@ -31,7 +31,7 @@ Si vous souhaitez utiliser une machine virtuelle proxy pour connecter un disque 
 | Ajouter de nouvelles informations d'identification  a| 
 .. Sélectionnez *Ajouter*.
 .. Dans la boîte de dialogue *Exécuter en tant qu'informations d'identification*, entrez les informations d'identification.
-.. Cliquez sur *Sélectionner VM*, puis sélectionnez une VM dans la boîte de dialogue *Proxy VM*. Cliquez sur *Enregistrer* pour revenir à la boîte de dialogue *Exécuter en tant qu'informations d'identification*.
+.. Sélectionnez *Sélectionner VM*, puis sélectionnez une VM dans la boîte de dialogue *Proxy VM*. Sélectionnez *Enregistrer* pour revenir à la boîte de dialogue *Exécuter en tant qu'informations d'identification*.
 .. Entrez les informations d'identification. Pour Nom d'utilisateur, vous devez entrer « Administrateur ».
 
 
@@ -42,8 +42,8 @@ Le plug-in SnapCenter pour VMware vSphere utilise les informations d'identificat
 +
 Les informations d'identification Exécuter en tant que doivent être l'administrateur de domaine par défaut fourni par Windows ou par l'administrateur local intégré. Les utilisateurs de Workgroup peuvent utiliser le compte d'administrateur local intégré.
 
-. Dans la section *Proxy Credentials*, cliquez sur *Add* pour ajouter une machine virtuelle à utiliser comme proxy.
-. Dans la boîte de dialogue *Proxy VM*, complétez les informations, puis cliquez sur *Enregistrer*.
+. Dans la section *informations d'identification proxy*, sélectionnez *Ajouter* pour ajouter une machine virtuelle à utiliser comme proxy.
+. Dans la boîte de dialogue *Proxy VM*, renseignez les informations, puis sélectionnez *Save*.
 
 
 

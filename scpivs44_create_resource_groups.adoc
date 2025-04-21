@@ -16,7 +16,7 @@ summary:
 [role="lead"]
 Suivez les étapes ci-dessous pour créer des groupes de ressources.
 
-. Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, puis sélectionnez *Créer*.
+. Dans le volet de navigation de gauche du plug-in SCV, sélectionnez *groupes de ressources*, puis *Créer*.
 . Entrez les informations requises sur chaque page de l'assistant Créer un groupe de ressources, sélectionnez les machines virtuelles et les datastores à inclure dans le groupe de ressources, puis sélectionnez les règles de sauvegarde à appliquer au groupe de ressources. Ajoutez les détails de la protection secondaire distante et spécifiez le planning de sauvegarde.
 
 

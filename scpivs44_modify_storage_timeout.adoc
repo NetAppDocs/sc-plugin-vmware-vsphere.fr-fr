@@ -19,8 +19,8 @@ Même si les sauvegardes ont réussi par le passé, elles peuvent commencer à �
 Vous pouvez rencontrer l'erreur `Unable to discover resources on SCV: Unable to get storage details for datastore <xxx>…`
 
 .Étapes
-. Dans le volet gauche du plug-in SCV, cliquez sur *systèmes de stockage*.
-. Sur la page Storage Systems (systèmes de stockage), sélectionnez le système de stockage à modifier et cliquez sur *Edit* (Modifier).
+. Dans le volet gauche du plug-in SCV, sélectionnez *systèmes de stockage*.
+. Sur la page systèmes de stockage, sélectionnez le système de stockage à modifier et sélectionnez *Modifier*.
 . Dans le champ délai, augmentez le nombre de secondes.
 +
 

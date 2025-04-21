@@ -32,7 +32,7 @@ NOTE:  Le déploiement OVA est pris en charge dans VMware vCenter 7u1 et version
 * Vous devez vous être déconnecté et avoir fermé toutes les sessions de navigateur du client vSphere, puis supprimé le cache du navigateur pour éviter tout problème de cache du navigateur lors du déploiement du plug-in SnapCenter pour VMware vSphere.
 * Vous devez avoir activé transport Layer Security (TLS) dans vCenter. Voir la documentation VMware.
 * Si vous prévoyez d'effectuer des sauvegardes dans des instances vCenter autres que celles dans lesquelles le plug-in SnapCenter pour VMware vSphere est déployé, le serveur ESXi, le plug-in SnapCenter pour VMware vSphere et chaque serveur vCenter doivent être synchronisés en même temps.
-* Pour protéger les machines virtuelles sur les datastores vvol, vous devez d'abord déployer les outils ONTAP pour VMware vSphere. Pour obtenir les informations les plus récentes sur les versions prises en charge des outils ONTAP, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^]. Les outils ONTAP provisionne et configurent le stockage sur ONTAP et sur le client web VMware.
+* Pour protéger les machines virtuelles sur les datastores vvol, vous devez d'abord déployer les outils ONTAP pour VMware vSphere. Pour obtenir les informations les plus récentes sur les versions prises en charge des outils ONTAP, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^]. Les outils ONTAP provisionne et configurent le stockage sur ONTAP et sur le client web VMware.
 
 
 Déployez le plug-in SnapCenter pour VMware vSphere dans le même fuseau horaire que vCenter. Les plannings de sauvegarde sont exécutés dans le fuseau horaire dans lequel le plug-in SnapCenter pour VMware vSphere est déployé. VCenter rapporte les données dans le fuseau horaire dans lequel se trouve vCenter. Par conséquent, si le plug-in SnapCenter pour VMware vSphere et vCenter se trouve dans des fuseaux horaires différents, les données du plug-in SnapCenter pour VMware vSphere Dashboard peuvent ne pas être identiques aux données des rapports.
@@ -47,16 +47,16 @@ NOTE: Pour les clients Web HTML d'adresse IPv6, vous devez utiliser Chrome ou Fi
 . Connectez-vous à la page *Single Sign-on de VMware vCenter*.
 . Dans le volet navigateur, cliquez avec le bouton droit de la souris sur un objet d'inventaire qui est un objet parent valide d'une machine virtuelle, tel qu'un centre de données, un cluster ou un hôte, et sélectionnez *déployer le modèle OVF* pour lancer l'assistant de déploiement VMware.
 . Extrayez le fichier .tar, qui contient le fichier .ova dans votre système local. Sur la page *Sélectionner un modèle OVF*, indiquez l'emplacement du `.ova` fichier dans le dossier .tar extrait.
-. Cliquez sur *Suivant*.
-. Sur la page *Sélectionner un nom et un dossier*, entrez un nom unique pour la machine virtuelle ou la vApp, sélectionnez un emplacement de déploiement, puis cliquez sur *Suivant*.
+. Sélectionnez *Suivant*.
+. Sur la page *Sélectionner un nom et un dossier*, entrez un nom unique pour la machine virtuelle ou la vApp, sélectionnez un emplacement de déploiement, puis sélectionnez *Suivant*.
 +
 Cette étape indique où importer le `.tar` Fichier dans vCenter. Le nom par défaut de la machine virtuelle est identique au nom de la machine virtuelle sélectionnée `.ova` fichier. Si vous modifiez le nom par défaut, choisissez un nom unique dans chaque dossier de VM de vCenter Server.
 
 +
 L'emplacement de déploiement par défaut de la machine virtuelle est l'objet d'inventaire au démarrage de l'assistant.
 
-. Sur la page *Sélectionner une ressource*, sélectionnez la ressource dans laquelle vous souhaitez exécuter le modèle VM déployé, puis cliquez sur *Suivant*.
-. Sur la page *Review details*, vérifiez `.tar` Détails du modèle et cliquez sur *Suivant*.
+. Sur la page *Sélectionner une ressource*, sélectionnez la ressource dans laquelle vous souhaitez exécuter le modèle de machine virtuelle déployée, puis sélectionnez *Suivant*.
+. Sur la page *vérifier les détails*, vérifiez les `.tar` détails du modèle et sélectionnez *Suivant*.
 . Sur la page *accords de licence*, cochez la case *J'accepte tous les accords de licence*.
 . Sur la page *Sélectionner le stockage*, définissez l'emplacement et le mode de stockage des fichiers pour le modèle OVF déployé.
 +
@@ -80,7 +80,7 @@ Sélectionnez un datastore suffisamment grand pour héberger la machine virtuell
 +
 La colonne Source Network répertorie tous les réseaux définis dans le modèle OVA.
 
-.. Dans la section *Paramètres d'allocation IP*, sélectionnez le protocole d'adresse IP requis, puis cliquez sur *Suivant*.
+.. Dans la section *Paramètres d'allocation IP*, sélectionnez le protocole d'adresse IP requis, puis sélectionnez *Suivant*.
 +
 Le plug-in SnapCenter pour VMware vSphere prend en charge une seule interface réseau. Si vous avez besoin de plusieurs cartes réseau, vous devez le configurer manuellement. Reportez-vous à la https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3["Article de la base de connaissances : comment créer des cartes réseau supplémentaires"^].
 
@@ -117,7 +117,7 @@ IMPORTANT: Vous pouvez ignorer ces étapes et laisser les entrées vides dans la
 .. Dans *Configuration Date et heure*, sélectionnez le fuseau horaire dans lequel se trouve le vCenter.
 
 
-. Sur la page *prêt à compléter*, consultez la page et cliquez sur *Terminer*.
+. Sur la page *prêt à terminer*, passez en revue la page et sélectionnez *Terminer*.
 +
 Tous les hôtes doivent être configurés avec des adresses IP (les noms d'hôte FQDN ne sont pas pris en charge). L'opération de déploiement ne permet pas de valider vos informations avant le déploiement.
 
@@ -127,8 +127,8 @@ Vous pouvez afficher la progression du déploiement à partir de la fenêtre tâ
 +
 Une fois le déploiement du plug-in SnapCenter pour VMware vSphere réussi, il est déployé en tant que VM Linux, enregistré auprès de vCenter et un client VMware vSphere est installé.
 
-. Accédez à la machine virtuelle sur laquelle le plug-in SnapCenter pour VMware vSphere a été déployé, puis cliquez sur l'onglet *Résumé*, puis cliquez sur la case *mise sous tension* pour démarrer l'appliance virtuelle.
-. Pendant que le plug-in SnapCenter pour VMware vSphere est sous tension, cliquez avec le bouton droit de la souris sur le plug-in SnapCenter déployé pour VMware vSphere, sélectionnez *OS invité*, puis cliquez sur *installer les outils VMware*.
+. Accédez à la machine virtuelle sur laquelle le plug-in SnapCenter pour VMware vSphere a été déployé, puis sélectionnez l'onglet *Résumé*, puis cochez la case *mise sous tension* pour démarrer l'appliance virtuelle.
+. Pendant que le plug-in SnapCenter pour VMware vSphere est sous tension, cliquez avec le bouton droit de la souris sur le plug-in SnapCenter déployé pour VMware vSphere, sélectionnez *OS invité*, puis sélectionnez *installer les outils VMware*.
 +
 Les outils VMware sont installés sur la machine virtuelle sur laquelle le plug-in SnapCenter pour VMware vSphere est déployé. Pour plus d'informations sur l'installation des outils VMware, reportez-vous à la documentation VMware.
 

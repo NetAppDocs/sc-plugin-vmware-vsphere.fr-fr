@@ -29,18 +29,18 @@ Vous devez connaître l'adresse IP et les identifiants de connexion de l'interfa
 +
 Utiliser le format `\https://<appliance-IP-address>:8080`
 
-. Cliquez sur l'icône Paramètres dans la barre d'outils supérieure.
+. Sélectionnez l'icône Paramètres dans la barre d'outils supérieure.
 +
 image:scpivs44_image31.png["Plug-in SnapCenter pour l'interface graphique de gestion VMware vSphere"]
 
-. Sur la page *Paramètres*, dans la section *Paramètres réseau*, cliquez sur *IPv4* ou *IPv6* adresse, puis cliquez sur *Modifier*.
+. Sur la page *Paramètres*, dans la section *Paramètres réseau*, sélectionnez *IPv4* ou *IPv6* adresse, puis sélectionnez *Modifier*.
 +
-Saisissez les nouvelles informations et cliquez sur *Enregistrer*.
+Entrez les nouvelles informations et sélectionnez *Enregistrer*.
 
 . Si vous supprimez un paramètre réseau, procédez comme suit :
 +
-** IPv4 : dans le champ *adresse IP*, entrez `0.0.0.0` Puis cliquez sur *Enregistrer*.
-** IPv6 : dans le champ *adresse IP* : saisissez `: :0` Puis cliquez sur *Enregistrer*.
+** IPv4 : dans le champ *adresse IP*, entrez `0.0.0.0`, puis sélectionnez *Enregistrer*.
+** IPv6 : dans le champ *adresse IP* : entrez `: :0`, puis sélectionnez *Enregistrer*.
 
 
 

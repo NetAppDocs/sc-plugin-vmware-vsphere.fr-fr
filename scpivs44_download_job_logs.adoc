@@ -29,7 +29,7 @@ NOTE: La valeur par défaut pour la conservation des journaux de travaux est de 
 Vous devrez peut-être faire défiler l'icône vers la droite.
 
 +
-Vous pouvez également double-cliquer sur un travail pour accéder à la fenêtre Détails du travail, puis cliquer sur *Télécharger les journaux du travail*.
+Vous pouvez également double-cliquer sur un travail pour accéder à la fenêtre Détails du travail, puis sélectionner *Télécharger les journaux du travail*.
 
 
 

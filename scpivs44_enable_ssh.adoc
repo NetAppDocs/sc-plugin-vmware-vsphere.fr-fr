@@ -18,7 +18,7 @@ Lorsque le plug-in SnapCenter pour VMware vSphere est déployé, SSH est désact
 
 .Étapes
 . Depuis le client VMware vSphere, sélectionnez la machine virtuelle sur laquelle se trouve le plug-in SnapCenter pour VMware vSphere.
-. Dans l'onglet *Résumé* de l'appliance virtuelle, cliquez sur *lancer la console distante* pour ouvrir une fenêtre de console de maintenance, puis connectez-vous.
+. Dans l'onglet *Résumé* de l'appliance virtuelle, sélectionnez *lancer la console distante* pour ouvrir une fenêtre de console de maintenance, puis ouvrez une session.
 +
 Pour plus d'informations sur l'accès à la console de maintenance et la connexion à celle-ci, reportez-vous à la section link:scpivs44_access_the_maintenance_console.html["Accéder à la Console de maintenance"^].
 

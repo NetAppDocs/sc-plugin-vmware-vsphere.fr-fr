@@ -26,12 +26,12 @@ Vous pouvez détacher des règles d'un groupe de ressources SnapCenter Plug-in f
 Les instructions pour détacher des règles des groupes de ressources du plug-in SnapCenter pour VMware vSphere diffèrent des instructions pour les groupes de ressources SnapCenter. Pour un groupe de ressources client VMware vSphere, il est possible de détacher toutes les stratégies, ce qui laisse le groupe de ressources sans stratégie. Toutefois, pour effectuer toute opération de protection des données sur ce groupe de ressources, vous devez associer au moins une règle.
 
 .Étapes
-. Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *groupes de ressources*, puis sélectionnez un groupe de ressources et cliquez sur *Modifier*.
+. Dans le volet de navigation de gauche du plug-in SCV, sélectionnez *groupes de ressources*, puis sélectionnez un groupe de ressources et sélectionnez *Modifier*.
 . Sur la page *Policies* de l'assistant *Modifier le groupe de ressources*, décochez la case en regard des stratégies que vous souhaitez détacher.
 +
 Vous pouvez également ajouter une stratégie au groupe de ressources en cochant la stratégie.
 
-. Apportez toute modification supplémentaire au groupe de ressources dans le reste de l'assistant, puis cliquez sur *Terminer*.
+. Apportez toute modification supplémentaire au groupe de ressources dans le reste de l'assistant, puis sélectionnez *Terminer*.
 
 
 
@@ -59,9 +59,9 @@ Les sauvegardes qui dépassent le nouveau paramètre sont supprimées lors de la
 NOTE: Pour modifier la planification d'une stratégie de plug-in SnapCenter pour VMware vSphere, vous devez la modifier dans le groupe de ressources du plug-in.
 
 .Étapes
-. Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *stratégies*, sélectionnez une stratégie et cliquez sur *Modifier*.
+. Dans le volet de navigation de gauche du plug-in SCV, sélectionnez *Policies*, puis une stratégie et sélectionnez *Edit*.
 . Modifier les champs de la stratégie.
-. Lorsque vous avez terminé, cliquez sur *mettre à jour*.
+. Lorsque vous avez terminé, sélectionnez *mettre à jour*.
 
 
 Les modifications prennent effet lorsque la prochaine sauvegarde planifiée est exécutée.
@@ -76,6 +76,6 @@ Si vous n'avez plus besoin d'une règle de sauvegarde configurée pour le plug-i
 Vous devez avoir détaché la stratégie de tous les groupes de ressources de l'appliance virtuelle pour SnapCenter avant de pouvoir la supprimer.
 
 .Étapes
-. Dans le volet de navigation de gauche du plug-in SCV, cliquez sur *stratégies*, sélectionnez une stratégie et cliquez sur *Supprimer*.
-. Dans la boîte de dialogue de confirmation, cliquez sur *OK*.
+. Dans le volet de navigation de gauche du plug-in SCV, sélectionnez *Policies*, puis une stratégie et sélectionnez *Remove*.
+. Dans la boîte de dialogue de confirmation, sélectionnez *OK*.
 
