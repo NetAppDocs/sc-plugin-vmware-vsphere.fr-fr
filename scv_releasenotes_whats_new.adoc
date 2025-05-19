@@ -11,7 +11,7 @@ summary: Découvrez les nouvelles fonctionnalités disponibles dans le plug-in S
 [role="lead"]
 *Prise en charge des machines virtuelles et du datastore VMFS sur les systèmes ASA r2*
 
-Le plug-in SnapCenter pour VMware vSphere 6.1 prend désormais en charge le provisionnement de machines virtuelles et de datastores VMFS sur les systèmes ASA r2. Les systèmes ASA r2 apportent une solution matérielle et logicielle unifiée qui simplifie l'expérience et répond parfaitement aux besoins des clients SAN. Le plug-in SnapCenter pour VMware vSphere 6.1 prend en charge les fonctionnalités pour les machines virtuelles, les datastores et le format VMDK (Virtual machine Disk format) sur les systèmes ASA r2 :
+Le plug-in SnapCenter pour VMware vSphere 6.1 prend en charge le provisionnement de machines virtuelles et de datastores VMFS sur les systèmes ASA r2. Les systèmes ASA r2 apportent une solution matérielle et logicielle unifiée qui simplifie l'expérience et répond parfaitement aux besoins des clients SAN. Le plug-in SnapCenter pour VMware vSphere 6.1 prend en charge les fonctionnalités pour les machines virtuelles, les datastores et le format VMDK (Virtual machine Disk format) sur les systèmes ASA r2 :
 
 * Provisionnement de groupes de cohérence pour la protection principale
 * Sauvegarde basée sur les groupes de cohérence

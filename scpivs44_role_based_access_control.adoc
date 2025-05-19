@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_role_based_access_control.html 
 keywords:  
-summary: 'Le plug-in SnapCenter pour VMware vSphere fournit un niveau supplémentaire de contrôle d"accès basé sur les rôles (RBAC) pour la gestion des ressources virtualisées. Le plug-in prend en charge le RBAC de vCenter Server et le RBAC d"Data ONTAP.' 
+summary: 'Le plug-in SnapCenter pour VMware vSphere fournit un niveau supplémentaire de contrôle d"accès basé sur les rôles (RBAC) pour la gestion des ressources virtualisées. Le plug-in prend en charge le RBAC de vCenter Server et le RBAC d"ONTAP.' 
 ---
 = Contrôle d'accès basé sur des rôles (RBAC)
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Le plug-in SnapCenter pour VMware vSphere fournit un niveau supplémen
 
 
 [role="lead"]
-Le plug-in SnapCenter pour VMware vSphere fournit un niveau supplémentaire de contrôle d'accès basé sur les rôles (RBAC) pour la gestion des ressources virtualisées. Le plug-in prend en charge le RBAC de vCenter Server et le RBAC d'Data ONTAP.
+Le plug-in SnapCenter pour VMware vSphere fournit un niveau supplémentaire de contrôle d'accès basé sur les rôles (RBAC) pour la gestion des ressources virtualisées. Le plug-in prend en charge le RBAC de vCenter Server et le RBAC d'ONTAP.
 
 Le contrôle d'accès basé sur des rôles (RBAC) SnapCenter et ONTAP s'applique uniquement aux tâches du serveur SnapCenter cohérentes au niveau des applications (application sur VMDK). Si vous utilisez le plug-in SnapCenter pour VMware vSphere pour prendre en charge les tâches SnapCenter cohérentes avec les applications, vous devez attribuer le rôle SnapCenterAdmin ; vous ne pouvez pas modifier les autorisations du rôle SnapCenterAdmin.
 

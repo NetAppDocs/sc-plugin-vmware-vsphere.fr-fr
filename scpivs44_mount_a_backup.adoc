@@ -47,9 +47,6 @@ Une opération de montage peut échouer si le niveau de stockage de la FabricPoo
 .. Sélectionnez *Menu* dans la barre d'outils, puis sélectionnez *stockage* dans la liste déroulante.
 .. Le volet gauche du navigateur affiche le datastore que vous avez monté en haut de la liste.
 +
-Si vous effectuez une opération de rattachement ou de montage sur un volume de destination SnapVault protégé par des planifications SnapVault et exécutant ONTAP 8.3, il est possible qu'un instantané supplémentaire apparaisse dans l'écran de la boîte de dialogue joindre ou monter. Cela se produit parce que l'opération de rattachement ou de montage clone le volume de destination SnapVault et que ONTAP met à jour le volume en créant un nouveau snapshot.
-
-+
 Pour empêcher la création de nouveaux snapshots lorsque vous clonez le volume, désactivez la planification ONTAP du volume SnapVault. Les instantanés existants précédemment ne sont pas supprimés.
 
 

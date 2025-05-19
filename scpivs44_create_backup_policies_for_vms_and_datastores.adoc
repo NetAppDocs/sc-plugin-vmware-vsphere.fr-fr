@@ -41,7 +41,7 @@ NOTE: La synchronisation active SnapMirror n'est prise en charge que pour les da
 Pour protéger un datastore VMFS sur un déploiement à synchronisation active SnapMirror, en tant qu'administrateur SnapCenter, vous devez :
 
 +
-** Configurez les clusters et le médiateur comme décrit dans le rapport technique : https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["Tr-4878 : synchronisation active SnapMirror (anciennement SMBC)"].
+** Configurez les clusters et le médiateur comme décrit dans le rapport technique : https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html["Configurer le médiateur ONTAP et les clusters pour la synchronisation active SnapMirror"].
 ** Ajoutez le volume associé au datastore VMFS au groupe de cohérence et créez une relation de protection des données en utilisant la règle de protection _AutomatedFailOver_ ou _AutomateFailOverDuplex_ entre deux systèmes de stockage ONTAP. _AutomatedFailOverDuplex_ la stratégie est prise en charge à partir de la version 9.15.1 de ONTAP.
 
 
@@ -87,7 +87,9 @@ IMPORTANT: Si vous prévoyez d'activer la réplication SnapVault, définissez le
 
 +
 
-NOTE: La valeur maximale de rétention est de 1018 sauvegardes pour les ressources sous ONTAP 9.4 ou version ultérieure et de 254 sauvegardes pour les ressources sous ONTAP 9.3 ou version antérieure. Les sauvegardes échouent si la conservation est définie sur une valeur supérieure à celle prise en charge par la version ONTAP sous-jacente. Cela s'applique également aux datastores Spanning. Si un datastore Spanning comprend des ressources à la fois sur ONTAP 9.3 et versions antérieures, et sur ONTAP 9.4 et versions ultérieures, veillez à définir la valeur de rétention ci-dessous 254.
+NOTE: La valeur de rétention maximale est de 1018 sauvegardes. Les sauvegardes échouent si la conservation est définie sur une valeur supérieure à celle prise en charge par la version ONTAP sous-jacente. Cela s'applique également aux datastores Spanning.
+
+
 
 . Dans les champs *Replication*, spécifiez le type de réplication vers le stockage secondaire, comme indiqué dans le tableau suivant :
 +

@@ -280,17 +280,7 @@ NOTE: Si l'opération de mise au repos échoue pour l'une des machines virtuelle
 
 == Gérer les échecs de contrôle de compatibilité
 
-SnapCenter vérifie la compatibilité lors de la création d'un groupe de ressources.
-
-Les raisons de l'incompatibilité peuvent être :
-
-* Les VMDK se trouvent sur du stockage non pris en charge ; par exemple, sur un système ONTAP s'exécutant en 7-mode ou sur un périphérique non ONTAP.
-* Un datastore se trouve sur un système de stockage NetApp exécutant clustered Data ONTAP 8.2.1 ou version antérieure.
-+
-SnapCenter version 4.x prend en charge ONTAP 8.3.1 et versions ultérieures.
-
-+
-Le plug-in SnapCenter pour VMware vSphere ne vérifie pas la compatibilité pour toutes les versions de ONTAP, uniquement pour ONTAP versions 8.2.1 et antérieures. Par conséquent, consultez toujours le https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp (IMT)"^] pour obtenir les informations les plus récentes sur le support SnapCenter.
+SnapCenter vérifie la compatibilité lors de la création d'un groupe de ressources. Consultez toujours le https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp (IMT)"^] pour obtenir les informations les plus récentes sur le support SnapCenter. Les raisons de l'incompatibilité peuvent être :
 
 * Un périphérique PCI partagé est connecté à un serveur virtuel.
 * L'adresse IP préférée n'est pas configurée dans SnapCenter.

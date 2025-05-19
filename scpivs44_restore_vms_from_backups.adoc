@@ -100,7 +100,7 @@ Même en cas de défaillance d'un snapshot de cohérence VMware pour une machine
 . Dans l'interface graphique du client VMware vSphere, sélectionnez *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
 +
 
-NOTE: Si vous restaurez une machine virtuelle supprimée, les informations d'identification de la machine virtuelle de stockage qui ont été ajoutées au plug-in SnapCenter pour VMware vSphere doivent être ou être `vsadmin` un compte d'utilisateur disposant de tous les mêmes privilèges que `vsadmin`. L'hôte doit se trouver sur un système de stockage qui exécute ONTAP 8.2.2 ou une version ultérieure.
+NOTE: Si vous restaurez une machine virtuelle supprimée, les informations d'identification de la machine virtuelle de stockage qui ont été ajoutées au plug-in SnapCenter pour VMware vSphere doivent être ou être `vsadmin` un compte d'utilisateur disposant de tous les mêmes privilèges que `vsadmin`.
 
 . Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur une machine virtuelle, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la liste déroulante, puis sélectionnez *Restore* dans la liste déroulante secondaire pour démarrer l'assistant.
 . Dans l'assistant *Restore*, sur la page *Select Backup*, sélectionnez l'instantané de sauvegarde que vous souhaitez restaurer.
