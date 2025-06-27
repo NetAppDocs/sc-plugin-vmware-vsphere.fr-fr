@@ -64,7 +64,7 @@ En mode lié, chaque vCenter dispose d'une appliance virtuelle distincte. Par co
 
 ** Caractères non pris en charge
 +
-N'utilisez pas les caractères spéciaux suivants dans VM, datastore, cluster, stratégie, sauvegarde, ou noms des groupes de ressources : % et * $ # @ ! \ / : * ? " < > - | ; ' , .
+N'utilisez pas les caractères spéciaux suivants dans VM, datastore, cluster, stratégie, sauvegarde, ou noms des groupes de ressources : % et * $ # @ ! \ / : * ? " < > - | ; ' , et l'espace.
 
 +
 Un caractère de soulignement (_) est autorisé.

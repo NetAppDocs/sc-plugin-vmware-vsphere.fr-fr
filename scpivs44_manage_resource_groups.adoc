@@ -44,9 +44,7 @@ Vous pouvez supprimer ou ajouter des ressources dans des groupes de ressources d
 .Description de la tâche
 Si vous souhaitez modifier le nom d'un groupe de ressources, n'utilisez pas les caractères spéciaux suivants dans les noms de VM, datastore, stratégie, sauvegarde ou groupe de ressources :
 
-% Et * $ # @ ! \ / : * ? " < > - | ; ' , .
-
-Un caractère de soulignement (_) est autorisé.
+% Et * $ # @ ! \ / : * ? " < > - | ; ' , et l'espace. Un caractère de soulignement (_) est autorisé.
 
 .Étapes
 . Dans le volet de navigation de gauche du plug-in SCV, sélectionnez *groupes de ressources*, puis sélectionnez un groupe de ressources et sélectionnez *Modifier*.
