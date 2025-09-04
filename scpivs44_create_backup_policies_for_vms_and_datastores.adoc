@@ -27,7 +27,7 @@ Vous devez créer des politiques de sauvegarde avant d'utiliser le plug-in SnapC
 Pour corriger ce problème, configurez la stratégie de rétention SnapMirror pour le stockage secondaire afin d'éviter d'atteindre la limite maximale de snapshots.
 
 +
-Pour plus d'informations sur la façon dont les administrateurs attribuent des ressources aux utilisateurs, reportez-vous à la section https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["Informations SnapCenter sur l'utilisation du contrôle d'accès basé sur des rôles"^].
+Pour plus d'informations sur la manière dont les administrateurs attribuent des ressources aux utilisateurs, reportez-vous à https://docs.netapp.com/us-en/snapcenter/get-started/rbac-snapcenter.html["Informations SnapCenter sur l'utilisation du contrôle d'accès basé sur des rôles"^] .
 
 
 
