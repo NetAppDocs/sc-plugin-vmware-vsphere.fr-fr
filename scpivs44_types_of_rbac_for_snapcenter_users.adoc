@@ -35,7 +35,7 @@ L'administrateur vSphere configure le contrôle d'accès basé sur les rôles de
 * Définition des autorisations du serveur vCenter sur l'objet racine (également appelé dossier racine). Vous pouvez ensuite affiner la sécurité en limitant les entités enfants qui n'ont pas besoin de ces autorisations.
 * Attribution des rôles de distributeur sélectif aux utilisateurs Active Directory.
 +
-Tous les utilisateurs doivent au moins pouvoir afficher les objets vCenter. Sans ce privilège, les utilisateurs ne peuvent pas accéder à l'interface utilisateur graphique du client VMware vSphere.
+Au minimum, tous les utilisateurs doivent pouvoir afficher les objets vCenter.  Sans ce privilège, les utilisateurs ne peuvent pas accéder à l’interface utilisateur du client VMware vSphere.
 
 
 

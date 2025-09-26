@@ -17,7 +17,7 @@ summary: 'Vous pouvez rechercher et trouver une sauvegarde spécifique d"une mac
 Vous pouvez rechercher et trouver une sauvegarde spécifique d'une machine virtuelle ou d'un datastore à l'aide de l'assistant de restauration. Une fois que vous avez trouvé une sauvegarde, vous pouvez la restaurer.
 
 .Étapes
-. Dans l'interface graphique du client VMware vSphere, sélectionnez *Menu* dans la barre d'outils, puis effectuez l'une des opérations suivantes :
+. Dans l’interface utilisateur du client VMware vSphere, sélectionnez *Menu* dans la barre d’outils, puis effectuez l’une des opérations suivantes :
 +
 |===
 | Pour afficher les sauvegardes pour… | Procédez comme suit… 

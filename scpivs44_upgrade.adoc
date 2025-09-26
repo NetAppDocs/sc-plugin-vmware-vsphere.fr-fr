@@ -14,7 +14,7 @@ summary: 'Si vous utilisez le plug-in SnapCenter pour l"appliance virtuelle VMwa
 
 
 
-NOTE: La mise à niveau vers SCV 6.1 est prise en charge uniquement sur VMware vCenter Server 7, mise à jour 1 et versions ultérieures. Pour le serveur VMware vCenter antérieur à la version 7, mise à jour 1, vous devez continuer à utiliser SCV 4.7. La mise à niveau est perturbatrice sur des versions de serveur VMware vCenter non prises en charge.
+NOTE: La mise à niveau vers SCV 6.2 est prise en charge uniquement sur VMware vCenter Server 7 mise à jour 1 et les versions ultérieures. Pour VMware vCenter Server antérieur à la version 7 mise à jour 1, vous devez continuer à utiliser SCV 4.7.  La mise à niveau est perturbatrice sur les versions non prises en charge du serveur VMware vCenter.
 
 Si vous utilisez le plug-in SnapCenter pour l'appliance virtuelle VMware vSphere, vous pouvez effectuer la mise à niveau vers une version plus récente. Le processus de mise à niveau annule l'enregistrement du plug-in existant et déploie un plug-in compatible uniquement avec vSphere 7.0U1 et les versions ultérieures.
 
@@ -28,7 +28,10 @@ Si vous utilisez le plug-in SnapCenter pour l'appliance virtuelle VMware vSphere
 | Si vous utilisez le plug-in SnapCenter pour la version de VMware vSphere (SCV)... | Vous pouvez directement mettre à niveau le plug-in SnapCenter pour VMware vSphere vers... 
 
 
-| DISTRIBUTEUR AUXILIAIRE 6.0 | Mise à niveau vers le distributeur sélectif 6.1 
+| SCV 6,1 | Mise à niveau vers SCV 6.2 
+
+
+| DISTRIBUTEUR AUXILIAIRE 6.0 | Mise à niveau vers SCV 6.1 et SCV 6.2 
 
 
 | DISTRIBUTEUR AUXILIAIRE 5.0 | Mise à niveau vers les distributeurs sélectifs 6.0 et 6.1 
@@ -56,7 +59,7 @@ Pour obtenir les informations les plus récentes sur les versions prises en char
 .Étapes
 . Préparation à la mise à niveau en désactivant le plug-in SnapCenter pour VMware vSphere.
 +
-.. Connectez-vous au plug-in SnapCenter pour l'interface graphique de gestion VMware vSphere. L'adresse IP s'affiche lorsque vous déployez le plug-in SnapCenter pour VMware vSphere.
+.. Connectez-vous à l'interface utilisateur de gestion du SnapCenter Plug-in for VMware vSphere .  L'adresse IP s'affiche lorsque vous déployez le SnapCenter Plug-in for VMware vSphere.
 .. Sélectionnez *Configuration* dans le volet de navigation de gauche, puis sélectionnez l'option *Service* dans la section Détails du plug-in pour désactiver le plug-in.
 
 
@@ -70,7 +73,7 @@ Pour obtenir les informations les plus récentes sur les versions prises en char
 . Installez la mise à niveau.
 +
 .. Dans votre navigateur, accédez à VMware vSphere vCenter.
-.. Dans l'interface graphique vCenter, sélectionnez *vSphere client (HTML)*.
+.. Sur l’interface utilisateur de vCenter, sélectionnez *client vSphere (HTML)*.
 .. Connectez-vous à la page *Single Sign-on de VMware vCenter*.
 .. Dans le volet du navigateur, sélectionnez la machine virtuelle que vous souhaitez mettre à niveau, puis sélectionnez l'onglet *Résumé*.
 .. Dans le volet *Related Objects*, sélectionnez sur n'importe quel datastore de la liste, puis sélectionnez l'onglet *Summary*.

@@ -16,7 +16,7 @@ summary: 'L"ajout de stockage permet au plug-in SnapCenter pour VMware vSphere d
 [role="lead"]
 Avant de sauvegarder ou de restaurer des machines virtuelles, vous devez ajouter des clusters de stockage ou des machines virtuelles de stockage. L'ajout de stockage permet au plug-in SnapCenter pour VMware vSphere de reconnaître et de gérer les opérations de sauvegarde et de restauration dans vCenter.
 
-* Dans quelle interface utilisateur choisir
+* Quelle interface utilisateur utiliser
 +
 Utilisez le client VMware vSphere pour ajouter du stockage.
 
@@ -40,7 +40,7 @@ Le serveur ESXi, le plug-in SnapCenter pour VMware vSphere et chaque vCenter doi
 Le plug-in SnapCenter pour VMware vSphere effectue des opérations de sauvegarde et de restauration sur les machines virtuelles de stockage directement connectées, ainsi que sur les machines virtuelles de stockage d'un cluster de stockage.
 
 
-NOTE: Si vous utilisez le plug-in SnapCenter pour VMware vSphere pour prendre en charge les sauvegardes basées sur les applications sur des VMDK, vous devez utiliser l'interface graphique SnapCenter pour entrer les détails d'authentification du stockage et enregistrer les systèmes de stockage.
+NOTE: Si vous utilisez le SnapCenter Plug-in for VMware vSphere pour prendre en charge les sauvegardes basées sur des applications sur des VMDK, vous devez utiliser l'interface utilisateur SnapCenter pour saisir les détails d'authentification de stockage et enregistrer les systèmes de stockage.
 
 * Pour les vCenters en mode lié, vous devez ajouter séparément des systèmes de stockage à chaque vCenter.
 * Si vous ajoutez un SVM, les noms des VM de stockage doivent résoudre en tant que LIF de gestion.

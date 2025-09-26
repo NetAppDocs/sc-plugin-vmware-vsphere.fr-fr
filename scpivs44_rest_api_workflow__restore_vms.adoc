@@ -14,7 +14,7 @@ summary: 'Pour effectuer des opérations de restauration pour les sauvegardes de
 
 
 [role="lead"]
-Pour effectuer des opérations de restauration pour les sauvegardes de machines virtuelles à l'aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez suivre la séquence prescrite d'appels d'API REST.
+Pour restaurer les sauvegardes de machines virtuelles avec le SnapCenter Plug-in for VMware vSphere , suivez la séquence requise d'appels d'API REST comme indiqué ci-dessous.
 
 Pour chaque API REST, ajoutez `\https://<server>:<port>` Au niveau de l'API REST, pour former un terminal complet.
 

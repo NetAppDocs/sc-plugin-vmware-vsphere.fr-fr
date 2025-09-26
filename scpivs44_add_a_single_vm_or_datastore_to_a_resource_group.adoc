@@ -20,7 +20,7 @@ Vous pouvez ajouter rapidement une machine virtuelle ou un datastore unique à n
 Vous pouvez ajouter des datastores SAN et NAS, mais pas des datastores VSAN ou VVOL.
 
 .Étapes
-. Dans l'interface graphique du client vSphere, sélectionnez *Menu* dans la barre d'outils, puis accédez à la machine virtuelle ou au datastore que vous souhaitez ajouter.
+. Dans l’interface utilisateur du client vSphere, sélectionnez *Menu* dans la barre d’outils et accédez à la machine virtuelle ou à la banque de données que vous souhaitez ajouter.
 . Dans le volet gauche du navigateur, cliquez avec le bouton droit de la souris sur la machine virtuelle ou le datastore, sélectionnez *SnapCenter Plug-in pour VMware vSphere* > *Ajouter au groupe de ressources* dans la liste déroulante secondaire.
 +
 Le système vérifie d'abord que SnapCenter gère et est compatible avec le système de stockage sur lequel se trouve la machine virtuelle sélectionnée, puis affiche la page *Ajouter au groupe de ressources*. Si le message s'affiche `SnapCenter Compatibility Error` S'affiche, la VM sélectionnée n'est pas compatible avec SnapCenter et vous devez d'abord ajouter la VM de stockage appropriée à SnapCenter.

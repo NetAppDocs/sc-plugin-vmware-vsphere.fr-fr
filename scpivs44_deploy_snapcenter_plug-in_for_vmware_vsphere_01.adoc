@@ -71,11 +71,11 @@ NOTE: Tous les hôtes doivent être configurés avec des adresses IP (les noms d
 Le déploiement peut prendre quelques minutes. Un déploiement réussi est indiqué lorsque le plug-in SnapCenter pour VMware vSphere est sous tension, que les outils VMware sont installés et que l'écran vous invite à vous connecter au plug-in SnapCenter pour VMware vSphere.
 
 +
-L'écran affiche l'adresse IP à laquelle le plug-in SnapCenter pour VMware vSphere est déployé. Notez l'adresse IP. Vous devez vous connecter à l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere si vous souhaitez modifier la configuration du plug-in SnapCenter pour VMware vSphere.
+L'écran affiche l'adresse IP où le SnapCenter Plug-in for VMware vSphere est déployé.  Notez l'adresse IP.  Vous devez vous connecter à l'interface utilisateur de gestion du SnapCenter Plug-in for VMware vSphere si vous souhaitez apporter des modifications à la configuration du SnapCenter Plug-in for VMware vSphere .
 
-. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere à l'aide de l'adresse IP affichée sur l'écran de déploiement à l'aide des informations d'identification fournies dans l'assistant de déploiement, puis vérifiez sur le tableau de bord que le plug-in SnapCenter pour VMware vSphere est connecté à vCenter et activé.
+. Connectez-vous à l'interface utilisateur de gestion du SnapCenter Plug-in for VMware vSphere à l'aide de l'adresse IP affichée sur l'écran de déploiement à l'aide des informations d'identification que vous avez fournies dans l'assistant de déploiement, puis vérifiez sur le tableau de bord que le SnapCenter Plug-in for VMware vSphere est correctement connecté à vCenter et est activé.
 +
-Utiliser le format `\https://<appliance-IP-address>:8080` Pour accéder à l'interface graphique de gestion.
+Utiliser le format `\https://<appliance-IP-address>:8080` pour accéder à l'interface utilisateur de gestion.
 
 +
 Connectez-vous avec le nom d'utilisateur et le mot de passe administrateur définis au moment du déploiement, ainsi que le jeton MFA généré à l'aide de la console de maintenance.

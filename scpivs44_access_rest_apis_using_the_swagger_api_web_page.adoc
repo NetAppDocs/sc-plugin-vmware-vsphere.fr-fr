@@ -19,7 +19,7 @@ Les API REST sont exposées via la page Web de swagger. Vous pouvez accéder à 
 Le plug-in comporte différentes pages Web de swagger à partir des pages Web de SnapCenter Server swagger.
 
 .Avant de commencer
-Pour le plug-in SnapCenter pour les API REST VMware vSphere, vous devez connaître l'adresse IP ou le nom d'hôte du plug-in SnapCenter pour VMware vSphere.
+Pour accéder aux API REST du SnapCenter Plug-in for VMware vSphere , assurez-vous de disposer de l'adresse IP ou du nom d'hôte du SnapCenter Plug-in for VMware vSphere.
 
 
 NOTE: Le plug-in ne prend en charge que les API REST dans le but de l'intégration avec des applications tierces et ne prend pas en charge les applets de commande PowerShell ou une interface de ligne de commande.

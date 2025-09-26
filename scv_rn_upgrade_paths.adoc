@@ -22,9 +22,16 @@ La mise à niveau vers le plug-in SnapCenter pour VMware vSphere (SCV) 4.8 et ve
 
 
  a| 
+SCV 6,1
+ a| 
+SCV 6,2
+
+
+
+ a| 
 DISTRIBUTEUR AUXILIAIRE 6.0
  a| 
-SCV 6,1
+SCV 6.1 et SCV 6.2
 
 
 
@@ -40,26 +47,21 @@ DISTRIBUTEUR AUXILIAIRE 4.9
  a| 
 Distributeurs sélectifs 5.0 et 6.0
 
-
-
- a| 
-DISTRIBUTEUR AUXILIAIRE 4.8
- a| 
-Distributeurs sélectifs 4.9 et 5.0
-
-
-
- a| 
-DISTRIBUTEUR AUXILIAIRE 4.7
- a| 
-Distributeurs sélectifs 4.8 et 4.9
-
 |===
 Pour les bases de données virtualisées et les systèmes de fichiers intégrés à SnapCenter, il s'agit du chemin de mise à niveau :
 
 [cols="30%,30%,40%"]
 |===
 | Si vous utilisez | Si votre plug-in VMware est... | Vous pouvez effectuer une mise à niveau directe vers… 
+
+
+ a| 
+SnapCenter 6.2
+ a| 
+SCV 6,1
+ a| 
+SCV 6,2
+
 
 
  a| 

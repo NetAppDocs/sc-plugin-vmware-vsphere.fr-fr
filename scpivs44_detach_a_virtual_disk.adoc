@@ -17,7 +17,7 @@ summary: Une fois que vous avez attaché un disque virtuel pour restaurer des fi
 Une fois que vous avez attaché un disque virtuel pour restaurer des fichiers individuels, vous pouvez détacher le disque virtuel de la machine virtuelle parent.
 
 .Étapes
-. Dans l'interface graphique du client VMware vSphere, sélectionnez *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
+. Dans l’interface utilisateur du client VMware vSphere, sélectionnez *Menu* dans la barre d’outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
 . Dans le volet gauche du navigateur, sélectionnez un serveur virtuel.
 . Dans le volet de navigation de gauche, cliquez avec le bouton droit de la souris sur la machine virtuelle, puis sélectionnez *SnapCenter Plug-in pour VMware vSphere* dans la liste déroulante, puis sélectionnez *détacher le disque virtuel* dans la liste déroulante secondaire.
 . Sur l'écran *détacher le disque virtuel*, sélectionnez un ou plusieurs disques à détacher, puis cochez la case *détacher le ou les disques sélectionnés* et sélectionnez *détacher*.

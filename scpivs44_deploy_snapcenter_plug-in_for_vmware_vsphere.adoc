@@ -22,17 +22,17 @@ Cette section répertorie toutes les actions nécessaires que vous devez effectu
 
 NOTE:  Le déploiement OVA est pris en charge dans VMware vCenter 7u1 et versions ultérieures.
 
-* Vous devez avoir lu les conditions de déploiement.
-* Vous devez exécuter une version prise en charge de vCenter Server.
-* Vous devez avoir configuré et configuré votre environnement vCenter Server.
-* Vous devez avoir configuré un hôte ESXi pour le plug-in SnapCenter pour VMware vSphere VM.
-* Vous devez avoir téléchargé le fichier .tar du plug-in SnapCenter pour VMware vSphere.
-* Vous devez disposer des informations d'authentification de connexion pour votre instance de vCenter Server.
-* Vous devez disposer d'un certificat avec des fichiers de clé publique et privée valides. Pour plus d'informations, reportez-vous aux articles de https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_Certificate_Resolution_Guide["Gestion des certificats de stockage"] la section.
-* Vous devez vous être déconnecté et avoir fermé toutes les sessions de navigateur du client vSphere, puis supprimé le cache du navigateur pour éviter tout problème de cache du navigateur lors du déploiement du plug-in SnapCenter pour VMware vSphere.
-* Vous devez avoir activé transport Layer Security (TLS) dans vCenter. Voir la documentation VMware.
-* Si vous prévoyez d'effectuer des sauvegardes dans des instances vCenter autres que celles dans lesquelles le plug-in SnapCenter pour VMware vSphere est déployé, le serveur ESXi, le plug-in SnapCenter pour VMware vSphere et chaque serveur vCenter doivent être synchronisés en même temps.
-* Pour protéger les machines virtuelles sur les datastores vvol, vous devez d'abord déployer les outils ONTAP pour VMware vSphere. Pour obtenir les informations les plus récentes sur les versions prises en charge des outils ONTAP, reportez-vous à la section https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^]. Les outils ONTAP provisionne et configurent le stockage sur ONTAP et sur le client web VMware.
+* Assurez-vous d’avoir examiné les exigences de déploiement.
+* Vérifiez que vous exécutez une version prise en charge de vCenter Server.
+* Confirmez que votre environnement vCenter Server est configuré et installé.
+* Préparez un hôte ESXi pour le SnapCenter Plug-in for VMware vSphere VM.
+* Téléchargez le fichier .tar du SnapCenter Plug-in for VMware vSphere .
+* Obtenez les informations de connexion pour votre instance vCenter Server.
+* Obtenez un certificat avec des fichiers de clés publiques et privées valides.  Pour plus de détails, voir les articles dans le https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_Certificate_Resolution_Guide["Gestion des certificats de stockage"] section.
+* Déconnectez-vous et fermez toutes les sessions du navigateur client vSphere, et effacez le cache du navigateur pour éviter les problèmes lors du déploiement.
+* Activez Transport Layer Security (TLS) dans vCenter.  Reportez-vous à la documentation VMware.
+* Si vous prévoyez d'effectuer des sauvegardes dans des vCenter autres que celui sur lequel le SnapCenter Plug-in for VMware vSphere est déployé, assurez-vous que le serveur ESXi, le SnapCenter Plug-in for VMware vSphere et chaque vCenter sont synchronisés à la même heure.
+* Pour protéger les machines virtuelles sur les banques de données vVol, déployez d’abord les ONTAP tools for VMware vSphere .  Pour connaître les versions des outils ONTAP prises en charge, consultez le https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^] .  Les outils ONTAP provisionnent et configurent le stockage sur ONTAP et le client Web VMware.
 
 
 Déployez le plug-in SnapCenter pour VMware vSphere dans le même fuseau horaire que vCenter. Les plannings de sauvegarde sont exécutés dans le fuseau horaire dans lequel le plug-in SnapCenter pour VMware vSphere est déployé. VCenter rapporte les données dans le fuseau horaire dans lequel se trouve vCenter. Par conséquent, si le plug-in SnapCenter pour VMware vSphere et vCenter se trouve dans des fuseaux horaires différents, les données du plug-in SnapCenter pour VMware vSphere Dashboard peuvent ne pas être identiques aux données des rapports.
@@ -136,11 +136,11 @@ Les outils VMware sont installés sur la machine virtuelle sur laquelle le plug-
 Le déploiement peut prendre quelques minutes. Un déploiement réussi est indiqué lorsque le plug-in SnapCenter pour VMware vSphere est sous tension, que les outils VMware sont installés et que l'écran vous invite à vous connecter au plug-in SnapCenter pour VMware vSphere. Vous pouvez basculer votre configuration réseau de DHCP vers statique au cours du premier redémarrage. Toutefois, le passage de statique à DHCP n'est pas pris en charge.
 
 +
-L'écran affiche l'adresse IP à laquelle le plug-in SnapCenter pour VMware vSphere est déployé. Notez l'adresse IP. Vous devez vous connecter à l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere si vous souhaitez modifier la configuration du plug-in SnapCenter pour VMware vSphere.
+L'écran affiche l'adresse IP où le SnapCenter Plug-in for VMware vSphere est déployé.  Notez l'adresse IP.  Vous devez vous connecter à l'interface utilisateur de gestion du SnapCenter Plug-in for VMware vSphere si vous souhaitez apporter des modifications à la configuration du SnapCenter Plug-in for VMware vSphere .
 
-. Connectez-vous à l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere à l'aide de l'adresse IP affichée sur l'écran de déploiement et des informations d'identification fournies dans l'assistant de déploiement. vérifiez ensuite sur le tableau de bord que le plug-in SnapCenter pour VMware vSphere est correctement connecté à vCenter et activé.
+. Connectez-vous à l'interface utilisateur de gestion du SnapCenter Plug-in for VMware vSphere à l'aide de l'adresse IP affichée sur l'écran de déploiement et des informations d'identification que vous avez fournies dans l'assistant de déploiement, puis vérifiez sur le tableau de bord que le SnapCenter Plug-in for VMware vSphere est correctement connecté à vCenter et est activé.
 +
-Utiliser le format `\https://<appliance-IP-address>:8080` Pour accéder à l'interface graphique de gestion.
+Utiliser le format `\https://<appliance-IP-address>:8080` pour accéder à l'interface utilisateur de gestion.
 
 +
 Connectez-vous avec le nom d'utilisateur et le mot de passe administrateur définis au moment du déploiement, ainsi que le jeton MFA généré à l'aide de la console de maintenance.

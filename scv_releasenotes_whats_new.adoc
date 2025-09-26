@@ -1,29 +1,22 @@
 ---
 permalink: scv_releasenotes_whats_new.html 
 sidebar: sidebar 
-keywords: 'what"s new, release notes, scv, 6.1' 
-summary: Découvrez les nouvelles fonctionnalités disponibles dans le plug-in SnapCenter pour VMware vSphere 6.1. 
+keywords: 'what"s new, release notes, scv, 6.2' 
+summary: Découvrez les nouvelles fonctionnalités disponibles dans SnapCenter Plug-in for VMware vSphere 6.2. 
 ---
-= Nouveautés du plug-in SnapCenter pour VMware vSphere 6.1
+= Nouveautés du SnapCenter Plug-in for VMware vSphere 6.2
 :allow-uri-read: 
 
 
 [role="lead"]
-*Prise en charge des machines virtuelles et du datastore VMFS sur les systèmes ASA r2*
+Découvrez les nouvelles fonctionnalités disponibles dans SnapCenter Plug-in for VMware vSphere 6.2.
 
-Le plug-in SnapCenter pour VMware vSphere 6.1 prend en charge le provisionnement de machines virtuelles et de datastores VMFS sur les systèmes ASA r2. Les systèmes ASA r2 apportent une solution matérielle et logicielle unifiée qui simplifie l'expérience et répond parfaitement aux besoins des clients SAN. Le plug-in SnapCenter pour VMware vSphere 6.1 prend en charge les fonctionnalités pour les machines virtuelles, les datastores et le format VMDK (Virtual machine Disk format) sur les systèmes ASA r2 :
+La version SnapCenter Plug-in for VMware vSphere 6.2 ajoute la prise en charge de la sauvegarde et de la récupération des machines virtuelles (VM) sur les banques de données VMFS pour les systèmes ASA r2 exécutant ONTAP 9.17.1 ou version ultérieure.  Avec cette version, vous pouvez effectuer les opérations suivantes pour les machines virtuelles, les banques de données et le format de disque de machine virtuelle (VMDK) sur les systèmes ASA r2 :
 
-* Provisionnement de groupes de cohérence pour la protection principale
-* Sauvegarde basée sur les groupes de cohérence
-* Flux de travail de clonage
-* Workflows de restauration
-* Provisionnement de la protection secondaire lorsque vous créez ou modifiez le groupe de ressources.
-+
+* Groupes de cohérence des provisions pour la protection primaire
+* Effectuer des sauvegardes basées sur des groupes de cohérence
+* Utiliser des groupes de cohérence hiérarchiques (disponibles avec ONTAP 9.17.1 et versions ultérieures)
+* Exécuter des workflows de clonage
+* Exécuter des flux de travail de restauration
+* Fournir une protection secondaire lors de la création ou de la modification de groupes de ressources (disponible avec ONTAP 9.16.1 et versions ultérieures)
 
-NOTE: La protection secondaire n'est prise en charge que sur ONTAP 9.16.1 et versions ultérieures
-
-
-
-*Prise en charge des instantanés inviolables secondaires (TPS)*
-
-Le plug-in SnapCenter pour VMware vSphere introduit la prise en charge de TPS secondaire, ce qui garantit que les copies Snapshot secondaires sont protégées contre la suppression ou l'altération par des attaques par ransomware ou des administrateurs malveillants, et les rend disponibles même après une attaque.

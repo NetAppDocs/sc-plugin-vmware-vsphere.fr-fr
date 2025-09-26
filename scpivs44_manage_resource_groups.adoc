@@ -23,7 +23,7 @@ NOTE: Ces groupes de ressources sont appelés tâches de sauvegarde dans Virtual
 
 == Suspendre et reprendre les opérations sur les groupes de ressources
 
-Vous pouvez désactiver temporairement les opérations planifiées de démarrer sur un groupe de ressources. Vous pouvez activer ces opérations plus tard que vous le souhaitez.
+Suspendre les opérations planifiées sur un groupe de ressources.  Réactivez-les lorsque cela est nécessaire.
 
 .Étapes
 . Dans le volet de navigation de gauche du plug-in SCV, sélectionnez *groupes de ressources*, sélectionnez un groupe de ressources et sélectionnez *suspendre* (ou sélectionnez *reprendre*).
@@ -59,15 +59,15 @@ Vous pouvez modifier plusieurs catégories. Vous pouvez également modifier des 
 
 == Supprimer des groupes de ressources
 
-Vous pouvez supprimer un groupe de ressources dans vCenter si vous n'avez plus besoin de protéger les ressources du groupe de ressources. Vous devez vous assurer que tous les groupes de ressources sont supprimés avant de supprimer le plug-in SnapCenter pour VMware vSphere de vCenter.
+Supprimez un groupe de ressources dans vCenter si vous n’avez pas besoin de protéger les ressources.  Supprimez tous les groupes de ressources avant de supprimer SnapCenter Plug-in for VMware vSphere.
 
 .Description de la tâche
-Toutes les opérations de suppression de groupe de ressources sont effectuées en tant que suppressions de force. L'opération de suppression dissocie toutes les règles du groupe de ressources vCenter, supprime le groupe de ressources du plug-in SnapCenter pour VMware vSphere et supprime toutes les sauvegardes et instantanés du groupe de ressources.
+Toutes les opérations de suppression de groupe de ressources sont effectuées sous forme de suppressions forcées.  Lorsque vous supprimez un groupe de ressources, le système détache toutes les stratégies du groupe de ressources vCenter, supprime le groupe de ressources de SnapCenter Plug-in for VMware vSphere et supprime toutes les sauvegardes et tous les snapshots du groupe de ressources.
 
 
-NOTE: Dans une relation SnapVault, le dernier snapshot ne peut pas être supprimé. Par conséquent, le groupe de ressources ne peut pas être supprimé. Avant de supprimer un groupe de ressources faisant partie d'une relation SnapVault, vous devez utiliser System Manager ou l'interface de ligne de commandes de ONTAP pour supprimer la relation SnapVault. Vous devez ensuite supprimer le dernier snapshot.
+NOTE: Dans une relation SnapVault , vous ne pouvez pas supprimer le dernier instantané, par conséquent vous ne pouvez pas supprimer le groupe de ressources.  Avant de supprimer un groupe de ressources dans une relation SnapVault , utilisez System Manager ou ONTAP CLI pour supprimer la relation, puis supprimez le dernier snapshot.
 
 .Étapes
 . Dans le volet de navigation de gauche du plug-in SCV, sélectionnez *groupes de ressources*, puis sélectionnez un groupe de ressources et sélectionnez *Supprimer*.
-. Dans la zone de confirmation *Supprimer le groupe de ressources*, sélectionnez *OK* pour confirmer.
+. Dans la boîte de dialogue de confirmation *Supprimer le groupe de ressources*, sélectionnez *OK* pour confirmer.  La suppression d’un groupe de ressources ne supprime pas la protection secondaire.  Si nécessaire, utilisez le Gestionnaire système pour supprimer la protection secondaire.  Les groupes de cohérence créés pour le groupe de ressources ne sont pas automatiquement supprimés ; vous devez les supprimer manuellement d' ONTAP à l'aide de System Manager ou d'une autre interface prise en charge.
 

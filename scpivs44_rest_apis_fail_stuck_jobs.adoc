@@ -24,5 +24,5 @@ Utilisez l'API REST suivante de la section travaux pour modifier les travaux blo
 | API REST | Commentaires 
 
 
-| `/4.1/jobs/{id}/failJobs` | Lorsque vous transmettez les ID des travaux bloqués dans un état en cours, `failJobs` permet de marquer ces travaux comme ayant échoué. Pour identifier les travaux bloqués dans un état en cours d'exécution, utilisez l'interface graphique du moniteur de tâches pour afficher l'état de chaque travail et l'ID du travail. 
+| `/4.1/jobs/{id}/failJobs` | Lorsque vous transmettez les identifiants des tâches bloquées dans un état d'exécution, `failJobs` marque ces tâches comme ayant échoué.  Pour identifier les tâches bloquées dans un état d'exécution, utilisez l'interface utilisateur du moniteur de tâches pour voir l'état de chaque tâche et l'ID de tâche. 
 |===

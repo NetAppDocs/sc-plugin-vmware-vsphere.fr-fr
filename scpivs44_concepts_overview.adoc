@@ -25,7 +25,7 @@ Le plug-in SnapCenter pour VMware vSphere ajoute les fonctionnalités suivantes 
 
 * Prise en charge des opérations de protection des données cohérentes au niveau des VM et des défaillances
 +
-Vous pouvez utiliser l'interface utilisateur client VMware vSphere dans vCenter pour toutes les opérations de sauvegarde et de restauration des machines virtuelles VMware (machines virtuelles classiques et machines virtuelles vvol), des disques VMDK et des datastores. Pour les machines virtuelles vvol (ordinateurs virtuels dans les datastores vvol), seules les sauvegardes cohérentes avec les défaillances sont prises en charge. Vous pouvez également restaurer des machines virtuelles et des VMDK, et restaurer des fichiers et des dossiers qui résident sur un système d'exploitation invité.
+Vous pouvez utiliser l'interface utilisateur du client VMware vSphere dans vCenter pour toutes les opérations de sauvegarde et de restauration des machines virtuelles VMware (machines virtuelles traditionnelles et machines virtuelles vVol), des VMDK et des banques de données.  Pour les machines virtuelles vVol (machines virtuelles dans les banques de données vVol), seules les sauvegardes cohérentes en cas de panne sont prises en charge.  Vous pouvez également restaurer des machines virtuelles et des VMDK, ainsi que des fichiers et des dossiers qui résident sur un système d’exploitation invité.
 
 +
 Lorsque vous sauvegardez des machines virtuelles, des VMDK et des datastores, le plug-in ne prend pas en charge RDM. Les tâches de sauvegarde des machines virtuelles ignorent RDM. Si vous devez sauvegarder des RDM, vous devez utiliser un plug-in SnapCenter basé sur les applications.
@@ -35,13 +35,13 @@ Le plug-in SnapCenter pour VMware vSphere inclut une base de données MySQL qui 
 
 * Prise en charge des opérations de protection des données cohérentes au niveau des applications (application sur VMDK/RDM).
 +
-Vous pouvez utiliser l'interface graphique d'SnapCenter et les plug-ins d'applications SnapCenter appropriés pour toutes les opérations de sauvegarde et de restauration des bases de données et des systèmes de fichiers sur le stockage primaire et secondaire sur les machines virtuelles.
+Vous pouvez utiliser l'interface utilisateur SnapCenter et les plug-ins d'application SnapCenter appropriés pour toutes les opérations de sauvegarde et de restauration de bases de données et de systèmes de fichiers sur le stockage principal et secondaire des machines virtuelles.
 
 +
 SnapCenter exploite de manière native le plug-in SnapCenter pour VMware vSphere pour toutes les opérations de protection des données sur des VMDK, des mappages de périphériques bruts (RDM) et des datastores NFS. Une fois l'appliance virtuelle déployée, le plug-in gère toutes les interactions avec vCenter. Le plug-in SnapCenter pour VMware vSphere prend en charge tous les plug-ins applicatifs SnapCenter.
 
 +
-SnapCenter ne prend pas en charge les snapshots uniques des bases de données et des machines virtuelles ensemble. Les sauvegardes des VM et des bases de données doivent être planifiées et exécutées indépendamment, ce qui crée des snapshots distincts, même si les bases de données et les VM sont hébergées sur le même volume. Planifier les sauvegardes des applications de base de données à l'aide de l'interface graphique SnapCenter ; planifier les sauvegardes de la machine virtuelle et du datastore à l'aide de l'interface graphique du client VMware vSphere.
+SnapCenter ne prend pas en charge les snapshots uniques de bases de données et de machines virtuelles ensemble.  Les sauvegardes des machines virtuelles et des bases de données doivent être planifiées et exécutées indépendamment, ce qui crée des instantanés distincts, même si les bases de données et les machines virtuelles sont hébergées dans le même volume.  Planifiez les sauvegardes de l'application de base de données à l'aide de l'interface utilisateur de SnapCenter ; planifiez les sauvegardes de la machine virtuelle et de la banque de données à l'aide de l'interface utilisateur du client VMware vSphere.
 
 * Des outils VMware sont nécessaires pour les snapshots cohérents avec les machines virtuelles
 +

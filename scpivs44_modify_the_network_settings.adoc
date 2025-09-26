@@ -17,7 +17,7 @@ summary: Vous pouvez modifier les paramètres réseau configurés dans le plug-i
 Vous pouvez modifier les paramètres réseau configurés dans le plug-in SnapCenter pour VMware vSphere. Ces paramètres sont utilisés par le plug-in pour accéder à vCenter.
 
 .Avant de commencer
-Vous devez connaître l'adresse IP et les identifiants de connexion de l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere. Vous devez également noter le jeton MFA généré à partir de la console de maintenance.
+Vous devez connaître l'adresse IP et les informations de connexion pour l'interface utilisateur de gestion du SnapCenter Plug-in for VMware vSphere .  Vous devez également noter le jeton MFA généré à partir de la console de maintenance.
 
 * L'adresse IP était affichée lors du déploiement du plug-in SnapCenter pour VMware vSphere.
 * Utilisez les informations d'identification fournies lors du déploiement du plug-in SnapCenter pour VMware vSphere ou telles que modifiées ultérieurement.
@@ -25,13 +25,13 @@ Vous devez connaître l'adresse IP et les identifiants de connexion de l'interfa
 
 
 .Étapes
-. Connectez-vous au plug-in SnapCenter pour l'interface graphique de gestion VMware vSphere.
+. Connectez-vous à l'interface utilisateur de gestion du SnapCenter Plug-in for VMware vSphere .
 +
 Utiliser le format `\https://<appliance-IP-address>:8080`
 
 . Sélectionnez l'icône Paramètres dans la barre d'outils supérieure.
 +
-image:scpivs44_image31.png["Plug-in SnapCenter pour l'interface graphique de gestion VMware vSphere"]
+image:scpivs44_image31.png["SnapCenter Plug-in for VMware vSphere"]
 
 . Sur la page *Paramètres*, dans la section *Paramètres réseau*, sélectionnez *IPv4* ou *IPv6* adresse, puis sélectionnez *Modifier*.
 +

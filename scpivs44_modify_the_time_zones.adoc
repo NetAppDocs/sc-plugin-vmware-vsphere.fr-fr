@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_modify_the_time_zones.html 
 keywords:  
-summary: 'Lorsque vous configurez une planification de sauvegarde pour un groupe de ressources SnapCenter Plug-in pour VMware vSphere, la planification est automatiquement définie pour le fuseau horaire dans lequel le plug-in SnapCenter pour VMware vSphere est déployé. Vous pouvez modifier ce fuseau horaire à l"aide de l"interface graphique ou de la console de maintenance du plug-in SnapCenter pour VMware vSphere.' 
+summary: 'Lorsque vous configurez une planification de sauvegarde pour un groupe de ressources SnapCenter Plug-in for VMware vSphere , la planification est automatiquement définie pour le fuseau horaire dans lequel SnapCenter Plug-in for VMware vSphere est déployé.  Vous pouvez modifier ce fuseau horaire à l"aide de l"interface utilisateur de gestion ou de la console de maintenance du SnapCenter Plug-in for VMware vSphere .' 
 ---
 = Modifier les fuseaux horaires pour les sauvegardes
 :hardbreaks:
@@ -16,11 +16,11 @@ summary: 'Lorsque vous configurez une planification de sauvegarde pour un groupe
 :authorinitials: [
 :authors: [.lead]
 :revnumber: 
-:revdate: the schedule is automatically set for the time zone in which SnapCenter Plug-in for VMware vSphere is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management GUI or maintenance console.
+:revdate: the schedule is automatically set for the time zone in which SnapCenter Plug-in for VMware vSphere is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management user interface or maintenance console.
 
 
 .Avant de commencer
-Vous devez connaître l'adresse IP et les identifiants de connexion de l'interface graphique de gestion du plug-in SnapCenter pour VMware vSphere. Vous devez également noter le jeton MFA généré à partir de la console de maintenance.
+Vous devez connaître l'adresse IP et les informations de connexion pour l'interface utilisateur de gestion du SnapCenter Plug-in for VMware vSphere .  Vous devez également noter le jeton MFA généré à partir de la console de maintenance.
 
 * L'adresse IP était affichée lors du déploiement du plug-in SnapCenter pour VMware vSphere.
 * Utilisez les informations d'identification fournies lors du déploiement du plug-in SnapCenter pour VMware vSphere ou telles que modifiées ultérieurement.
@@ -28,7 +28,7 @@ Vous devez connaître l'adresse IP et les identifiants de connexion de l'interfa
 
 
 .Étapes
-. Connectez-vous au plug-in SnapCenter pour l'interface graphique de gestion VMware vSphere.
+. Connectez-vous à l'interface utilisateur de gestion du SnapCenter Plug-in for VMware vSphere .
 +
 Utiliser le format `\https://<appliance-IP-address>:8080`
 

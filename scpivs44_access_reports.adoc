@@ -35,7 +35,7 @@ Double-cliquez sur un travail pour générer un rapport détaillé pour ce trava
 
 . Facultatif : dans l'onglet Rapports, sélectionnez *Télécharger* et sélectionnez le format (HTML ou CSV).
 +
-Vous pouvez également sélectionner l'icône de téléchargement pour télécharger les journaux des plug-ins.
+Vous pouvez sélectionner l'icône de téléchargement pour télécharger les journaux du plug-in.
 
 
 

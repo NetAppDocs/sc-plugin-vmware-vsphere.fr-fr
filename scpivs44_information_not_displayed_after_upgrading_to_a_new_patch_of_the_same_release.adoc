@@ -40,7 +40,7 @@ Le cache se trouve dans les emplacements suivants, en fonction du type de systè
 
 == Solution de contournement si vous avez déjà mis à niveau avant de supprimer le cache
 
-. Connectez-vous au plug-in SnapCenter pour l'interface graphique de gestion VMware vSphere.
+. Connectez-vous à l'interface utilisateur de gestion du SnapCenter Plug-in for VMware vSphere .
 +
 L'adresse IP s'affiche lorsque vous déployez le plug-in SnapCenter pour VMware vSphere.
 

@@ -97,7 +97,7 @@ Même en cas de défaillance d'un snapshot de cohérence VMware pour une machine
 
 
 .Étapes
-. Dans l'interface graphique du client VMware vSphere, sélectionnez *Menu* dans la barre d'outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
+. Dans l’interface utilisateur du client VMware vSphere, sélectionnez *Menu* dans la barre d’outils, puis sélectionnez *VM et modèles* dans la liste déroulante.
 +
 
 NOTE: Si vous restaurez une machine virtuelle supprimée, les informations d'identification de la machine virtuelle de stockage qui ont été ajoutées au plug-in SnapCenter pour VMware vSphere doivent être ou être `vsadmin` un compte d'utilisateur disposant de tous les mêmes privilèges que `vsadmin`.

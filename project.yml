@@ -1,14 +1,16 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere
+  name: SnapCenter Plug-in for VMware vSphere 6.2
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: false
   versions:
-  - version-number: '6.1'
+  - version-number: '6.2'
     url: "/sc-plugin-vmware-vsphere"
+  - version-number: '6.1'
+    url: "/sc-plugin-vmware-vsphere-61"
   - version-number: '6.0'
     url: "/sc-plugin-vmware-vsphere-60"
   - version-number: '5.0'
@@ -26,13 +28,13 @@ settings:
   langs: fr-fr,us-en,de-de,es-es,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: Plug-in SnapCenter pour VMware vSphere 6.1
+  - title: SnapCenter Plug-in for VMware vSphere 6.2
     url: "/index.html"
   - title: Notes de mise à jour
     entries:
     - title: Notes de version du plug-in SnapCenter pour VMware vSphere
       url: "/scpivs44_release_notes.html"
-    - title: Nouveautés du plug-in SnapCenter pour VMware vSphere 6.1
+    - title: Nouveautés du SnapCenter Plug-in for VMware vSphere 6.2
       url: "/scv_releasenotes_whats_new.html"
     - title: Chemins de mise à niveau
       url: "/scv_rn_upgrade_paths.html"
@@ -40,7 +42,7 @@ sidebar:
     entries:
     - title: Présentation du produit
       url: "/scpivs44_concepts_overview.html"
-    - title: Présentation des différentes interfaces graphiques SnapCenter
+    - title: Aperçu des différentes interfaces utilisateur de SnapCenter
       url: "/scpivs44_overview_of_different_snapcenter_guis.html"
     - title: Licences
       url: "/scpivs44_licensing.html"
@@ -103,8 +105,8 @@ sidebar:
       url: "/scpivs44_download_job_logs.html"
     - title: Accédez aux rapports
       url: "/scpivs44_access_reports.html"
-    - title: Générez un bundle de support à partir du plug-in SnapCenter pour l'interface
-        graphique VMware vSphere
+    - title: Générer un bundle de support à partir de l'interface utilisateur du SnapCenter
+        Plug-in for VMware vSphere
       url: "/scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html"
     - title: Générez un bundle de support à partir de la console de maintenance
       url: "/scpivs44_generate_a_support_bundle_from_the_maintenance_console.html"

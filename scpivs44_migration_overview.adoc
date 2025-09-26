@@ -54,7 +54,7 @@ L'applet de commande effectue les opérations suivantes :
 ** Crée des planifications de sauvegarde pour les sauvegardes post-migration.
 ** Désinstalle le plug-in SnapCenter existant pour VMware vSphere à partir de l'hôte Windows.
 +
-Si le plug-in SnapCenter pour VMware vSphere est installé sur l'hôte SnapCenter Server et que la protection est configurée pour le référentiel SnapCenter, le processus de migration désinstalle également le package de plug-in Windows contenant le plug-in SnapCenter pour VMware vSphere et le plug-in SnapCenter pour Windows, puis réinstalle la dernière version du plug-in SnapCenter pour Windows afin de prendre en charge la protection du référentiel. Le type d'hôte dans l'interface utilisateur graphique SnapCenter passe de vSphere à Windows.
+Si le SnapCenter Plug-in for VMware vSphere est installé sur l'hôte SnapCenter Server et que la protection est configurée pour le référentiel SnapCenter , le processus de migration désinstalle également le package de plug-in Windows qui contient le SnapCenter Plug-in for VMware vSphere et le plug-in SnapCenter pour Windows, puis réinstalle la dernière version du plug-in SnapCenter pour Windows pour prendre en charge la protection du référentiel.  Le type d’hôte dans l’interface utilisateur de SnapCenter passe de « vsphere » à « Windows ».
 
 ** Supprime l'hôte vSphere et les groupes de ressources du serveur SnapCenter Windows.
 ** Active les tâches de sauvegarde sur le plug-in SnapCenter basé sur Linux pour VMware vSphere.

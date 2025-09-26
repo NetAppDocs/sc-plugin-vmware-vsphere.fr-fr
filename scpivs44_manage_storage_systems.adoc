@@ -25,7 +25,7 @@ Vous pouvez utiliser le client VMware vSphere pour modifier les configurations d
 Si vous modifiez une machine virtuelle de stockage qui a été automatiquement ajoutée dans un cluster (parfois appelée machine virtuelle de stockage implicite), cette machine virtuelle de stockage passe à une machine virtuelle de stockage explicite et peut être supprimée séparément sans modifier le reste des machines virtuelles de stockage du cluster. Sur la page Storage Systems (systèmes de stockage), le nom d'utilisateur est affiché sous la forme N/A lorsque la méthode d'authentification se trouve via le certificat ; les noms d'utilisateur sont affichés uniquement pour les machines virtuelles de stockage explicites dans la liste des clusters et l'indicateur ExplicitSVM est défini sur true. Toutes les machines virtuelles de stockage sont toujours répertoriées sous le cluster associé.
 
 
-IMPORTANT: Si vous avez ajouté des machines virtuelles de stockage pour les opérations de protection des données basées sur les applications à l'aide de l'interface graphique de SnapCenter, vous devez utiliser la même interface pour modifier ces machines virtuelles de stockage.
+IMPORTANT: Si vous avez ajouté des machines virtuelles de stockage pour des opérations de protection des données basées sur des applications à l'aide de l'interface utilisateur de SnapCenter , vous devez utiliser la même interface utilisateur pour modifier ces machines virtuelles de stockage.
 
 .Étapes
 . Dans le volet gauche du plug-in SCV, sélectionnez *systèmes de stockage*.
@@ -40,7 +40,7 @@ IMPORTANT: Si vous avez ajouté des machines virtuelles de stockage pour les op�
 Vous pouvez utiliser le client VMware vSphere pour supprimer des machines virtuelles de stockage de l'inventaire dans vCenter.
 
 
-NOTE: Si vous avez ajouté des machines virtuelles de stockage pour les opérations de protection des données basées sur les applications à l'aide de l'interface graphique de SnapCenter, vous devez utiliser la même interface pour modifier ces machines virtuelles de stockage.
+NOTE: Si vous avez ajouté des machines virtuelles de stockage pour des opérations de protection des données basées sur des applications à l'aide de l'interface utilisateur de SnapCenter , vous devez utiliser la même interface utilisateur pour modifier ces machines virtuelles de stockage.
 
 .Avant de commencer
 Vous devez démonter tous les datastores de la machine virtuelle de stockage avant de pouvoir supprimer la machine virtuelle de stockage.

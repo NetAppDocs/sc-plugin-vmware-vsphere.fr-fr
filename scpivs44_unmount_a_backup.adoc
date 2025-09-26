@@ -16,9 +16,9 @@ summary: 'Vous pouvez démonter une sauvegarde lorsque vous n"avez plus besoin d
 [role="lead"]
 Vous pouvez démonter une sauvegarde lorsque vous n'avez plus besoin d'accéder aux fichiers du datastore.
 
-Si une sauvegarde est répertoriée comme montée dans l'interface utilisateur graphique du client VMware vSphere, mais qu'elle ne figure pas dans l'écran de démontage de la sauvegarde, vous devez utiliser l'API REST `/backup/{backup-Id}/cleanup` pour nettoyer les datastores hors limite, puis réessayez la procédure de démontage.
+Si une sauvegarde est répertoriée comme montée dans l'interface utilisateur du client VMware vSphere, mais qu'elle n'est pas répertoriée dans l'écran de démontage de la sauvegarde, vous devez utiliser l'API REST. `/backup/{backup-Id}/cleanup` pour nettoyer les banques de données hors limites, puis réessayer la procédure de démontage.
 
-Si vous tentez de monter une copie de sauvegarde d'un datastore NFS sur une machine virtuelle de stockage (SVM) avec le volume racine dans une relation de miroir de partage de charge, l'erreur peut se produire `You may have reached the maximum number of NFS volumes configured in the vCenter. Check the vSphere Client for any error messages.` Pour éviter ce problème, modifiez le paramètre de volumes maximum en accédant à *ESX* > *Manage* > *Settings* > *Advance System Settings* et en modifiant la valeur NFS.Maxvolumes. La valeur maximale est de 256.
+Si vous tentez de monter une copie de sauvegarde d'une banque de données NFS sur une machine virtuelle de stockage (SVM) avec le volume racine dans une relation de miroir de partage de charge et que vous risquez de rencontrer l'erreur `You might have reached the maximum number of NFS volumes configured in the vCenter. Check the vSphere Client for any error messages.` Pour éviter ce problème, modifiez le paramètre de volumes maximum en accédant à *ESX* > *Gérer* > *Paramètres* > *Paramètres système avancés* et en modifiant la valeur NFS.MaxVolumes.  La valeur maximale est 256.
 
 .Étapes
 . Sur la page des raccourcis client VMware vSphere, sélectionnez *Storage*.

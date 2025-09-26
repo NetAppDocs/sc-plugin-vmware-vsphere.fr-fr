@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html 
 keywords:  
-summary: 'Vous pouvez générer un bundle de prise en charge à partir du plug-in SnapCenter pour l"interface graphique de VMware vSphere.' 
+summary: 'Vous pouvez générer un bundle de support à partir de l"interface utilisateur du SnapCenter Plug-in for VMware vSphere .' 
 ---
-= Générez un bundle de prise en charge à partir de l'interface graphique du plug-in SnapCenter pour VMware vSphere
+= Générer un bundle de support à partir de l'interface utilisateur du SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -15,7 +15,7 @@ summary: 'Vous pouvez générer un bundle de prise en charge à partir du plug-i
 
 .Avant de commencer
 [role="lead"]
-Pour vous connecter à l'interface utilisateur graphique de gestion SnapCenter Plug-in for VMware vSphere, vous devez connaître l'adresse IP et les identifiants de connexion. Vous devez également noter le jeton MFA généré à partir de la console de maintenance.
+Pour vous connecter à l'interface utilisateur de gestion du SnapCenter Plug-in for VMware vSphere , vous devez connaître l'adresse IP et les informations d'identification de connexion.  Vous devez également noter le jeton MFA généré à partir de la console de maintenance.
 
 * L'adresse IP était affichée lors du déploiement du plug-in SnapCenter pour VMware vSphere.
 * Utilisez les informations d'identification fournies lors du déploiement du plug-in SnapCenter pour VMware vSphere ou telles que modifiées ultérieurement.
@@ -23,7 +23,7 @@ Pour vous connecter à l'interface utilisateur graphique de gestion SnapCenter P
 
 
 .Étapes
-. Connectez-vous au plug-in SnapCenter pour l'interface utilisateur graphique VMware vSphere.
+. Connectez-vous à l’interface utilisateur du SnapCenter Plug-in for VMware vSphere .
 +
 Utiliser le format `\https://<OVA-IP-address>:8080`.
 
