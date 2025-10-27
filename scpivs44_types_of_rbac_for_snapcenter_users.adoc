@@ -32,6 +32,7 @@ Le plug-in SnapCenter pour le déploiement de VMware vSphere crée les rôles su
 
 L'administrateur vSphere configure le contrôle d'accès basé sur les rôles de vCenter Server en procédant comme suit :
 
+* Vous pouvez associer un utilisateur à des rôles prédéfinis sous des autorisations globales.
 * Définition des autorisations du serveur vCenter sur l'objet racine (également appelé dossier racine). Vous pouvez ensuite affiner la sécurité en limitant les entités enfants qui n'ont pas besoin de ces autorisations.
 * Attribution des rôles de distributeur sélectif aux utilisateurs Active Directory.
 +

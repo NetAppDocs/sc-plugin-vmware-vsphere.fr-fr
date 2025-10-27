@@ -70,3 +70,6 @@ Les opérations de restauration de fichiers invités sont effectuées à l'aide 
 IMPORTANT: Au cours d'une opération de restauration, une erreur peut `Host unresolved volumes is null` se produire ou `Exception while calling pre-restore on SCV….Error mounting cloned LUN as datastore…` lorsque le plug-in SnapCenter pour VMware vSphere tente de resigner le clone. En raison des restrictions de VMware, le plug-in SnapCenter pour VMware vSphere ne peut pas contrôler la valeur de resignature automatique dans les configurations hôte VMware ESXi avancées. Pour le stockage NVMe over TCP et NVMe over FC, SCV ne peut pas ajouter de contrôleurs de manière dynamique lors de l'ajout d'un nouveau sous-système. Vous devez effectuer le mappage nécessaire avant l'opération de montage.
 
 Reportez-vous https://kb.netapp.com/mgmt/SnapCenter/SCV_clone_or_restores_fail_with_error_'Host_Unresolved_volumes_is_null'#["Article de la base de connaissances : le clone ou les restaurations de SCV échouent avec l'erreur « les volumes non résolus de l'hôte sont nuls"^] à pour plus d'informations sur l'erreur.
+
+
+NOTE: La prise en charge des systèmes de stockage Amazon FSx for NetApp ONTAP est disponible à partir de la version SCV 6.2.

@@ -2202,4 +2202,6 @@ Le <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"
   <block id="90a8886635ee0da0c4b0c0f9f05014c9" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.2</block>
   <block id="62889a042309a4c109020af336b64d80" category="sidebar">Nouveautés du SnapCenter Plug-in for VMware vSphere 6.2</block>
   <block id="5f9632818cc0b2ae9e72f12df491a0d9" category="sidebar">Générer un bundle de support à partir de l'interface utilisateur du SnapCenter Plug-in for VMware vSphere</block>
+  <block id="d6ede90a002c3b83d155e427efb5f090" category="admonition">La prise en charge des systèmes de stockage Amazon FSx for NetApp ONTAP est disponible à partir de la version SCV 6.2.</block>
+  <block id="7b373df72819a720b694167ed282840b" category="list-text">Vous pouvez associer un utilisateur à des rôles prédéfinis sous des autorisations globales.</block>
 </blocks>
