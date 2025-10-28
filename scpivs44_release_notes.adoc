@@ -20,6 +20,6 @@ Pour plus de détails sur les problèmes connus, les limitations et les problèm
 
 [NOTE]
 ====
-Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à la matrice d'interopérabilité de NetApp (http://mysupport.netapp.com/matrix["IMT"^]).
+Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp (IMT)"^] .
 
 ====
