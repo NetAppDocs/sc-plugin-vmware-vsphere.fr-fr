@@ -123,6 +123,9 @@ Restauration d'une machine virtuelle complète lorsqu'un ou plusieurs VMDK se tr
 
 
 | Outils ONTAP pour VMware | Le SnapCenter Plug-in for VMware vSphere l'utilise pour gérer les banques de données vVol (volumes virtuels VMware). Pour les versions prises en charge, reportez-vous à https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^] . 
+
+
+| Stockage Amazon FSxN pour NetApp ONTAP | 9.10 et plus 
 |===
 Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^] .
 
@@ -152,9 +155,6 @@ La configuration logicielle minimale requise pour la prise en charge des protoco
 
 
 | Espace disque minimum pour le plug-in SnapCenter pour VMware vSphere, les journaux et la base de données MySQL | 100 GO 
-
-
-| Taille maximale du segment de mémoire du service vmcontrol dans l'appliance | 8 Go 
 |===
 
 
