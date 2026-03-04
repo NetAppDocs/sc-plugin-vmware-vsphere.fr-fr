@@ -4,7 +4,7 @@ permalink: scpivs44_attach_vmdks_to_a_vm.html
 keywords:  
 summary: 'Il est possible d"attacher un ou plusieurs VMDK à partir d"une sauvegarde sur la machine virtuelle parent, ou sur une autre machine virtuelle sur le même hôte ESXi, ou sur une autre machine virtuelle sur un hôte ESXi secondaire géré par le même vCenter ou dans un autre vCenter en mode lié. Les machines virtuelles dans les datastores traditionnels et les datastores vvol sont prises en charge.' 
 ---
-= Attachement de VMDK à une machine virtuelle ou vvol
+= Attachez des VMDK à une VM à l'aide du SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

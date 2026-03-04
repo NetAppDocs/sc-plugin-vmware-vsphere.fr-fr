@@ -4,7 +4,7 @@ permalink: scpivs44_guest_file_restore_scenarios_you_might_encounter.html
 keywords:  
 summary: 'Lorsque vous essayez de restaurer un fichier invité, vous pouvez rencontrer des scénarios dans lesquels la session de restauration de fichier invité est vide, l"opération de connexion de restauration de fichier invité échoue ou les sauvegardes ne sont pas détachées après l"interruption de la session de restauration de fichier invité.' 
 ---
-= Scénarios de restauration de fichiers invités
+= Scénarios de restauration de fichiers invités dans le SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

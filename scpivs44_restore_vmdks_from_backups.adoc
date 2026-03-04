@@ -4,7 +4,7 @@ permalink: scpivs44_restore_vmdks_from_backups.html
 keywords:  
 summary: 'Il est possible de restaurer des VMDK existants, ou des VMDK supprimés ou détachés, à partir d"une sauvegarde primaire ou secondaire de machines virtuelles traditionnelles ou vvol.' 
 ---
-= Restaurer des VMDK à partir des sauvegardes
+= Restaurez les VMDK à partir de sauvegardes à l'aide du SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

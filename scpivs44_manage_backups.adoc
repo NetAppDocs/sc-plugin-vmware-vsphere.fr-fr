@@ -4,7 +4,7 @@ permalink: scpivs44_manage_backups.html
 keywords:  
 summary: Vous pouvez renommer et supprimer les sauvegardes effectuées par le plug-in SnapCenter pour VMware vSphere. Vous pouvez également supprimer plusieurs sauvegardes simultanément. 
 ---
-= Gérer les sauvegardes
+= Gérez les sauvegardes dans le SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

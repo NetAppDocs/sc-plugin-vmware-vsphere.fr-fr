@@ -4,7 +4,7 @@ permalink: scpivs44_modify_the_time_zones.html
 keywords:  
 summary: 'Lorsque vous configurez une planification de sauvegarde pour un groupe de ressources SnapCenter Plug-in for VMware vSphere , la planification est automatiquement définie pour le fuseau horaire dans lequel SnapCenter Plug-in for VMware vSphere est déployé.  Vous pouvez modifier ce fuseau horaire à l"aide de l"interface utilisateur de gestion ou de la console de maintenance du SnapCenter Plug-in for VMware vSphere .' 
 ---
-= Modifier les fuseaux horaires pour les sauvegardes
+= Modifiez les fuseaux horaires des sauvegardes dans le SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

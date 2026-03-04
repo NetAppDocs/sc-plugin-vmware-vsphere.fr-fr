@@ -4,7 +4,7 @@ permalink: scpivs44_prescripts_and_postscripts.html
 keywords:  
 summary: 'Vous pouvez utiliser des prescripteurs et des postscripts personnalisés dans le cadre de vos opérations de protection des données. Ces scripts permettent l"automatisation avant ou après votre tâche de protection des données.' 
 ---
-= Préscripts et postscripts
+= Prescripts et postscripts pour le SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_upgrade_to_a_new_patch.html
 keywords:  
 summary: 'Si vous effectuez une mise à niveau vers un nouveau correctif de la même version, vous devez effacer le cache SnapCenter Plug-in pour VMware vSphere sur le serveur Web vCenter et redémarrer le serveur avant la mise à niveau ou l"enregistrement.' 
 ---
-= Mise à niveau vers un nouveau correctif de la même version du plug-in SnapCenter pour VMware vSphere
+= Mettez à niveau vers un nouveau correctif de la même version du SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

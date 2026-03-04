@@ -4,7 +4,7 @@ permalink: scpivs44_manage_policies.html
 keywords:  
 summary: Vous pouvez créer, modifier, afficher, détacher et supprimer des règles de sauvegarde pour le plug-in SnapCenter pour VMware vSphere. Des règles sont requises pour exécuter les opérations de protection des données. 
 ---
-= Gestion des règles
+= Gérez les politiques dans le SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

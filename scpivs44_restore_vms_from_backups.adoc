@@ -4,7 +4,7 @@ permalink: scpivs44_restore_vms_from_backups.html
 keywords:  
 summary: Lorsque vous restaurez une machine virtuelle, vous pouvez remplacer le contenu existant par la copie de sauvegarde que vous sélectionnez ou effectuer une copie de la machine virtuelle. 
 ---
-= Restauration de machines virtuelles à partir des sauvegardes
+= Restaurez les machines virtuelles à partir de sauvegardes à l'aide du SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

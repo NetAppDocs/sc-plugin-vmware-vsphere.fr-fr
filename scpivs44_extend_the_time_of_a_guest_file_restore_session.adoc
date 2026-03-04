@@ -4,7 +4,7 @@ permalink: scpivs44_extend_the_time_of_a_guest_file_restore_session.html
 keywords:  
 summary: Par défaut, un VMDK de restauration de fichier invité joint est disponible pendant 24 heures, puis il est automatiquement détaché. Vous pouvez prolonger le temps dans la page Configuration invité. 
 ---
-= Prolonger la durée d'une session de restauration de fichier invité
+= Prolongez la durée d'une session de restauration de fichiers invités dans le SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

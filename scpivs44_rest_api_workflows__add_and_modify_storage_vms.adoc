@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflows__add_and_modify_storage_vms.html
 keywords:  
 summary: 'Pour effectuer des opérations d"ajout et de modification de machines virtuelles de stockage à l"aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez suivre la séquence prescrite d"appels d"API REST.' 
 ---
-= Des workflows d'API REST pour ajouter et modifier des VM de stockage
+= Flux de travail de l'API REST pour ajouter et modifier des machines virtuelles de stockage dans le SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

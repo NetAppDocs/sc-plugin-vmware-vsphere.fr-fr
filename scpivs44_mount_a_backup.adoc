@@ -4,7 +4,7 @@ permalink: scpivs44_mount_a_backup.html
 keywords:  
 summary: 'Vous pouvez monter un datastore traditionnel à partir d"une sauvegarde si vous souhaitez accéder aux fichiers de la sauvegarde. Vous pouvez monter la sauvegarde sur le même hôte ESXi où la sauvegarde a été créée ou sur un autre hôte ESXi possédant le même type de configuration VM et hôte. Vous pouvez monter un datastore plusieurs fois sur un hôte.' 
 ---
-= Monter une sauvegarde
+= Montez une sauvegarde à l'aide du SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

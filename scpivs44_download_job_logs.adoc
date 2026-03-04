@@ -4,7 +4,7 @@ permalink: scpivs44_download_job_logs.html
 keywords:  
 summary: 'Vous pouvez télécharger les journaux des tâches à partir de l"onglet surveillance des tâches du tableau de bord du client SnapCenter VMware vSphere.' 
 ---
-= Télécharger les journaux des travaux
+= Téléchargez les journaux de tâches à partir du SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

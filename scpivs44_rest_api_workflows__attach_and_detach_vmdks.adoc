@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflows__attach_and_detach_vmdks.html
 keywords:  
 summary: 'Pour effectuer des opérations de liaison et de déconnexion pour les VMDK à l"aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez suivre la séquence prescrite d"appels d"API REST.' 
 ---
-= Des flux de travail API REST pour connecter et détacher les VMDK
+= Flux de travail d'API REST pour attacher et détacher des VMDK dans le SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

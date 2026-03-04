@@ -4,7 +4,7 @@ permalink: scpivs44_manage_resource_groups.html
 keywords:  
 summary: Vous pouvez créer, modifier et supprimer des groupes de ressources de sauvegarde et effectuer des opérations de sauvegarde sur des groupes de ressources. 
 ---
-= Gérer les groupes de ressources
+= Gérez les groupes de ressources dans le SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

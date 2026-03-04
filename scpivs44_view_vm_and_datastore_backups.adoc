@@ -4,7 +4,7 @@ permalink: scpivs44_view_vm_and_datastore_backups.html
 keywords:  
 summary: Lorsque vous préparez à sauvegarder ou restaurer une machine virtuelle ou un datastore, vous pouvez voir toutes les sauvegardes disponibles pour cette ressource et afficher les détails de ces sauvegardes. 
 ---
-= Afficher les sauvegardes des VM et des datastores
+= Afficher les sauvegardes de machines virtuelles et de banques de données dans le SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

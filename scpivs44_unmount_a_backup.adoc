@@ -4,7 +4,7 @@ permalink: scpivs44_unmount_a_backup.html
 keywords:  
 summary: 'Vous pouvez démonter une sauvegarde lorsque vous n"avez plus besoin d"accéder aux fichiers du datastore.' 
 ---
-= Démonter une sauvegarde
+= Démontez une sauvegarde à l'aide du SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

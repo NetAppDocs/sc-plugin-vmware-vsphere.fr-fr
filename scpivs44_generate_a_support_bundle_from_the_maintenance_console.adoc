@@ -4,7 +4,7 @@ permalink: scpivs44_generate_a_support_bundle_from_the_maintenance_console.html
 keywords:  
 summary: Vous pouvez générer un bundle de support à partir de la console de maintenance. 
 ---
-= Générez un bundle de support à partir de la console de maintenance
+= Générez un bundle de support à partir de la console de maintenance SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

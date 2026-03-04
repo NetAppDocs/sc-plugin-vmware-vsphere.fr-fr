@@ -4,7 +4,7 @@ permalink: scpivs44_search_for_backups.html
 keywords:  
 summary: 'Vous pouvez rechercher et trouver une sauvegarde spécifique d"une machine virtuelle ou d"un datastore à l"aide de l"assistant de restauration. Une fois que vous avez trouvé une sauvegarde, vous pouvez la restaurer.' 
 ---
-= Recherchez des sauvegardes
+= Recherchez les sauvegardes dans le SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

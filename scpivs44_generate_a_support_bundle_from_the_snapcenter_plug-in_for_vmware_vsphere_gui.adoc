@@ -4,7 +4,7 @@ permalink: scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vm
 keywords:  
 summary: 'Vous pouvez générer un bundle de support à partir de l"interface utilisateur du SnapCenter Plug-in for VMware vSphere .' 
 ---
-= Générer un bundle de support à partir de l'interface utilisateur du SnapCenter Plug-in for VMware vSphere
+= Générez un bundle de support à partir de l'interface utilisateur SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

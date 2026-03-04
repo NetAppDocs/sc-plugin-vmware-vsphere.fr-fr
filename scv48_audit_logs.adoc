@@ -4,7 +4,7 @@ permalink: scv48_audit_logs.html
 keywords:  
 summary: 'Le journal d"audit assure la traçabilité des personnes qui ont fait quoi et quand. Un journal d"audit est un ensemble d"événements classés par ordre chronologique, qui est écrit dans un fichier de l"appliance.' 
 ---
-= Journaux d'audit
+= Journaux d'audit pour le SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

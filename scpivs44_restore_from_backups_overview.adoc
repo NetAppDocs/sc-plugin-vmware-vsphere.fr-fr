@@ -4,7 +4,7 @@ permalink: scpivs44_restore_from_backups_overview.html
 keywords:  
 summary: Il est possible de restaurer des machines virtuelles, des VMDK, des fichiers et des dossiers à partir de sauvegardes primaires ou secondaires. 
 ---
-= Vue d'ensemble de la restauration
+= Options de restauration pour le SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

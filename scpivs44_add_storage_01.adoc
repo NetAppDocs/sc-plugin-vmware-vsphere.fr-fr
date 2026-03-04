@@ -4,7 +4,7 @@ permalink: scpivs44_add_storage_01.html
 keywords:  
 summary: 'L"ajout de stockage permet au plug-in SnapCenter pour VMware vSphere de reconnaître et de gérer les opérations de sauvegarde et de restauration dans vCenter.' 
 ---
-= Ajouter du stockage
+= Ajoutez des systèmes de stockage au SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_restart_the_vmware_vsphere_web_client_service.html
 keywords:  
 summary: Si le client SnapCenter VMware vSphere ne se comporte pas correctement, vous devrez peut-être effacer le cache du navigateur. Si le problème persiste, redémarrez le service client Web. 
 ---
-= Redémarrez le service client VMware vSphere
+= Redémarrez le service client VMware vSphere pour le SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

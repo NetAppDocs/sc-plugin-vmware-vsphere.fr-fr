@@ -4,7 +4,7 @@ permalink: scpivs44_restore_deleted_vms_from_backups.html
 keywords:  
 summary: 'Vous pouvez restaurer une machine virtuelle supprimée d"une sauvegarde principale ou secondaire de datastore vers un hôte ESXi sélectionné.' 
 ---
-= Restaurer des machines virtuelles supprimées à partir des sauvegardes
+= Restaurez les machines virtuelles supprimées à partir des sauvegardes à l'aide du SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

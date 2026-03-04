@@ -4,7 +4,7 @@ permalink: scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html
 keywords:  
 summary: 'Vous pouvez ajouter rapidement une machine virtuelle ou un datastore unique à n"importe quel groupe de ressources existant géré par le plug-in SnapCenter pour VMware vSphere.' 
 ---
-= Ajoutez un seul serveur virtuel ou datastore à un groupe de ressources
+= Ajoutez une seule machine virtuelle ou banque de données à un groupe de ressources dans le SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_protect_data_overview.html
 keywords:  
 summary: Toutes les opérations de sauvegarde sont effectuées sur des groupes de ressources qui peuvent contenir une ou plusieurs machines virtuelles et datastores. Vous pouvez effectuer des sauvegardes à la demande ou selon un planning de protection défini. 
 ---
-= Flux de travail de protection des données
+= Flux de travail de protection des données pour le SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

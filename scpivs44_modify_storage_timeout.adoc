@@ -4,7 +4,7 @@ permalink: scpivs44_modify_storage_timeout.html
 keywords:  
 summary: 'Même si les sauvegardes ont réussi par le passé, elles peuvent commencer à échouer au moment où le plug-in SnapCenter pour VMware vSphere doit attendre que le système de stockage dépasse le délai d"expiration configuré. Si cette condition se produit, vous pouvez augmenter le délai configuré.' 
 ---
-= Modifier le délai d'expiration du stockage configuré
+= Modifiez le délai d'expiration du stockage dans le SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

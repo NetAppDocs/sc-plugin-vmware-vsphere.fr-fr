@@ -4,7 +4,7 @@ permalink: scpivs44_restore_guest_files_and_folders_from_vmdks.html
 keywords:  
 summary: 'Vous pouvez restaurer un ou plusieurs fichiers ou dossiers à partir d"un VMDK sur un système d"exploitation invité Windows.' 
 ---
-= Restaurez les fichiers et les dossiers invités à partir de VMDK
+= Restaurez les fichiers et dossiers invités à partir de VMDK à l'aide du SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

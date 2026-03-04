@@ -4,7 +4,7 @@ permalink: scpivs44_quick_start_overview.html
 keywords:  
 summary: 'La documentation de démarrage rapide contient un ensemble d"instructions pour le déploiement du plug-in SnapCenter pour le dispositif virtuel VMware vSphere et l"activation du plug-in SnapCenter pour VMware vSphere. Ces instructions sont destinées aux clients qui ne disposent pas encore de SnapCenter et qui souhaitent protéger uniquement les machines virtuelles et les datastores.' 
 ---
-= Présentation
+= Démarrage rapide du SnapCenter Plug-in pour VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

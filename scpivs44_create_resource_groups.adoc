@@ -4,7 +4,7 @@ permalink: scpivs44_create_resource_groups.html
 keywords:  
 summary:  
 ---
-= Créer des groupes de ressources
+= Créez des groupes de ressources dans le SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

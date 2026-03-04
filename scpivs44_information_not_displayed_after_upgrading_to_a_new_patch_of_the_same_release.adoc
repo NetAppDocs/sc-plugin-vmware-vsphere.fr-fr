@@ -4,7 +4,7 @@ permalink: scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_
 keywords:  
 summary: 'Après la mise à niveau du plug-in SnapCenter pour VMware vSphere vers un nouveau correctif de la même version, il est possible que les tâches récentes ou d"autres informations ne s"affichent pas dans le tableau de bord et le moniteur des tâches.' 
 ---
-= Informations non affichées après la mise à niveau vers un nouveau correctif de la même version
+= Informations non affichées après la mise à niveau vers un nouveau correctif du SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

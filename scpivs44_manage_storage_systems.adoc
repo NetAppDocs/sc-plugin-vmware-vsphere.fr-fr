@@ -4,7 +4,7 @@ permalink: scpivs44_manage_storage_systems.html
 keywords:  
 summary: 'Avant de pouvoir sauvegarder ou restaurer des machines virtuelles ou des datastores à l"aide du client VMware vSphere, vous devez ajouter le stockage.' 
 ---
-= Gérer des systèmes de stockage
+= Gérez les systèmes de stockage dans le SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

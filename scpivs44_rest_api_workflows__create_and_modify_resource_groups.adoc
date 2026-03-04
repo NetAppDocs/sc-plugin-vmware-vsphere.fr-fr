@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflows__create_and_modify_resource_groups.html
 keywords:  
 summary: 'Pour effectuer des opérations de création et de modification de groupes de ressources à l"aide du plug-in SnapCenter pour API REST VMware vSphere, vous devez suivre la séquence prescrite des appels de l"API REST.' 
 ---
-= Des workflows d'API REST pour créer et modifier des groupes de ressources
+= Flux de travail d'API REST pour créer et modifier des groupes de ressources dans le SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

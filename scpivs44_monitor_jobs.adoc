@@ -4,7 +4,7 @@ permalink: scpivs44_monitor_jobs.html
 keywords:  
 summary: 'Après avoir effectué toute opération de protection des données à l"aide du client VMware vSphere, vous pouvez surveiller l"état des tâches à partir de l"onglet surveillance des tâches du tableau de bord et afficher les détails des tâches.' 
 ---
-= Surveiller les tâches
+= Surveiller les tâches dans le SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

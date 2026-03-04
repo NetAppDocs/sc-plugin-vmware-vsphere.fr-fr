@@ -4,7 +4,7 @@ permalink: scpivs44_deployment_workflow_for_existing_users.html
 keywords:  
 summary: Vous pouvez utiliser ce flux de travail si vous êtes un utilisateur SnapCenter et que vous avez des sauvegardes SnapCenter. 
 ---
-= Flux de travail de déploiement pour les utilisateurs existants
+= Flux de travail de déploiement pour les utilisateurs existants de SnapCenter
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

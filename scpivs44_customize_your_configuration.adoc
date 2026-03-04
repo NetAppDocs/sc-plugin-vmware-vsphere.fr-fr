@@ -4,7 +4,7 @@ permalink: scpivs44_customize_your_configuration.html
 keywords:  
 summary: 'Pour améliorer l"efficacité opérationnelle, vous pouvez modifier le fichier de configuration scbr.override pour modifier les valeurs par défaut. Ces valeurs contrôlent des paramètres tels que le nombre de snapshots VMware créés ou supprimés lors d"une sauvegarde ou la durée avant l"arrêt de l"exécution d"un script de sauvegarde.' 
 ---
-= Personnalisez votre configuration
+= Personnalisez la configuration du plug-in SnapCenter pour VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs48_rest_apis_audit_logs.html
 keywords:  
 summary: 'API REST pour générer des journaux d"audit' 
 ---
-= API REST pour générer des journaux d'audit
+= API REST pour générer des journaux d'audit pour le SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

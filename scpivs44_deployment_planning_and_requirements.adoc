@@ -4,7 +4,7 @@ permalink: scpivs44_deployment_planning_and_requirements.html
 keywords:  
 summary: 'Il est important de connaître les conditions de déploiement requises avant de déployer l"appliance virtuelle.' 
 ---
-= Planification et exigences de déploiement
+= Planification du déploiement et exigences relatives au SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

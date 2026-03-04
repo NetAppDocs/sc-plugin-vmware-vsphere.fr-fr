@@ -4,7 +4,7 @@ permalink: rename_storage.html
 keywords:  
 summary: 'Vous pouvez renommer le stockage à l"aide de l"API REST.' 
 ---
-= Restaurer la sauvegarde du stockage renommé
+= Restaurez les sauvegardes à partir d'un stockage renommé à l'aide du SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

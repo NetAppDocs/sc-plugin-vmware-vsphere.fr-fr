@@ -4,7 +4,7 @@ permalink: scpivs44_access_reports.html
 keywords:  
 summary: Vous pouvez demander des rapports pour un ou plusieurs travaux à partir du tableau de bord. 
 ---
-= Accédez aux rapports
+= Accédez aux rapports dans le SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

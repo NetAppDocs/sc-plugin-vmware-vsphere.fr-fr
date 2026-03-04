@@ -4,7 +4,7 @@ permalink: scpivs44_predefined_roles_packaged_with_snapcenter.html
 keywords:  
 summary: 'Pour simplifier l"utilisation du RBAC de vCenter Server, le plug-in SnapCenter pour VMware vSphere fournit un ensemble de rôles prédéfinis qui permettent aux utilisateurs d"effectuer des tâches SnapCenter. Le rôle en lecture seule permet également aux utilisateurs d"afficher les informations SnapCenter, mais n"effectuent aucune tâche.' 
 ---
-= Rôles prédéfinis avec le plug-in SnapCenter pour VMware vSphere
+= Rôles prédéfinis fournis avec le SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflow__restore_vms.html
 keywords:  
 summary: 'Pour effectuer des opérations de restauration pour les sauvegardes de machines virtuelles à l"aide du plug-in SnapCenter pour les API REST VMware vSphere, vous devez suivre la séquence prescrite d"appels d"API REST.' 
 ---
-= Workflow d'API REST pour restaurer des VM
+= Flux de travail de l'API REST pour restaurer des machines virtuelles à l'aide du SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
