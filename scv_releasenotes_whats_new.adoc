@@ -22,3 +22,32 @@ La version SnapCenter Plug-in for VMware vSphere 6.2 ajoute la prise en charge d
 
 
 À compter de cette version, le SnapCenter Plug-in for VMware vSphere prend en charge les systèmes de stockage Amazon FSxN pour NetApp ONTAP exécutant la version 9.10 ou ultérieure.
+
+[NOTE]
+====
+Vous pouvez désormais effectuer une migration transparente, en un seul clic et sans interruption de service, du SnapCenter Plug-in for VMware vers NetApp Backup and Recovery. NetApp Backup and Recovery offre des fonctionnalités améliorées de protection et de gestion des données, notamment :
+
+* Soutien à la stratégie de sauvegarde et d'archivage 3-2-1
+* Protection contre les ransomwares avec SnapLock et sauvegardes logiques isolées utilisant le verrouillage d'objets
+* Remédiation automatisée lors des analyses de ransomware
+* Création automatisée de relations SnapMirror pour les cibles de stockage secondaire et objet, gestion rationalisée de la conservation des sauvegardes et simplification des flux de travail de sauvegarde des applications et des machines virtuelles
+* Amélioration de l'évolutivité et des performances pour gérer les volumes de données croissants
+* Réduction des frais généraux et du coût de possession grâce à un service de sauvegarde entièrement géré
+* gestion des sauvegardes des banques de données et des machines virtuelles sur plusieurs vCenter instances à partir d'une interface unique
+* Restauration rapide de fichiers et de dossiers depuis un système d'exploitation invité Windows ou Linux
+
+
+====
+Pour plus d'informations, veuillez consulter les liens suivants :
+
+* https://docs.netapp.com/us-en/data-services-backup-recovery/["Documentation NetApp Backup and Recovery"].
+* https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-discovery.html["Découvrez les charges de travail VMware avec NetApp Backup and Recovery"]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-login.html["Connectez-vous à NetApp Backup and Recovery"]
+* https://console.netapp.com/unified-backup-restore["Accédez au service NetApp Backup and Recovery"]
+
+
+
+
+== Protégez votre environnement VMware à l'aide de NetApp Backup and Recovery
+
+video::UeT9yFssTug[youtube,width=848,height=480]
