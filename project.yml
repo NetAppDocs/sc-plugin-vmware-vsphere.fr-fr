@@ -217,7 +217,7 @@ sidebar:
       url: "/scpivs44_modify_the_time_zones.html"
     - title: Modifier les informations d'identification
       url: "/scpivs44_modify_the_logon_credentials.html"
-    - title: Modifier les informations d'identification de connexion vCenter
+    - title: Mettez à jour les identifiants vCenter configurés dans SCV
       url: "/scpivs44_modify_the_vcenter_logon_credentials.html"
     - title: Modifier les paramètres réseau
       url: "/scpivs44_modify_the_network_settings.html"
