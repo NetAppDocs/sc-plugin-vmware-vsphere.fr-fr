@@ -47,7 +47,7 @@ Pour plus d'informations, reportez-vous à la documentation des ONTAP tools for 
 * Vous pouvez ajouter ou supprimer des ressources d’un groupe de ressources à tout moment.
 * Pour sauvegarder une seule ressource, telle qu’une machine virtuelle, créez un groupe de ressources contenant uniquement cette ressource.
 * Pour sauvegarder plusieurs ressources, créez un groupe de ressources qui inclut toutes les ressources que vous souhaitez protéger.
-* Pour les volumes FlexGroup dans les environnements NetApp MetroCluster, si vous utilisez ONTAP 9.8 ou 9.9, redémarrez le service SnapCenter Plug-in pour VMware vSphere et resynchronisez les relations SnapMirror après un basculement ou un retour en arrière avant de sauvegarder les groupes de ressources. Dans ONTAP 9.8, les sauvegardes peuvent se bloquer après un retour en arrière ; ce problème est résolu dans ONTAP 9.9.
+* Pour les volumes FlexGroup dans les environnements MetroCluster, si vous utilisez ONTAP 9.8 ou 9.9, redémarrez le service SnapCenter Plug-in for VMware vSphere et resynchronisez les relations SnapMirror après un basculement ou un retour en arrière avant de sauvegarder les groupes de ressources. Dans ONTAP 9.8, les sauvegardes peuvent se bloquer après un retour en arrière ; ce problème est résolu dans ONTAP 9.9.
 * Pour des performances de snapshot optimales, regroupez les machines virtuelles et les banques de données sur le même volume dans un seul groupe de ressources.
 * Vous pouvez créer un groupe de ressources sans politique de sauvegarde, mais la protection des données nécessite au moins une politique.  Sélectionnez une politique existante ou créez-en une nouvelle lors de la création du groupe de ressources.
 +
