@@ -19,7 +19,11 @@ NOTE: La mise à niveau vers SCV 6.2 est prise en charge uniquement sur VMware v
 Si vous utilisez le plug-in SnapCenter pour l'appliance virtuelle VMware vSphere, vous pouvez effectuer la mise à niveau vers une version plus récente. Le processus de mise à niveau annule l'enregistrement du plug-in existant et déploie un plug-in compatible uniquement avec vSphere 7.0U1 et les versions ultérieures.
 
 
+CAUTION: Avant de procéder à la mise à niveau, vérifiez que votre environnement répond aux exigences système. Consultez link:scpivs44_deployment_planning_and_requirements.html["SnapCenter Plug-in pour VMware vSphere Planification du déploiement et exigences"] pour plus de détails.
 
+
+
+[[upgrade-paths]]
 == Chemins de mise à niveau
 
 |===
@@ -54,7 +58,7 @@ TIP: Sauvegarder le plug-in SnapCenter pour VMware vSphere OVA avant de lancer u
 
 NOTE: Le basculement de votre configuration réseau statique vers DHCP n'est pas pris en charge.
 
-Pour obtenir les dernières informations sur les versions prises en charge, reportez-vous à https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp"^] (IMT).
+Pour obtenir les informations les plus récentes sur les versions prises en charge, veuillez consulter link:https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp (IMT)"^].
 
 .Étapes
 . Préparation à la mise à niveau en désactivant le plug-in SnapCenter pour VMware vSphere.
@@ -65,7 +69,7 @@ Pour obtenir les dernières informations sur les versions prises en charge, repo
 
 . Téléchargez la mise à niveau `.iso` fichier.
 +
-.. Connectez-vous au site de support NetApp .
+.. Connectez-vous au link:https://mysupport.netapp.com/products/index.html["Site de support NetApp"^].
 .. Dans la liste de produits, sélectionnez *Plug-in SnapCenter pour VMware vSphere*, puis cliquez sur le bouton *TÉLÉCHARGER LA DERNIÈRE VERSION*.
 .. Téléchargez la mise à niveau du plug-in SnapCenter pour VMware vSphere `.iso` fichier à n'importe quel emplacement.
 

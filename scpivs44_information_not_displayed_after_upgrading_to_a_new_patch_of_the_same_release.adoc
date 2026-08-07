@@ -38,6 +38,7 @@ Le cache se trouve dans les emplacements suivants, en fonction du type de systè
 
 
 
+[[workaround-if-you-already-upgraded-before-clearing-the-cache]]
 == Solution de contournement si vous avez déjà mis à niveau avant de supprimer le cache
 
 . Connectez-vous à l'interface utilisateur de gestion du SnapCenter Plug-in for VMware vSphere .

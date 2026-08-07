@@ -18,6 +18,7 @@ Avant de pouvoir sauvegarder ou restaurer des machines virtuelles ou des datasto
 
 
 
+[[modify-storage-vms]]
 == Modifier les VM de stockage
 
 Vous pouvez utiliser le client VMware vSphere pour modifier les configurations des clusters et des machines virtuelles de stockage enregistrées dans le plug-in SnapCenter pour VMware vSphere et utilisées pour les opérations de protection des données des machines virtuelles.
@@ -35,6 +36,7 @@ IMPORTANT: Si vous avez ajouté des machines virtuelles de stockage pour des op�
 
 
 
+[[remove-storage-vms]]
 == Supprimer les machines virtuelles de stockage
 
 Vous pouvez utiliser le client VMware vSphere pour supprimer des machines virtuelles de stockage de l'inventaire dans vCenter.

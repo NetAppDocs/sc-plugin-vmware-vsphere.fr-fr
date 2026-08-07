@@ -18,6 +18,7 @@ Lorsque vous essayez de restaurer un fichier invité, vous pouvez rencontrer l'u
 
 
 
+[[guest-file-restore-session-is-blank]]
 == La session de restauration du fichier invité est vide
 
 Ce problème survient lorsque vous créez une session de restauration de fichier invité. Pendant que cette session était active, le système d'exploitation invité est redémarré. Dans ce cas, les VMDK du système d'exploitation invité peuvent rester hors ligne. Par conséquent, lorsque vous essayez de parcourir la session de restauration de fichier invité, la liste est vide.
@@ -26,6 +27,7 @@ Pour corriger le problème, remettez manuellement les VMDK en ligne dans le syst
 
 
 
+[[guest-file-restore-attach-disk-operation-fails]]
 == Échec de l'opération de rattachement de la restauration du fichier invité
 
 Ce problème se produit lorsque vous démarrez une opération de restauration de fichier invité, mais que l'opération de connexion de disque échoue même si les outils VMware sont en cours d'exécution et que les informations d'identification du système d'exploitation invité sont correctes. Si cela se produit, l'erreur suivante est renvoyée :
@@ -36,12 +38,14 @@ Pour corriger le problème, redémarrez le service VMware Tools Windows sur le s
 
 
 
+[[guest-email-shows-for-the-file-name]]
 == L'email invité montre ?????? nom du fichier
 
 Ce problème se produit lorsque vous utilisez la fonction de restauration de fichier invité pour restaurer des fichiers ou des dossiers avec des caractères non anglais dans les noms et que la notification par e-mail affiche « ?????????? " pour les noms de fichiers restaurés. La pièce jointe à un e-mail répertorie correctement les noms des fichiers et dossiers restaurés.
 
 
 
+[[backups-are-not-detached-after-guest-file-restore-session-is-discontinued]]
 == Les sauvegardes ne sont pas détachées après l'interruption de la session de restauration des fichiers invités
 
 Ce problème survient lorsque vous effectuez une opération de restauration des fichiers invités à partir d'une sauvegarde cohérente avec les machines virtuelles. Pendant que la session de restauration des fichiers invités est active, une autre sauvegarde cohérente avec la machine virtuelle est effectuée pour la même machine virtuelle. Lorsque la session de restauration des fichiers invités est déconnectée, manuellement ou automatiquement après 24 heures, les sauvegardes de la session ne sont pas détachées.

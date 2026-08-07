@@ -21,6 +21,7 @@ NOTE: Ces groupes de ressources sont appelés tâches de sauvegarde dans Virtual
 
 
 
+[[suspend-and-resume-operations-on-resource-groups]]
 == Suspendre et reprendre les opérations sur les groupes de ressources
 
 Suspendre les opérations planifiées sur un groupe de ressources.  Réactivez-les lorsque cela est nécessaire.
@@ -37,6 +38,7 @@ Après la reprise des opérations de sauvegarde, l'état du travail devient `Pro
 
 
 
+[[modify-resource-groups]]
 == Modifier les groupes de ressources
 
 Vous pouvez supprimer ou ajouter des ressources dans des groupes de ressources dans vCenter, détacher ou attacher des stratégies, modifier des plannings ou modifier toute autre option de groupe de ressources.
@@ -57,6 +59,7 @@ Vous pouvez modifier plusieurs catégories. Vous pouvez également modifier des 
 
 
 
+[[delete-resource-groups]]
 == Supprimer des groupes de ressources
 
 Supprimez un groupe de ressources dans vCenter si vous n’avez pas besoin de protéger les ressources.  Supprimez tous les groupes de ressources avant de supprimer SnapCenter Plug-in for VMware vSphere.

@@ -227,6 +227,7 @@ NOTE: Si l'opération de mise en veille échoue pour l'une des machines virtuell
 
 
 
+[[manage-compatibility-check-failures]]
 == Gérer les échecs de contrôle de compatibilité
 
 SnapCenter effectue des vérifications de compatibilité lorsque vous tentez de créer un groupe de ressources. Toujours se référer à https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["Matrice d'interopérabilité NetApp (IMT)"^] pour les dernières informations sur le support SnapCenter . Les raisons d’incompatibilité peuvent être :

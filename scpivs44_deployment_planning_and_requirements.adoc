@@ -18,6 +18,7 @@ Vous devez connaître les exigences suivantes avant de commencer à déployer le
 
 
 
+[[host-requirements]]
 == Configuration requise pour l'hôte
 
 Avant de commencer le déploiement du plug-in SnapCenter pour VMware vSphere (SCV), vous devez vous familiariser avec la configuration requise pour l'hôte.
@@ -79,6 +80,7 @@ Restauration d'une machine virtuelle complète lorsqu'un ou plusieurs VMDK se tr
 
 
 
+[[license-requirements]]
 == Conditions de licence
 
 |===
@@ -98,6 +100,7 @@ Restauration d'une machine virtuelle complète lorsqu'un ou plusieurs VMDK se tr
 |===
 
 
+[[software-support]]
 == Support logiciel
 
 |===
@@ -142,6 +145,7 @@ La configuration logicielle minimale requise pour la prise en charge des protoco
 
 
 
+[[space-sizing-and-scaling-requirements]]
 == Besoins en termes d'espace, de dimensionnement et d'évolutivité
 
 |===
@@ -158,6 +162,7 @@ La configuration logicielle minimale requise pour la prise en charge des protoco
 |===
 
 
+[[connection-and-port-requirements]]
 == Connexion et port requis
 
 |===
@@ -181,6 +186,7 @@ Remarque : le port personnalisé pour l'ajout de l'hôte de distributeur sélect
 |===
 
 
+[[configurations-supported]]
 == Configurations prises en charge
 
 Chaque instance de plug-in ne prend en charge qu'un seul serveur vCenter, qui est en mode lié. Cependant, plusieurs instances de plug-in peuvent prendre en charge le même serveur SnapCenter, comme indiqué dans la figure suivante.
@@ -189,6 +195,7 @@ image:scpivs44_image4.png["Représentation graphique de configuration prise en c
 
 
 
+[[rbac-privileges-required]]
 == Privilèges RBAC requis
 
 Le compte d'administrateur vCenter doit avoir le vCenter Privileges requis répertorié dans le tableau suivant.
@@ -216,6 +223,7 @@ Extension
 |===
 
 
+[[autosupport]]
 == AutoSupport
 
 Le plug-in SnapCenter pour VMware vSphere fournit un minimum d'informations pour suivre son utilisation, y compris l'URL du plug-in. AutoSupport comprend un tableau des plug-ins installés qui est affiché par le visualiseur AutoSupport.

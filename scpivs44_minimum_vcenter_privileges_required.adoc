@@ -18,12 +18,14 @@ Avant de commencer le déploiement du plug-in SnapCenter pour VMware vSphere, as
 
 
 
+[[required-privileges-for-vcenter-admin-role]]
 == Privilèges requis pour le rôle d'administrateur vCenter
 
 Datastore.AllocateSpace datastore.Browse datastore.Delete datastore.FileManagement datastore.Move datastore.Renommer extension.Enregistrer extension.désinscrire extension.mettre à jour Host.Config.VirtualancedConfig hôte.Config.hôte.Config.hôte.Config.hôte.CreateVM hôte.hôte.ToVirtualConvert.hôte.Contrethôte.ContresVirtualExVirtualVM.hôte.hôte.hôte.hôte.hôte.ContresInteract.hôte.hôte.hôte.hôte.ContretRéreContres.machine.hôte.hôte.hôte.hôte.hôte.machine.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.hôte.virtuel.hôte.hôte.virtuel.hôte.hôte.hôte.hôte.hôte.hôte.virtuel.hôte.hôte.hôte.hôte.hôte.hôte.virtuel.hôte.hôte
 
 
 
+[[required-privileges-specific-to-snapcenter-plug-in-for-vmware-vcenter]]
 == Privilèges requis spécifiques au plug-in SnapCenter pour VMware vCenter
 
 |===

@@ -18,6 +18,7 @@ Vous pouvez restaurer des fichiers ou des dossiers à partir d'un disque de mach
 
 
 
+[[guest-restore-workflow]]
 == Flux de travail de restauration invité
 
 Les opérations de restauration du système d'exploitation invité incluent les étapes suivantes :
@@ -48,6 +49,7 @@ Restaurez les fichiers ou dossiers sélectionnés à un emplacement spécifié.
 
 
 
+[[prerequisites-for-restoring-guest-files-and-folders]]
 == Conditions requises pour la restauration des fichiers et dossiers invités
 
 Avant de restaurer un ou plusieurs fichiers ou dossiers à partir d'un VMDK sur un système d'exploitation invité Windows, vous devez connaître toutes les exigences.
@@ -89,6 +91,7 @@ Vous ne pouvez pas restaurer des fichiers et des dossiers à partir d’une mach
 
 
 
+[[guest-file-restore-limitations]]
 == Limites de restauration de fichiers invités
 
 Avant de restaurer un fichier ou un dossier à partir d'un système d'exploitation invité, vous devez savoir ce que cette fonctionnalité ne prend pas en charge.

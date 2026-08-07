@@ -21,6 +21,7 @@ NOTE: À partir du plug-in SnapCenter pour VMware (SCV) 5.0, vous devez ajouter 
 
 
 
+[[minimum-ontap-privileges-required]]
 == Privilèges minimum ONTAP requis
 
 Tous les plug-ins SnapCenter requièrent les privilèges minimaux suivants :
@@ -72,6 +73,7 @@ NOTE: Vous pouvez ignorer les messages d'avertissement concernant les commandes 
 
 
 
+[[additional-ontap-information]]
 == Autres informations sur ONTAP
 
 * Vous avez besoin de ONTAP 9.12.1 ou de versions ultérieures pour utiliser la fonctionnalité de synchronisation active de SnapMirror.

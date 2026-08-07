@@ -18,6 +18,7 @@ Vous pouvez renommer et supprimer les sauvegardes effectuées par le plug-in Sna
 
 
 
+[[rename-backups]]
 == Renommer les sauvegardes
 
 Vous pouvez renommer le plug-in SnapCenter pour les sauvegardes VMware vSphere si vous souhaitez fournir un meilleur nom afin d'améliorer la possibilité de recherche.
@@ -39,6 +40,7 @@ N'utilisez pas les caractères spéciaux suivants dans les noms VM, datastore, s
 
 
 
+[[delete-backups]]
 == Supprimer les sauvegardes
 
 Vous pouvez supprimer le plug-in SnapCenter pour sauvegardes VMware vSphere si vous ne souhaitez plus effectuer de sauvegarde pour d'autres opérations de protection des données. Vous pouvez supprimer une sauvegarde ou supprimer plusieurs sauvegardes simultanément.

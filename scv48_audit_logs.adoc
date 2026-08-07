@@ -63,6 +63,7 @@ Les événements sont classés en trois catégories principales :
 
 
 
+[[data-protection-events]]
 == Événements de protection des données
 
 Les ressources du distributeur sélectif sont:
@@ -102,6 +103,7 @@ Le tableau suivant répertorie les opérations pouvant être effectuées sur cha
 |===
 
 
+[[maintenance-console-events]]
 == Événements de la console de maintenance
 
 Les opérations administratives de la console de maintenance sont auditées. Les options de console de maintenance disponibles sont les suivantes :
@@ -127,6 +129,7 @@ Les opérations administratives de la console de maintenance sont auditées. Les
 
 
 
+[[admin-console-events]]
 == Événements de la console d'administration
 
 Les opérations suivantes dans l'interface utilisateur de la console d'administration sont auditées :
@@ -149,6 +152,7 @@ Les opérations suivantes dans l'interface utilisateur de la console d'administr
 
 
 
+[[configure-syslog-servers]]
 == Configurer les serveurs syslog
 
 Les journaux d'audit sont stockés dans l'appliance et leur intégrité est régulièrement vérifiée. Le transfert d'événements vous permet d'obtenir des événements à partir de l'ordinateur source ou de transfert et de les stocker dans un ordinateur centralisé, qui est le serveur Syslog. Les données sont chiffrées en transit entre la source et la destination.
@@ -176,6 +180,7 @@ Cette tâche vous aide à configurer le serveur syslog.
 
 
 
+[[change-audit-log-settings]]
 == Modifier les paramètres du journal d'audit
 
 Vous pouvez modifier les configurations par défaut des paramètres du journal.

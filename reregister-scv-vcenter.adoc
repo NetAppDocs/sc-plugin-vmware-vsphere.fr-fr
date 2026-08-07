@@ -34,6 +34,7 @@ Pour plus d'informations, voir link:scpivs44_minimum_vcenter_privileges_required
 
 
 
+[[recovery-steps]]
 == Étapes de récupération
 
 . Redémarrez le service client VMware vSphere.
@@ -70,6 +71,8 @@ Pour plus d'informations, voir link:scpivs44_unregister_plugin_from_vcenter.html
 
 
 
+[[verify-that-the-registration-succeeded]]
+[[verify-registration-succeeded]]
 == Vérifiez que l'enregistrement a réussi
 
 Utilisez l'une des vérifications suivantes pour confirmer que SCV est enregistré et connecté.
@@ -91,6 +94,7 @@ Utilisez les références suivantes uniquement pour le dépannage avancé. La di
 ====
 
 
+[[common-registration-errors-and-remediations]]
 == Erreurs d'enregistrement courantes et solutions
 
 * *Identifiants de connexion invalides*
@@ -117,6 +121,7 @@ Redémarrez le service client VMware vSphere.
 
 
 
+[[related-topics]]
 == Sujets connexes
 
 * link:scpivs44_modify_the_vcenter_logon_credentials.html["Mettez à jour les identifiants vCenter configurés dans SCV"]

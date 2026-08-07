@@ -24,6 +24,7 @@ Si le cache du plug-in n'est pas effacé, les travaux récents ne sont pas affic
 
 
 
+[[steps-for-clearing-the-cache]]
 == Procédure de suppression du cache
 
 . Localisez le `vsphere-client-serenity` puis localisez le `com.netapp.scv.client-<release-number>` et supprimez-le.
