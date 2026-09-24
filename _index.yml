@@ -42,7 +42,7 @@ indexpage:
     - title: Blog NetApp – distributeurs sélectifs
       url: https://blog.netapp.com/tag/snapcenter/
     - title: Communauté NetApp - distributeur auxiliaire
-      url: https://community.netapp.com/t5/forums/filteredbylabelpage/board-id/backup-and-restore-discussions/label-name/snapcenter
+      url: https://community.netapp.com/community/categories/solutions
   - title: Ressources supplémentaires
     links:
     - title: Documentation du logiciel SnapCenter
