@@ -1810,7 +1810,6 @@ Le <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"
   <block id="511a61be3395b836dbaacf9a77e28d9c" category="cell">Entrez le chemin du partage UNC vers l'invité où les fichiers sélectionnés seront restaurés. Exemple d'adresse IPv4 :<block ref="c1efda00eba14c667cfd89393b2be583" prefix=" " category="inline-code"></block> adresse IPv6 exemple :<block ref="f7a108079a0dc952ef09921776f4796f" prefix=" " category="inline-code"></block></block>
   <block id="d86e4811939307b3183e2dfd4eb853b6" category="cell">Mise à niveau vers les distributeurs sélectifs 6.0 et 6.1</block>
   <block id="b0ef2ccf9ac61cfaed33ce8cd24eae39" category="list-text">Modifiez les paramètres d'adresse IPv4/IPv6</block>
-  <block id="2fd5adf936b993ca4d80eea4c1f5d1e5" category="summary">Découvrez les nouvelles fonctionnalités disponibles dans le plug-in SnapCenter pour VMware vSphere 6.1.</block>
   <block id="5db6882763ebe6a093c82ca0da5652f2" category="paragraph">SCV 6,1</block>
   <block id="d61532c65e483bb3822f5a0a1ae885f5" category="paragraph">Distributeurs sélectifs 6.0 et 6.1</block>
   <block id="dd3471364a418c5d14272ff6d6881150" category="paragraph">SnapCenter 6.1</block>
@@ -2119,9 +2118,6 @@ Le <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"
   <block id="3486b2a1d30bd161fb36899f3376d2b5" category="paragraph">Vérifiez les éléments suivants pour vérifier que les valeurs du script sont renseignées :</block>
   <block id="4d7e82b16d362076d5ab45e16c70089e" category="list-text">Pour les scripts PERL :<block ref="61d298a13a3f843732a864857b069bb5" prefix=" " category="inline-code"></block></block>
   <block id="a0da1c9995a65432072be2aeebd4e3ea" category="list-text">Pour les scripts shell :<block ref="77c2d1d96cf44632f8442af060d93cb0" prefix=" " category="inline-code"></block></block>
-  <block id="48ed95b473e7ef4e7788b1e1d9482edb" category="paragraph">Découvrez les fonctionnalités nouvelles et améliorées disponibles dans SnapCenter Plug-in for VMware vSphere 6.2.</block>
-  <block id="19abdf7b381f5ed7b0de0d79a7e0f03e" category="inline-link">Notes de publication du SnapCenter Plug-in for VMware vSphere 6.2</block>
-  <block id="1afaab56cfbc3ce97a79993d50d9ef05" category="paragraph">Pour plus de détails sur les problèmes connus, les limitations et les problèmes résolus, consultez<block ref="6492f9c91b814421d341fb9d834710b0" category="inline-link-rx"></block> .  Vous devez vous connecter avec votre compte NetApp ou créer un compte pour accéder aux notes de publication.</block>
   <block id="5156b934ff5b0cd83a8a7f129e1e0a31" category="list-text">Connectez-vous à l'interface utilisateur de gestion du SnapCenter Plug-in for VMware vSphere en utilisant le format<block ref="3dfacd84c996ac983963942e2712a0bf" prefix=" " category="inline-code"></block> .</block>
   <block id="d874ab609149d0dde843df2768514cc7" category="paragraph">Pour restaurer les sauvegardes de machines virtuelles avec le SnapCenter Plug-in for VMware vSphere , suivez la séquence requise d'appels d'API REST comme indiqué ci-dessous.</block>
   <block id="e2706c19e437971cdf7231409e94e04f" category="cell">Lorsque vous transmettez les identifiants des tâches bloquées dans un état d'exécution,<block ref="23f52a72a3b1eee5ab4fb121803fa5aa" prefix=" " category="inline-code"></block> marque ces tâches comme ayant échoué.  Pour identifier les tâches bloquées dans un état d'exécution, utilisez l'interface utilisateur du moniteur de tâches pour voir l'état de chaque tâche et l'ID de tâche.</block>
@@ -2143,7 +2139,6 @@ Le <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"
   <block id="53f6bfae40bec441093e8e4b966c2d25" category="list-text">Exécuter des flux de travail de restauration</block>
   <block id="799a3904b328ccd6642506e9cffca3ac" category="list-text">Fournir une protection secondaire lors de la création ou de la modification de groupes de ressources (disponible avec ONTAP 9.16.1 et versions ultérieures)</block>
   <block id="e27967a072bb757c29d755e31dce790a" category="paragraph">SCV 6,2</block>
-  <block id="2dc5aae4389611e60ed72aa096627203" category="paragraph">SCV 6.1 et SCV 6.2</block>
   <block id="14ec6c84f15dc549038dd1b97273c7bc" category="paragraph">SnapCenter 6.2</block>
   <block id="d4d1d929fd42e59ee32c4b5906cf20be" category="sidebar">SnapCenter Plug-in for VMware vSphere (SCV) est une appliance virtuelle basée sur Linux.  En tant que solution autonome, il fournit des opérations de sauvegarde et de restauration rapides, peu encombrantes, cohérentes en cas de panne et compatibles avec les machines virtuelles pour les machines virtuelles, les banques de données et les VMDK.  Il fonctionne également avec SnapCenter Server pour prendre en charge les opérations de sauvegarde et de restauration basées sur les applications dans les environnements VMware pour les plug-ins spécifiques aux applications SnapCenter .  Cette bibliothèque de documentation décrit le SnapCenter Plug-in for VMware vSphere versions 6.2.</block>
   <block id="90a8886635ee0da0c4b0c0f9f05014c9" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.2</block>
@@ -2354,7 +2349,6 @@ Le <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"
   <block id="96fb488c6d5d6ed5f3816ffc8e3f6397" category="doc">Résolvez les informations manquantes après la mise à niveau vers un nouveau correctif du SCV</block>
   <block id="09f90d69ac8c406b9baae622de8de691" category="doc">Connectez-vous au client SnapCenter Plug-in pour VMware vSphere</block>
   <block id="d1feecd02693b9e7b54bae1972ce21f7" category="doc">Migration des métadonnées depuis SnapCenter pour VMware vSphere basé sur Windows</block>
-  <block id="14e70facdd7f1056b19624a65647f611" category="doc">Notes de version pour le SnapCenter Plug-in for VMware vSphere 6.2</block>
   <block id="0e1c5e24c38bf97d9c3a9e07e8ea35ac" category="doc">Marquez les tâches bloquées comme ayant échoué à l'aide des API REST dans SCV</block>
   <block id="25dc68a1ecd07d4ec635e66b5aba9478" category="doc">Découvrez la restauration de fichiers invités dans SCV</block>
   <block id="cecbb6d90c269c98fdac515b81e0d73b" category="cell">Recherchez le *moref* du datastore à partir de l'URL des objets gérés VMware. Notez le moref du datastore sur lequel se trouvait la machine virtuelle supprimée.</block>
@@ -2368,4 +2362,40 @@ Le <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"
   <block id="704566d14e7a9a5778c823d1b4ec8f66" category="cell"><block ref="cd167a8bf45e589a93aea03099990bf5" prefix="" category="inline-code"></block>Récupère les informations relatives à l’hôte sur lequel la sauvegarde est stockée. Transmettez le *moref* de l’étape 1. Notez les informations *availableEsxHostsList*.</block>
   <block id="d87a25d74744053d50de6457d00b0f8c" category="cell"><block ref="35fb52fb97add0bf107e8814314da67c" prefix="" category="inline-code"></block></block>
   <block id="31533fd2e85160fecb2398d5ece8c194" category="cell"><block ref="42deac4908a17efb438eb8235d8b5154" prefix="" category="inline-code"></block> Restaure la sauvegarde spécifiée. Indiquez l’*UUID* de l’étape 3. Indiquez le *backupId* de l’étape 2. Dans l’attribut *restoreLocations*, indiquez les informations de *snapshotLocationsList* de l’étape 4 ; dans l’attribut *esxHost*, indiquez les informations de *availableEsxHostsList* de l’étape 5. Si la sauvegarde de la machine virtuelle est partielle, définissez le paramètre <block ref="0736c145ca7c004b573fcb3b6242d260" prefix=" " category="inline-code"></block> sur *false*. *Remarque :* Vous ne pouvez pas restaurer une machine virtuelle qui est un modèle.</block>
+  <block id="5310a1036d007f5d44859f9192e84523" category="doc">Notes de version de SnapCenter Plug-in for VMware vSphere 6.2.1 et 6.2</block>
+  <block id="b96b8459b23d226bfd02193a57ee311b" category="paragraph">Découvrez les fonctionnalités nouvelles et améliorées disponibles dans SnapCenter Plug-in for VMware vSphere 6.2.1 et 6.2.</block>
+  <block id="5e92b8619c82a6981789afae4f5999b6" category="inline-link">SnapCenter Plug-in for VMware vSphere 6.2.1 et 6.2 - Notes de version</block>
+  <block id="02f1cb81ad227f4a78ad0c8cf52f4fe8" category="paragraph">Pour plus de détails sur les problèmes connus, les limitations et les problèmes résolus, consultez<block ref="05832d382e92b0ddb1f2a03c01b50eff" category="inline-link-rx"></block>. Vous devez vous connecter avec votre compte NetApp ou créer un compte pour accéder aux notes de version.</block>
+  <block id="8fe5f5a3a8d993e9ba3445b11b8da445" category="summary">Découvrez les nouvelles fonctionnalités disponibles dans SnapCenter Plug-in for VMware vSphere 6.2.1</block>
+  <block id="a94c00dc142552f5b2160709de2d8ca0" category="doc">Nouveautés de SnapCenter Plug-in for VMware vSphere 6.2.1</block>
+  <block id="fbdb29902420e2ebf4b5671a24980535" category="paragraph">SnapCenter Plug-in for VMware vSphere 6.2.1 est une version de maintenance. Elle met à jour le logiciel tiers fourni avec l'appliance et inclut des correctifs pour les problèmes détectés depuis la version 6.2 de SnapCenter Plug-in for VMware vSphere.</block>
+  <block id="7a1b53160a42fabcc2b19b67e77b7d3c" category="section-title">Composants mis à jour</block>
+  <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">Composant</block>
+  <block id="5c70fc47a114c0c742ecb76144743449" category="cell">SnapCenter Plug-in for VMware vSphere 6.2.1</block>
+  <block id="92dfecfa6869352e411b6c5dfd3cb166" category="cell">environnement d'exécution Java</block>
+  <block id="a87a746330fcccafdd46ff35e52a072f" category="cell">OpenJDK 21.0.12</block>
+  <block id="7166232140203ef2966ddd8115d51a31" category="cell">Runtime .NET</block>
+  <block id="814a517ee46c11069830333d9c37b5b9" category="cell">.NET 10.0.11</block>
+  <block id="7cb1d64978adc30091cfb3c7337cbba3" category="cell">Système d'exploitation de l'appliance</block>
+  <block id="1061da8067873a5bbcf3b13a320008da" category="cell">Debian 13</block>
+  <block id="69464e68a5cdd0b54694ac92276fa1a3" category="section-title">Problèmes résolus</block>
+  <block id="4bf7189ca42b78c35cf4f9f936645b31" category="paragraph">Il est recommandé de consulter la liste des problèmes connus corrigés dans une version avant de procéder à la mise à jour.</block>
+  <block id="f1b0557f30f515cd6d2e1aa2e60580b5" category="list-text">VMDP-7072 : ONTAP géré dans le cloud sur Oracle Cloud peut être ajouté en tant que système de stockage.</block>
+  <block id="7e30746a2e14afbe290955d5099a0827" category="list-text">VMDP-7052 : la restauration d’une VM vers un emplacement différent conserve la stratégie de stockage de la VM, de sorte que la restauration n’est plus rejetée pour les VM qui utilisent une stratégie non par défaut.</block>
+  <block id="ffbb81ba0942679379246214302064d0" category="list-text">VMDP-7027 : Les bundles de journaux de support incluent la liste des systèmes de stockage configurés.</block>
+  <block id="54df73c8ac14d36d89e624c6bcb25c15" category="list-text">VMDP-6987 : l’attachement ou la restauration d’un disque virtuel n’échoue plus lorsque vCenter signale brièvement le datastore comme indisponible.</block>
+  <block id="a0d9c0a5825a0a479c3c1abf79736802" category="list-text">VMDP-6965: La page des calendriers ne rencontre plus d’erreur de chargement lorsqu’un enregistrement de calendrier est incomplet.</block>
+  <block id="ae1fe0096853dc264aef45e1af3a1c54" category="list-text">VMDP-6952: Lorsqu’un utilisateur n’est pas autorisé à supprimer un groupe de ressources, le message d’autorisation s’affiche.</block>
+  <block id="807a094ef06af183d78e766a9312e93b" category="list-text">VMDP-6939 : La console de maintenance ne signale plus que VMware Tools sont absents.</block>
+  <block id="d10b5064d7908d30ce794457a6f3a36d" category="list-text">VMDP-6935: La navigation dans une sauvegarde pour restaurer des fichiers individuels n’échoue plus.</block>
+  <block id="67edb748ed65475a815d4782acf1f80a" category="list-text">VMDP-6933 : le déploiement d’une nouvelle appliance n’échoue plus lors de la configuration initiale.</block>
+  <block id="447fa43309a40a78d5e193fd06081614" category="list-text">VMDP-6931 : Le nettoyage des sauvegardes secondaires ne bloque plus pendant des heures sur un volume inaccessible. Le traitement des autres volumes se poursuit.</block>
+  <block id="1aa76d24b907dec4cb76b6d8a77fed05" category="list-text">VMDP-6817: Le renommage d’un volume source ONTAP ne laisse plus les sauvegardes secondaires bloquées sur l’ancien nom et n’affiche plus d’entrées qui ne sont plus valides.</block>
+  <block id="e5c7cede4b737581cd66c16346d917c5" category="section-title">Versions SnapCenter prises en charge</block>
+  <block id="a8873f8f7715ad49732b43f6bdd600b5" category="paragraph">Pour obtenir les informations les plus récentes sur les versions prises en charge, consultez<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block> (IMT).</block>
+  <block id="fdc5680e65fa7898d151f608475ae69c" category="summary">Découvrez les nouvelles fonctionnalités disponibles dans SnapCenter Plug-in pour VMware vSphere 6.2.1 et 6.2.</block>
+  <block id="d9cd9f5434c65a05a69f215297988e99" category="paragraph">SCV 6.2.1</block>
+  <block id="184c7c0c678f365279a40216ed22fe8a" category="paragraph">SCV 6.2 et SCV 6.2.1</block>
+  <block id="09e5cb2777291d8cdab464a3f4d035e6" category="paragraph">SCV6.1 et SCV 6.2</block>
+  <block id="20afa33773b6c08681241027158bf0c6" category="sidebar">Nouveautés de SnapCenter Plug-in for VMware vSphere 6.2.1</block>
 </blocks>
